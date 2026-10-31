@@ -1,0 +1,27 @@
+1/4 Validación del modelo de muones...
+{"muones_NE1_previstos": 5275861.191, "muones_NE1_publicados": 4400000.0, "exceso_pico_suavizado_BV_QC": 0.086, "exceso_publicado_KEK": [0.052, 0.11], "Z_BV_QC_modelo": 17.007, "Z_BV_QC_publicado_NE1": 13.7, "Z_BV_exterior_modelo": 2.758, "Z_BV_exterior_publicado": 5.8, "exceso_max_NFC_desde_corredor": 0.28, "Z_NFC_modelo": 94.131, "Z_NFC_publicado": "> 10", "mu_implicito_Djehutihotep_200N_350N": [0.06045906710253436, 0.10580336742943514]}
+2/4 Construcción (Monte Carlo)...
+   recta           P(viable)=0.00  años med=8.6 [6.6-11.6]  personas(20 a) med=4,816
+   zigzag          P(viable)=0.00  años med=91.1 [53.1-154.5]  personas(20 a) med=inf
+   zigzag4         P(viable)=0.37  años med=22.8 [13.3-38.7]  personas(20 a) med=inf
+   espiral         P(viable)=0.00  años med=91.1 [53.1-154.5]  personas(20 a) med=inf
+   espiral4        P(viable)=0.37  años med=22.8 [13.3-38.7]  personas(20 a) med=inf
+   interna         P(viable)=0.00  años med=70.0 [43.5-114.9]  personas(20 a) med=inf
+   aristas         P(viable)=0.37  años med=22.8 [13.3-38.7]  personas(20 a) med=inf
+   palancas        P(viable)=1.00  años med=7.5 [5.5-10.5]  personas(20 a) med=9,137
+   recta+zigzag    P(viable)=0.04  años med=36.0 [23.3-56.4]  personas(20 a) med=inf
+   recta+palancas  P(viable)=1.00  años med=8.3 [6.5-11.1]  personas(20 a) med=5,081
+3/4 Vigas de granito...
+4/4 Gran Vacío: ajuste, discriminación y rampa interna...
+   ajuste H1: Z_residual_QC = 0.00  (8 s)
+   ajuste H2: Z_residual_QC = 4.10  (32 s)
+   ajuste H3: Z_residual_QC = 4.86  (48 s)
+   ajuste H4: Z_residual_QC = 13.08  (81 s)
+   ajuste H5: Z_residual_QC = 2.43  (112 s)
+   ajuste H6: Z_residual_QC = 28.95  (112 s)
+   días para 5σ desde QC: H1-H2: 1151, H1-H3: 173, H2-H3: ∞, H1-H4: 11, H1-H5: ∞
+   días para 5σ desde GG: H1-H2: 5, H1-H3: 4, H2-H3: ∞, H1-H4: 1, H1-H5: 7
+   días para 5σ desde KC: H1-H2: 3, H1-H3: 3, H2-H3: 54, H1-H4: 1, H1-H5: 14
+   días para 5σ desde D1: H1-H2: 1, H1-H3: 1, H2-H3: ∞, H1-H4: 1, H1-H5: 4
+   días para 5σ desde D5: H1-H2: 1, H1-H3: 1, H2-H3: 5, H1-H4: 1, H1-H5: 2
+Hecho en 271 s

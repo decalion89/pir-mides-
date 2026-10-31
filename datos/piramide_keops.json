@@ -1,0 +1,46 @@
+{
+  "_nota": "Valores usados por el simulador y su procedencia. 'aprox' = reconstruido encadenando medidas clásicas; incertidumbre típica ±1-2 m.",
+  "exterior": {
+    "lado_base_m": {"valor": 230.33, "fuente": "Cole 1925; Dash 2015 (lados entre 230,25 y 230,45 m)"},
+    "altura_original_m": {"valor": 146.6, "fuente": "Lehner 1997"},
+    "altura_actual_m": {"valor": 138.5, "fuente": "Lehner 1997; ScanPyramids cita 139 m"},
+    "angulo_caras_grados": {"valor": 51.84, "fuente": "derivado"}
+  },
+  "interior": {
+    "corredores_al_este_del_eje_m": {"valor": 7.3, "fuente": "Petrie 1883 (aprox)"},
+    "entrada_altura_m": {"valor": 16.9, "fuente": "Petrie 1883 (aprox)"},
+    "pendiente_corredor_descendente_grados": {"valor": 26.5, "fuente": "Petrie 1883"},
+    "pendiente_ascendente_y_galeria_grados": {"valor": 26.0, "fuente": "Petrie 1883"},
+    "gran_galeria": {"largo_m": 46.7, "alto_m": 8.6, "ancho_m": "2,06 abajo / 1,0 arriba", "fuente": "Morishima et al. 2017 (Nature 552)"},
+    "camara_reina": {"dimensiones_m": [5.75, 5.23, 6.2], "suelo_m": 21.2, "fuente": "Maragioglio & Rinaldi 1965 (aprox)"},
+    "camara_rey": {"dimensiones_m": [10.47, 5.23, 5.84], "suelo_m": 43.0, "fuente": "Petrie 1883; Lehner 1997"},
+    "camaras_descarga": {"numero": 5, "cota_superior_aprox_m": 64, "vigas_granito": "~43, de 25 a 80 t", "fuente": "Lehner 1997; Houdin (máx. ~62 t)"}
+  },
+  "anomalias_muones": {
+    "gran_vacio_2017": {
+      "largo_m": ">30", "seccion": "comparable a la Gran Galería",
+      "centro": "40-50 m del suelo de la Cámara de la Reina; empieza casi en el centro de la pirámide y termina hacia el norte en tan θy ≈ 0,8 (KEK)",
+      "orientacion": "horizontal o inclinada: no determinada",
+      "excesos_publicados": "KEK H1: 5,2-8,9 %; H2: 8,9-11 %; Nagoya NE1 13,7σ (98 d), NE2 12,7σ (140 d); CEA exterior 5,8σ",
+      "exposicion": "NE1: 4,4 M trazas en 98 d; NE2: 6,2 M trazas en 140 d; área efectiva 0,45 m²",
+      "densidad_usada": "caliza 2,2 g/cm³, granito 2,75 g/cm³",
+      "fuente": "Morishima et al. 2017, Nature 552, 386-390 (arXiv:1711.01576)"
+    },
+    "corredor_cara_norte_2023": {
+      "seccion_m": [2.0, 2.0], "largo_m": 9.1, "suelo_m": 20,
+      "posicion": "empieza 0,8 m detrás del chevrón y sigue 9,1 m hacia el sur, sobre el corredor descendente",
+      "significacion": ">10σ en todos los detectores",
+      "fuente": "Procureur et al. 2023, Nat. Commun. 14, 1144 (PMC9981702)"
+    }
+  },
+  "calibraciones": {
+    "djehutihotep": {"hombres": 172, "masa_t": 58, "fuente": "pintura de la tumba de Djehutihotep, Deir el-Bersha (c. 1900 a. C.)"},
+    "arena_humeda": {"fuente": "Fall et al. 2014, PRL 112, 175502: la fuerza de arrastre cae ~50 % con la humedad óptima"},
+    "rampa_hatnub": {"fuente": "Enmarch & Gourdon 2018: rampa de ~20 % con escaleras y agujeros de poste, reinado de Keops"},
+    "diario_de_merer": {"fuente": "Tallet 2017: transporte de caliza de Tura a Giza, año 27 de Keops"}
+  },
+  "flujo_muones": {
+    "espectro": "Reyna 2006 (hep-ph/0604145), empalmado con Gaisser 1990 por encima de 2 TeV",
+    "perdida_energia": "dE/dX = a + bE, a = 2,17 MeV cm²/g, b = 4·10⁻⁶ cm²/g (roca estándar)"
+  }
+}

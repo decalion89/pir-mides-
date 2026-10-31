@@ -1,0 +1,37 @@
+# Registro de predicciones
+
+Predicciones concretas y comprobables, escritas **antes** de que existan las mediciones que las pondrían a prueba. El historial de git les pone fecha. Si una medición futura las contradice, este registro lo dejará claro y el modelo se corregirá públicamente.
+
+Fecha de registro: **31 de octubre de 2026**. Las cifras salen de `simulador/ejecutar_todo.py` (versión de este commit).
+
+## P1 — Un detector en la Cámara del Rey decide la forma del Gran Vacío
+- **Medición:** un detector de muones de ~1 m², mirando hacia el Gran Vacío, durante **≤ 2 meses** (hasta ~7 meses en el caso pesimista de nuestro modelo).
+- **Qué debe verse según cada hipótesis:**
+  - **horizontal (H1):** franja corta entre tanθy ≈ −0,2 y +0,45;
+  - **inclinado 26° (H2) o galería de contrapeso (H3):** franja larga que llega hasta tanθy ≳ 0,65;
+  - **cámaras apiladas (H5):** franja interrumpida en tramos;
+  - **relleno suelto (H4):** mancha ancha y difusa.
+- **Qué la refutaría:** que con esa exposición la medición no separe al menos H1 de H2 a 5σ, salvo por sistemáticos mayores del 2 % por bin.
+
+## P2 — Desde la Cámara de Campbell bastan unos días
+- **Medición:** 1 m² en la quinta cámara de descarga, durante **~1–5 días**, separa todos los pares de hipótesis a 5σ (hasta ~3 semanas en el caso pesimista).
+- **Firma propia de H3:** solo la galería de contrapeso produce un exceso adicional **cerca del detector**, al norte y por encima, por el pasaje que la uniría con la pila de cámaras.
+
+## P3 — El Gran Vacío no es un hueco de descarga pegado a la Gran Galería
+- Esa configuración ya es incompatible con los datos de 2017: **29σ** en nuestro modelo.
+- Cualquier medición nueva debería situar el Vacío **~20 m por encima** del techo de la Gran Galería.
+
+## P4 — La rampa interna de Houdin no existe como túnel abierto
+- Un túnel de 1,8–2,6 m de sección a ~12 m de las caras habría producido en los datos de la Cámara de la Reina de 2017 un **anillo de excesos de 1,6–4 %** cerca de |tanθ| ≈ 1, con una significación de **16–30σ**.
+- **Qué la refutaría:** que un reanálisis de la periferia de esos datos, o una muografía nueva desde el exterior a la altura de 40–90 m, mostrara ese anillo.
+
+## P5 — Una rampa de un solo carril con esquinas no construye la pirámide a tiempo
+- Con el tiempo de giro medido en un experimento real, el modelo da **más de 20 años** (con 25 000 personas y parámetros centrales) para cualquier rampa de un carril (zigzag, espiral o interna), salvo que el giro dure **≤ 1,5 min**.
+- **Experimento barato que lo decide:** un trineo de 2,5 t sobre una pista húmeda, con un equipo de ~20–25 personas y una esquina de 90° en una rampa de 3–4 m de ancho. Se mide el tiempo que la esquina queda ocupada por cada trineo.
+- **Umbrales que fija el modelo:**
+  - si el giro dura **≤ 6,3 min**, las rampas en las aristas o en las cuatro caras son viables en 20 años;
+  - si dura más, solo lo son los métodos sin esquinas (rampa recta baja + palancas).
+
+## P6 — Si hubo rampas en las aristas, quedaron huellas (predicción cualitativa, aún sin simular)
+- Si se usaron rampas integradas en las aristas o apoyadas en las caras, la muografía externa de las aristas debería mostrar **franjas helicoidales de bloques de relleno**, con densidad o juntas distintas, y muescas en las esquinas.
+- Si se usaron palancas, no debería haber ninguna estructura helicoidal.

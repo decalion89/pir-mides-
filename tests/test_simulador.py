@@ -154,3 +154,27 @@ def test_carriles_dentro_de_la_piramide_actual():
     for c in am.carriles_aristas(-0.1):
         x, y, z = c.centro
         assert max(abs(x), abs(y)) + c.tam[0] / 2 < g.lado(z) / 2 - 0.5 + 1e-9
+
+
+# --- fase 3: reanálisis de los datos publicados de 2017 -------------------------------
+from piramide import reanalisis as ra, reanalisis_emulsiones as rem  # noqa: E402
+
+
+def test_datos_kek_extraidos():
+    d = ra.cargar()
+    assert d["val"].size == 679
+    assert set(d["det"]) == {"H1", "H2"}
+    assert np.allclose(d["dx"], np.round(d["dx"]), atol=0.15)      # canales casi enteros: calibración correcta
+    assert 1.05 < d["val"].max() < 1.2
+
+
+def test_la_galeria_calibra_las_emulsiones_como_scanpyramids():
+    x1, x2, _ = rem.calibrar(xs1=np.arange(12.0, 14.01, 0.5), xs2=np.arange(2.2, 3.81, 0.4))
+    assert abs((x1 - g.X_PASAJES) - 5.8) < 0.8      # publicado: NE1 5,8 m al este del eje
+    assert abs((g.X_PASAJES - x2) - 4.5) < 0.8      # publicado: NE2 4,5 m al oeste
+
+
+def test_reanalisis_kek_pide_un_vacio():
+    r = ra.Reanalisis()
+    con = r.chi2(ra.Corredor(8.9, 21.0, 52.0, 45.0, 2.7, ancho=3.6, inclinacion=18))
+    assert con < r.chi2_sin_vacio() - 500

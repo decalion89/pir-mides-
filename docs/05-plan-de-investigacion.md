@@ -40,5 +40,7 @@ FUENTES.md
 - [ ] **Modelo por agentes** de la circulación en rampas y esquinas.
 - [ ] **Experimento real del tiempo de giro** de un trineo cargado (P5).
 - [x] **Firma muográfica de rampas en las aristas** (P6). Ver [10](10-que-cambiaria-la-historia.md) y `resultados/06_aristas.json`.
+- [x] **Reanálisis de los datos publicados de 2017** (KEK y Nagoya). Ver [11](11-reanalisis-datos-2017.md).
+- [ ] **Datos originales.** Pedir a ScanPyramids los mapas completos para resolver la tensión entre KEK y las emulsiones.
 - [x] **Ajuste conjunto, sistemáticos correlacionados y prueba a ciegas.** Ver [09](09-robustez-y-prueba-a-ciegas.md).
 - [ ] **Contacto con equipos de muografía** (ScanPyramids: Universidad de Nagoya, KEK, CEA, HIP Institute; Universidad de El Cairo) para proponer la medición desde la Cámara del Rey.

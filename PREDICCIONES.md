@@ -44,3 +44,11 @@ La prueba a ciegas ([docs/09](docs/09-robustez-y-prueba-a-ciegas.md)) muestra qu
 2. el flujo calibrado a cielo abierto con el mismo detector;
 3. la geometría láser de las cámaras conocidas, con un error < 0,5 m;
 4. confirmación desde un segundo puesto (Cámara de Campbell o cabeza de la Gran Galería).
+
+## P8 — Posición del Gran Vacío según los datos publicados (reanálisis, docs/11)
+Cualquier medición nueva debería encontrar el centro del Vacío:
+- **en el plano vertical del eje de la Gran Galería**, a ±0,5 m;
+- a una altura de **~56–66 m**;
+- con una sección de **~10–13 m²**.
+
+**Qué la refutaría**: un centro desplazado más de 1,5 m al este o al oeste del eje, o una sección menor de 6 m².

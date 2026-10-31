@@ -2,3 +2,4 @@ numpy>=2.0
 scipy>=1.12
 matplotlib>=3.8
 pytest>=8.0
+pymupdf>=1.24   # solo para extraer los datos del PDF de arXiv:1711.01576

@@ -17,6 +17,7 @@ Resultados principales:
   - Un detector de 1 m² en la **Cámara del Rey**, de acceso público, separaría todas las hipótesis a 5σ en ≤ 2 meses. En la **Cámara de Campbell** bastarían ~1–5 días.
   - Publicamos las firmas esperadas para cada hipótesis como predicciones registradas.
 - **Robustez.** Repetimos el análisis con un ajuste conjunto: cada hipótesis tiene 225 variantes de posición, forma y sección, y se ajustan sistemáticos de normalización, gradiente y espectro. En pruebas a ciegas con física alterada (flujo ±10 %, densidad, geometría desplazada), 60 días en la Cámara del Rey identifican la hipótesis correcta en el 96–98,5 % de los casos. La hipótesis de la galería de contrapeso es la más sensible a errores de flujo, y fijamos condiciones previas para poder afirmarla.
+- **Reanálisis de los datos publicados.** Digitalizamos los 679 puntos de KEK y los perfiles de las emulsiones de Nagoya. Nuestra geometría recupera las posiciones de los detectores publicadas, con un error de 0,2 m. El Vacío queda sobre el eje de la Gran Galería, a ~60–65 m de altura, con una sección de ~10–13 m². Su inclinación no se puede fijar de forma robusta: los dos conjuntos de datos son mutuamente incompatibles bajo un corredor recto único. Un fallo de extracción produjo al principio una inclinación falsa de 18°; lo documentamos.
 - **Huella de las rampas.** Si se usaron rampas integradas en las aristas, su relleno, si es ≥ 5 % menos denso, sería visible desde el exterior en ~30–300 días.
 
 ## 1. Introducción
@@ -44,6 +45,7 @@ El modelo reproduce las tasas y los excesos medidos. Sus significaciones son cor
 - Granito y Gran Vacío: [docs/08](docs/08-gran-vacio-y-experimento-decisivo.md).
 - Robustez y prueba a ciegas: [docs/09](docs/09-robustez-y-prueba-a-ciegas.md).
 - Qué cambiaría cada resultado: [docs/10](docs/10-que-cambiaria-la-historia.md).
+- Reanálisis de los datos de 2017: [docs/11](docs/11-reanalisis-datos-2017.md).
 - Predicciones registradas: [PREDICCIONES.md](PREDICCIONES.md).
 
 ## 5. Discusión

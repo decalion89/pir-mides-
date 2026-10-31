@@ -40,7 +40,19 @@ Cada hipótesis rival puede moverse ±3 m y cambiar su sección ×0,75–1,25 pa
 ### 5. Qué cambiaría la historia → [docs/10](docs/10-que-cambiaria-la-historia.md)
 Si el Vacío resultara ser una **galería de contrapeso**, sería la prueba más antigua conocida de elevación con contrapesos a gran escala. Se adelantaría unos 350 años al primer cigoñal conocido (Mesopotamia, ~2200 a. C.) y unos 1000 años a su llegada a Egipto (~1550 a. C.). Cualquier otro resultado también cerraría una pregunta abierta desde 2017.
 
-### 6. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 6. Reanálisis independiente de los datos publicados en 2017 → [docs/11](docs/11-reanalisis-datos-2017.md)
+Extrajimos de la figura del artículo los **679 puntos reales de KEK** y los perfiles de las **emulsiones de Nagoya**, y ajustamos el Vacío con nuestro propio modelo:
+- **Validación**: nuestra geometría recupera las posiciones de los detectores publicadas (+5,7/−4,3 m frente a +5,8/−4,5 m).
+- **Lo robusto**: el Vacío está sobre el eje de la Gran Galería (±0,3 m), a ~60–65 m de altura, con una sección de ~10–13 m², comparable a la de la Galería.
+- **La inclinación no se puede fijar** con los datos públicos:
+  - las emulsiones prefieren horizontal o poco inclinado;
+  - KEK prefiere inclinado;
+  - bajo un mismo corredor recto, los dos conjuntos son incompatibles (Δχ² ≈ 70).
+- **Un error nuestro, contado**: una primera versión daba "18° a 4–6σ" por un fallo de extracción, y lo detectamos y corregimos.
+
+Conclusión: los datos de 2017 no deciden la forma del Vacío. Hace falta medir desde otro punto.
+
+### 7. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -56,15 +68,19 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [08 — Gran Vacío y experimento decisivo](docs/08-gran-vacio-y-experimento-decisivo.md) | Hipótesis, vigas de granito, diseño de la medición |
 | [09 — Robustez y prueba a ciegas](docs/09-robustez-y-prueba-a-ciegas.md) | Ajuste conjunto, sistemáticos y física alterada |
 | [10 — Qué cambiaría la historia](docs/10-que-cambiaria-la-historia.md) | Qué significaría cada resultado y hoja de ruta |
+| [11 — Reanálisis de los datos de 2017](docs/11-reanalisis-datos-2017.md) | Datos reales de KEK y Nagoya ajustados con nuestro modelo |
 | [ARTICULO.md](ARTICULO.md) | Borrador de preprint |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |
 
 ## Reproducir
 ```bash
 pip install -r requirements.txt
-python -m pytest -q tests                      # 18 pruebas
+python -m pytest -q tests                      # 21 pruebas
 cd simulador && python ejecutar_todo.py        # ~5 min: resultados 01-04 y figuras
 python ejecutar_profundo.py                    # ~12 min: robustez, prueba a ciegas, aristas
+# Reanálisis de los datos publicados (requiere el PDF de arXiv:1711.01576):
+python extraer_datos_kek.py 1711.01576.pdf && python extraer_datos_emulsiones.py 1711.01576.pdf
+PYTHONPATH=. python reanalisis_emulsiones_inclinacion.py   # y reanalisis_kek_inclinacion.py, reanalisis_conjunto.py
 ```
 
 Estructura:
@@ -75,7 +91,8 @@ Estructura:
   - `granito.py`: vigas de la Cámara del Rey;
   - `vacio.py`: hipótesis sobre el Gran Vacío y diseño de la medición;
   - `robustez.py`: ajuste conjunto, sistemáticos perfilados y prueba a ciegas;
-  - `aristas_muones.py`: huella de las rampas integradas en las aristas.
+  - `aristas_muones.py`: huella de las rampas integradas en las aristas;
+  - `reanalisis.py`, `reanalisis_emulsiones.py`: modelo directo de los detectores de KEK y Nagoya para ajustar sus datos publicados.
 - `datos/piramide_keops.json`: cada valor con su fuente.
 
 ## Honestidad

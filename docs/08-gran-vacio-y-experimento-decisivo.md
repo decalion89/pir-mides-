@@ -84,7 +84,7 @@ Evaluamos siete puestos para un detector nuevo (figura `04a`). Para cada par de 
   - **Solo H3** añade un exceso **cerca del detector**: su pasaje de conexión pasaría a pocos metros, al norte y por encima de las cámaras de descarga.
 
 ## 5. Prueba adicional: la rampa interna de Houdin
-Si existiera un túnel en espiral de 1,8–2,6 m de sección a ~12 m de las caras, los detectores de la Cámara de la Reina de 2017 lo habrían visto como un **anillo de excesos de 1,6–4 %** cerca de |tanθ| ≈ 1, con una significación de **16–30σ** en el modelo.
+Si existiera un túnel en espiral de 1,8–2,6 m de sección a ~12 m de las caras, los detectores de la Cámara de la Reina de 2017 lo habrían visto como un **anillo de excesos de 2,6–6 %** cerca de |tanθ| ≈ 1, con una significación de **17–32σ** en el modelo.
 
 Las imágenes publicadas no muestran ese anillo. En 2017, Bob Brier dijo que los datos sugerían que la rampa "no está ahí". Además, el modelo de construcción (doc. 07) muestra que una rampa interna de **un solo carril** no termina la obra a tiempo en ninguna de las 600 simulaciones. La rampa interna queda así **doblemente desfavorecida**. Matiz: si el análisis de 2017 no cubría bien la periferia de la aceptancia, esta prueba es más débil.
 

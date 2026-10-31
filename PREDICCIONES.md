@@ -22,7 +22,7 @@ Fecha de registro: **31 de octubre de 2026**. Las cifras salen de `simulador/eje
 - Cualquier medición nueva debería situar el Vacío **~20 m por encima** del techo de la Gran Galería.
 
 ## P4 — La rampa interna de Houdin no existe como túnel abierto
-- Un túnel de 1,8–2,6 m de sección a ~12 m de las caras habría producido en los datos de la Cámara de la Reina de 2017 un **anillo de excesos de 1,6–4 %** cerca de |tanθ| ≈ 1, con una significación de **16–30σ**.
+- Un túnel de 1,8–2,6 m de sección a ~12 m de las caras habría producido en los datos de la Cámara de la Reina de 2017 un **anillo de excesos de 2,6–6 %** cerca de |tanθ| ≈ 1, con una significación de **17–32σ**.
 - **Qué la refutaría:** que un reanálisis de la periferia de esos datos, o una muografía nueva desde el exterior a la altura de 40–90 m, mostrara ese anillo.
 
 ## P5 — Una rampa de un solo carril con esquinas no construye la pirámide a tiempo
@@ -32,6 +32,15 @@ Fecha de registro: **31 de octubre de 2026**. Las cifras salen de `simulador/eje
   - si el giro dura **≤ 6,3 min**, las rampas en las aristas o en las cuatro caras son viables en 20 años;
   - si dura más, solo lo son los métodos sin esquinas (rampa recta baja + palancas).
 
-## P6 — Si hubo rampas en las aristas, quedaron huellas (predicción cualitativa, aún sin simular)
-- Si se usaron rampas integradas en las aristas o apoyadas en las caras, la muografía externa de las aristas debería mostrar **franjas helicoidales de bloques de relleno**, con densidad o juntas distintas, y muescas en las esquinas.
-- Si se usaron palancas, no debería haber ninguna estructura helicoidal.
+## P6 — Si hubo rampas en las aristas, quedaron huellas medibles desde fuera
+- **Medición:** un detector de 1 m² a 15 m del pie de una cara, inclinado 45°, que vea la franja exterior de la pirámide.
+- **Predicción:** si se usaron rampas integradas en las aristas y se rellenaron con bloques al menos un **5 % menos densos** que el núcleo, se verán bandas helicoidales a **5σ en unos 300 días** (4,3σ en 100 días). Con un 9 % menos de densidad bastan 30 días.
+  - Cifras exactas en `resultados/06_aristas.json`.
+- **Si no se ven bandas** con 300 días, las rampas en las aristas solo siguen siendo posibles con un relleno casi idéntico al núcleo. Entonces ganan peso las palancas o las rampas exteriores desmontadas.
+
+## P7 — Condiciones para afirmar que el Gran Vacío es una galería de contrapeso (H3)
+La prueba a ciegas ([docs/09](docs/09-robustez-y-prueba-a-ciegas.md)) muestra que H3 es la conclusión más sensible a errores de modelado. **No debe afirmarse** hasta cumplir estas cuatro condiciones:
+1. un margen de **≥ 5σ frente a H2** en el ajuste conjunto con la Cámara de la Reina;
+2. el flujo calibrado a cielo abierto con el mismo detector;
+3. la geometría láser de las cámaras conocidas, con un error < 0,5 m;
+4. confirmación desde un segundo puesto (Cámara de Campbell o cabeza de la Gran Galería).

@@ -13,15 +13,15 @@
    recta+palancas  P(viable)=1.00  años med=8.3 [6.5-11.1]  personas(20 a) med=5,081
 3/4 Vigas de granito...
 4/4 Gran Vacío: ajuste, discriminación y rampa interna...
-   ajuste H1: Z_residual_QC = 0.00  (8 s)
-   ajuste H2: Z_residual_QC = 4.10  (32 s)
-   ajuste H3: Z_residual_QC = 4.86  (48 s)
-   ajuste H4: Z_residual_QC = 13.08  (81 s)
-   ajuste H5: Z_residual_QC = 2.43  (112 s)
-   ajuste H6: Z_residual_QC = 28.95  (112 s)
+   ajuste H1: Z_residual_QC = 0.00  (13 s)
+   ajuste H2: Z_residual_QC = 4.10  (38 s)
+   ajuste H3: Z_residual_QC = 4.86  (54 s)
+   ajuste H4: Z_residual_QC = 13.08  (87 s)
+   ajuste H5: Z_residual_QC = 2.43  (118 s)
+   ajuste H6: Z_residual_QC = 28.95  (118 s)
    días para 5σ desde QC: H1-H2: 1151, H1-H3: 173, H2-H3: ∞, H1-H4: 11, H1-H5: ∞
    días para 5σ desde GG: H1-H2: 5, H1-H3: 4, H2-H3: ∞, H1-H4: 1, H1-H5: 7
    días para 5σ desde KC: H1-H2: 3, H1-H3: 3, H2-H3: 54, H1-H4: 1, H1-H5: 14
    días para 5σ desde D1: H1-H2: 1, H1-H3: 1, H2-H3: ∞, H1-H4: 1, H1-H5: 4
    días para 5σ desde D5: H1-H2: 1, H1-H3: 1, H2-H3: 5, H1-H4: 1, H1-H5: 2
-Hecho en 271 s
+Hecho en 283 s

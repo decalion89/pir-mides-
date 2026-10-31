@@ -128,3 +128,29 @@ def test_hibridos_no_duplican_tramos():
     rp = cat["recta+palancas"].segmentos(100.0, p)
     assert sum(L for L, s in rp if s > 0) == pytest.approx(45.0 / 0.10)
     assert cat["recta+palancas"].elevaciones(100.0, p) == pytest.approx(55.0 / p.altura_hilada)
+
+
+# --- fase 2: robustez y huella de las aristas -----------------------------------------
+from piramide import robustez as rb, aristas_muones as am  # noqa: E402
+
+
+def test_chi2_perfilado_absorbe_normalizacion_y_gradiente():
+    rng = np.random.default_rng(0)
+    tx, ty = rng.uniform(-0.7, 0.7, 500), rng.uniform(-0.7, 0.7, 500)
+    M = rng.uniform(5e3, 2e4, 500)
+    datos = M * (1.03 + 0.02 * tx - 0.01 * ty)
+    assert rb.chi2_perfilado(M, M[None, :], tx, ty)[0] == pytest.approx(0, abs=1e-6)
+    chi_perf = rb.chi2_perfilado(datos, M[None, :], tx, ty)[0]
+    chi_sin = float(np.sum((datos - M) ** 2 / (M + (0.02 * M) ** 2)))
+    assert chi_perf < 0.05 * chi_sin
+
+
+def test_huella_de_aristas_crece_con_el_deficit_de_densidad():
+    z = [am.significacion(dd, dias=30)["Z"] for dd in (-0.02, -0.1)]
+    assert z[1] > 3 * z[0] > 0
+
+
+def test_carriles_dentro_de_la_piramide_actual():
+    for c in am.carriles_aristas(-0.1):
+        x, y, z = c.centro
+        assert max(abs(x), abs(y)) + c.tam[0] / 2 < g.lado(z) / 2 - 0.5 + 1e-9

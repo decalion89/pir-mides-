@@ -714,24 +714,24 @@
   },
   "rampa_interna_houdin_vista_desde_QC_2017": {
     "z0=0_seccion=1.8": {
-      "exceso_max_suavizado": 0.038602765611154395,
-      "exceso_max_en_aceptancia": 0.015916288131238004,
-      "z_aceptancia": 16.361175951099032
+      "exceso_max_suavizado": 0.04170814167824621,
+      "exceso_max_en_aceptancia": 0.03018771900805721,
+      "z_aceptancia": 17.765369073871234
     },
     "z0=0_seccion=2.6": {
-      "exceso_max_suavizado": 0.06476919785640123,
-      "exceso_max_en_aceptancia": 0.03975031499315499,
-      "z_aceptancia": 29.828458303822067
+      "exceso_max_suavizado": 0.08329728330468843,
+      "exceso_max_en_aceptancia": 0.06168467821438912,
+      "z_aceptancia": 31.631859657579913
     },
     "z0=43_seccion=1.8": {
-      "exceso_max_suavizado": 0.026904258442533108,
-      "exceso_max_en_aceptancia": 0.01595442687589415,
-      "z_aceptancia": 16.320070846381007
+      "exceso_max_suavizado": 0.036804911527296924,
+      "exceso_max_en_aceptancia": 0.026334295344418786,
+      "z_aceptancia": 17.33741471546292
     },
     "z0=43_seccion=2.6": {
-      "exceso_max_suavizado": 0.050875241731362666,
-      "exceso_max_en_aceptancia": 0.03268998450481212,
-      "z_aceptancia": 28.732651063373645
+      "exceso_max_suavizado": 0.07343399376442723,
+      "exceso_max_en_aceptancia": 0.05281561135143591,
+      "z_aceptancia": 31.03598673251661
     }
   },
   "notas": "Z incluye 2% de sistemático por bin, resolución ~20 mrad y factor de realismo 0,5."

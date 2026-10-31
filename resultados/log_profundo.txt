@@ -1,0 +1,24 @@
+Construyendo la biblioteca de mapas...
+   1125 variantes (27 s)
+Separación mínima frente a la mejor alternativa:
+   H1: Solo QC (2017): 2.3σ, QC + Cámara del Rey 60 d: 9.6σ, QC + Cámara de Campbell 7 d: 4.8σ
+   H2: Solo QC (2017): 2.6σ, QC + Cámara del Rey 60 d: 5.9σ, QC + Cámara de Campbell 7 d: 8.1σ
+   H3: Solo QC (2017): 2.4σ, QC + Cámara del Rey 60 d: 5.7σ, QC + Cámara de Campbell 7 d: 7.9σ
+   H4: Solo QC (2017): 11.4σ, QC + Cámara del Rey 60 d: 19.4σ, QC + Cámara de Campbell 7 d: 12.0σ
+   H5: Solo QC (2017): 2.8σ, QC + Cámara del Rey 60 d: 10.2σ, QC + Cámara de Campbell 7 d: 6.0σ
+   ciegas [Solo QC (2017)]: acierto 89.5 %  (61 s)
+   ciegas [QC + KC 60 d]: acierto 98.0 %  (118 s)
+   ciegas [QC + KC 60 d, flujo -10 % y índice +0,05]: acierto 97.5 %  (182 s)
+   ciegas [QC + KC 60 d, flujo +10 % e índice -0,05]: acierto 98.5 %  (244 s)
+   ciegas [QC + KC 60 d, espectro de Gaisser (extremo)]: acierto 82.5 %  (299 s)
+   ciegas [QC + KC 60 d, caliza 2,35 g/cm³]: acierto 98.0 %  (354 s)
+   ciegas [QC + KC 60 d, cámaras desplazadas 1 m]: acierto 96.0 %  (410 s)
+   ciegas [QC + Campbell 7 d]: acierto 97.5 %  (468 s)
+   KC 3 días: acierto 94.7 %
+   KC 7 días: acierto 97.3 %
+   KC 14 días: acierto 98.7 %
+   KC 30 días: acierto 98.7 %
+   KC 60 días: acierto 98.7 %
+   KC 120 días: acierto 98.0 %
+   aristas: [(-0.02, 30, 0.6), (-0.02, 100, 0.9), (-0.02, 300, 1.1), (-0.05, 30, 1.5), (-0.05, 100, 2.2), (-0.05, 300, 2.6), (-0.1, 30, 3.1), (-0.1, 100, 4.3), (-0.1, 300, 5.3), (-0.2, 30, 6.2), (-0.2, 100, 8.8), (-0.2, 300, 10.8)]
+Hecho en 718 s

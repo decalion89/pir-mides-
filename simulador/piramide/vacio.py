@@ -272,7 +272,9 @@ def dias_para_5_sigma(hip_a: Hipotesis, hip_b: Hipotesis, puesto: Puesto, area: 
 
 # --- Prueba de la rampa interna de Houdin con los datos de 2017 --------------------------
 def rampa_interna_houdin(z0: float = 43.0, z_fin: float = 130.0, pendiente: float = 0.07,
-                         retranqueo: float = 12.0, ancho: float = 2.6, alto: float = 2.6) -> list[g.Caja]:
+                         retranqueo: float = 12.0, ancho: float = 2.6, alto: float = 2.6,
+                         cara_inicial: int = 0, delta_densidad: float = -g.DENSIDAD_CALIZA,
+                         nombre: str = "Rampa interna") -> list[g.Caja]:
     """Túnel en espiral a `retranqueo` m de las caras, subiendo con `pendiente` (Houdin 2007).
 
     Se genera tramo a tramo: sur (hacia el este), este (hacia el norte), norte (hacia el
@@ -281,21 +283,34 @@ def rampa_interna_houdin(z0: float = 43.0, z_fin: float = 130.0, pendiente: floa
     cajas = []
     z = z0
     ang = math.degrees(math.atan(pendiente))
-    # (signo_x, signo_y de la cara, rumbo, inclinación con la convención de Caja)
-    caras = [("S", 90.0, +ang), ("E", 0.0, -ang), ("N", 90.0, -ang), ("O", 0.0, +ang)]
+    # (cara, dirección de avance en planta, rumbo, inclinación con la convención de Caja)
+    caras = [("S", (1, 0), 90.0, +ang), ("E", (0, 1), 0.0, -ang),
+             ("N", (-1, 0), 90.0, -ang), ("O", (0, -1), 0.0, +ang)]
     i = 0
     while z < z_fin:
         a = g.SEMILADO * (1 - z / g.ALTURA) - retranqueo
         if a < 4.0:
             break
         largo = 2 * a
-        dz = largo * pendiente
-        zc = z + dz / 2
-        cara, rumbo, incl = caras[i % 4]
-        cen = {"S": (0.0, -a, zc), "E": (a, 0.0, zc), "N": (0.0, a, zc), "O": (-a, 0.0, zc)}[cara]
-        cajas.append(g.Caja(f"Rampa interna tramo {i + 1} ({cara})", cen, (ancho, largo, alto),
-                            inclinacion=incl, rumbo=rumbo, tipo="hipótesis"))
-        z += dz
+        cara, (ux, uy), rumbo, incl = caras[(i + cara_inicial) % 4]
+        # cada tramo se trocea para que su distancia a la cara siga la retirada de la cara al subir
+        n = max(1, int(math.ceil(largo / 15.0)))
+        L = largo / n
+        for j in range(n):
+            u = -a + (j + 0.5) * L                     # posición a lo largo del tramo
+            zc = z + (j + 0.5) * L * pendiente
+            lat = g.SEMILADO * (1 - zc / g.ALTURA) - retranqueo
+            if lat < 2.0:
+                break
+            u = float(np.clip(u, -(lat - L / 2), lat - L / 2))   # no salirse por la esquina
+            if cara in ("S", "N"):
+                cen = (u * ux, -lat if cara == "S" else lat, zc)
+            else:
+                cen = (lat if cara == "E" else -lat, u * uy, zc)
+            cajas.append(g.Caja(f"{nombre} tramo {i + 1}.{j + 1} ({cara})", cen, (ancho, L, alto),
+                                inclinacion=incl, rumbo=rumbo, delta_densidad=delta_densidad,
+                                tipo="hipótesis"))
+        z += largo * pendiente
         i += 1
     return cajas
 

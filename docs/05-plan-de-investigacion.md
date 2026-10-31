@@ -39,5 +39,6 @@ FUENTES.md
 - [ ] **Simulación con Geant4** de los puestos KC y D5, para confirmar los tiempos de exposición.
 - [ ] **Modelo por agentes** de la circulación en rampas y esquinas.
 - [ ] **Experimento real del tiempo de giro** de un trineo cargado (P5).
-- [ ] **Firma muográfica de rampas en las aristas** (P6), para diseñar la medición exterior.
+- [x] **Firma muográfica de rampas en las aristas** (P6). Ver [10](10-que-cambiaria-la-historia.md) y `resultados/06_aristas.json`.
+- [x] **Ajuste conjunto, sistemáticos correlacionados y prueba a ciegas.** Ver [09](09-robustez-y-prueba-a-ciegas.md).
 - [ ] **Contacto con equipos de muografía** (ScanPyramids: Universidad de Nagoya, KEK, CEA, HIP Institute; Universidad de El Cairo) para proponer la medición desde la Cámara del Rey.

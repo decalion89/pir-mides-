@@ -24,13 +24,24 @@ Para subir las ~43 vigas de 25–80 t de la Cámara del Rey hay tres métodos f�
 ### 3. El Gran Vacío: qué se puede saber y cómo → [docs/08](docs/08-gran-vacio-y-experimento-decisivo.md)
 - Nuestro modelo de muones reproduce los datos de ScanPyramids: tasas, excesos del 5–11 % y significaciones correctas hasta un factor ~2.
 - **Con los detectores de 2017 era casi imposible distinguir** si el Vacío es horizontal, inclinado, una galería de contrapeso o varias cámaras. Eso explica por qué sigue sin resolverse.
-- **Descartado**: un simple hueco de descarga pegado a la Gran Galería (29σ) y la rampa interna abierta de Houdin (16–30σ).
+- **Descartado**: un simple hueco de descarga pegado a la Gran Galería (29σ) y la rampa interna abierta de Houdin (17–32σ).
 - **El experimento decisivo**: un detector de 1 m² en la **Cámara del Rey**, accesible al público, lo resolvería en **≤ 2 meses**; en la **Cámara de Campbell** bastarían ~1–5 días. Damos la imagen que debería verse con cada hipótesis.
 
 ![Lo que vería cada detector según cada hipótesis](figuras/04b_mapas_exceso.png)
 
-### 4. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
-Seis predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán.
+### 4. La prueba más dura: ajuste conjunto y prueba a ciegas → [docs/09](docs/09-robustez-y-prueba-a-ciegas.md)
+Cada hipótesis rival puede moverse ±3 m y cambiar su sección ×0,75–1,25 para imitar los datos. Los errores sistemáticos de flujo, densidad y geometría se ajustan libremente. Con esas reglas, en experimentos simulados a ciegas:
+- **Solo con los datos de 2017**: el análisis acierta a menudo, pero con un margen de ~2σ. Insuficiente.
+- **Con 60 días en la Cámara del Rey**: acierta el **96–98,5 %** con física realista alterada (flujo ±10 %, caliza de 2,35, cámaras desplazadas 1 m), con márgenes de ~4,3–5,6σ.
+- **Advertencia**: la conclusión más espectacular, la galería de contrapeso, es la más sensible a errores de flujo. Las condiciones para afirmarla están en la predicción P7.
+
+![Prueba a ciegas](figuras/05a_prueba_a_ciegas.png)
+
+### 5. Qué cambiaría la historia → [docs/10](docs/10-que-cambiaria-la-historia.md)
+Si el Vacío resultara ser una **galería de contrapeso**, sería la prueba más antigua conocida de elevación con contrapesos a gran escala. Se adelantaría unos 350 años al primer cigoñal conocido (Mesopotamia, ~2200 a. C.) y unos 1000 años a su llegada a Egipto (~1550 a. C.). Cualquier otro resultado también cerraría una pregunta abierta desde 2017.
+
+### 6. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
 | Archivo | Contenido |
@@ -43,14 +54,17 @@ Seis predicciones concretas, fechadas en git **antes** de que existan las medici
 | [06 — Método y validación](docs/06-metodo-y-validacion.md) | Cómo funciona el simulador y contra qué se ha validado |
 | [07 — Resultados de construcción](docs/07-resultados-construccion.md) | Qué métodos de elevación son viables |
 | [08 — Gran Vacío y experimento decisivo](docs/08-gran-vacio-y-experimento-decisivo.md) | Hipótesis, vigas de granito, diseño de la medición |
+| [09 — Robustez y prueba a ciegas](docs/09-robustez-y-prueba-a-ciegas.md) | Ajuste conjunto, sistemáticos y física alterada |
+| [10 — Qué cambiaría la historia](docs/10-que-cambiaria-la-historia.md) | Qué significaría cada resultado y hoja de ruta |
 | [ARTICULO.md](ARTICULO.md) | Borrador de preprint |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |
 
 ## Reproducir
 ```bash
 pip install -r requirements.txt
-python -m pytest -q tests                 # 15 pruebas
-cd simulador && python ejecutar_todo.py   # ~5 min: resultados/*.json y figuras/*.png
+python -m pytest -q tests                      # 18 pruebas
+cd simulador && python ejecutar_todo.py        # ~5 min: resultados 01-04 y figuras
+python ejecutar_profundo.py                    # ~12 min: robustez, prueba a ciegas, aristas
 ```
 
 Estructura:
@@ -59,7 +73,9 @@ Estructura:
   - `muones.py`: modelo de muografía;
   - `fisica.py`, `rampas.py`, `obra.py`, `montecarlo.py`: construcción;
   - `granito.py`: vigas de la Cámara del Rey;
-  - `vacio.py`: hipótesis sobre el Gran Vacío y diseño de la medición.
+  - `vacio.py`: hipótesis sobre el Gran Vacío y diseño de la medición;
+  - `robustez.py`: ajuste conjunto, sistemáticos perfilados y prueba a ciegas;
+  - `aristas_muones.py`: huella de las rampas integradas en las aristas.
 - `datos/piramide_keops.json`: cada valor con su fuente.
 
 ## Honestidad

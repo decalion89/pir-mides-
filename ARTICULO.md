@@ -13,9 +13,11 @@ Resultados principales:
 - **Vigas de granito.** Tres métodos son físicamente viables para subirlas: rampa, contrapeso en galería y palancas que acompañan la subida del núcleo. Por tanto, las vigas **no implican** que el Gran Vacío fuera una galería de contrapeso, aunque esa hipótesis es mecánicamente coherente.
 - **Gran Vacío.**
   - Con la geometría de los detectores de 2017, las hipótesis horizontal, inclinada, de contrapeso y de cámaras apiladas son casi indistinguibles: tras ajustarlas, difieren 2,4–4,9σ de la referencia.
-  - Quedan excluidos un hueco estructural pegado a la Gran Galería (29σ) y una rampa interna abierta tipo Houdin (16–30σ).
+  - Quedan excluidos un hueco estructural pegado a la Gran Galería (29σ) y una rampa interna abierta tipo Houdin (17–32σ).
   - Un detector de 1 m² en la **Cámara del Rey**, de acceso público, separaría todas las hipótesis a 5σ en ≤ 2 meses. En la **Cámara de Campbell** bastarían ~1–5 días.
   - Publicamos las firmas esperadas para cada hipótesis como predicciones registradas.
+- **Robustez.** Repetimos el análisis con un ajuste conjunto: cada hipótesis tiene 225 variantes de posición, forma y sección, y se ajustan sistemáticos de normalización, gradiente y espectro. En pruebas a ciegas con física alterada (flujo ±10 %, densidad, geometría desplazada), 60 días en la Cámara del Rey identifican la hipótesis correcta en el 96–98,5 % de los casos. La hipótesis de la galería de contrapeso es la más sensible a errores de flujo, y fijamos condiciones previas para poder afirmarla.
+- **Huella de las rampas.** Si se usaron rampas integradas en las aristas, su relleno, si es ≥ 5 % menos denso, sería visible desde el exterior en ~30–300 días.
 
 ## 1. Introducción
 En la construcción de la Gran Pirámide quedan dos incógnitas principales: el **sistema de elevación de los bloques** y la **función del Gran Vacío** detectado con muones en 2017 (Morishima et al.). El debate se ha basado sobre todo en argumentos cualitativos. Aquí las tratamos como **problemas de cálculo con predicciones comprobables**.
@@ -40,6 +42,8 @@ El modelo reproduce las tasas y los excesos medidos. Sus significaciones son cor
 ## 4. Resultados
 - Construcción: [docs/07](docs/07-resultados-construccion.md).
 - Granito y Gran Vacío: [docs/08](docs/08-gran-vacio-y-experimento-decisivo.md).
+- Robustez y prueba a ciegas: [docs/09](docs/09-robustez-y-prueba-a-ciegas.md).
+- Qué cambiaría cada resultado: [docs/10](docs/10-que-cambiaria-la-historia.md).
 - Predicciones registradas: [PREDICCIONES.md](PREDICCIONES.md).
 
 ## 5. Discusión

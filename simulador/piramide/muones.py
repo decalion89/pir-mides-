@@ -67,7 +67,13 @@ class _TablaFlujo:
         Eg = np.exp(np.linspace(np.log(0.1), np.log(1e6), 3000))
         logI = np.empty((self.logE.size, self.cos.size))
         for j, c in enumerate(self.cos):
-            f = espectro(Eg, np.full_like(Eg, c))
+            if ESPECTRO == "gaisser":
+                f = gaisser_diferencial(Eg, np.full_like(Eg, c))
+            elif ESPECTRO == "reyna_perturbado":
+                # incertidumbre realista del flujo: ±10 % en normalización y ±0,05 en el índice
+                f = espectro(Eg, np.full_like(Eg, c)) * PERTURBACION[0] * (Eg / 50.0) ** PERTURBACION[1]
+            else:
+                f = espectro(Eg, np.full_like(Eg, c))
             # integral acumulada desde arriba (trapecios en E)
             seg = 0.5 * (f[1:] + f[:-1]) * np.diff(Eg)
             acum = np.concatenate([np.cumsum(seg[::-1])[::-1], [0.0]])
@@ -89,6 +95,23 @@ class _TablaFlujo:
 
 
 _TABLA: _TablaFlujo | None = None
+ESPECTRO = "reyna"            # "reyna" (defecto), "gaisser" o "reyna_perturbado" (robustez)
+PERTURBACION = (0.9, 0.05)    # (factor de normalización, cambio del índice espectral)
+DENSIDAD_MATRIZ = g.DENSIDAD_CALIZA
+
+
+def configurar(espectro: str | None = None, densidad: float | None = None,
+               perturbacion: tuple[float, float] | None = None) -> None:
+    """Cambia el espectro o la densidad de la caliza (pruebas de física alterada)."""
+    global ESPECTRO, DENSIDAD_MATRIZ, _TABLA, PERTURBACION
+    if perturbacion is not None and perturbacion != PERTURBACION:
+        PERTURBACION = perturbacion
+        _TABLA = None
+    if espectro is not None and espectro != ESPECTRO:
+        ESPECTRO = espectro
+        _TABLA = None
+    if densidad is not None:
+        DENSIDAD_MATRIZ = densidad
 
 
 def flujo_integral(Emin, cos_t):
@@ -150,16 +173,18 @@ class Rejilla:
 
 
 def opacidad(origen: np.ndarray, dirs: np.ndarray, estructuras: list[g.Caja],
-             densidad: float = g.DENSIDAD_CALIZA, actual: bool = True) -> np.ndarray:
+             densidad: float | None = None, actual: bool = True) -> np.ndarray:
     """Opacidad (g/cm2) a lo largo de cada rayo, dentro de la pirámide.
 
     `actual=True` usa la forma de hoy (sin revestimiento ni cúspide), que es la que ven
     los detectores.
     """
     L = g.longitud_en_piramide(origen, dirs, actual=actual)
-    X = densidad * L
+    X = (DENSIDAD_MATRIZ if densidad is None else densidad) * L
+    rho = DENSIDAD_MATRIZ if densidad is None else densidad
     for c in estructuras:
-        X = X + c.delta_densidad * c.longitud_en_rayos(origen, dirs)
+        dd = -rho if c.delta_densidad == -g.DENSIDAD_CALIZA else c.delta_densidad   # aire
+        X = X + dd * c.longitud_en_rayos(origen, dirs)
     return np.maximum(X, 0.0) * 100.0      # t/m3 * m = g/cm3 * 100 cm
 
 

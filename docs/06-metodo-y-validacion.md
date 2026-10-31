@@ -5,7 +5,7 @@ Todo el código está en [`simulador/`](../simulador) y se reproduce con:
 ```bash
 pip install -r requirements.txt
 cd simulador && python ejecutar_todo.py        # ~20 min; --rapido para una versión corta
-cd .. && python -m pytest -q tests             # 14 pruebas
+cd .. && python -m pytest -q tests             # 18 pruebas
 ```
 
 ## 1. Geometría (`geometria.py`)

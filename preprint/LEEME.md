@@ -1,7 +1,7 @@
 # Preprint (borrador en inglés)
 
 - `preprint_en.md`: fuente.
-- `preprint_en.pdf`: versión para leer (7 páginas), generada con pandoc y Chromium.
+- `preprint_en.pdf`: versión para leer, generada con pandoc y Chromium.
 - `preprint_en.tex`: fuente LaTeX para arXiv. Antes de subirla, copia las figuras que cita (`../figuras/*.png`) a la misma carpeta y cambia las rutas a `figuras/...`.
 
 Las figuras llevan las etiquetas en español; para la versión final convendría traducirlas.

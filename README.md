@@ -84,7 +84,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [14 — Los canales: ¿estrellas o proporciones?](docs/14-canales-estrellas-o-proporciones.md) | Astronomía de precisión y prueba contra el azar de la hipótesis estelar; patrón de pendientes n/11 |
 | [15 — ¿Cómo encontraron el norte?](docs/15-orientacion-al-norte.md) | 92 pares de estrellas contra las orientaciones medidas: la deriva es real, pero no sirve para fechar |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
-| [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** (7 páginas), con fuente LaTeX para arXiv |
+| [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |
 | [PROPUESTA_EXPERIMENTO_TRINEO.md](PROPUESTA_EXPERIMENTO_TRINEO.md) | Propuesta para museos y universidades: medir cuánto tarda un trineo de 2,5 t en girar una esquina |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |

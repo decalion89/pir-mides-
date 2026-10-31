@@ -16,6 +16,16 @@ We present an open, reproducible framework that links three questions about the 
 
 **(iv) Ramp construction.** In a flow model of ramp construction, the corner-turn time of loaded sledges controls feasibility (rank correlation 0.97). Deriving it from mechanics gives 0.8–2.8 min for stop-and-pivot, or 0.3 min with a rope-redirecting corner post (as suggested by the post holes of the Khufu-era Hatnub ramp), the latter at the cost of 1.4–1.9× larger crews. With these values a single cornered ramp is **possible but tight** (median 20–23 years), while parallel systems leave ample margin.
 
+**(v) The "star shafts".** With the Yale Bright Star Catalogue, IAU 2006 precession and refraction, the stars proposed for the four shafts culminate along them at mutually inconsistent dates:
+
+- Alnitak: 2497 ± 41 BC;
+- Thuban: 2338 ± 53 BC;
+- Sirius and Kochab: ~2369 BC, with large errors.
+
+Under the same tolerance, random shaft angles produce a four-star coincidence 59 % of the time. The measured angles instead fit slopes of n/11 (7/11, 9/11, 11/11), the same denominator as the face (14/11): p = 1.3 % with the denominator fixed by the face, and 16 % with look-elsewhere.
+
+**(vi) Orientation to north.** We reproduce Spence's (2000) ~100-year chronology shift with Kochab–Mizar. However, of 92 bright circumpolar star pairs, 15 fit the six Fourth-Dynasty orientation errors equally well (Δχ² < 2.3), implying chronology shifts from −228 to +132 years, and a plain linear drift fits as well as any pair. The drift supports a stellar method, but orientations alone cannot date the pyramids.
+
 We report two errors in our own earlier analyses — an extraction artefact that produced a spurious "18° inclination at 4–6σ", and an untested corner-time assumption that had produced "single ramps are impossible" — and how they were caught. All predictions are pre-registered.
 
 # 1. Introduction
@@ -114,6 +124,31 @@ Rotating a 2.6 t sledge needs ~2.4 kN·m of torque, which six lever-men supply i
 | Straight ramp to 45 m + levers | — | 96–100 % |
 
 An earlier version of our model assumed corner times of 2–15 min and concluded that single ramps were impossible; we withdraw that conclusion. We propose a 2–3-day experimental-archaeology test with pre-registered thresholds: stop-and-pivot ≤ 2.1 min per corner, or post friction μ_c ≤ 0.4, implies that a single ramp suffices.
+
+# 7b. The shafts: stars or proportions?
+
+| Shaft | Measured (Gantenbrink) | Star at Khufu's reign (2589–2566 BC) | n/11 slope |
+|---|---|---|---|
+| King's south | 45.0° ± 0.2 | 44.6° (Alnitak) | 45.00° (11/11) |
+| King's north | 32.47–32.6° | 31.2–31.3° (Thuban) | 32.47° (7/11) |
+| Queen's south | 39.61° | 38.9–39.0° (Sirius) | 39.29° (9/11) |
+| Queen's north | ~39.1° (upper part unmeasured) | 39.8–39.9° (Kochab) | 39.29° (9/11) |
+
+A ±0.2° laser survey of the unmeasured upper Queen's north shaft decides between the two hypotheses.
+
+# 7c. Orientation to north cannot date the pyramids
+
+Using the orientation errors (Meidum −20′, Bent −17.3′, Red −8.7′, Khufu −3.4′, Khafre −6.0′, Menkaure +12.4′), we fit every pair of V ≤ 3.5 stars with δ > 40°. Each pair gives the azimuth at which both stars share a plumb line, evolved with precession, and we propagate dating uncertainties.
+
+| Model | χ² | Implied chronology shift |
+|---|---|---|
+| ψ UMa + γ UMa | 28.1 | +76 yr |
+| Phecda + Megrez | 28.1 | −12 yr |
+| ζ Dra + δ Cyg | 28.4 | −228 yr |
+| Kochab + Mizar (Spence) | 39.1 (rank 27/92) | −92 yr |
+| Linear drift | 25.9 | — |
+
+Prediction: Fifth-Dynasty pyramids should continue the drift, at +23′ (Userkaf) to +54′ (Niuserre).
 
 # 8. Pre-registered predictions
 

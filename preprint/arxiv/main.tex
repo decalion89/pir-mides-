@@ -1,0 +1,912 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{amssymb}
+\usepackage{newunicodechar}
+\newunicodechar{–}{--}
+\newunicodechar{—}{---}
+\newunicodechar{−}{$-$}
+\newunicodechar{…}{\ldots}
+\newunicodechar{’}{'}
+\newunicodechar{‘}{`}
+\newunicodechar{“}{``}
+\newunicodechar{”}{''}
+\newunicodechar{·}{\textperiodcentered}
+\newunicodechar{√}{$\surd$}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Khufu's Big Void, ramp logistics and the pyramid alignments: an open reanalysis with pre-registered tests},
+  pdfauthor={{[}AUTHOR NAME(S) AND AFFILIATION --- to be completed before submission{]} · Proyecto Pirámides, https://github.com/decalion89/pir-mides-},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Khufu's Big Void, ramp logistics and the pyramid alignments: an
+open reanalysis with pre-registered tests}
+\author{{[}AUTHOR NAME(S) AND AFFILIATION --- to be completed before
+submission{]} · Proyecto Pirámides,
+https://github.com/decalion89/pir-mides-}
+\date{Preprint draft v2, 31 October 2026}
+
+\begin{document}
+\maketitle
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+We release an open, reproducible framework (code, digitized data, 29
+automated tests) for three long-debated questions about the Great
+Pyramid of Khufu: what the ``Big Void'' detected by muography in 2017
+is, how 2.3 million blocks were raised, and what the four ``star
+shafts'' and the pyramids' orientation to north encode.
+
+\textbf{(i) Forward model and validation.} We model muon transmission
+(Reyna spectrum, continuous energy loss, ray tracing through a
+reconstructed internal geometry). It reproduces the published
+ScanPyramids results to within a factor \textasciitilde2 in
+significance:
+
+\begin{itemize}
+\tightlist
+\item
+  track counts: 5.3 vs 4.4 million emulsion tracks;
+\item
+  excess: 8.6 \% vs 5.2--11 \%;
+\item
+  significance: 17\(\sigma\) vs 13.7\(\sigma\) inside, 2.8\(\sigma\) vs
+  5.8\(\sigma\) outside.
+\end{itemize}
+
+\textbf{(ii) Reanalysis of the published figures.} We digitize the 679
+KEK hodoscope points and the Nagoya emulsion profiles from the 2017
+paper. Calibrating only on the simulated Grand Gallery, our geometry
+recovers the published emulsion positions to within 0.2 m. The void lies
+close to the Grand Gallery axis, but its height and cross-section depend
+on the data set:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Data
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Centre height
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cross-section
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Emulsions & 61--62.5 m & \textasciitilde19--21 m\(^{2}\) \\
+KEK + emulsions (joint fit) & 56--59 m & \textasciitilde9--11
+m\(^{2}\) \\
+KEK alone & 47--54 m (47.5 m at its best-fit 26\(^\circ\)) &
+\textasciitilde8.5--9.6 m\(^{2}\) \\
+\end{longtable}
+
+The inclination cannot be determined robustly. The emulsions prefer
+shallow angles, but this fails a leave-one-slice-out test. KEK prefers
+inclined geometries, but places the void \textasciitilde1.7 m east of
+the axis. Under any tested shape (straight, two-segment, two-level) the
+two data sets are mutually inconsistent (\(\Delta\chi^{2}\) \(\approx\)
+78 for \textasciitilde7 shared parameters), which indicates an
+unresolved systematic.
+
+\textbf{(iii) Simulation study of future measurements.} With one
+simulated detector in the Queen's Chamber, four candidate void
+geometries are nearly degenerate (2.3--2.8\(\sigma\)); a loose-fill zone
+is separable. A Cramér--Rao calculation shows that no analysis of the
+full 2017 stereo emulsion data could measure the inclination better than
+\$\pm\(2.5–3.3\)\textsuperscript{\circ\(; this is a local, model-dependent lower bound. In blind tests that are optimistic by construction (the injected systematics match the fitted nuisance model), adding a ~1 m\)}\{2\}\$
+detector in the publicly accessible \textbf{King's Chamber} for 60 days
+identifies the true hypothesis in 96--98.5 \% of trials under moderate
+physics perturbations, and in 82.5 \% under a grossly wrong muon
+spectrum.
+
+\textbf{(iv) Ramp logistics.} In a layer-by-layer flow model, corner
+turns of loaded sledges are the key uncertainty. A mechanical estimate
+gives 0.8--2.8 min per corner for stop-and-pivot, dominated by an
+assumed stop/restart overhead, or 0.3 min with a rope-redirecting post
+at the cost of 1.4--1.9\(\times\) larger crews. With these values a
+single cornered ramp is possible but tight (median 20--23 years), while
+parallel systems leave ample margin. The corner time must be measured;
+we propose a 2--3-day experiment.
+
+\textbf{(v) Shafts and orientation.}
+
+\begin{itemize}
+\item
+  \emph{Shafts.} With the Yale Bright Star Catalogue and IAU 2006
+  precession, the two King's Chamber shafts point to their proposed
+  stars (Alnitak, Thuban) at dates 2.4\(\sigma\) apart, and at V
+  \(\leq\) 3.0 the measured angles produce no four-star coincidence
+  while 27 \% of random angle sets do. The rational slopes n/11 that the
+  angles fit are not significant after a look-elsewhere correction (p =
+  16 \%).
+\item
+  \emph{Orientation.} With Spence's (2000) data and only observable star
+  configurations, no star pair explains the Fourth-Dynasty orientation
+  errors without a configuration switch for Khafre. With that switch,
+  Kochab--Mizar fits best among pairs with historically plausible dates
+  and reproduces Spence's date (Khufu aligned \textasciitilde2478 BC).
+  However:
+\item
+  a generic linear drift with Khafre reflected fits equally well;
+\item
+  Unas does not fit;
+\item
+  Spence's 74-year lowering lies outside the window allowed by the
+  radiocarbon chronology of Bronk Ramsey et al.~(2010); within that
+  window the best pair fits markedly worse.
+\end{itemize}
+
+The data are compatible with a stellar method but do not support
+astronomical dating.
+
+\textbf{Self-corrections.} We document four errors in our own earlier
+analyses and how they were caught:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  a digitization artefact that produced a spurious ``18\(^\circ\)
+  inclination at 4--6\(\sigma\)'';
+\item
+  an untested corner-time assumption that had produced ``single ramps
+  are impossible'';
+\item
+  wrong chronology inputs and unobservable stars in a first orientation
+  study;
+\item
+  outdated void dimensions.
+\end{enumerate}
+
+Predictions are registered in git before any new measurement.
+
+\hypertarget{introduction}{%
+\section{1. Introduction}\label{introduction}}
+
+ScanPyramids reported a void of length \$\geq\$30 m above the Grand
+Gallery, with a cross-section ``comparable to the Grand Gallery''
+(Morishima et al.~2017). Its orientation, horizontal or inclined, was
+left open, and so was its function. Proposals include a structural
+relieving space and a construction gallery for counterweights (Houdin).
+
+Equally debated are the method used to raise the blocks (straight,
+zigzag, spiral, internal or edge-integrated ramps --- see e.g.~Lehner
+1997; Rosell Roig 2025 --- and levers), the purpose of the shafts
+(Trimble 1964; Badawy 1964; Bauval 1993), and whether the pyramids'
+orientation errors can date them (Spence 2000; Belmonte 2001).
+
+We treat these questions quantitatively, test our own claims
+adversarially, and release everything.
+
+\hypertarget{methods-summary-full-details-in-docs0616-of-the-repository}{%
+\section{2. Methods (summary; full details in docs/06--16 of the
+repository)}\label{methods-summary-full-details-in-docs0616-of-the-repository}}
+
+\textbf{Geometry.} The pyramid is a convex solid (base 230.33 m,
+original height 146.6 m). The current truncated shape is used for
+muography. Chambers and passages are oriented boxes reconstructed from
+Petrie (1883) and Maragioglio \& Rinaldi (\$\pm\$1--2 m).
+
+\textbf{Muon model.}
+
+\begin{itemize}
+\tightlist
+\item
+  Spectrum: Reyna (2006), joined to Gaisser (1990) above 2 TeV.
+\item
+  Energy loss: E\_min(X) = \(E_0\) + (a/b)(e\^{}\{bX\} − 1), with
+  standard-rock a and b. This approximation neglects the rise of
+  ionization loss and calcite-specific constants.
+\item
+  \(\chi^{2}\): includes a 2 \% per-bin systematic and angular smearing.
+  In the robustness studies it also profiles normalization, two angular
+  gradients and two spectral terms. Directions more than 70\(^\circ\)
+  from the zenith are excluded.
+\item
+  Realism factor: a factor of 0.5 is applied to model significances. It
+  is calibrated on one published number (Queen's Chamber), and the
+  outside-detector comparison suggests the model is instead
+  \textasciitilde2\(\times\) pessimistic there.
+\end{itemize}
+
+\textbf{Digitization.}
+
+\begin{itemize}
+\tightlist
+\item
+  KEK Extended Data Fig. 4: PDF vector graphics, axes calibrated from
+  major ticks. The recovered \(\Delta\)x values are integers to within
+  0.15.
+\item
+  Nagoya Extended Data Fig. 2: raster image. Data crosses are found as
+  intersections of horizontal and vertical colour runs. Where a bin has
+  two candidates (data cross and overlaid fitted curve), the candidate
+  with the longer error bar is kept.
+\end{itemize}
+
+\textbf{Construction model.} Layer by layer (210 courses), the daily
+rate is the minimum of three capacities:
+
+\begin{itemize}
+\tightlist
+\item
+  lane capacity (sledge spacing and corner occupancy);
+\item
+  placement area;
+\item
+  labour (Little's law).
+\end{itemize}
+
+A Monte Carlo runs over 22 uncertain parameters. Friction is calibrated
+on the Djehutihotep painting (\(\mu\) \(\approx\) 0.06--0.11 for
+200--350 N per man), consistent with the wet-sand measurements of Fall
+et al.~(2014). Transport logistics are informed by the Merer papyri
+(Tallet 2017).
+
+\textbf{Astronomy.}
+
+\begin{itemize}
+\tightlist
+\item
+  Catalogue: Yale BSC5 (Hoffleit \& Warren 1991), with proper motions.
+\item
+  Precession: IAU 2006 (Capitaine et al.~2003).
+\item
+  Refraction: Bennett.
+\item
+  Site: meridian transit at Giza (\(\varphi\) = 29.979\(^\circ\)).
+\item
+  Orientation fits: for each star pair, the azimuth at which both stars
+  share a plumb line near north, with both at least 5\(^\circ\) above
+  the horizon.
+\end{itemize}
+
+\hypertarget{validation-against-published-results}{%
+\section{3. Validation against published
+results}\label{validation-against-published-results}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Quantity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Published
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Emulsion NE1 tracks (98 d, 0.45 m\(^{2}\)) & 5.3 \(\times\) 10\(^{6}\)
+(square \textbar tan\(\theta\)x,y\textbar{} \textless{} 1) & 4.4
+\(\times\) 10\(^{6}\) (acceptance to \textbar tan\(\theta\)\textbar{}
+\(\approx\) 1.3) \\
+Big Void excess, Queen's Chamber & 8.6 \% (smoothed) & 5.2--11 \% (KEK
+slices) \\
+Big Void significance, Queen's Chamber & 17\(\sigma\) (with
+\$\times\(0.5 factor) | 13.7\)\sigma\$ (NE1) & \\
+Big Void significance, outside the north face & 2.8\(\sigma\) (with
+\$\times\(0.5 factor) | 5.8\)\sigma\$ (CEA) & \\
+Emulsion E--W offsets from the Grand Gallery axis, recovered from the
+simulated Gallery alone & NE1 +5.7 m, NE2 −4.3 m & +5.8 m, −4.5 m \\
+\end{longtable}
+
+\hypertarget{reanalysis-of-the-published-2017-data}{%
+\section{4. Reanalysis of the published 2017
+data}\label{reanalysis-of-the-published-2017-data}}
+
+The void lies close to the Grand Gallery axis:
+
+\begin{itemize}
+\tightlist
+\item
+  emulsions: x = 7.5 m (axis 7.3 m);
+\item
+  KEK alone: \textasciitilde1.7 m east;
+\item
+  joint fit: 7.1--7.3 m.
+\end{itemize}
+
+Its centre height and cross-section depend on the data set:
+
+\begin{itemize}
+\tightlist
+\item
+  emulsions: 61--62.5 m and \textasciitilde19--21 m\(^{2}\) (best-fit
+  parameters in resultados/18\_ajuste\_emulsiones.json);
+\item
+  joint fit: 56--59 m and \textasciitilde9--11 m\(^{2}\);
+\item
+  KEK alone: 47--54 m, with its best fit (26\(^\circ\)) at 47.5 m.
+\end{itemize}
+
+Inclination profile (\(\sigma\) against each angle, errors rescaled by
+\(\chi^{2}\)/ndf):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Data
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+0\(^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+10\(^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+20\(^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+26\(^\circ\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+35\(^\circ\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Emulsions (nominal) & 0.4 & 0.9 & 2.2 & 2.8 & 3.9 \\
+Emulsions, without the southern slice & 1.6 & 0.5 & 0.1 & 0.4 & 1.0 \\
+Emulsions, Grand Gallery residual free & 2.4 & 0.3 & 1.4 & 2.4 & 3.8 \\
+KEK alone (detector position free; best at the +1 m grid edge) & 4.3 &
+2.5 & 1.0 (18\(^\circ\)) & 0.0 & 1.8 \\
+Joint fit & 4.0 & 1.3 & 0.0 (18\(^\circ\)) & 0.7 & 4.0 \\
+\end{longtable}
+
+The joint fit is not trusted: the two data sets are inconsistent under a
+common straight corridor (\(\chi^{2}\) 807 vs \(\approx\) 729 for the
+separate minima, \textasciitilde7 shared parameters), and the tension is
+unchanged for two-segment and two-level shapes. We attribute it to an
+unresolved systematic, most plausibly the KEK normalization to the
+authors' own simulation of known structures or the hodoscope geometry.
+Only the original maps can resolve it. (The North Face Corridor,
+characterised by Procureur et al.~2023, is a separate structure and is
+part of our validation geometry.)
+
+\textbf{Our own error.} A first version reported an 18\(^\circ\)
+inclination at 4--6\(\sigma\), robust to five variations. A
+leave-one-slice-out test removed it. We traced it to 26 of 396 bins in
+which the overlaid fitted curve had been digitized instead of the data
+cross.
+
+\hypertarget{simulation-study-what-a-new-measurement-could-decide}{%
+\section{5. Simulation study: what a new measurement could
+decide}\label{simulation-study-what-a-new-measurement-could-decide}}
+
+\textbf{Hypotheses.} H1 is a horizontal corridor; H2 a corridor inclined
+at 26\(^\circ\); H3 a 26\(^\circ\) counterweight gallery joined to the
+relieving chambers; H4 a loose-fill zone; H5 stacked low chambers.
+
+\begin{figure}
+\centering
+\includegraphics{figuras/04a_corte_hipotesis.png}
+\caption{North--south section of the pyramid with the void hypotheses
+(fitted to a simulated reference view) and candidate detector positions
+(\(\blacktriangledown\)). Labels in Spanish.}
+\end{figure}
+
+\textbf{Fitting.} Each hypothesis is fitted to mimic the expected
+Queen's Chamber view of a simulated reference void (a 1.6 \(\times\) 8 m
+box at z = 63 m, H1). It is \emph{not} fitted to the 2017 data. Two
+exclusions are therefore relative to this simulation:
+
+\begin{itemize}
+\tightlist
+\item
+  a relieving void hugging the Grand Gallery roof (29\(\sigma\));
+\item
+  an open internal spiral ramp of Houdin's type, which would produce an
+  expected 17--32\(\sigma\) ring in the Queen's Chamber acceptance.
+\end{itemize}
+
+\textbf{Results.} With one simulated Queen's Chamber detector, H1, H2,
+H3 and H5 are within 2.3--2.8\(\sigma\) of each other, while H4 is
+separable at 11\(\sigma\).
+
+\begin{figure}
+\centering
+\includegraphics{figuras/04b_mapas_exceso.png}
+\caption{Expected muon excess for each hypothesis. Top row: Queen's
+Chamber (nearly identical). Middle: King's Chamber. Bottom: Campbell's
+Chamber.}
+\end{figure}
+
+\textbf{Joint fit and blind tests.} The joint fit covers the Queen's
+Chamber plus a new position, with 225 variants per hypothesis (\$\pm\$3
+m, cross-section \$\times\$0.75--1.25) and profiled systematics. The
+blind trials perturb the physics (flux \$\pm\$10 \% and index
+\$\pm\(0.05; limestone 2.35 g/cm\)\^{}\{3\}\$; known chambers displaced
+by 1 m), but they remain \textbf{optimistic by construction}:
+
+\begin{itemize}
+\tightlist
+\item
+  the injected systematics have the same form as those profiled in the
+  fit;
+\item
+  the true geometries are drawn inside the library range and only from
+  H1--H5.
+\end{itemize}
+
+Within these limits, 60 days with 1 m\(^{2}\) in the King's Chamber (25
+\% effective exposure) identify the true hypothesis in 96--98.5 \% of
+trials, and in 82.5 \% with a grossly wrong spectrum (Gaisser outside
+its validity). The counterweight interpretation (H3) is the most
+sensitive to flux mismodelling. We pre-register four conditions before
+H3 may be claimed:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \$\geq\(5\)\sigma\$ against H2;
+\item
+  open-sky flux calibration;
+\item
+  laser-scan geometry;
+\item
+  confirmation from a second position.
+\end{enumerate}
+
+Quoted ``margins'' are √(median \(\Delta\chi^{2}\)) between non-nested
+hypotheses, not Gaussian significances.
+
+\begin{figure}
+\centering
+\includegraphics{figuras/05a_prueba_a_ciegas.png}
+\caption{Blind-test confusion matrices (optimistic by construction; see
+text).}
+\end{figure}
+
+\textbf{Cramér--Rao lower bound.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+True void (z = 63 m, 6 \(\times\) 2 m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+2017 stereo (NE1 + NE2)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
++ King's Chamber 60 d
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Horizontal & \(\sigma\)(incl.) \(\geq\) 2.5\(^\circ\) & \(\geq\)
+1.1\(^\circ\) \\
+Inclined 13\(^\circ\) & \(\geq\) 3.3\(^\circ\) & \(\geq\)
+1.6\(^\circ\) \\
+Inclined 26\(^\circ\) & \(\geq\) 3.0\(^\circ\) & \(\geq\)
+1.9\(^\circ\) \\
+\end{longtable}
+
+The bound is local and model-dependent: x and the density contrast are
+fixed, the nuisances carry Gaussian priors, and the 2 \%/bin systematic
+is optimistic compared with the real \(\chi^{2}\)/ndf. Blind tests with
+the stereo configuration give 92 \% accuracy with
+\textasciitilde3\(\sigma\) median margins for 2017 alone, and 98.5 \%
+when King's Chamber data are added. This is a forecast for the
+\emph{full} 2017 maps, which our figure-based reanalysis (Section 4)
+does not reach.
+
+\textbf{Campbell's Chamber} adds no information for a horizontal void:
+the void lies at the detector's height, in directions removed by the
+zenith cut. The King's Chamber is therefore the robust choice.
+
+\hypertarget{ramp-logistics-and-the-corner-bottleneck}{%
+\section{6. Ramp logistics and the corner
+bottleneck}\label{ramp-logistics-and-the-corner-bottleneck}}
+
+Rotating a 2.6 t sledge needs \textasciitilde2.4 kN·m. The pivot itself
+takes seconds; the 0.8--2.8 min per corner is dominated by an
+\emph{assumed} 30--150 s stop/restart overhead. A rope-redirecting post
+would reduce corner occupancy to \textasciitilde0.3 min, at a capstan
+cost of e\^{}\{\(\mu\)\_c \(\pi\)/2\} = 1.4--1.9 on crew size. The
+Khufu-era Hatnub ramp shows posts used for hauling on a \emph{straight}
+ramp; posts at corners are an extrapolation.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Model & Median years & Share finishing in \(\leq\) 27 years \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Single cornered ramp (zigzag, spiral or internal) & 20--23 & 74--85
+\% \\
+Four edge ramps & 6 & 100 \% \\
+Straight ramp to 45 m + zigzag & 12--13 & 100 \% \\
+Straight ramp to 45 m + levers & 8 & 100 \% \\
+\end{longtable}
+
+\begin{figure}
+\centering
+\includegraphics{figuras/07_giros.png}
+\caption{Share of scenarios finishing in \(\leq\) 20 years under the
+initial corner-time assumption and under the mechanical estimates.}
+\end{figure}
+
+An earlier version assumed 2--15 min per corner and concluded that
+single ramps were impossible; we withdraw it. Under that broad prior,
+corner time dominated the variance (rank correlation 0.97), which is why
+it must be measured.
+
+Proposed test: a 2.5 t sledge on wet tafla, with a 90\(^\circ\) corner
+on a 4 m platform. The pre-registered thresholds are:
+
+\begin{itemize}
+\tightlist
+\item
+  stop-and-pivot \(\leq\) 2.1 min per corner, or
+\item
+  post friction \(\mu\)\_c \(\leq\) 0.4,
+\end{itemize}
+
+either of which implies a single ramp could finish within the reign.
+
+\hypertarget{the-star-shafts}{%
+\section{7. The ``star shafts''}\label{the-star-shafts}}
+
+The stellar hypothesis goes back to Trimble (1964) and Badawy (1964),
+and was extended to the Queen's Chamber by Bauval (1993). Shaft angles
+are from Gantenbrink's Upuaut survey.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Shaft
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Measured (Gantenbrink)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Proposed star
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Date it culminated along the shaft
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+King's south & 45.0\(^\circ\) \(\pm\) 0.2 & Alnitak & 2497 \(\pm\) 41
+BC \\
+King's north & 32.47--32.6\(^\circ\) (\(\pm\) 0.3) & Thuban & 2338
+\(\pm\) 53 BC (or 3257 BC) \\
+Queen's south & 39.61\(^\circ\) (\(\pm\) 1, Gantenbrink quotes \(\pm\)
+2) & Sirius & 2369 \(\pm\) 333 BC \\
+Queen's north & \textasciitilde39.1\(^\circ\) (upper part unmeasured) &
+Kochab & 2369 \(\pm\) 446 BC \\
+\end{longtable}
+
+\textbf{Dates.} Sirius and Kochab are compatible with Khufu's reign
+(\textasciitilde2589--2566 BC) because their angles are poorly
+constrained; Alnilam also fits the King's south shaft within the reign.
+The real tension is between the two King's Chamber shafts
+(2.4\(\sigma\)), which rests on the adopted 0.3\(^\circ\) uncertainty.
+
+\textbf{Chance.} At V \(\leq\) 3.0, the measured angles produce no
+simultaneous four-star coincidence, while 27 \% of random angle sets do.
+At V \(\leq\) 3.7 (needed to include Thuban), 59 \% of random sets do.
+
+\textbf{Rational slopes.} The angles fit slopes n/11 (11/11, 7/11, 9/11;
+the face is 14/11), but after look-elsewhere over denominators 5--16 the
+chance probability is 16 \%. The result also depends on the adopted
+\(\sigma\) of the Queen's south shaft, and 9/11 corresponds to an
+unusual seked (8 4/9 palms). We therefore make no claim that either
+explanation is preferred.
+
+A \$\pm\(0.2\)\^{}\circ\$ laser survey would discriminate: Kochab at
+Khufu's reign needs 39.8--39.9\(^\circ\), while 9/11 gives
+39.29\(^\circ\).
+
+\hypertarget{orientation-to-north}{%
+\section{8. Orientation to north}\label{orientation-to-north}}
+
+\textbf{Data.} Spence (2000), Table 1, \emph{east-side} orientations:
+Meidum −20.6\('\), Bent −17.3\('\), Red −8.7\('\), Khufu −3.4\('\),
+Khafre −6.0\('\), Menkaure +12.4\('\). Dates follow von Beckerath, with
+Sneferu after Stadelmann, and the alignment is taken in regnal year 2.
+
+The quoted \$\pm\(0.2\)'\$ errors are optimistic: Spence's own west- and
+east-side values differ by up to 5.5\('\) (Bent). For critiques and
+alternatives see Rawlins \& Pickering (2001), Belmonte (2001), Magli
+(2004) and the solar method of Dash (2017).
+
+\textbf{Pairs.} We consider 219 observable star pairs (V \(\leq\) 3.5,
+both stars at least 5\(^\circ\) up) and fit a chronology shift
+\(\Delta\)T between −500 and +500 years. 182 pairs give a finite fit
+(364 fits with and without the switch). The 82 fits that reach the
+\$\pm\$500-year grid edge are discarded. ``With switch'' means that, as
+coded, each pyramid may use either plumb-line configuration. In all the
+best fits only Khafre switches.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\chi^{2}\) (6 pyramids)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\Delta\)T
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+No drift & 3320 & --- \\
+Any pair or a line, same configuration for all & \(\geq\) 199 & --- \\
+\(\eta\) UMa + Kochab, with switch & 11.8 & +472 yr (far outside the
+radiocarbon window) \\
+\textbf{Kochab + Mizar, with switch (Spence)} & \textbf{12.3} &
+\textbf{−74 yr (Khufu aligned \textasciitilde2478 BC)} \\
+\(\beta\) UMa + \(\eta\) Dra, with switch & 22.2 & −2 yr (best pair
+inside the radiocarbon window) \\
+Line with Khafre reflected & 11.4 & --- \\
+\end{longtable}
+
+\textbf{Radiocarbon.} Bronk Ramsey et al.~(2010) place Djoser's
+accession at 2691--2625 BC, against 2640 BC in the chronology used here.
+That allows shifts of roughly −15 to +51 years. Spence's −74 years lies
+outside this window, and inside it the best pair (\(\beta\) UMa +
+\(\eta\) Dra) fits markedly worse (\(\Delta\chi^{2}\) \(\approx\) 10).
+
+\textbf{Retrodiction for the Fifth Dynasty.} This is a weak test: with
+switching allowed, the sign is free, so a magnitude match is all that is
+checked. Unas has no quoted error in Spence; we adopt 1\('\), but the
+conclusion holds for any reasonable value. With Kochab--Mizar and the
+switch:
+
+\begin{itemize}
+\tightlist
+\item
+  Sahure: predicted \$\pm\(29\)'\(, measured −23\)'\$ \(\pm\) 10:
+  consistent;
+\item
+  Neferirkare: predicted \$\pm\(33\)'\(, measured +30\)'\$ \(\pm\) 10:
+  consistent;
+\item
+  Unas: predicted \$\pm\(68\)'\(, measured +17.1\)'\$: inconsistent.
+\end{itemize}
+
+The orientations support a stellar method. They are compatible with
+Spence's pair, but a generic drift fits as well, and Spence's date is in
+tension with radiocarbon. Astronomical dating of the pyramids is
+therefore not supported by these data.
+
+\hypertarget{pre-registered-predictions-full-list-in-predicciones.md-dated-in-git}{%
+\section{9. Pre-registered predictions (full list in PREDICCIONES.md,
+dated in
+git)}\label{pre-registered-predictions-full-list-in-predicciones.md-dated-in-git}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  A \textasciitilde1 m\(^{2}\) detector in the King's Chamber separates
+  the hypotheses in \(\leq\) 2 months.
+\item
+  A stereo analysis of the full 2017 NE1 + NE2 maps prefers the true
+  shape at \textasciitilde2--3\(\sigma\) and constrains the void height
+  to \(\lesssim\) 1 m.
+\item
+  A new measurement finds the void centre within
+  \$\pm\(2 m of the Grand Gallery's vertical plane, at 47–63 m height, with a cross-section of 8–21 m\)\^{}\{2\}\$.
+\item
+  If edge-integrated ramps were used and back-filled \(\geq\) 0.1
+  t/m\(^{3}\) (\textasciitilde4.5 \%) lighter than the core, an external
+  1 m\(^{2}\) detector sees helical bands at 5\(\sigma\) in
+  \textasciitilde300 days; at \(\geq\) 0.2 t/m\(^{3}\), in
+  \textasciitilde30 days.
+\item
+  A precise survey of the upper Queen's north shaft gives
+  39.29\(^\circ\) \(\pm\) 0.3\(^\circ\) (9/11) rather than
+  39.8--39.9\(^\circ\) (Kochab at Khufu's reign).
+\end{enumerate}
+
+\hypertarget{limitations}{%
+\section{10. Limitations}\label{limitations}}
+
+\begin{itemize}
+\tightlist
+\item
+  No full transport simulation (Geant4); multiple scattering is
+  approximated by a fitted angular smearing.
+\item
+  Approximate internal geometry (\$\pm\$1--2 m).
+\item
+  The reanalysis uses digitized figures, not raw data.
+\item
+  The blind tests are optimistic by construction (Section 5).
+\item
+  The construction model is a mean-flow model with an assumed corner
+  overhead.
+\item
+  Shaft angle uncertainties are partly assumed.
+\item
+  The orientation conclusions depend on Spence's tabulated values and
+  dates.
+\end{itemize}
+
+\hypertarget{conclusion}{%
+\section{11. Conclusion}\label{conclusion}}
+
+The public data establish that the Big Void exists close to the Grand
+Gallery axis, at roughly 47--63 m height depending on the data set. They
+do not fix its shape, and the two published data sets disagree for
+reasons we cannot resolve from the figures.
+
+We identify measurements that would decide:
+
+\begin{itemize}
+\tightlist
+\item
+  a stereo reanalysis of the original 2017 maps;
+\item
+  a King's Chamber muography campaign;
+\item
+  a sledge-turning experiment;
+\item
+  a laser survey of the Queen's Chamber shafts.
+\end{itemize}
+
+Each comes with predictions registered in advance, so that its result
+can prove us wrong.
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\begin{itemize}
+\tightlist
+\item
+  Badawy, A. \emph{Mitteilungen des Instituts für Orientforschung} 10,
+  189 (1964).
+\item
+  Bauval, R. \emph{Discussions in Egyptology} 26 (1993).
+\item
+  Belmonte, J. A. \emph{Journal for the History of Astronomy,
+  Archaeoastronomy Supplement} 26, S1 (2001).
+\item
+  Bronk Ramsey, C. et al.~Radiocarbon-based chronology for dynastic
+  Egypt. \emph{Science} 328, 1554--1557 (2010).
+\item
+  Capitaine, N., Wallace, P. T. \& Chapront, J. \emph{Astron.
+  Astrophys.} 412, 567 (2003).
+\item
+  Dash, G. \emph{Journal of Ancient Egyptian Architecture} 2 (2017).
+\item
+  Fall, A. et al.~\emph{Phys. Rev.~Lett.} 112, 175502 (2014).
+\item
+  Gaisser, T. K. \emph{Cosmic Rays and Particle Physics} (Cambridge,
+  1990).
+\item
+  Gantenbrink, R. Upuaut Project survey data (1993--1999).
+\item
+  Hoffleit, D. \& Warren, W. H. \emph{The Bright Star Catalogue}, 5th
+  ed.~(Yale, 1991).
+\item
+  Houdin, J.-P. \emph{Khufu: The Secrets Behind the Building of the
+  Great Pyramid} (2006).
+\item
+  Lehner, M. \emph{The Complete Pyramids} (Thames \& Hudson, 1997).
+\item
+  Magli, G. arXiv:physics/0407108 (2004).
+\item
+  Maragioglio, V. \& Rinaldi, C. \emph{L'architettura delle piramidi
+  menfite} IV (1965).
+\item
+  Morishima, K. et al.~\emph{Nature} 552, 386--390 (2017);
+  arXiv:1711.01576.
+\item
+  Petrie, W. M. F. \emph{The Pyramids and Temples of Gizeh} (1883).
+\item
+  Procureur, S. et al.~\emph{Nat. Commun.} 14, 1144 (2023).
+\item
+  Rawlins, D. \& Pickering, K. \emph{Nature} 412, 699 (2001).
+\item
+  Reyna, D. hep-ph/0604145 (2006).
+\item
+  Rosell Roig, V. L. arXiv:2511.06112 (2025).
+\item
+  Spence, K. \emph{Nature} 408, 320--324 (2000).
+\item
+  Tallet, P. \emph{Les papyrus de la mer Rouge I}, MIFAO 136 (2017).
+\item
+  Trimble, V. \emph{Mitteilungen des Instituts für Orientforschung} 10,
+  183 (1964).
+\end{itemize}
+
+\emph{Bibliographic details of some references (volume and page numbers)
+should be verified against the original publications before submission.}
+
+\end{document}

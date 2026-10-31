@@ -46,6 +46,19 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -415,6 +428,14 @@ decide}\label{simulation-study-what-a-new-measurement-could-decide}}
 at 26°; H3 a 26° counterweight gallery joined to the relieving chambers;
 H4 a loose-fill zone; H5 stacked low chambers.
 
+\begin{figure}
+\centering
+\includegraphics{../figuras/04a_corte_hipotesis.png}
+\caption{North--south section of the pyramid with the void hypotheses
+(fitted to a simulated reference view) and candidate detector positions
+(▼). Labels in Spanish.}
+\end{figure}
+
 \textbf{Fitting.} Each hypothesis is fitted to mimic the expected
 Queen's Chamber view of a simulated reference void (a 1.6 × 8 m box at z
 = 63 m, H1). It is \emph{not} fitted to the 2017 data. Two exclusions
@@ -432,6 +453,14 @@ are therefore relative to this simulation:
 \textbf{Results.} With one simulated Queen's Chamber detector, H1, H2,
 H3 and H5 are within 2.3--2.8σ of each other, while H4 is separable at
 11σ.
+
+\begin{figure}
+\centering
+\includegraphics{../figuras/04b_mapas_exceso.png}
+\caption{Expected muon excess for each hypothesis. Top row: Queen's
+Chamber (nearly identical). Middle: King's Chamber. Bottom: Campbell's
+Chamber.}
+\end{figure}
 
 \textbf{Joint fit and blind tests.} The joint fit covers the Queen's
 Chamber plus a new position, with 225 variants per hypothesis (±3 m,
@@ -472,6 +501,13 @@ H3 may be claimed:
 
 Quoted ``margins'' are √(median Δχ²) between non-nested hypotheses, not
 Gaussian significances.
+
+\begin{figure}
+\centering
+\includegraphics{../figuras/05a_prueba_a_ciegas.png}
+\caption{Blind-test confusion matrices (optimistic by construction; see
+text).}
+\end{figure}
 
 \textbf{Cramér--Rao lower bound.}
 
@@ -533,6 +569,13 @@ Four edge ramps & 6 & 100 \% \\
 Straight ramp to 45 m + zigzag & 12--13 & 100 \% \\
 Straight ramp to 45 m + levers & 8 & 100 \% \\
 \end{longtable}
+
+\begin{figure}
+\centering
+\includegraphics{../figuras/07_giros.png}
+\caption{Share of scenarios finishing in ≤ 20 years under the initial
+corner-time assumption and under the mechanical estimates.}
+\end{figure}
 
 An earlier version assumed 2--15 min per corner and concluded that
 single ramps were impossible; we withdraw it. Under that broad prior,

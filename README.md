@@ -96,6 +96,8 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |
+| [preprint/arxiv_paquete.zip](preprint/arxiv_paquete.zip) | **Paquete para arXiv** (main.tex + figuras); instrucciones en preprint/arxiv/LEEME.md |
+| [envio/correos.md](envio/correos.md) | Borradores de correo para ScanPyramids, el experimento del trineo y el aval de arXiv |
 | [PLAN_DE_CONTACTO.md](PLAN_DE_CONTACTO.md) | Qué grupo puede comprobar cada predicción y en qué orden escribirles |
 | [PROPUESTA_EXPERIMENTO_TRINEO.md](PROPUESTA_EXPERIMENTO_TRINEO.md) | Propuesta para museos y universidades: medir cuánto tarda un trineo de 2,5 t en girar una esquina |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |

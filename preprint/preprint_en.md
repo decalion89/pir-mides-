@@ -130,12 +130,18 @@ The joint fit is not trusted: the two data sets are inconsistent under a common 
 
 **Hypotheses.** H1 is a horizontal corridor; H2 a corridor inclined at 26°; H3 a 26° counterweight gallery joined to the relieving chambers; H4 a loose-fill zone; H5 stacked low chambers.
 
+![North–south section of the pyramid with the void hypotheses (fitted to a simulated reference view) and candidate detector positions (▼). Labels in Spanish.](../figuras/04a_corte_hipotesis.png)
+
+
 **Fitting.** Each hypothesis is fitted to mimic the expected Queen's Chamber view of a simulated reference void (a 1.6 × 8 m box at z = 63 m, H1). It is *not* fitted to the 2017 data. Two exclusions are therefore relative to this simulation:
 
 - a relieving void hugging the Grand Gallery roof (29σ);
 - an open internal spiral ramp of Houdin's type, which would produce an expected 17–32σ ring in the Queen's Chamber acceptance.
 
 **Results.** With one simulated Queen's Chamber detector, H1, H2, H3 and H5 are within 2.3–2.8σ of each other, while H4 is separable at 11σ.
+
+![Expected muon excess for each hypothesis. Top row: Queen's Chamber (nearly identical). Middle: King's Chamber. Bottom: Campbell's Chamber.](../figuras/04b_mapas_exceso.png)
+
 
 **Joint fit and blind tests.** The joint fit covers the Queen's Chamber plus a new position, with 225 variants per hypothesis (±3 m, cross-section ×0.75–1.25) and profiled systematics. The blind trials perturb the physics (flux ±10 % and index ±0.05; limestone 2.35 g/cm³; known chambers displaced by 1 m), but they remain **optimistic by construction**:
 
@@ -150,6 +156,9 @@ Within these limits, 60 days with 1 m² in the King's Chamber (25 % effective ex
 4. confirmation from a second position.
 
 Quoted "margins" are √(median Δχ²) between non-nested hypotheses, not Gaussian significances.
+
+![Blind-test confusion matrices (optimistic by construction; see text).](../figuras/05a_prueba_a_ciegas.png)
+
 
 **Cramér–Rao lower bound.**
 
@@ -173,6 +182,10 @@ Rotating a 2.6 t sledge needs ~2.4 kN·m. The pivot itself takes seconds; the 0.
 | Four edge ramps | 6 | 100 % |
 | Straight ramp to 45 m + zigzag | 12–13 | 100 % |
 | Straight ramp to 45 m + levers | 8 | 100 % |
+
+
+![Share of scenarios finishing in ≤ 20 years under the initial corner-time assumption and under the mechanical estimates.](../figuras/07_giros.png)
+
 
 An earlier version assumed 2–15 min per corner and concluded that single ramps were impossible; we withdraw it. Under that broad prior, corner time dominated the variance (rank correlation 0.97), which is why it must be measured.
 

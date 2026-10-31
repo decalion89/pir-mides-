@@ -68,7 +68,8 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [10 — Qué cambiaría la historia](docs/10-que-cambiaria-la-historia.md) | Qué significaría cada resultado y hoja de ruta |
 | [11 — Reanálisis de los datos de 2017](docs/11-reanalisis-datos-2017.md) | Datos reales de KEK y Nagoya ajustados con nuestro modelo |
 | [12 — La física de la esquina](docs/12-la-fisica-de-la-esquina.md) | Corrección de una conclusión y protocolo del experimento del trineo |
-| [ARTICULO.md](ARTICULO.md) | Borrador de preprint |
+| [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
+| [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** (7 páginas), con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |
 | [PROPUESTA_EXPERIMENTO_TRINEO.md](PROPUESTA_EXPERIMENTO_TRINEO.md) | Propuesta para museos y universidades: medir cuánto tarda un trineo de 2,5 t en girar una esquina |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |

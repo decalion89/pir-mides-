@@ -26,7 +26,7 @@ Ambas familias se pueden distinguir midiendo:
 
 ## Hoja de ruta para hacerlo realidad
 1. **Simulación completa con Geant4** de los puestos KC (Cámara del Rey) y D5 (Cámara de Campbell), usando la geometría láser de ScanPyramids. El objetivo es confirmar los tiempos de exposición.
-2. **Propuesta técnica de una página**: puesto, detector y exposición, con las firmas esperadas de cada hipótesis y el criterio de decisión registrado de antemano. Está en [PREDICCIONES.md](../PREDICCIONES.md).
+2. **Propuesta técnica** (borrador listo: [PROPUESTA_SCANPYRAMIDS_en.md](../PROPUESTA_SCANPYRAMIDS_en.md)): puesto, detector y exposición, con las firmas esperadas de cada hipótesis y el criterio de decisión registrado de antemano. Está en [PREDICCIONES.md](../PREDICCIONES.md).
 3. **Contacto con los equipos de muografía**: Universidad de Nagoya (emulsiones), KEK (centelleadores), CEA (Micromegas), HIP Institute y Universidad de El Cairo. Las mediciones en la pirámide necesitan permiso del **Consejo Supremo de Antigüedades de Egipto**, y solo pueden hacerlas equipos autorizados.
 4. **Experimento del tiempo de giro**, lo que se puede hacer fuera de Egipto: con un museo, una universidad o un grupo de arqueología experimental.
 5. **Publicación del preprint** ([ARTICULO.md](../ARTICULO.md)) con el código abierto, para que otros lo revisen y lo critiquen.

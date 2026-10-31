@@ -70,6 +70,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [10 — Qué cambiaría la historia](docs/10-que-cambiaria-la-historia.md) | Qué significaría cada resultado y hoja de ruta |
 | [11 — Reanálisis de los datos de 2017](docs/11-reanalisis-datos-2017.md) | Datos reales de KEK y Nagoya ajustados con nuestro modelo |
 | [ARTICULO.md](ARTICULO.md) | Borrador de preprint |
+| [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |
 
 ## Reproducir

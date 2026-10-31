@@ -2,6 +2,8 @@
 
 Archivos: [`resultados/02_construccion.json`](../resultados/02_construccion.json), figuras [`02_construccion_anios.png`](../figuras/02_construccion_anios.png) y [`02b_tiempo_de_giro.png`](../figuras/02b_tiempo_de_giro.png). Método en [06](06-metodo-y-validacion.md).
 
+> ⚠️ **Corrección (31 de octubre de 2026, [doc. 12](12-la-fisica-de-la-esquina.md)).** La tabla y las conclusiones 1 y 2 de abajo usan la suposición inicial de 2–15 min por giro. Al calcular el giro desde la física (0,3–2,8 min), **una sola rampa con esquinas pasa a ser posible pero justa**: mediana de 20–23 años, y termina en ≤ 27 años en el 74–85 % de los escenarios. Los sistemas en paralelo son viables en el 96–100 %. Dejamos el texto original debajo como registro.
+
 ## Resultado principal
 Monte Carlo de 600 escenarios, con 20 parámetros inciertos. "Viable" significa terminar en ≤ 20 años con ≤ 25 000 personas y sin que las rampas superen el 50 % del volumen de la pirámide.
 

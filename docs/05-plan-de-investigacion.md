@@ -38,7 +38,8 @@ FUENTES.md
 - [ ] **Fase 2, logística del diario de Merer** (circuito fluvial de Tura y Asuán).
 - [ ] **Simulación con Geant4** de los puestos KC y D5, para confirmar los tiempos de exposición.
 - [ ] **Modelo por agentes** de la circulación en rampas y esquinas.
-- [ ] **Experimento real del tiempo de giro** de un trineo cargado (P5).
+- [x] **Física del giro en las esquinas** y protocolo experimental con criterios de decisión. Ver [12](12-la-fisica-de-la-esquina.md).
+- [ ] **Experimento real del tiempo de giro** de un trineo cargado (P5), con un museo o una universidad.
 - [x] **Firma muográfica de rampas en las aristas** (P6). Ver [10](10-que-cambiaria-la-historia.md) y `resultados/06_aristas.json`.
 - [x] **Reanálisis de los datos publicados de 2017** (KEK y Nagoya). Ver [11](11-reanalisis-datos-2017.md).
 - [ ] **Datos originales.** Pedir a ScanPyramids los mapas completos para resolver la tensión entre KEK y las emulsiones.

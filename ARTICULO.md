@@ -9,7 +9,7 @@ Presentamos un marco reproducible que une tres cosas:
 3. un **modelo directo de muografía**, validado con las mediciones publicadas por ScanPyramids.
 
 Resultados principales:
-- **Construcción.** Un Monte Carlo de 600 escenarios muestra que ninguna rampa de **un solo carril con esquinas** (zigzag, espiral o la rampa interna de Houdin) termina la obra en el reinado de Keops: la mediana es de 70–91 años. El parámetro que lo controla es el **tiempo de giro** en las esquinas (ρ = 0,97). Los métodos viables son dos: rampas múltiples en caras o aristas, solo si el giro dura ≤ 6,3 min, o una rampa recta hasta 45 m seguida de palancas. La mano de obra necesaria (~5000–9000 personas) no es el factor limitante.
+- **Construcción.** El tiempo de giro en las esquinas controla la viabilidad de las rampas (ρ = 0,97). Lo calculamos desde la física: 0,8–2,8 min parando y pivotando, o 0,3 min con un poste de reenvío como los de Hatnub, a cambio de equipos 1,4–1,9 veces mayores. Con esos tiempos, **una sola rampa con esquinas** es posible pero justa: mediana de 20–23 años, y termina en ≤ 27 años en el 74–85 % de los escenarios. **Los sistemas en paralelo** son viables en el 96–100 %. Una primera versión, que suponía giros de 2–15 min, concluyó erróneamente que una sola rampa era imposible. La mano de obra necesaria (~5000–9000 personas) no es el factor limitante.
 - **Vigas de granito.** Tres métodos son físicamente viables para subirlas: rampa, contrapeso en galería y palancas que acompañan la subida del núcleo. Por tanto, las vigas **no implican** que el Gran Vacío fuera una galería de contrapeso, aunque esa hipótesis es mecánicamente coherente.
 - **Gran Vacío.**
   - Con la geometría de los detectores de 2017, las hipótesis horizontal, inclinada, de contrapeso y de cámaras apiladas son casi indistinguibles: tras ajustarlas, difieren 2,4–4,9σ de la referencia.
@@ -51,7 +51,7 @@ El modelo reproduce las tasas y los excesos medidos. Sus significaciones son cor
 ## 5. Discusión
 - **Qué es nuevo.** No lo son las hipótesis: Houdin, Lehner, Rosell Roig y ScanPyramids las propusieron antes. Lo nuevo es:
   1. haberlas puesto en **un mismo marco cuantitativo y abierto**;
-  2. haber identificado el **tiempo de giro** como el parámetro que decide la viabilidad de las rampas;
+  2. haber identificado el **tiempo de giro** como el parámetro que decide la viabilidad de las rampas, y haberlo estimado desde la física;
   3. haber mostrado que la geometría de 2017 **no puede** distinguir las hipótesis sobre el Vacío;
   4. haber **cuantificado** un experimento concreto que sí puede, desde un puesto público, con detectores como los ya usados y en semanas.
 - **Qué falta**:

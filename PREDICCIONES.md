@@ -25,7 +25,8 @@ Fecha de registro: **31 de octubre de 2026**. Las cifras salen de `simulador/eje
 - Un túnel de 1,8–2,6 m de sección a ~12 m de las caras habría producido en los datos de la Cámara de la Reina de 2017 un **anillo de excesos de 2,6–6 %** cerca de |tanθ| ≈ 1, con una significación de **17–32σ**.
 - **Qué la refutaría:** que un reanálisis de la periferia de esos datos, o una muografía nueva desde el exterior a la altura de 40–90 m, mostrara ese anillo.
 
-## P5 — Una rampa de un solo carril con esquinas no construye la pirámide a tiempo
+## P5 — (REVISADA el 31/10/2026, ver docs/12) El tiempo de giro decide si bastaba una sola rampa
+> **Revisión.** La versión original decía que "una rampa de un solo carril con esquinas no construye la pirámide a tiempo". Calculado desde la física, el giro cuesta 0,3–2,8 min, y con eso una sola rampa es posible pero justa. Los criterios de decisión actualizados están en docs/12, §3. El texto original se conserva debajo como registro.
 - Con el tiempo de giro medido en un experimento real, el modelo da **más de 20 años** (con 25 000 personas y parámetros centrales) para cualquier rampa de un carril (zigzag, espiral o interna), salvo que el giro dure **≤ 1,5 min**.
 - **Experimento barato que lo decide:** un trineo de 2,5 t sobre una pista húmeda, con un equipo de ~20–25 personas y una esquina de 90° en una rampa de 3–4 m de ancho. Se mide el tiempo que la esquina queda ocupada por cada trineo.
 - **Umbrales que fija el modelo:**

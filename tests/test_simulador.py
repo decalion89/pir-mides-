@@ -93,7 +93,7 @@ def test_rampa_recta_hasta_la_cima_es_inviable_por_volumen():
     assert rampas.RampaRecta().volumen_aux(g.ALTURA) > g.VOLUMEN_TOTAL
 
 
-def test_un_solo_carril_con_giros_no_llega_a_tiempo():
+def test_con_la_suposicion_inicial_de_giro_un_solo_carril_no_llega():
     p = Parametros()
     assert obra.simular(rampas.Zigzag(), p).anios > 27
     assert obra.simular(rampas.Interna(), p).anios > 27
@@ -178,3 +178,22 @@ def test_reanalisis_kek_pide_un_vacio():
     r = ra.Reanalisis()
     con = r.chi2(ra.Corredor(8.9, 21.0, 52.0, 45.0, 2.7, ancho=3.6, inclinacion=18))
     assert con < r.chi2_sin_vacio() - 500
+
+
+# --- fase 4: física del giro ----------------------------------------------------------
+from piramide import giro  # noqa: E402
+
+
+def test_fisica_del_giro():
+    c = giro.comparar()
+    assert 0.5 < c["pivote_min"] < 3.0
+    assert c["poste_ocupacion_min"] < 0.5
+    assert 1.3 < c["poste_factor_equipo_mu02"] < c["poste_factor_equipo_mu04"] < 2.0
+
+
+def test_con_giros_fisicos_una_rampa_unica_va_justa_pero_es_posible():
+    cat = {m.clave: m for m in rampas.catalogo()}
+    p = Parametros()
+    p.tecnica_giro = "pivote"
+    a = obra.simular(cat["zigzag"], p).anios
+    assert 12 < a < 27

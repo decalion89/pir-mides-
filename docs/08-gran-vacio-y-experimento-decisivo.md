@@ -86,7 +86,7 @@ Evaluamos siete puestos para un detector nuevo (figura `04a`). Para cada par de 
 ## 5. Prueba adicional: la rampa interna de Houdin
 Si existiera un túnel en espiral de 1,8–2,6 m de sección a ~12 m de las caras, los detectores de la Cámara de la Reina de 2017 lo habrían visto como un **anillo de excesos de 2,6–6 %** cerca de |tanθ| ≈ 1, con una significación de **17–32σ** en el modelo.
 
-Las imágenes publicadas no muestran ese anillo. En 2017, Bob Brier dijo que los datos sugerían que la rampa "no está ahí". Además, el modelo de construcción (doc. 07) muestra que una rampa interna de **un solo carril** no termina la obra a tiempo en ninguna de las 600 simulaciones. La rampa interna queda así **doblemente desfavorecida**. Matiz: si el análisis de 2017 no cubría bien la periferia de la aceptancia, esta prueba es más débil.
+Las imágenes publicadas no muestran ese anillo. En 2017, Bob Brier dijo que los datos sugerían que la rampa "no está ahí". (Una versión anterior añadía que la rampa interna tampoco terminaba la obra a tiempo. Con el tiempo de giro calculado desde la física (doc. 12) sí puede, aunque muy justa: mediana de 20–22 años. La objeción que se mantiene es la de la muografía.) Matiz: si el análisis de 2017 no cubría bien la periferia de la aceptancia, esta prueba es más débil.
 
 ## 6. Lo que esto no dice
 - No decimos qué es el Vacío. Decimos **cómo averiguarlo** y **qué resultado corresponde a cada hipótesis**.

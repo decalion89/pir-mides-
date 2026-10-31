@@ -14,14 +14,15 @@ Con la medición que proponemos en la Cámara del Rey, cada resultado posible en
 En cualquiera de los casos, la pregunta abierta desde 2017 quedaría resuelta.
 
 ## Otro resultado que ya cambia el relato habitual
-Del modelo de construcción ([07](07-resultados-construccion.md)) sale una conclusión firme: **con una sola rampa no daba tiempo.** Ninguna rampa de un solo carril con esquinas (zigzag, espiral o la rampa interna de Houdin) termina la obra en el reinado de Keops en ninguno de los 600 escenarios. Lo que limitaba no era la fuerza, ni el número de obreros: eran **los giros en las esquinas**.
+Del modelo de construcción ([07](07-resultados-construccion.md), [12](12-la-fisica-de-la-esquina.md)) sale esta conclusión: **lo que limitaba era el flujo en las esquinas, no la fuerza ni el número de obreros.** Con los tiempos de giro que da la física:
+- **una sola rampa con esquinas** habría ocupado casi todo el reinado (mediana de 20–23 años);
+- **un sistema en paralelo** (varias rampas, o una rampa baja y palancas) deja años de margen.
 
-La pirámide se construyó con un sistema **en paralelo**:
-- o varios carriles a la vez, si girar una esquina costaba menos de ~6 min;
-- o una rampa baja y palancas.
+Una primera versión afirmaba que una sola rampa era imposible. Esa conclusión venía de una suposición pesimista y la hemos retirado.
 
-Ambas familias se pueden distinguir midiendo:
-- **El tiempo de giro**, con arqueología experimental: un trineo de 2,5 t, un equipo de unas 20 personas y una esquina.
+Las familias de métodos se pueden distinguir midiendo:
+- **El tiempo de giro** y la técnica, con arqueología experimental: un trineo de 2,5 t, un equipo de unas 20 personas y una esquina con y sin poste. Ver el protocolo en el doc. 12.
+- **Huellas de postes** en las esquinas de las rampas, como los agujeros de poste de la rampa de Hatnub, de la época de Keops.
 - **Muografía exterior de las aristas**: un detector de 1 m² al pie de una cara vería los carriles rellenos a 5σ en unos 300 días si el relleno es un ~5 % menos denso, o en 30 días si lo es un ~9 %. Ver la [figura 06](../figuras/06_huella_aristas.png) y `resultados/06_aristas.json`.
 
 ## Hoja de ruta para hacerlo realidad

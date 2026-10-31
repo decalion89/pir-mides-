@@ -8,15 +8,13 @@ Estado de la evidencia: octubre de 2026.
 
 ## Resultados principales
 
-### 1. Ninguna rampa única con esquinas basta → [docs/07](docs/07-resultados-construccion.md)
-Simulamos hilada a hilada 10 métodos de elevación en 600 escenarios con parámetros inciertos:
-- **Rampas de un solo carril** con esquinas (zigzag, espiral, rampa interna de Houdin): tardarían **70–91 años** de mediana, cuando Keops reinó unos 27. Fallan en el **100 %** de los escenarios.
+### 1. Una sola rampa con esquinas va justa; los sistemas en paralelo dejan margen → [docs/07](docs/07-resultados-construccion.md) y [docs/12](docs/12-la-fisica-de-la-esquina.md)
+Simulamos hilada a hilada 10 métodos de elevación en cientos de escenarios con parámetros inciertos. El tiempo que un trineo cargado tarda en girar cada esquina sale de la física (doc. 12):
+- **Una sola rampa con esquinas** (zigzag, espiral o la rampa interna de Houdin): mediana de **20–23 años**. Acaba dentro del reinado de Keops (~27 años) en el **74–85 %** de los escenarios, pero en ≤ 20 años solo en el 29–49 %. Es posible, pero ocuparía casi todo el reinado.
+- **Sistemas en paralelo** (varias rampas, rampa recta y luego zigzag, o rampa recta y luego palancas): **96–100 %** viables, con ~5000 personas.
 - **Rampa recta hasta la cima**: necesitaría más volumen que la propia pirámide.
-- **Métodos viables**:
-  - rampa recta hasta 45 m (dos tercios del volumen) y **palancas** por encima, en el 100 % de los escenarios y con ~5000 personas;
-  - **varias rampas** en las caras o aristas, en el 37 % de los escenarios.
-- **El parámetro que lo decide todo es cuánto tarda un trineo cargado en girar una esquina** (ρ = 0,97). Se puede medir con un experimento sencillo.
 - **La mano de obra no era el problema; el flujo, sí.**
+- ⚠️ **Corrección**: una versión anterior afirmaba que una sola rampa con esquinas era imposible (0 %). Esa conclusión venía de suponer giros de 2–15 min. La física da 0,3–2,8 min, y la retiramos.
 
 ### 2. Las vigas de granito no obligan a nada → [docs/08 §3](docs/08-gran-vacio-y-experimento-decisivo.md)
 Para subir las ~43 vigas de 25–80 t de la Cámara del Rey hay tres métodos físicamente viables: rampa, contrapeso y palancas. La idea de que el Gran Vacío fuera una galería de contrapeso es **coherente** (el volumen alcanza para vigas de 60 t), pero **no necesaria**.
@@ -69,6 +67,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [09 — Robustez y prueba a ciegas](docs/09-robustez-y-prueba-a-ciegas.md) | Ajuste conjunto, sistemáticos y física alterada |
 | [10 — Qué cambiaría la historia](docs/10-que-cambiaria-la-historia.md) | Qué significaría cada resultado y hoja de ruta |
 | [11 — Reanálisis de los datos de 2017](docs/11-reanalisis-datos-2017.md) | Datos reales de KEK y Nagoya ajustados con nuestro modelo |
+| [12 — La física de la esquina](docs/12-la-fisica-de-la-esquina.md) | Corrección de una conclusión y protocolo del experimento del trineo |
 | [ARTICULO.md](ARTICULO.md) | Borrador de preprint |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |
@@ -76,12 +75,13 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 ## Reproducir
 ```bash
 pip install -r requirements.txt
-python -m pytest -q tests                      # 21 pruebas
+python -m pytest -q tests                      # 23 pruebas
 cd simulador && python ejecutar_todo.py        # ~5 min: resultados 01-04 y figuras
 python ejecutar_profundo.py                    # ~12 min: robustez, prueba a ciegas, aristas
 # Reanálisis de los datos publicados (requiere el PDF de arXiv:1711.01576):
 python extraer_datos_kek.py 1711.01576.pdf && python extraer_datos_emulsiones.py 1711.01576.pdf
 PYTHONPATH=. python reanalisis_emulsiones_inclinacion.py   # y reanalisis_kek_inclinacion.py, reanalisis_conjunto.py
+PYTHONPATH=. python estudio_giros.py                      # física del giro (~3 min)
 ```
 
 Estructura:

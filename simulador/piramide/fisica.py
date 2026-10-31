@@ -30,7 +30,11 @@ class Parametros:
     v_vacio: float = 1.0             # m/s
     metros_por_hombre: float = 0.5   # m de cuerda por persona (dos o más filas)
     holgura_trineos: float = 6.0     # m extra entre equipos consecutivos
-    t_giro_min: float = 5.0          # min por giro de 90° de un trineo cargado
+    t_giro_min: float = 5.0          # min por giro de 90° de un trineo cargado (técnica "parametrica")
+    tecnica_giro: str = "parametrica"  # "parametrica" | "pivote" | "poste" (ver giro.py)
+    mu_cuerda: float = 0.3           # rozamiento cuerda-poste (técnica "poste")
+    sobrecarga_giro_s: float = 60.0  # parar, calzar, tensar y arrancar (técnica "pivote")
+    largo_trineo: float = 2.5
     t_carga_min: float = 10.0        # min de carga + descarga por viaje
     t_colocar_min: float = 25.0      # min por bloque para colocarlo con palancas
     equipo_colocacion: int = 8
@@ -82,4 +86,6 @@ RANGOS: dict[str, tuple[float, float, float]] = {
     "fraccion_apoyo": (0.3, 0.4, 0.5),
     "distancia_cantera": (300.0, 450.0, 700.0),
     "volumen_bloque": (1.0, 1.13, 1.3),
+    "mu_cuerda": (0.2, 0.3, 0.4),
+    "sobrecarga_giro_s": (30.0, 60.0, 150.0),
 }

@@ -17,6 +17,7 @@ import numpy as np
 from . import geometria as g
 from .fisica import Parametros, fuerza_arrastre
 from .rampas import Modelo
+from .giro import Trineo, factor_cabrestante, ocupacion_con_poste, tiempo_parar_y_pivotar
 
 
 @dataclass
@@ -50,17 +51,31 @@ def simular(modelo: Modelo, p: Parametros, personas: float = 25000.0,
         pend_max = max(s for _, s in segs)
         F = fuerza_arrastre(p.masa_bloque, pend_max, p.mu)
         n_h = max(1, math.ceil(F / p.fuerza_hombre))
-        equipo_max = max(equipo_max, n_h)
         L_tot = sum(L for L, _ in segs)
         giros = modelo.giros(z)
-        t_sub = L_tot / p.v_cargado + giros * p.t_giro_min * 60 + p.t_carga_min * 60
+        # tiempo que cada giro ocupa la esquina y retraso que añade al viaje (giro.py)
+        if giros > 0 and p.tecnica_giro == "poste":
+            n_h = math.ceil(n_h * factor_cabrestante(p.mu_cuerda))
+            t_giro_s = ocupacion_con_poste(Trineo(p.masa_bloque, p.largo_trineo, p.mu),
+                                           getattr(modelo, "ancho", 4.0), p.v_cargado)
+            retraso_giro = 0.0
+        elif giros > 0 and p.tecnica_giro == "pivote":
+            t_giro_s = tiempo_parar_y_pivotar(Trineo(p.masa_bloque, p.largo_trineo, p.mu), n_h,
+                                              p.metros_por_hombre, p.v_vacio,
+                                              sobrecarga_s=p.sobrecarga_giro_s)
+            retraso_giro = t_giro_s
+        else:
+            t_giro_s = p.t_giro_min * 60
+            retraso_giro = t_giro_s
+        equipo_max = max(equipo_max, n_h)
+        t_sub = L_tot / p.v_cargado + giros * retraso_giro + p.t_carga_min * 60
         t_baj = L_tot / p.v_vacio
         ciclo = t_sub + t_baj                                        # s
         # (a) capacidad de carriles
         esp = n_h * p.metros_por_hombre + 4.0 + p.holgura_trineos
         q_carril = p.v_cargado / esp                                  # trineos/s
         if giros > 0:
-            q_carril = min(q_carril, 1.0 / (p.t_giro_min * 60))
+            q_carril = min(q_carril, 1.0 / t_giro_s)
         q_lanes = modelo.carriles(z) * q_carril * seg_h
         # métodos de palancas: cada columna sube un bloque por t_palanca
         elev = modelo.elevaciones(z, p)

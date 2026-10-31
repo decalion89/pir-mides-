@@ -8,7 +8,7 @@
 >
 > **Resultados**:
 > - Nuestra geometría reproduce la calibración de ScanPyramids.
-> - El Vacío está sobre el eje de la Gran Galería, a ~60–65 m de altura, con una sección parecida a la de la Galería.
+> - El Vacío está sobre el eje de la Gran Galería, a ~56–63 m de altura, con una sección del orden de la de la Galería: ~9–21 m² según el conjunto de datos.
 > - **Su inclinación no se puede fijar de forma robusta con los datos publicados**:
 >   - las emulsiones prefieren un Vacío horizontal o poco inclinado;
 >   - KEK prefiere uno inclinado, pero en una posición incompatible con la de las emulsiones;
@@ -35,8 +35,8 @@ Modelo: un corredor recto, con posición, longitud, sección e inclinación libr
 En cada panel de las emulsiones, la escala de la señal del Vacío se fija con la de la Gran Galería simulada del mismo panel, y así se conserva la información de amplitud. Los errores se reescalan con el χ²/ndf de cada conjunto de datos (3,9 para las emulsiones y 1,7 para KEK).
 
 - **Posición este-oeste** (emulsiones): **sobre el eje de la Gran Galería**, x = 7,1–7,5 m frente a 7,3 m.
-- **Altura** (emulsiones): centro a **~59–65 m**, es decir, 38–44 m sobre la Cámara de la Reina. Coincide con el "40–50 m" publicado.
-- **Sección**: un área de **~10–13 m²**, comparable a la de la Gran Galería (~13 m²), como dice el artículo. La proporción entre alto y ancho no queda determinada: hay ajustes igual de buenos con 8–11 × 1,4–2 m y con 2,5 × 4 m.
+- **Altura**: las emulsiones solas sitúan el centro a **~61–62,5 m**, unos 40 m sobre la Cámara de la Reina, lo que coincide con el "40–50 m" publicado. El ajuste conjunto con KEK lo baja a 56–59 m.
+- **Sección**: las emulsiones solas dan **~19–21 m²** (unos 10 m de alto por 2 m de ancho) y el ajuste conjunto con KEK **~9–11 m²**. Es del orden de la Gran Galería (~13 m²), como dice el artículo, pero el valor exacto depende del conjunto de datos. *(Corregido: una versión anterior decía 10–13 m², resumiendo ajustes hechos antes de corregir la extracción.)* La proporción entre alto y ancho no queda determinada: hay ajustes igual de buenos con 8–11 × 1,4–2 m y con 2,5 × 4 m.
 
 ### Inclinación: perfil de verosimilitud (σ con que se desfavorece cada ángulo frente al mejor ajuste)
 | Datos | 0° | 10° | 20° | 26° (paralelo a la Galería) | 35° |
@@ -85,7 +85,7 @@ Ninguna forma reduce la tensión. Por tanto, **no la causa la geometría del Vac
 ## 6. Conclusión
 - **Lo robusto**:
   - el Vacío existe;
-  - está sobre el eje de la Gran Galería, a ~60–65 m de altura;
+  - está sobre el eje de la Gran Galería, a ~56–63 m de altura (emulsiones solas: 61–62,5 m; conjunto: 56–59 m);
   - tiene una sección parecida a la de la Galería;
   - mide ≥ 30 m.
 

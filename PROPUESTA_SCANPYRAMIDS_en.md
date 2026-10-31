@@ -17,7 +17,7 @@ We built an open forward model of cosmic-ray muography in the Great Pyramid and 
    - a loose-fill zone.
 2. **Our independent reanalysis of your published figures agrees.** We digitized the 679 KEK points (Extended Data Fig. 4) and the Nagoya emulsion profiles (Extended Data Fig. 2).
    - Using the simulated Grand Gallery alone, our geometry recovers NE1 at +5.7 m and NE2 at −4.3 m from the Gallery axis. You published +5.8 m and −4.5 m.
-   - The void lies on the Gallery axis (±0.3 m), with its centre at ~60–65 m, and a cross-section of ~10–13 m².
+   - The void lies on the Gallery axis (±0.3 m), with its centre at ~56–63 m and a cross-section of ~9–21 m² (about 20 m² from the emulsions alone, about 10 m² in the joint fit with KEK).
    - Its inclination is **not** constrained robustly. The emulsions prefer horizontal or shallow; KEK prefers inclined; and under a single straight corridor the two sets are mutually inconsistent (Δχ² ≈ 70).
 3. **A detector of about 1 m² in the King's Chamber, mostly looking north and upward, separates all five hypotheses at ≥5σ in ≤2 months.** We tested this with a joint fit to the Queen's Chamber data and the new data, letting each rival hypothesis move ±3 m and rescale its cross-section ×0.75–1.25, and fitting normalization, gradient and spectral systematics freely. In blind tests with deliberately altered physics, the analysis identifies the true hypothesis in **96–98.5 %** of cases:
    - flux ±10 % and spectral index ±0.05;

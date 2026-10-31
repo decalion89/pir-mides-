@@ -239,3 +239,13 @@ def test_reproduce_la_correccion_de_spence_con_kochab_y_mizar():
     c = orient.curva_par(cat, i("Bet UMi"), i("Zet UMa"), anios)
     chi, dT, _ = orient.ajustar_par(anios, c, False)
     assert -130 < dT < -60          # Spence: Keops ~2467-2480 a. C., unos 100 años más tarde
+
+
+from piramide import luna  # noqa: E402
+
+
+def test_presupuesto_energetico_de_la_gran_piramide():
+    p = luna.gran_piramide()
+    E_GWh = p.energia_total_J() / luna.KWH / 1e6
+    assert 2.0 < E_GWh < 3.0
+    assert p.energia_arrastre_J() > 3 * p.energia_elevar_J()

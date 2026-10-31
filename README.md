@@ -41,7 +41,7 @@ Si el Vacío resultara ser una **galería de contrapeso**, sería la prueba más
 ### 6. Reanálisis independiente de los datos publicados en 2017 → [docs/11](docs/11-reanalisis-datos-2017.md)
 Extrajimos de la figura del artículo los **679 puntos reales de KEK** y los perfiles de las **emulsiones de Nagoya**, y ajustamos el Vacío con nuestro propio modelo:
 - **Validación**: nuestra geometría recupera las posiciones de los detectores publicadas (+5,7/−4,3 m frente a +5,8/−4,5 m).
-- **Lo robusto**: el Vacío está sobre el eje de la Gran Galería (±0,3 m), a ~60–65 m de altura, con una sección de ~10–13 m², comparable a la de la Galería.
+- **Lo robusto**: el Vacío está sobre el eje de la Gran Galería (±0,3 m), a ~56–63 m de altura, con una sección de ~9–21 m² según el conjunto de datos, comparable a la de la Galería.
 - **La inclinación no se puede fijar** con los datos públicos:
   - las emulsiones prefieren horizontal o poco inclinado;
   - KEK prefiere inclinado;
@@ -62,7 +62,12 @@ Recalculamos con precisión (catálogo de Yale, precesión IAU 2006) a qué estr
 - **El problema**: **15 pares de estrellas ajustan igual de bien**, con desfases de **−228 a +132 años**, y una tendencia lineal cualquiera ajusta igual. Kochab y Mizar quedan en el puesto 27 de 92.
 - **Conclusión**: la deriva apoya un método estelar, pero **las orientaciones no pueden fechar las pirámides**.
 
-### 9. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 9. De Giza a la Luna → [docs/16](docs/16-de-giza-a-la-luna.md)
+- **La energía**: construir la Gran Pirámide costó unos **2,5 GWh** de trabajo mecánico, lo que produce una central de 100 MW en ~25 horas. El **77 % se fue en rozamiento**.
+- **El cuello de botella**: el problema nunca fue la energía, sino el rozamiento, el flujo y la organización.
+- **La lección para la Luna**: núcleo basto y revestimiento fino, menos rozamiento antes que más potencia, y vías en paralelo.
+
+### 10. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -83,6 +88,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [13 — El límite de la información](docs/13-limite-de-informacion.md) | Cota de Cramér–Rao: qué pueden decir como máximo los datos de 2017 y la Cámara del Rey |
 | [14 — Los canales: ¿estrellas o proporciones?](docs/14-canales-estrellas-o-proporciones.md) | Astronomía de precisión y prueba contra el azar de la hipótesis estelar; patrón de pendientes n/11 |
 | [15 — ¿Cómo encontraron el norte?](docs/15-orientacion-al-norte.md) | 92 pares de estrellas contra las orientaciones medidas: la deriva es real, pero no sirve para fechar |
+| [16 — De Giza a la Luna](docs/16-de-giza-a-la-luna.md) | La Gran Pirámide costó ~2,5 GWh de trabajo mecánico (25 h de una central de 100 MW); lecciones para construir en la Luna |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |

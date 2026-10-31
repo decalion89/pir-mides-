@@ -57,9 +57,9 @@ Un análisis estéreo de los mapas 2D originales de las emulsiones NE1 + NE2 deb
 Cualquier medición nueva debería encontrar el centro del Vacío:
 - **en el plano vertical del eje de la Gran Galería**, a ±0,5 m;
 - a una altura de **~56–66 m**;
-- con una sección de **~10–13 m²**.
+- con una sección de **~9–21 m²** (las emulsiones solas dan ~20 m², el ajuste conjunto con KEK ~10 m²).
 
-**Qué la refutaría**: un centro desplazado más de 1,5 m al este o al oeste del eje, o una sección menor de 6 m².
+**Qué la refutaría**: un centro desplazado más de 1,5 m al este o al oeste del eje, o una sección menor de 5 m².
 
 ## P10 — Los canales siguen proporciones n/11, no las estrellas del reinado de Keops (doc. 14)
 Una medición precisa (±0,2°) del tramo alto, hoy sin medir, del canal norte de la Cámara de la Reina debería dar **39,29° ± 0,3°** (pendiente 9/11), y no 39,8–39,9° (Kochab culminando en 2589–2566 a. C.). El canal sur de la Reina, medido en toda su longitud con láser, debería dar 39,29° y no 38,9–39,0° (Sirio en el reinado).

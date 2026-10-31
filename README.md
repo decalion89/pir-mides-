@@ -42,7 +42,7 @@ Si el Vacío resultara ser una **galería de contrapeso**, sería la prueba más
 ### 6. Reanálisis independiente de los datos publicados en 2017 → [docs/11](docs/11-reanalisis-datos-2017.md)
 Extrajimos de la figura del artículo los **679 puntos reales de KEK** y los perfiles de las **emulsiones de Nagoya**, y ajustamos el Vacío con nuestro propio modelo:
 - **Validación**: nuestra geometría recupera las posiciones de los detectores publicadas (+5,7/−4,3 m frente a +5,8/−4,5 m).
-- **Lo robusto**: el Vacío está sobre el eje de la Gran Galería (±0,3 m), a ~56–63 m de altura, con una sección de ~9–21 m² según el conjunto de datos, comparable a la de la Galería.
+- **Lo robusto**: el Vacío está cerca del eje de la Gran Galería (las emulsiones lo sitúan a +0,2 m y KEK a ~1,7 m al este), a ~52–63 m de altura, con una sección de ~9–21 m² según el conjunto de datos, comparable a la de la Galería.
 - **La inclinación no se puede fijar** con los datos públicos:
   - las emulsiones prefieren horizontal o poco inclinado;
   - KEK prefiere inclinado;

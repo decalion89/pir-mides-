@@ -93,11 +93,16 @@ class Reanalisis:
         tx_pt = np.array([d["dx"][i] * CANAL / SEPARACION[d["det"][i]] for i in range(n)])
         self.tx = tx_pt
 
-    def razon(self, corredor: Corredor) -> np.ndarray:
-        c = corredor.caja()
+    def razon(self, corredor) -> np.ndarray:
+        """`corredor` puede ser un Corredor o una lista de Corredor/Caja (formas compuestas)."""
+        if isinstance(corredor, (list, tuple)):
+            cajas = [c.caja() if hasattr(c, "caja") else c for c in corredor]
+        else:
+            cajas = [corredor.caja()]
+        c = cajas[0]
         num = np.zeros(self.n)
         for o, dirs, idx, X, I0 in self.grupos:
-            L = c.longitud_en_rayos(o, dirs)
+            L = sum(cc.longitud_en_rayos(o, dirs) for cc in cajas)
             m = L > 0
             I = I0.copy()
             if np.any(m):

@@ -45,7 +45,7 @@ Extrajimos de la figura del artículo los **679 puntos reales de KEK** y los per
 - **La inclinación no se puede fijar** con los datos públicos:
   - las emulsiones prefieren horizontal o poco inclinado;
   - KEK prefiere inclinado;
-  - bajo un mismo corredor recto, los dos conjuntos son incompatibles (Δχ² ≈ 70).
+  - bajo un mismo corredor, recto o compuesto, los dos conjuntos son incompatibles (Δχ² ≈ 78). Ninguna forma lo arregla, así que es un sistemático y no la geometría.
 - **Un error nuestro, contado**: una primera versión daba "18° a 4–6σ" por un fallo de extracción, y lo detectamos y corregimos.
 
 Conclusión: los datos de 2017 no deciden la forma del Vacío. Hace falta medir desde otro punto.
@@ -70,6 +70,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [12 — La física de la esquina](docs/12-la-fisica-de-la-esquina.md) | Corrección de una conclusión y protocolo del experimento del trineo |
 | [ARTICULO.md](ARTICULO.md) | Borrador de preprint |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |
+| [PROPUESTA_EXPERIMENTO_TRINEO.md](PROPUESTA_EXPERIMENTO_TRINEO.md) | Propuesta para museos y universidades: medir cuánto tarda un trineo de 2,5 t en girar una esquina |
 | [FUENTES](docs/FUENTES.md) | Bibliografía |
 
 ## Reproducir

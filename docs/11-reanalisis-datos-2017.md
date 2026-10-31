@@ -71,6 +71,17 @@ Por tanto, **no damos por bueno el "4σ contra la horizontal" del ajuste conjunt
 
 Para resolverlo harían falta los datos originales o, mejor, una medición nueva desde otro ángulo.
 
+### 5b. ¿Explica la forma del Vacío la tensión? No.
+Probamos formas compuestas ajustadas a la vez a los dos conjuntos de datos (`simulador/reanalisis_formas.py`, `resultados/11_formas_conjuntas.json`):
+
+| Forma | χ² conjunto | Tensión (frente a la suma de ajustes separados, ≈ 729) |
+|---|---|---|
+| Corredor recto con inclinación libre | 807,0 | +78 |
+| Dos tramos (horizontal + inclinado) | 812,1 | +83 |
+| Dos corredores superpuestos | 806,8 | +78 |
+
+Ninguna forma reduce la tensión. Por tanto, **no la causa la geometría del Vacío**, sino un sistemático en alguno de los análisis. El candidato más probable es la normalización de KEK: sus datos están divididos por la simulación de ScanPyramids de las estructuras conocidas, no por la nuestra. También podría ser la posición o la orientación exacta de sus hodoscopios. Solo se puede resolver con los mapas originales: es la primera petición de [la propuesta técnica](../PROPUESTA_SCANPYRAMIDS_en.md).
+
 ## 6. Conclusión
 - **Lo robusto**:
   - el Vacío existe;

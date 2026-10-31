@@ -1,9 +1,9 @@
 # 14 — Los canales de la Gran Pirámide: ¿estrellas o proporciones?
 
 > **Resumen.** Recalculamos con astronomía de precisión a qué estrellas apuntaban los cuatro canales de la Gran Pirámide y en qué fecha. Usamos el catálogo de Yale con movimientos propios, la precesión IAU 2006 y la refracción. Encontramos tres cosas:
-> 1. **Las fechas de alineación no coinciden entre sí ni con el reinado de Keops.** Alnitak da 2497 ± 41 a. C. y Thuban 2338 ± 53 a. C., una diferencia de 2,4σ entre los dos canales mejor medidos. Thuban queda a 4,7σ del reinado (~2589–2566 a. C.).
-> 2. **La alineación simultánea con cuatro estrellas no es significativa.** Con la misma tolerancia, cuatro ángulos al azar la consiguen el 59 % de las veces.
-> 3. **Los cuatro ángulos encajan con pendientes n/11** (7/11, 9/11 y 11/11), el mismo denominador que la cara de la pirámide (14/11). Si ese denominador se fija de antemano a partir de la cara, la probabilidad de que sea casualidad es del 1,3 %. Si se busca el mejor entre 5 y 16, es del 16 %: sugerente, no demostrado.
+> 1. **Los dos canales de la Cámara del Rey no coinciden en la fecha.** Alnitak da 2497 ± 41 a. C. y Thuban 2338 ± 53 a. C. (o 3257 a. C.): una tensión de 2,4σ. Thuban queda además a 4,7σ del reinado de Keops (~2589–2566 a. C.). Esta tensión descansa en la incertidumbre de 0,3° adoptada para el canal norte. Sirio y Kochab sí son compatibles con el reinado, porque sus canales están mal medidos, y Alnilam encaja con el canal sur del Rey durante el reinado.
+> 2. **La alineación simultánea con cuatro estrellas brillantes no es especial.** Con estrellas de V ≤ 3,0, los ángulos reales **no** producen ninguna coincidencia de cuatro estrellas en una misma época, mientras que el 27 % de los conjuntos de ángulos al azar sí. Con V ≤ 3,7, la condición necesaria para incluir a Thuban, la consiguen el 59 % de los conjuntos al azar.
+> 3. **Las pendientes n/11 no están demostradas.** Los ángulos encajan con 7/11, 9/11 y 11/11, pero la comparación justa, buscando también otros denominadores, da **p = 16 %**: no es significativo. El 1,3 % solo vale si el 11 se hubiera fijado de antemano. Además, 9/11 corresponde a un seked de 8 4/9 palmos, un valor poco natural para los egipcios. El ajuste también depende de la incertidumbre adoptada para el canal sur de la Reina: con ±0,2° falla, y la hipótesis de Sirio también. Y el ángulo del canal norte de la Reina es una estimación.
 >
 > Proponemos una medición que distingue entre estrellas y proporciones en el tramo no medido del canal norte de la Cámara de la Reina.
 
@@ -70,8 +70,8 @@ En términos egipcios, serían sekeds de 7 palmos, 11 palmos y 8,56 palmos. La p
 - **16 %** buscando el mejor denominador entre 5 y 16. El 11 y el 14 encajan los dos.
 
 ## 6. Veredicto honesto
-- **Lo que queda debilitado**: la idea de que los canales se orientaron con precisión hacia cuatro estrellas concretas en la época de Keops. Las fechas no cuadran, y la coincidencia es la que cabe esperar por azar.
-- **Lo que gana peso, sin estar demostrado**: que los ángulos salen del sistema de proporciones de la obra (n/11). Eso no excluye un simbolismo general del cielo del norte y del sur.
+- **Lo que queda debilitado**: la idea de que los cuatro canales se orientaron con precisión hacia cuatro estrellas concretas a la vez. La coincidencia no es especial frente al azar, y los dos canales del Rey dan fechas en tensión.
+- **Lo que no está demostrado**: que los ángulos salgan del sistema n/11 (p = 16 % con la corrección justa). Es una hipótesis que se puede comprobar, no un resultado. Ninguna de las dos excluye un simbolismo general del cielo.
 - **Sigue abierta** la función de los canales y de las "puertas" de la Cámara de la Reina.
 
 ## 7. La medición que lo decide (P10)

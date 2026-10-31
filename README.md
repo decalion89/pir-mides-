@@ -11,7 +11,8 @@ Estado de la evidencia: octubre de 2026.
 ### 1. Una sola rampa con esquinas va justa; los sistemas en paralelo dejan margen → [docs/07](docs/07-resultados-construccion.md) y [docs/12](docs/12-la-fisica-de-la-esquina.md)
 Simulamos hilada a hilada 10 métodos de elevación en cientos de escenarios con parámetros inciertos. El tiempo que un trineo cargado tarda en girar cada esquina sale de la física (doc. 12):
 - **Una sola rampa con esquinas** (zigzag, espiral o la rampa interna de Houdin): mediana de **20–23 años**. Acaba dentro del reinado de Keops (~27 años) en el **74–85 %** de los escenarios, pero en ≤ 20 años solo en el 29–49 %. Es posible, pero ocuparía casi todo el reinado.
-- **Sistemas en paralelo** (varias rampas, rampa recta y luego zigzag, o rampa recta y luego palancas): **96–100 %** viables, con ~5000 personas.
+- **Sistemas en paralelo** (varias rampas, rampa recta y luego zigzag, o rampa recta y luego palancas): viables en el **100 %** de los escenarios en ≤ 27 años (96–100 % en ≤ 20 años), con ~5000 personas.
+- El tiempo de giro es una **estimación** (el pivote dura segundos; el resto es una suposición sobre parar y arrancar): hay que **medirlo**.
 - **Rampa recta hasta la cima**: necesitaría más volumen que la propia pirámide.
 - **La mano de obra no era el problema; el flujo, sí.**
 - ⚠️ **Corrección**: una versión anterior afirmaba que una sola rampa con esquinas era imposible (0 %). Esa conclusión venía de suponer giros de 2–15 min. La física da 0,3–2,8 min, y la retiramos.
@@ -52,15 +53,18 @@ Conclusión: las figuras publicadas no deciden la forma del Vacío. La cota de C
 
 ### 7. Los canales de la Gran Pirámide → [docs/14](docs/14-canales-estrellas-o-proporciones.md)
 Recalculamos con precisión (catálogo de Yale, precesión IAU 2006) a qué estrellas apuntaban los cuatro canales:
-- **Las fechas no cuadran**: Alnitak da 2497 ± 41 a. C. y Thuban 2338 ± 53 a. C., ninguna en el reinado de Keops.
-- **La alineación con cuatro estrellas no es significativa**: cuatro ángulos al azar la logran el 59 % de las veces.
-- **Los ángulos encajan con pendientes n/11** (7/11, 9/11 y 11/11), como la cara de la pirámide (14/11). La probabilidad de que sea casualidad es del 1,3 % si el 11 se fija de antemano y del 16 % si se busca el mejor denominador.
+- **Los dos canales del Rey dan fechas en tensión**: Alnitak 2497 ± 41 a. C. y Thuban 2338 ± 53 a. C. (2,4σ).
+- **La alineación con cuatro estrellas no es especial**: con estrellas de V ≤ 3,0, los ángulos reales no la producen, y el 27 % de los ángulos al azar sí.
+- **Las pendientes n/11** (7/11, 9/11, 11/11) encajan, pero con la corrección justa p = 16 %: **no es significativo**.
 - **Medición que lo decide**: el tramo alto del canal norte de la Cámara de la Reina (P10).
 
-### 8. La orientación al norte → [docs/15](docs/15-orientacion-al-norte.md)
-- **La propuesta**: Spence (*Nature* 2000) atribuyó la deriva de los errores de orientación a las estrellas Kochab y Mizar y propuso retrasar la cronología egipcia unos 100 años. Reproducimos su resultado.
-- **El problema**: **15 pares de estrellas ajustan igual de bien**, con desfases de **−228 a +132 años**, y una tendencia lineal cualquiera ajusta igual. Kochab y Mizar quedan en el puesto 27 de 92.
-- **Conclusión**: la deriva apoya un método estelar, pero **las orientaciones no pueden fechar las pirámides**.
+### 8. La orientación al norte → [docs/15](docs/15-orientacion-al-norte.md) (v2, revisada)
+Con los datos de la tabla de Spence (2000) y solo estrellas visibles:
+- **La deriva es real**.
+- **Sin el "cambio de configuración" de Kefrén, nada encaja**.
+- **Con ese cambio**, Kochab + Mizar es el mejor par dentro de una cronología plausible y reproduce la fecha de Spence (Keops hacia el 2478 a. C.). Pero una recta genérica ajusta igual, así que es compatible, no demostrado.
+- **Unas no encaja**: el método habría cambiado en la V dinastía.
+- *Una versión anterior, con fechas erróneas y estrellas bajo el horizonte, decía lo contrario. La hemos corregido.*
 
 ### 9. De Giza a la Luna → [docs/16](docs/16-de-giza-a-la-luna.md)
 - **La energía**: construir la Gran Pirámide costó unos **2,5 GWh** de trabajo mecánico, lo que produce una central de 100 MW en ~25 horas. El **77 % se fue en rozamiento**.

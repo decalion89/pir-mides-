@@ -237,8 +237,8 @@ def test_reproduce_la_correccion_de_spence_con_kochab_y_mizar():
     i = lambda s: [j for j, n in enumerate(cat.nombre) if s in n][0]
     anios = np.arange(-3000, -1999, 5.0)
     c = orient.curva_par(cat, i("Bet UMi"), i("Zet UMa"), anios)
-    chi, dT, _ = orient.ajustar_par(anios, c, False)
-    assert -130 < dT < -60          # Spence: Keops ~2467-2480 a. C., unos 100 años más tarde
+    chi, dT, _ = orient.ajustar_par(anios, c, True)
+    assert -82 < dT < -66           # Spence: Keops orientada en 2480 ± 5 a. C. (74 años tras von Beckerath)
 
 
 from piramide import luna  # noqa: E402

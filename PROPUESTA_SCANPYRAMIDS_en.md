@@ -28,14 +28,14 @@ We built an open forward model of cosmic-ray muography in the Great Pyramid and 
 4. **What is at stake.** The predicted signature of each hypothesis is registered in advance (see `PREDICCIONES.md`, P1–P8, dated in git). One case would matter far beyond Egyptology: if the void is a **counterweight gallery** serving the granite roof beams (25–80 t), it would be the oldest known large-scale counterweight lifting system. That would predate the earliest attested shaduf (Akkadian seal, about 2200 BCE) by about three centuries.
 
 ## 2. What we ask
-0. **A stereo reanalysis of the full 2017 emulsion maps (NE1 + NE2)**, at no cost. Our Cramér–Rao calculation (`docs/13`) shows that, if the void were exactly a straight corridor, the full stereo data could fix its inclination to ±2.5–3.3°. In blind tests where the shape is allowed to differ, they would identify the right hypothesis ~92 % of the time, but only at ~3σ. That is a strong hint, available before any new measurement.
+0. **A stereo reanalysis of the full 2017 emulsion maps (NE1 + NE2)**, at no cost. Our Cramér–Rao calculation (`docs/13`) is a lower bound: no analysis of the full stereo data can measure the inclination better than ±2.5–3.3°. The bound is local and model-dependent, and reaching it would require an exact model. In blind tests where the shape is allowed to differ, they would identify the right hypothesis ~92 % of the time, but only at ~3σ. That is a strong hint, available before any new measurement.
 1. **Access to the full 2017 angular maps** (data and simulation) from the Queen's Chamber detectors. With them we could resolve the KEK–emulsion tension we find in the published figures and refine the predicted exposure times.
 2. **Consideration of a measurement from the King's Chamber**, the most accessible decisive position, and, if possible, from **Campbell's Chamber**. Our model suggests:
 
 | Position | Detector | Exposure for ≥5σ between all hypotheses (realistic systematics) |
 |---|---|---|
 | King's Chamber, NE corner, axis toward (x=7.3, y=17, z=63) m | ~1 m², resolution ≲20 mrad | 2–8 weeks (factor ~4 model uncertainty) |
-| Campbell's Chamber (top relieving chamber) | ~1 m² | ~1 week if the void is inclined. It sees a horizontal void almost edge-on, near the horizon, so it needs reliable near-horizontal muography (King's Chamber is the robust choice) |
+| Campbell's Chamber (top relieving chamber) | ~1 m² | ~1 week if the void is inclined. A horizontal void lies at the detector's own height, in directions removed by a 70° zenith cut, so this position adds nothing in that case (King's Chamber is the robust choice) |
 
 3. **A pre-registered decision rule.** We propose fixing the analysis (hypothesis set, nuisance model, decision thresholds) **before** unblinding. Our condition P7 lists what would be required before claiming the counterweight interpretation:
    - ≥5σ against a plain inclined corridor;

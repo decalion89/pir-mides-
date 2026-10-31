@@ -1,6 +1,12 @@
 # 13 — El límite de la información: qué pueden decir los datos de 2017 y qué no
 
-> **Resumen.** Calculamos la **cota de Cramér–Rao**: la mejor precisión que **cualquier** análisis puede alcanzar con un experimento dado. Sale que los datos completos de 2017, con las dos emulsiones de Nagoya en estéreo, contienen información para fijar la inclinación del Vacío a ±2,5–3,3° **si su forma fuera exactamente un corredor recto**.
+> **Resumen.** Calculamos la **cota de Cramér–Rao**: un **límite inferior** al error de cualquier estimador insesgado. Dice que con los datos completos de 2017 (las dos emulsiones de Nagoya, en estéreo) **ningún análisis podría medir la inclinación del Vacío con un error menor de ±2,5–3,3°**. Que se alcance ese límite no está garantizado: haría falta que el modelo fuera exacto.
+>
+> La cota es **local y depende del modelo**:
+> - se calcula para un corredor recto de referencia (z = 63 m, 6 × 2 m), que no es el mejor ajuste del reanálisis;
+> - la posición este-oeste y el contraste de densidad están fijos;
+> - los ruidos llevan restricciones gaussianas;
+> - el sistemático se supone independiente, de un 2 % por bin, cuando los datos reales muestran χ²/ndf = 3,9 (emulsiones) y 1,7 (KEK).
 >
 > Cuando se permite que la forma real difiera (prueba a ciegas con 225 variantes por hipótesis), esos datos eligen la hipótesis correcta el **92 %** de las veces, pero con un margen típico de solo **~3σ**. Con 60 días en la Cámara del Rey, el acierto sube al 98,5 % y el margen a **4,3–9σ**.
 >
@@ -39,7 +45,7 @@ La cota de Cramér–Rao es optimista porque supone que conocemos la familia exa
 
 ## 3. Lo que corrige y lo que añade
 - **Corrige** nuestras afirmaciones de los docs 08 y 09, según las cuales desde la Cámara de la Reina era "casi imposible" decidir. Allí modelamos **un solo** detector en la Cámara de la Reina. Con la configuración estéreo real de 2017, los datos completos sí apuntarían a la hipótesis correcta en ~9 de cada 10 casos, aunque sin margen suficiente para afirmarlo.
-- **Corrige** la recomendación sobre la Cámara de Campbell. Desde ella, un Vacío horizontal se ve casi en horizontal, y con el corte de cenit de 70° no aporta información. **La Cámara del Rey es el puesto robusto.**
+- **Corrige** la recomendación sobre la Cámara de Campbell. Desde ella, un Vacío horizontal queda a la misma altura que el detector, en direcciones que el corte de cenit de 70° elimina: **no aporta ninguna información** en ese caso. La cota con Campbell es idéntica a la de 2017 sola. **La Cámara del Rey es el puesto robusto.**
 - **Añade un paso previo y gratuito**: un análisis estéreo completo de los mapas originales de 2017 (NE1 + NE2), que solo ScanPyramids puede hacer porque solo ellos tienen los datos.
 
 ## 4. Por qué no coincide con nuestro reanálisis de las figuras (doc. 11)

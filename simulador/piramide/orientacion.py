@@ -19,19 +19,28 @@ import numpy as np
 
 from . import astronomia as astro
 
-# Spence (2000), recogido en Magli, arXiv:physics/0407108. Minutos de arco, + = este.
+# Spence (2000), tabla 1: error del lado oeste (′, + = este) y fecha de acceso al trono según
+# von Beckerath (cifras bajas), con el reinado de Esnofru según Stadelmann. Spence supone que la
+# orientación se hizo en el año 2 del reinado: aquí se restan 2 años a la fecha a. C. El error de
+# fecha es el margen de su tabla, simetrizado.
 PIRAMIDES = [
-    # nombre, error ('), sigma ('), año de inicio aproximado (a. C., cronología convencional), sigma año
-    ("Meidum", -20.0, 1.0, 2600, 15),
-    ("Acodada", -17.3, 0.2, 2595, 10),
-    ("Roja", -8.7, 0.2, 2585, 10),
-    ("Keops", -3.4, 0.2, 2585, 5),
-    ("Kefrén", -6.0, 0.2, 2555, 5),
-    ("Micerino", 12.4, 1.0, 2530, 5),
+    # nombre, error ('), sigma ('), año a. C. de la orientación, sigma año
+    ("Meidum", -20.6, 1.0, 2598, 10),
+    ("Acodada", -17.3, 0.2, 2583, 7),
+    ("Roja", -8.7, 0.2, 2572, 6),
+    ("Keops", -3.4, 0.2, 2552, 2),
+    ("Kefrén", -6.0, 0.2, 2520, 2),
+    ("Micerino", 12.4, 1.0, 2487, 3),
 ]
-# Nota sobre las fechas: Esnofru reinó ~2613-2589, Keops ~2589-2566, Kefrén ~2558-2532 y
-# Micerino ~2532-2503 a. C. (Shaw 2000). Lo que importa es el orden relativo y los intervalos; el
-# desfase absoluto ΔT se ajusta.
+# Pirámides de la V dinastía en la misma tabla (Spence: margen nominal de 10′)
+PIRAMIDES_V = [
+    ("Sahure", -23.0, 10.0, 2444, 15),
+    ("Neferirkare", 30.0, 10.0, 2431, 16),
+    ("Unas", 17.1, 1.0, 2315, 20),
+]
+# Spence obtiene Keops orientada en 2480 ± 5 a. C.: un desfase de −72 a −74 años respecto de esta
+# tabla (fechas 74 años más recientes que las de von Beckerath).
+ALTURA_MIN = 5.0     # grados: ambas estrellas deben verse por encima del horizonte
 
 LAT = math.radians(astro.LAT_GIZA)
 
@@ -73,6 +82,8 @@ def error_alineacion(raA, decA, raB, decB, n: int = 7200):
         az = azA[i] + f * np.angle(np.exp(1j * (azA[j] - azA[i])))
         if abs(az) > math.radians(3):
             continue
+        if min(altA[i], altB[i]) < math.radians(ALTURA_MIN):
+            continue                          # una de las dos estrellas no se ve
         clave = "A_arriba" if altA[i] > altB[i] else "B_arriba"
         out[clave] = math.degrees(az) * 60
     return out
@@ -90,7 +101,7 @@ def curva_par(cat: astro.Catalogo, iA: int, iB: int, anios: np.ndarray) -> dict:
 
 
 def ajustar_par(anios: np.ndarray, curvas: dict, permitir_cambio: bool = False,
-                desfases=np.arange(-250, 251, 2.0)):
+                desfases=np.arange(-500, 501, 2.0), piramides=None):
     """Mejor desfase cronológico ΔT (años) y χ² para las pirámides de PIRAMIDES.
 
     Modelo: error_i = curva(año_i − ΔT). Con `permitir_cambio`, cada pirámide puede usar
@@ -102,7 +113,7 @@ def ajustar_par(anios: np.ndarray, curvas: dict, permitir_cambio: bool = False,
         chi = 0.0
         conf = []
         valido = True
-        for (nom, e, s, anio_bc, sa) in PIRAMIDES:
+        for (nom, e, s, anio_bc, sa) in (piramides or PIRAMIDES):
             t = (1 - anio_bc) - dT                   # año astronómico de la orientación
             opciones = ["A_arriba", "B_arriba"] if permitir_cambio else [None]
             mejores = []
@@ -131,13 +142,13 @@ def ajustar_par(anios: np.ndarray, curvas: dict, permitir_cambio: bool = False,
             for k in ("A_arriba", "B_arriba"):
                 c = curvas[k]
                 tot = 0.0
-                for (nom, e, s, anio_bc, sa) in PIRAMIDES:
+                for (nom, e, s, anio_bc, sa) in (piramides or PIRAMIDES):
                     t = (1 - anio_bc) - dT
                     m = np.interp(t, anios, c, left=np.nan, right=np.nan)
                     pend = np.interp(t + 5, anios, c) - np.interp(t - 5, anios, c)
                     tot += (e - m) ** 2 / (s ** 2 + (pend / 10 * sa) ** 2)
                 if np.isfinite(tot) and tot < chi:
-                    chi, conf = tot, [k] * len(PIRAMIDES)
+                    chi, conf = tot, [k] * len(piramides or PIRAMIDES)
         if valido and chi < mejor[0]:
             mejor = (chi, dT, conf)
     return mejor

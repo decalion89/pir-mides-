@@ -1,6 +1,8 @@
 # 12 — La física de la esquina: una conclusión que tuvimos que corregir
 
-> **Resumen.** Nuestra conclusión más fuerte sobre la construcción era que *"ninguna rampa de un solo carril con esquinas termina a tiempo"*. Descansaba en una suposición que no habíamos comprobado: que girar un trineo en una esquina cuesta 2–15 minutos, con 5 como valor más probable. Al calcularlo desde la física, el giro cuesta **0,8–2,8 min** si se para y pivota, o **0,3 min** de ocupación de la esquina si se usa un **poste de reenvío**. En este segundo caso el equipo tiene que ser 1,4–1,9 veces mayor.
+> **Resumen.** Nuestra conclusión más fuerte sobre la construcción era que *"ninguna rampa de un solo carril con esquinas termina a tiempo"*. Descansaba en una suposición que no habíamos comprobado: que girar un trineo en una esquina cuesta 2–15 minutos, con 5 como valor más probable. Una **estimación** mecánica da **0,8–2,8 min** si se para y pivota, o **0,3 min** de ocupación de la esquina si se usa un **poste de reenvío**; en este segundo caso el equipo tiene que ser 1,4–1,9 veces mayor.
+>
+> Aviso: el pivote en sí dura unos 8 s. Casi todo el tiempo de la técnica A sale de una **suposición** sobre lo que se tarda en parar, calzar, tensar y arrancar (30–150 s). Por eso hace falta medirlo.
 >
 > Con esos valores, **una sola rampa con esquinas es posible, pero justa**: ocuparía casi todo el reinado de Keops. Los sistemas en paralelo siguen dejando años de margen. Retiramos la afirmación anterior.
 
@@ -16,7 +18,7 @@ Archivos: [`simulador/piramide/giro.py`](../simulador/piramide/giro.py), [`simul
 
 **B. Poste de reenvío.**
 - Un poste fijo en la esquina interior desvía la cuerda y el trineo avanza sin detenerse, guiado por el bordillo.
-- Es la técnica que sugieren los **agujeros de poste de la rampa de Hatnub**, fechada en el reinado de Keops.
+- Los **agujeros de poste de la rampa de Hatnub**, de la época de Keops, demuestran que se tiraba con cuerdas apoyadas en postes, aunque en una rampa **recta**: no hay pruebas de postes en esquinas. La técnica B es una extrapolación.
 - El precio es el rozamiento de la cuerda contra el poste (ecuación del cabrestante): la fuerza se multiplica por e^{μ_c·π/2}, es decir **×1,4–1,9** con μ_c = 0,2–0,4.
 - Hacen falta equipos mayores, y los trineos tienen que ir más separados.
 - La esquina solo queda ocupada lo que el trineo tarda en recorrerla: **~0,3 min**.

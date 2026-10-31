@@ -55,24 +55,16 @@ Un análisis estéreo de los mapas 2D originales de las emulsiones NE1 + NE2 deb
 
 ## P8 — Posición del Gran Vacío según los datos publicados (reanálisis, docs/11)
 Cualquier medición nueva debería encontrar el centro del Vacío:
-- **en el plano vertical del eje de la Gran Galería**, a ±0,5 m;
-- a una altura de **~56–66 m**;
+- **cerca del plano vertical del eje de la Gran Galería**: las emulsiones lo sitúan a +0,2–0,3 m y KEK, que tiene un sistemático sin resolver, a ~1,7 m al este. Por eso el margen es de ±2 m (corregido el 31/10/2026; antes decía ±0,5 m);
+- a una altura de **~52–63 m** (emulsiones 61–62,5 m; conjunto 56–59 m; KEK sola 52–54 m);
 - con una sección de **~9–21 m²** (las emulsiones solas dan ~20 m², el ajuste conjunto con KEK ~10 m²).
 
-**Qué la refutaría**: un centro desplazado más de 1,5 m al este o al oeste del eje, o una sección menor de 5 m².
+**Qué la refutaría**: un centro desplazado más de 3 m al este o al oeste del eje, o una sección menor de 5 m².
 
 ## P10 — Los canales siguen proporciones n/11, no las estrellas del reinado de Keops (doc. 14)
 Una medición precisa (±0,2°) del tramo alto, hoy sin medir, del canal norte de la Cámara de la Reina debería dar **39,29° ± 0,3°** (pendiente 9/11), y no 39,8–39,9° (Kochab culminando en 2589–2566 a. C.). El canal sur de la Reina, medido en toda su longitud con láser, debería dar 39,29° y no 38,9–39,0° (Sirio en el reinado).
 
 **Qué la refutaría**: ángulos de 39,8–39,9° (norte) y 38,9–39,0° (sur) en ambos canales a la vez. Eso apoyaría la orientación estelar en la época de Keops.
 
-## P11 — La deriva de orientación continúa en la V dinastía, y no sirve para fechar (doc. 15)
-Si la práctica de orientación siguió igual, mediciones precisas de los ejes de las pirámides de la V dinastía deberían dar errores hacia el este de:
-- Userkaf: **+23′ a +31′**;
-- Sahure: **+25′ a +34′**;
-- Neferirkare: **+29′ a +40′**;
-- Niuserre: **+38′ a +54′**.
-
-Además, **ningún par de estrellas podrá preferirse por encima de Δχ² ≈ 2** con las orientaciones solas. La datación astronómica de las pirámides requiere identificar las estrellas por otra vía.
-
-**Qué la refutaría**: errores de orientación cercanos a 0′ o negativos en esas pirámides. Indicarían un cambio de método, por ejemplo el paso al Sol.
+## P11 — RETIRADA (31/10/2026, revisión independiente)
+> La versión original "predecía" errores de orientación de +23′ a +54′ para las pirámides de la V dinastía. Esos valores **ya estaban publicados** en la tabla 1 de Spence (2000): Sahure −23′ ± 10, Neferirkare +30′ ± 10, Unas +17,1′. No encajan con aquella extrapolación lineal, así que no era una predicción y además era errónea. Ver docs/15 (v2): con el par de Spence, Sahure y Neferirkare encajan y Unas no.

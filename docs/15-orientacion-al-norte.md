@@ -1,69 +1,68 @@
-# 15 — ¿Cómo encontraron el norte? Y por qué las estrellas no pueden fechar las pirámides
+# 15 — ¿Cómo encontraron el norte? (versión 2, revisada)
 
-> **Resumen.** Las pirámides de la IV dinastía están orientadas al norte con errores de solo unos minutos de arco, y esos errores **derivan con el tiempo**: de −20′ en Meidum a +12,4′ en Micerino. Spence (*Nature* 2000) lo atribuyó al "tránsito simultáneo" de Kochab y Mizar, y dedujo que la cronología convencional debía retrasarse ~100 años.
+> ⚠️ **Esta versión sustituye a la anterior.** Una revisión independiente encontró dos errores en la primera:
+> 1. usamos fechas comprimidas para las pirámides de Esnofru (la Roja, en el mismo año que Keops);
+> 2. no exigimos que las estrellas fueran **visibles**: muchos pares "equivalentes" necesitaban una estrella bajo el horizonte.
 >
-> Reproducimos su resultado (−92 a −102 años) y después ajustamos **todos los pares** de estrellas brillantes circumpolares, 92 en total:
-> - **15 pares ajustan igual de bien** (Δχ² < 2,3);
-> - **cada uno implica un desfase de cronología distinto, de −228 a +132 años**;
-> - una simple tendencia lineal ajusta igual de bien que cualquier par;
-> - Kochab–Mizar queda en el puesto 27.
+> Con los datos de la tabla 1 de Spence (2000) y solo alineaciones observables, la conclusión cambia.
+
+> **Resumen (v2).** Las orientaciones de la IV dinastía **derivan con el tiempo**: χ² = 3320 sin deriva.
+> - **Sin cambio de configuración**, ningún par de estrellas ni ninguna recta las explica: χ² ≈ 199 con 6 pirámides, por culpa de Kefrén.
+> - **Con la regla de Spence**, que permite a Kefrén usar la configuración opuesta, el mejor par dentro de una cronología plausible (±100 años) es **Kochab + Mizar**: χ² = 12,3, con un desfase de **−74 años**, el mismo que publicó Spence. El siguiente par plausible queda a Δχ² ≈ 10.
+> - **Pero** una tendencia lineal genérica con Kefrén reflejado ajusta igual (χ² = 11,4), y otro par (η UMa + Kochab) ajusta igual con un desfase de +472 años, que el radiocarbono excluye.
 >
-> **Conclusión**: la deriva apunta a un método estelar, pero **los datos no identifican las estrellas ni pueden fechar las pirámides**. La corrección de la cronología egipcia propuesta a partir de estas orientaciones no está justificada.
+> **Conclusión**: los datos son **compatibles** con el método y la fecha de Spence, pero no la **demuestran**. La datación depende de aceptar la regla de cambio de configuración y la ventana cronológica.
 
 Archivos:
 - código: [`simulador/piramide/orientacion.py`](../simulador/piramide/orientacion.py), [`simulador/estudio_orientacion.py`](../simulador/estudio_orientacion.py);
 - resultados: [`resultados/17_orientacion_pares.json`](../resultados/17_orientacion_pares.json).
 
-## 1. Datos
-Errores de orientación de Spence (2000), recogidos en Magli (arXiv:physics/0407108). Positivo es hacia el este.
+## 1. Datos (Spence 2000, tabla 1)
+Error del lado oeste (positivo es hacia el este). Fecha de acceso al trono según von Beckerath, con Esnofru según Stadelmann. Se supone que la orientación se hizo en el año 2 del reinado.
 
-| Pirámide | Error | Inicio aproximado (cronología convencional) |
-|---|---|---|
-| Meidum | −20′ ± 1 | ~2600 a. C. |
-| Acodada | −17,3′ ± 0,2 | ~2595 |
-| Roja | −8,7′ ± 0,2 | ~2585 |
-| Keops | −3,4′ ± 0,2 | ~2585 |
-| Kefrén | −6,0′ ± 0,2 | ~2555 |
-| Micerino | +12,4′ ± 1 | ~2530 |
+| Pirámide | Error | Fecha de la orientación | Años antes (+) o después (−) de Keops |
+|---|---|---|---|
+| Meidum | −20,6′ ± 1,0 | 2598 a. C. | +46 |
+| Acodada | −17,3′ ± 0,2 | 2583 | +31 |
+| Roja | −8,7′ ± 0,2 | 2572 | +20 |
+| Keops | −3,4′ ± 0,2 | 2552 | 0 |
+| Kefrén | −6,0′ ± 0,2 | 2520 | −32 |
+| Micerino | +12,4′ ± 1,0 | 2487 | −65 |
+| Sahure | −23′ ± 10 | 2444 | −108 |
+| Neferirkare | +30′ ± 10 | 2431 | −121 |
+| Unas | +17,1′ | 2315 | −237 |
 
-## 2. Modelo
-Para cada par de estrellas (A, B) y cada año:
-- calculamos el instante en que A y B tienen el mismo acimut cerca del norte, es decir, cuando una plomada las cubre a la vez;
-- ese acimut común es el error de orientación;
-- cada día hay dos configuraciones, A encima o B encima, que dan errores de signo opuesto.
+## 2. Método
+Para cada par de estrellas (V ≤ 3,5) se calcula el acimut en que **las dos comparten la plomada cerca del norte**, con **ambas al menos a 5° sobre el horizonte**, y cómo cambia con la precesión (IAU 2006) y los movimientos propios. Después se ajusta un desfase de cronología ΔT entre −500 y +500 años, descartando los ajustes que tocan el borde. La incertidumbre de cada fecha se propaga a través de la pendiente de la curva.
 
-Se ajusta un desfase de cronología ΔT, propagando la incertidumbre de la fecha de cada pirámide a través de la pendiente de la curva. El ajuste se hace con dos reglas:
-- la misma configuración para todas las pirámides;
-- o permitiendo que cada pirámide use la configuración que mejor encaje, como hizo Spence para explicar Kefrén.
+En total, 219 pares tienen alineaciones observables cerca del norte.
 
-**Validación**: con Kochab–Mizar obtenemos ΔT = −92 a −102 años, la misma corrección que publicó Spence (Keops hacia 2467–2480 a. C.).
+## 3. Resultados (6 pirámides de la IV dinastía)
+| Modelo | χ² | ΔT | Comentario |
+|---|---|---|---|
+| Sin deriva (constante) | 3320 | — | Descartado: la deriva es real |
+| Recta, misma configuración | 199,2 | — | Kefrén no encaja |
+| Cualquier par, misma configuración | ≥ 199,2 | — | Ningún par lo arregla |
+| η UMa + Kochab, con cambio | 11,8 | +472 | Keops hacia el 3020 a. C.: excluido por el radiocarbono |
+| **Kochab + Mizar, con cambio (Spence)** | **12,3** | **−74** | **Keops orientada hacia el 2478 a. C., como Spence** |
+| ε UMa + Kochab, con cambio | 17,2 | −462 | Implausible |
+| β UMa + η Dra, con cambio | 22,2 | −2 | El siguiente con cronología plausible: Δχ² ≈ 10 peor |
+| Recta con Kefrén reflejado | 11,4 | — | Igual de buena que Kochab + Mizar |
 
-## 3. Resultados
-| Modelo | χ² (6 pirámides) | Desfase de cronología |
-|---|---|---|
-| Mejor par (ψ UMa + γ UMa) | 28,1 | +76 años |
-| Phecda + Megrez (Belmonte 2001) | 28,1 | −12 años |
-| ζ Dra + δ Cyg | 28,4 | −228 años |
-| Kochab + Mizar (Spence 2000) | 39,1 (puesto 27 de 92) | −92 años |
-| Tendencia lineal cualquiera | 25,9 | — |
-| Constante, sin deriva | 3306 | — |
+## 4. La V dinastía como prueba (retrodicción, no predicción)
+Con Kochab + Mizar (ΔT = −74), el modelo da:
 
-Con cambio de configuración permitido, 22 pares quedan a Δχ² < 2,3 del mejor, con ΔT entre −238 y +250 años. La tendencia lineal, con Kefrén reflejado, da χ² = 8,6.
+| Pirámide | Modelo | Medido | ¿Encaja? |
+|---|---|---|---|
+| Sahure | ±29′ | −23′ ± 10 | Sí, con la configuración opuesta, como dijo Spence |
+| Neferirkare | ±33′ | +30′ ± 10 | Sí |
+| Unas | ±68′ | +17,1′ | **No** |
 
-## 4. Interpretación
-1. **La deriva es real y fuerte**: χ² = 3306 sin deriva frente a ~26 con ella. Un método solar como el del equinoccio (Dash) no produce esa deriva secular, así que esto apoya el uso de estrellas circumpolares. También cabe un método solar con un sesgo que cambiara con la práctica de cada generación de constructores, pero no hay pruebas de ello.
-2. **Las estrellas concretas no se pueden identificar**: cualquier par circumpolar genera una deriva casi lineal de ~0,3–0,5′ por año en esa época, y el punto de cruce depende del par.
-3. **No se puede fechar con este método**: el desfase ΔT abarca más de 350 años según el par elegido. Para fechar haría falta saber, por otra vía, qué estrellas usaron; por ejemplo, un texto.
-4. **Kefrén sigue siendo una anomalía**: hace falta una configuración opuesta o una medición revisada.
+Si el método fue el mismo, **había cambiado hacia la época de Unas**, unos 240 años después de Keops.
 
-## 5. Predicción comprobable (P11)
-Si la deriva continuó en la V dinastía con la misma práctica, las pirámides siguientes deberían tener errores de este orden:
+*(Una versión anterior de este documento "predecía" para la V dinastía errores de +23′ a +54′. Era incorrecta: esos valores ya estaban publicados en la tabla de Spence y no encajan con aquella extrapolación. La retiramos.)*
 
-| Pirámide | Inicio aproximado | Error predicho |
-|---|---|---|
-| Userkaf | ~2494 a. C. | **+23′ a +31′** |
-| Sahure | ~2487 | **+25′ a +34′** |
-| Neferirkare | ~2475 | **+29′ a +40′** |
-| Niuserre | ~2445 | **+38′ a +54′** |
-
-Mediciones modernas y precisas de estas pirámides, de la calidad de las de Dash en Giza, confirmarían o refutarían que fue el mismo método.
+## 5. Conclusión honesta
+1. La deriva de la orientación es real y apoya un método estelar.
+2. Con la regla de cambio de configuración, el par de Spence es el mejor dentro de una cronología plausible, y su fecha (Keops hacia el 2478 a. C.) se reproduce.
+3. Pero no queda demostrado: una recta genérica con Kefrén reflejado ajusta igual, y la conclusión depende de aceptar esa regla y la ventana de cronología. **Fechar las pirámides con su orientación sigue siendo una hipótesis, no un resultado.**

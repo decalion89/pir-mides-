@@ -249,3 +249,14 @@ def test_presupuesto_energetico_de_la_gran_piramide():
     E_GWh = p.energia_total_J() / luna.KWH / 1e6
     assert 2.0 < E_GWh < 3.0
     assert p.energia_arrastre_J() > 3 * p.energia_elevar_J()
+
+
+def test_todos_los_resultados_son_json_valido():
+    import json
+    raiz = Path(__file__).resolve().parent.parent / "resultados"
+    archivos = sorted(raiz.glob("*.json"))
+    assert len(archivos) >= 15
+    for f in archivos:
+        txt = f.read_text(encoding="utf-8")
+        assert "NaN" not in txt and "Infinity" not in txt, f.name
+        json.loads(txt)

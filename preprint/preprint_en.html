@@ -40,7 +40,7 @@ https://github.com/decalion89/pir-mides-</p>
 <p class="date">Preprint draft v2, 31 October 2026</p>
 </header>
 <h1 id="abstract">Abstract</h1>
-<p>We release an open, reproducible framework (code, digitized data, 28
+<p>We release an open, reproducible framework (code, digitized data, 29
 automated tests) for three long-debated questions about the Great
 Pyramid of Khufu: what the “Big Void” detected by muography in 2017 is,
 how 2.3 million blocks were raised, and what the four “star shafts” and
@@ -79,6 +79,11 @@ cross-section depend on the data set:</p>
 <td>56–59 m</td>
 <td>~9–11 m²</td>
 </tr>
+<tr class="odd">
+<td>KEK alone</td>
+<td>47–54 m (47.5 m at its best-fit 26°)</td>
+<td>~8.5–9.6 m²</td>
+</tr>
 </tbody>
 </table>
 <p>The inclination cannot be determined robustly. The emulsions prefer
@@ -108,21 +113,27 @@ systems leave ample margin. The corner time must be measured; we propose
 a 2–3-day experiment.</p>
 <p><strong>(v) Shafts and orientation.</strong></p>
 <ul>
-<li><em>Shafts.</em> With the Yale Bright Star Catalogue and IAU 2006
+<li><p><em>Shafts.</em> With the Yale Bright Star Catalogue and IAU 2006
 precession, the two King’s Chamber shafts point to their proposed stars
 (Alnitak, Thuban) at dates 2.4σ apart, and at V ≤ 3.0 the measured
 angles produce no four-star coincidence while 27 % of random angle sets
 do. The rational slopes n/11 that the angles fit are not significant
-after a look-elsewhere correction (p = 16 %).</li>
-<li><em>Orientation.</em> With Spence’s (2000) data and only observable
-star configurations, no star pair explains the Fourth-Dynasty
+after a look-elsewhere correction (p = 16 %).</p></li>
+<li><p><em>Orientation.</em> With Spence’s (2000) data and only
+observable star configurations, no star pair explains the Fourth-Dynasty
 orientation errors without a configuration switch for Khafre. With that
-switch, Kochab–Mizar is the best pair in a plausible chronology window
-and reproduces Spence’s date (Khufu aligned ~2478 BC). However, a
-generic linear drift with Khafre reflected fits equally well, and Unas
-does not fit. The data are compatible with, but do not establish,
-astronomical dating.</li>
+switch, Kochab–Mizar fits best among pairs with historically plausible
+dates and reproduces Spence’s date (Khufu aligned ~2478 BC).
+However:</p></li>
+<li><p>a generic linear drift with Khafre reflected fits equally
+well;</p></li>
+<li><p>Unas does not fit;</p></li>
+<li><p>Spence’s 74-year lowering lies outside the window allowed by the
+radiocarbon chronology of Bronk Ramsey et al. (2010); within that window
+the best pair fits markedly worse.</p></li>
 </ul>
+<p>The data are compatible with a stellar method but do not support
+astronomical dating.</p>
 <p><strong>Self-corrections.</strong> We document four errors in our own
 earlier analyses and how they were caught:</p>
 <ol type="1">
@@ -142,10 +153,10 @@ al. 2017). Its orientation, horizontal or inclined, was left open, and
 so was its function. Proposals include a structural relieving space and
 a construction gallery for counterweights (Houdin).</p>
 <p>Equally debated are the method used to raise the blocks (straight,
-zigzag, spiral, internal or edge-integrated ramps; levers), the purpose
-of the shafts (Trimble 1964; Badawy 1964; Bauval 1993), and whether the
-pyramids’ orientation errors can date them (Spence 2000; Belmonte
-2001).</p>
+zigzag, spiral, internal or edge-integrated ramps — see e.g. Lehner
+1997; Rosell Roig 2025 — and levers), the purpose of the shafts (Trimble
+1964; Badawy 1964; Bauval 1993), and whether the pyramids’ orientation
+errors can date them (Spence 2000; Belmonte 2001).</p>
 <p>We treat these questions quantitatively, test our own claims
 adversarially, and release everything.</p>
 <h1 id="methods-summary-full-details-in-docs0616-of-the-repository">2.
@@ -187,7 +198,8 @@ the daily rate is the minimum of three capacities:</p>
 </ul>
 <p>A Monte Carlo runs over 22 uncertain parameters. Friction is
 calibrated on the Djehutihotep painting (μ ≈ 0.06–0.11 for 200–350 N per
-man).</p>
+man), consistent with the wet-sand measurements of Fall et al. (2014).
+Transport logistics are informed by the Merer papyri (Tallet 2017).</p>
 <p><strong>Astronomy.</strong></p>
 <ul>
 <li>Catalogue: Yale BSC5 (Hoffleit &amp; Warren 1991), with proper
@@ -251,9 +263,13 @@ published 2017 data</h1>
 <li>KEK alone: ~1.7 m east;</li>
 <li>joint fit: 7.1–7.3 m.</li>
 </ul>
-<p>Its centre height and cross-section depend on the data set: emulsions
-61–62.5 m and ~19–21 m²; joint fit 56–59 m and ~9–11 m²; KEK alone 52–54
-m.</p>
+<p>Its centre height and cross-section depend on the data set:</p>
+<ul>
+<li>emulsions: 61–62.5 m and ~19–21 m² (best-fit parameters in
+resultados/18_ajuste_emulsiones.json);</li>
+<li>joint fit: 56–59 m and ~9–11 m²;</li>
+<li>KEK alone: 47–54 m, with its best fit (26°) at 47.5 m.</li>
+</ul>
 <p>Inclination profile (σ against each angle, errors rescaled by
 χ²/ndf):</p>
 <table style="width:100%;">
@@ -324,7 +340,9 @@ minima, ~7 shared parameters), and the tension is unchanged for
 two-segment and two-level shapes. We attribute it to an unresolved
 systematic, most plausibly the KEK normalization to the authors’ own
 simulation of known structures or the hodoscope geometry. Only the
-original maps can resolve it.</p>
+original maps can resolve it. (The North Face Corridor, characterised by
+Procureur et al. 2023, is a separate structure and is part of our
+validation geometry.)</p>
 <p><strong>Our own error.</strong> A first version reported an 18°
 inclination at 4–6σ, robust to five variations. A leave-one-slice-out
 test removed it. We traced it to 26 of 396 bins in which the overlaid
@@ -467,6 +485,9 @@ m platform. The pre-registered thresholds are:</p>
 <p>either of which implies a single ramp could finish within the
 reign.</p>
 <h1 id="the-star-shafts">7. The “star shafts”</h1>
+<p>The stellar hypothesis goes back to Trimble (1964) and Badawy (1964),
+and was extended to the Queen’s Chamber by Bauval (1993). Shaft angles
+are from Gantenbrink’s Upuaut survey.</p>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -526,13 +547,19 @@ claim that either explanation is preferred.</p>
 <p>A ±0.2° laser survey would discriminate: Kochab at Khufu’s reign
 needs 39.8–39.9°, while 9/11 gives 39.29°.</p>
 <h1 id="orientation-to-north">8. Orientation to north</h1>
-<p><strong>Data.</strong> Spence (2000), Table 1: Meidum −20.6′, Bent
-−17.3′, Red −8.7′, Khufu −3.4′, Khafre −6.0′, Menkaure +12.4′. Dates
-follow von Beckerath, with Sneferu after Stadelmann, and the alignment
-is taken in regnal year 2.</p>
+<p><strong>Data.</strong> Spence (2000), Table 1, <em>east-side</em>
+orientations: Meidum −20.6′, Bent −17.3′, Red −8.7′, Khufu −3.4′, Khafre
+−6.0′, Menkaure +12.4′. Dates follow von Beckerath, with Sneferu after
+Stadelmann, and the alignment is taken in regnal year 2.</p>
+<p>The quoted ±0.2′ errors are optimistic: Spence’s own west- and
+east-side values differ by up to 5.5′ (Bent). For critiques and
+alternatives see Rawlins &amp; Pickering (2001), Belmonte (2001), Magli
+(2004) and the solar method of Dash (2017).</p>
 <p><strong>Pairs.</strong> We consider 219 observable star pairs (V ≤
 3.5, both stars at least 5° up) and fit a chronology shift ΔT between
-−500 and +500 years.</p>
+−500 and +500 years. “With switch” means that, as coded, each pyramid
+may use either plumb-line configuration. In all the best fits only
+Khafre switches.</p>
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -560,7 +587,7 @@ is taken in regnal year 2.</p>
 <tr class="odd">
 <td>η UMa + Kochab, with switch</td>
 <td>11.8</td>
-<td>+472 yr (excluded by radiocarbon)</td>
+<td>+472 yr (far outside the radiocarbon window)</td>
 </tr>
 <tr class="even">
 <td><strong>Kochab + Mizar, with switch (Spence)</strong></td>
@@ -570,7 +597,7 @@ is taken in regnal year 2.</p>
 <tr class="odd">
 <td>β UMa + η Dra, with switch</td>
 <td>22.2</td>
-<td>−2 yr</td>
+<td>−2 yr (best pair inside the radiocarbon window)</td>
 </tr>
 <tr class="even">
 <td>Line with Khafre reflected</td>
@@ -579,17 +606,25 @@ is taken in regnal year 2.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Retrodiction for the Fifth Dynasty.</strong> With
-Kochab–Mizar and the switch:</p>
+<p><strong>Radiocarbon.</strong> Bronk Ramsey et al. (2010) place
+Djoser’s accession at 2691–2625 BC, against 2640 BC in the chronology
+used here. That allows shifts of roughly −15 to +51 years. Spence’s −74
+years lies outside this window, and inside it the best pair (β UMa + η
+Dra) fits markedly worse (Δχ² ≈ 10).</p>
+<p><strong>Retrodiction for the Fifth Dynasty.</strong> This is a weak
+test: with switching allowed, the sign is free, so a magnitude match is
+all that is checked. Unas has no quoted error in Spence; we adopt 1′,
+but the conclusion holds for any reasonable value. With Kochab–Mizar and
+the switch:</p>
 <ul>
 <li>Sahure: predicted ±29′, measured −23′ ± 10: consistent;</li>
 <li>Neferirkare: predicted ±33′, measured +30′ ± 10: consistent;</li>
 <li>Unas: predicted ±68′, measured +17.1′: inconsistent.</li>
 </ul>
-<p>The orientations support a stellar method and are compatible with
-Spence’s pair and date, but a generic drift fits as well. Astronomical
-dating therefore remains conditional on the configuration-switch rule
-and on the chronology window.</p>
+<p>The orientations support a stellar method. They are compatible with
+Spence’s pair, but a generic drift fits as well, and Spence’s date is in
+tension with radiocarbon. Astronomical dating of the pyramids is
+therefore not supported by these data.</p>
 <h1 id="pre-registered-predictions-full-list-in-predicciones.md-dated-in-git">9.
 Pre-registered predictions (full list in PREDICCIONES.md, dated in
 git)</h1>
@@ -599,8 +634,8 @@ git)</h1>
 <li>A stereo analysis of the full 2017 NE1 + NE2 maps prefers the true
 shape at ~2–3σ and constrains the void height to ≲ 1 m.</li>
 <li>A new measurement finds the void centre within ±2 m of the Grand
-Gallery’s vertical plane, at 52–63 m height, with a cross-section of
-9–21 m².</li>
+Gallery’s vertical plane, at 47–63 m height, with a cross-section of
+8–21 m².</li>
 <li>If edge-integrated ramps were used and back-filled ≥ 0.1 t/m³ (~4.5
 %) lighter than the core, an external 1 m² detector sees helical bands
 at 5σ in ~300 days; at ≥ 0.2 t/m³, in ~30 days.</li>
@@ -622,9 +657,9 @@ dates.</li>
 </ul>
 <h1 id="conclusion">11. Conclusion</h1>
 <p>The public data establish that the Big Void exists close to the Grand
-Gallery axis, at roughly 52–63 m height. They do not fix its shape, and
-the two published data sets disagree for reasons we cannot resolve from
-the figures.</p>
+Gallery axis, at roughly 47–63 m height depending on the data set. They
+do not fix its shape, and the two published data sets disagree for
+reasons we cannot resolve from the figures.</p>
 <p>We identify measurements that would decide:</p>
 <ul>
 <li>a stereo reanalysis of the original 2017 maps;</li>
@@ -641,6 +676,8 @@ can prove us wrong.</p>
 <li>Bauval, R. <em>Discussions in Egyptology</em> 26 (1993).</li>
 <li>Belmonte, J. A. <em>Journal for the History of Astronomy,
 Archaeoastronomy Supplement</em> 26, S1 (2001).</li>
+<li>Bronk Ramsey, C. et al. Radiocarbon-based chronology for dynastic
+Egypt. <em>Science</em> 328, 1554–1557 (2010).</li>
 <li>Capitaine, N., Wallace, P. T. &amp; Chapront, J. <em>Astron.
 Astrophys.</em> 412, 567 (2003).</li>
 <li>Dash, G. <em>Journal of Ancient Egyptian Architecture</em> 2

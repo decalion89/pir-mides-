@@ -19,7 +19,7 @@ import numpy as np
 
 from . import astronomia as astro
 
-# Spence (2000), tabla 1: error del lado oeste (′, + = este) y fecha de acceso al trono según
+# Spence (2000), tabla 1: orientación del lado ESTE (′, + = este) y fecha de acceso al trono según
 # von Beckerath (cifras bajas), con el reinado de Esnofru según Stadelmann. Spence supone que la
 # orientación se hizo en el año 2 del reinado: aquí se restan 2 años a la fecha a. C. El error de
 # fecha es el margen de su tabla, simetrizado.

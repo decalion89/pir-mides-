@@ -42,7 +42,7 @@ Si el Vacío resultara ser una **galería de contrapeso**, sería la prueba más
 ### 6. Reanálisis independiente de los datos publicados en 2017 → [docs/11](docs/11-reanalisis-datos-2017.md)
 Extrajimos de la figura del artículo los **679 puntos reales de KEK** y los perfiles de las **emulsiones de Nagoya**, y ajustamos el Vacío con nuestro propio modelo:
 - **Validación**: nuestra geometría recupera las posiciones de los detectores publicadas (+5,7/−4,3 m frente a +5,8/−4,5 m).
-- **Lo robusto**: el Vacío está cerca del eje de la Gran Galería (las emulsiones lo sitúan a +0,2 m y KEK a ~1,7 m al este), a ~52–63 m de altura, con una sección de ~9–21 m² según el conjunto de datos, comparable a la de la Galería.
+- **Lo robusto**: el Vacío está cerca del eje de la Gran Galería (las emulsiones lo sitúan a +0,2 m y KEK a ~1,7 m al este), a ~47–63 m de altura, con una sección de ~8–21 m² según el conjunto de datos, comparable a la de la Galería.
 - **La inclinación no se puede fijar** con los datos públicos:
   - las emulsiones prefieren horizontal o poco inclinado;
   - KEK prefiere inclinado;
@@ -62,7 +62,7 @@ Recalculamos con precisión (catálogo de Yale, precesión IAU 2006) a qué estr
 Con los datos de la tabla de Spence (2000) y solo estrellas visibles:
 - **La deriva es real**.
 - **Sin el "cambio de configuración" de Kefrén, nada encaja**.
-- **Con ese cambio**, Kochab + Mizar es el mejor par dentro de una cronología plausible y reproduce la fecha de Spence (Keops hacia el 2478 a. C.). Pero una recta genérica ajusta igual, así que es compatible, no demostrado.
+- **Con ese cambio**, Kochab + Mizar es el mejor par con fechas históricamente plausibles y reproduce la fecha de Spence (Keops hacia el 2478 a. C.). Pero una recta genérica ajusta igual, y **la fecha de Spence choca con el radiocarbono**: la datación astronómica no se sostiene.
 - **Unas no encaja**: el método habría cambiado en la V dinastía.
 - *Una versión anterior, con fechas erróneas y estrellas bajo el horizonte, decía lo contrario. La hemos corregido.*
 
@@ -103,7 +103,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 ## Reproducir
 ```bash
 pip install -r requirements.txt
-python -m pytest -q tests                      # 23 pruebas
+python -m pytest -q tests                      # 29 pruebas
 cd simulador && python ejecutar_todo.py        # ~5 min: resultados 01-04 y figuras
 python ejecutar_profundo.py                    # ~12 min: robustez, prueba a ciegas, aristas
 # Reanálisis de los datos publicados (requiere el PDF de arXiv:1711.01576):

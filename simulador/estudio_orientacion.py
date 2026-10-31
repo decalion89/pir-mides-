@@ -103,13 +103,15 @@ for x in r[:6]:
     fila = {}
     for nom, ev, sv, bc, sa in o.PIRAMIDES_V:
         tt = (1 - bc) - x["dT"]
-        fila[nom] = [float(np.interp(tt, anios, c[k], left=np.nan, right=np.nan)) for k in ("A_arriba", "B_arriba")]
+        vals = [float(np.interp(tt, anios, c[k], left=np.nan, right=np.nan)) for k in ("A_arriba", "B_arriba")]
+        fila[nom] = [None if not np.isfinite(v) else v for v in vals]
     retro.append(dict(par=f"{x['A']}+{x['B']}", dT=x["dT"], predicciones=fila))
     print(f"  {x['A']}+{x['B']} (ΔT {x['dT']:+.0f}): " + "; ".join(
-        f"{n} {p[0]:+.0f}′ o {p[1]:+.0f}′" for n, p in fila.items()))
+        f"{n} {p[0]}′ o {p[1]}′" for n, p in fila.items()))
 
 json.dump(dict(datos=dict(piramides=P, piramides_V=o.PIRAMIDES_V, fuente="Spence 2000, tabla 1"),
                nulo=nulo, resumen=resumen, retrodiccion_V=retro,
                pares=[{k: v for k, v in x.items() if k not in ("iA", "iB")} for x in res]),
-          open("../resultados/17_orientacion_pares.json", "w"), ensure_ascii=False, indent=1)
+          open("../resultados/17_orientacion_pares.json", "w"), ensure_ascii=False, indent=1, allow_nan=False,
+          default=float)
 print(f"\nHecho en {time.time() - t0:.0f} s")

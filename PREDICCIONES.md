@@ -56,8 +56,8 @@ Un análisis estéreo de los mapas 2D originales de las emulsiones NE1 + NE2 deb
 ## P8 — Posición del Gran Vacío según los datos publicados (reanálisis, docs/11)
 Cualquier medición nueva debería encontrar el centro del Vacío:
 - **cerca del plano vertical del eje de la Gran Galería**: las emulsiones lo sitúan a +0,2–0,3 m y KEK, que tiene un sistemático sin resolver, a ~1,7 m al este. Por eso el margen es de ±2 m (corregido el 31/10/2026; antes decía ±0,5 m);
-- a una altura de **~52–63 m** (emulsiones 61–62,5 m; conjunto 56–59 m; KEK sola 52–54 m);
-- con una sección de **~9–21 m²** (las emulsiones solas dan ~20 m², el ajuste conjunto con KEK ~10 m²).
+- a una altura de **~47–63 m** (emulsiones 61–62,5 m; conjunto 56–59 m; KEK sola 47–54 m, con su mejor ajuste en 47,5 m);
+- con una sección de **~8–21 m²** (las emulsiones solas dan ~20 m², el ajuste conjunto con KEK ~10 m²).
 
 **Qué la refutaría**: un centro desplazado más de 3 m al este o al oeste del eje, o una sección menor de 5 m².
 

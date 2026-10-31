@@ -11,14 +11,14 @@
 > - **Con la regla de Spence**, que permite a Kefrén usar la configuración opuesta, el mejor par dentro de una cronología plausible (±100 años) es **Kochab + Mizar**: χ² = 12,3, con un desfase de **−74 años**, el mismo que publicó Spence. El siguiente par plausible queda a Δχ² ≈ 10.
 > - **Pero** una tendencia lineal genérica con Kefrén reflejado ajusta igual (χ² = 11,4), y otro par (η UMa + Kochab) ajusta igual con un desfase de +472 años, que el radiocarbono excluye.
 >
-> **Conclusión**: los datos son **compatibles** con el método y la fecha de Spence, pero no la **demuestran**. La datación depende de aceptar la regla de cambio de configuración y la ventana cronológica.
+> **Conclusión**: los datos son **compatibles** con un método estelar y con el par de Spence, pero no **demuestran** su fecha. Además, el radiocarbono (Bronk Ramsey et al., *Science* 2010: Zoser entre 2691 y 2625 a. C.) solo admite desfases de unos −15 a +51 años, y **la corrección de Spence (−74) cae fuera**. Dentro de esa ventana, el mejor par (β UMa + η Dra) ajusta claramente peor (Δχ² ≈ 10). **La datación astronómica de las pirámides no se sostiene con estos datos.**
 
 Archivos:
 - código: [`simulador/piramide/orientacion.py`](../simulador/piramide/orientacion.py), [`simulador/estudio_orientacion.py`](../simulador/estudio_orientacion.py);
 - resultados: [`resultados/17_orientacion_pares.json`](../resultados/17_orientacion_pares.json).
 
 ## 1. Datos (Spence 2000, tabla 1)
-Error del lado oeste (positivo es hacia el este). Fecha de acceso al trono según von Beckerath, con Esnofru según Stadelmann. Se supone que la orientación se hizo en el año 2 del reinado.
+Orientación del **lado este** (positivo es hacia el este). Los lados oeste y este difieren hasta 5,5′ (en la Acodada), así que los errores de ±0,2′ son optimistas. Para Unas, Spence no da margen de error; adoptamos 1′, y la conclusión no cambia con valores razonables. "Con cambio" significa que el código permite a cada pirámide usar cualquiera de las dos configuraciones; en los mejores ajustes solo cambia Kefrén. Fecha de acceso al trono según von Beckerath, con Esnofru según Stadelmann. Se supone que la orientación se hizo en el año 2 del reinado.
 
 | Pirámide | Error | Fecha de la orientación | Años antes (+) o después (−) de Keops |
 |---|---|---|---|

@@ -1,0 +1,40 @@
+77 estrellas candidatas (V ≤ 3,5, δ > 25° en 2550 a. C.; el filtro de altura decide)
+nulo constante χ² 3320; lineal χ² 199.2 (pendiente 0.339′/año); lineal con Kefrén reflejado χ² 11.4
+219 pares observables con alineación cerca del norte; 364 ajustes (507 s)
+
+MISMA configuración: 141 ajustes sin tocar el borde; mejor χ² 199.2 (ndf 5)
+   1. 50Alp UMa  + 14Eta Dra   χ²  199.2  ΔT  -370 años
+   2. 40Alp Lyn  + 14Eta Dra   χ²  199.3  ΔT   +18 años
+   3. 77Eps UMa  + 7Bet UMi    χ²  199.4  ΔT  -448 años
+   4. 33Lam UMa  + 14Eta Dra   χ²  199.5  ΔT  +298 años
+   5. 12Alp2CVn  + 13Gam UMi   χ²  199.6  ΔT  +442 años
+   6. 25The UMa  + 50Alp UMa   χ²  199.7  ΔT    -4 años
+   7. 25The UMa  + 14Eta Dra   χ²  199.7  ΔT  -484 años
+   8. 48Bet UMa  + 14Eta Dra   χ²  199.8  ΔT   +12 años
+  Equivalentes Δχ²<1: 15 pares, ΔT de -484 a +494
+  Equivalentes con errores reescalados (×39.8): 47 pares, ΔT de -484 a +494
+  Kochab + Mizar: puesto 17 de 141, χ² 200.9, ΔT -58 (Spence: −72 a −74)
+
+CON cambio de configuración: 141 ajustes sin tocar el borde; mejor χ² 11.8 (ndf 5)
+   1. 85Eta UMa  + 7Bet UMi    χ²   11.8  ΔT  +472 años
+   2. 79Zet UMa  + 7Bet UMi    χ²   12.3  ΔT   -74 años
+   3. 77Eps UMa  + 7Bet UMi    χ²   17.2  ΔT  -462 años
+   4. 50Alp UMa  + 12Iot Dra   χ²   20.2  ΔT  +470 años
+   5. 50Alp UMa  + 14Eta Dra   χ²   20.6  ΔT  -384 años
+   6. 48Bet UMa  + 14Eta Dra   χ²   22.2  ΔT    -2 años
+   7. 79Zet UMa  + 13Gam UMi   χ²   23.9  ΔT  +280 años
+   8. 77Eps UMa  + 13Gam UMi   χ²   29.5  ΔT   -94 años
+  Equivalentes Δχ²<1: 2 pares, ΔT de -74 a +472
+  Equivalentes con errores reescalados (×2.4): 2 pares, ΔT de -74 a +472
+  Kochab + Mizar: puesto 2 de 141, χ² 12.3, ΔT -74 (Spence: −72 a −74)
+
+Retrodicción de la V dinastía (Spence: Sahure −23′±10, Neferirkare +30′±10, Unas +17,1′)
+  85Eta UMa+7Bet UMi (ΔT +472): Sahure 26.482639470974256′ o -26.482638547032483′; Neferirkare 30.0767084116565′ o -30.07670779713958′; Unas 61.689863107117866′ o -61.68986531077424′
+  79Zet UMa+7Bet UMi (ΔT -74): Sahure 29.35053031590747′ o -29.350529235784077′; Neferirkare 33.31484070485764′ o -33.314839905566835′; Unas 68.2652487467166′ o -68.26525277050891′
+  77Eps UMa+7Bet UMi (ΔT -462): Sahure None′ o None′; Neferirkare None′ o None′; Unas None′ o None′
+  50Alp UMa+12Iot Dra (ΔT +470): Sahure 24.802618827755712′ o -24.802618271064624′; Neferirkare 28.23142559795226′ o -28.231423871926115′; Unas 59.29314089203999′ o -59.29314158140126′
+  50Alp UMa+14Eta Dra (ΔT -384): Sahure 32.976651196383905′ o -32.97665299378485′; Neferirkare 37.53437023630204′ o -37.5343716843374′; Unas None′ o None′
+  48Bet UMa+14Eta Dra (ΔT -2): Sahure 33.09407537177129′ o -33.09407469588147′; Neferirkare 37.7172164129155′ o -37.71721572523177′; Unas 79.22716009332167′ o -79.22715817183094′
+
+Hecho en 507 s
+exit 0

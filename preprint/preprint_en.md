@@ -208,7 +208,7 @@ A ±0.2° laser survey would discriminate: Kochab at Khufu's reign needs 39.8–
 
 The quoted ±0.2′ errors are optimistic: Spence's own west- and east-side values differ by up to 5.5′ (Bent). For critiques and alternatives see Rawlins & Pickering (2001), Belmonte (2001), Magli (2004) and the solar method of Dash (2017).
 
-**Pairs.** We consider 219 observable star pairs (V ≤ 3.5, both stars at least 5° up) and fit a chronology shift ΔT between −500 and +500 years. "With switch" means that, as coded, each pyramid may use either plumb-line configuration. In all the best fits only Khafre switches.
+**Pairs.** We consider 219 observable star pairs (V ≤ 3.5, both stars at least 5° up) and fit a chronology shift ΔT between −500 and +500 years. 182 pairs give a finite fit (364 fits with and without the switch). The 82 fits that reach the ±500-year grid edge are discarded. "With switch" means that, as coded, each pyramid may use either plumb-line configuration. In all the best fits only Khafre switches.
 
 | Model | χ² (6 pyramids) | ΔT |
 |---|---|---|

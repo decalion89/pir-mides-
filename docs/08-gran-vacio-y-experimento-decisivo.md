@@ -1,5 +1,7 @@
 # 08 — El Gran Vacío: qué puede ser y cómo averiguarlo
 
+> ⚠️ **Nota (doc. 13).** Aquí la Cámara de la Reina se modela como **un solo** detector. Con la configuración estéreo real de 2017 (NE1 + NE2, separadas 10,3 m), los datos completos identificarían la hipótesis correcta ~92 % de las veces, con un margen de ~3σ: más de lo que se dice aquí, aunque sigue sin ser decisivo. La Cámara de Campbell no aporta nada si el Vacío es horizontal, por el corte de cenit de 70°. **La Cámara del Rey es el puesto robusto.**
+
 > **Resumen.** Los datos de 2017 no bastan para saber qué es el Gran Vacío. Desde la Cámara de la Reina, un corredor horizontal, uno inclinado, una galería de contrapeso y varias cámaras apiladas producen **casi la misma señal**. Nuestro modelo, validado con los datos publicados, calcula qué vería un detector desde otros puntos. **Un detector de muones de 1 m² en la Cámara del Rey, que es accesible al público, distinguiría entre esas hipótesis en días o semanas.** Desde la Cámara de Campbell, la más alta de las cámaras de descarga, bastarían ~1–5 días. Abajo están las predicciones concretas de cada hipótesis, para que la medición pueda confirmarlas o refutarlas.
 
 Archivos: [`simulador/piramide/vacio.py`](../simulador/piramide/vacio.py), [`resultados/04_gran_vacio.json`](../resultados/04_gran_vacio.json), figuras `04a`, `04b` y `04c`.

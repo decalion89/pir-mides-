@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -64,12 +64,17 @@ cause.</p>
 <p><strong>(iii) A decisive measurement.</strong> Using a joint fit with
 profiled normalization, gradient and spectral systematics, 225
 shape/position variants per hypothesis and blind tests with deliberately
-altered physics, we show the following. From the Queen’s Chamber, five
-candidate geometries are nearly degenerate: about 2σ. A ~1 m² detector
-in the <strong>King’s Chamber</strong>, a publicly accessible room,
-separates them, identifying the true hypothesis in 96–98.5 % of blind
-trials after 60 days; <strong>Campbell’s Chamber</strong> does so in
-about one week.</p>
+altered physics, we show the following. With a single Queen’s Chamber
+detector, five candidate geometries are nearly degenerate (about 2σ). A
+Cramér–Rao bound shows that the real 2017 stereo emulsion configuration
+(NE1 + NE2) could fix the inclination to ±2.5–3.3° if the shape were
+exactly a straight corridor. In realistic blind tests, the full 2017
+maps would pick the right hypothesis ~92 % of the time, but only at ~3σ:
+a free stereo reanalysis of the original maps would already give a
+strong hint. A ~1 m² detector in the <strong>King’s Chamber</strong>, a
+publicly accessible room, makes the test decisive, identifying the true
+hypothesis in 96–98.5 % of blind trials after 60 days, with margins of
+4.3–9σ.</p>
 <p><strong>(iv) Ramp construction.</strong> In a flow model of ramp
 construction, the corner-turn time of loaded sledges controls
 feasibility (rank correlation 0.97). Deriving it from mechanics gives
@@ -208,6 +213,41 @@ position.</p>
 <figcaption aria-hidden="true">Blind-test confusion
 matrices.</figcaption>
 </figure>
+<h1 id="b.-the-information-limit-cramérrao">5b. The information limit
+(Cramér–Rao)</h1>
+<p>For counting data, Var(θ̂) ≥ (F⁻¹)_jj, where F_jk = Σ ∂_jμ_i ∂_kμ_i /
+(μ_i + f²μ_i²). Systematics are marginalized.</p>
+<table>
+<thead>
+<tr class="header">
+<th>True void</th>
+<th>2017 stereo (NE1 + NE2)</th>
+<th>+ King’s Chamber 60 d</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Horizontal</td>
+<td>σ(incl.) ≥ 2.5°</td>
+<td>≥ 1.1°</td>
+</tr>
+<tr class="even">
+<td>Inclined 13°</td>
+<td>≥ 3.3°</td>
+<td>≥ 1.6°</td>
+</tr>
+<tr class="odd">
+<td>Inclined 26°</td>
+<td>≥ 3.0°</td>
+<td>≥ 1.9°</td>
+</tr>
+</tbody>
+</table>
+<p>Blind tests with the stereo configuration give 92 % accuracy with ~3σ
+margins (2017 only), and 98.5 % with 4.3–9σ margins when 60 days in the
+King’s Chamber are added. Campbell’s Chamber sees a horizontal void
+almost edge-on; with a 70° zenith cut it adds no information in that
+case, so the King’s Chamber is the robust choice.</p>
 <h1 id="reanalysis-of-the-published-2017-data">6. Reanalysis of the
 published 2017 data</h1>
 <p>The fits are robust in three respects:</p>
@@ -329,7 +369,9 @@ friction μ_c ≤ 0.4, implies that a single ramp suffices.</p>
 main ones:</p>
 <ol type="1">
 <li>From the King’s Chamber, the five hypotheses produce distinct
-signatures, separable in ≤ 2 months with 1 m².</li>
+signatures, separable in ≤ 2 months with 1 m². 1b. A stereo analysis of
+the full 2017 NE1 + NE2 maps prefers the true shape at ~2–3σ and fixes
+the void height to ≤ 1 m.</li>
 <li>The void centre lies within ±0.5 m of the Grand Gallery’s vertical
 plane, at 56–66 m height, with a cross-section of 10–13 m².</li>
 <li>An open internal spiral ramp does not exist.</li>

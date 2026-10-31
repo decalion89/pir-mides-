@@ -197,3 +197,18 @@ def test_con_giros_fisicos_una_rampa_unica_va_justa_pero_es_posible():
     p.tecnica_giro = "pivote"
     a = obra.simular(cat["zigzag"], p).anios
     assert 12 < a < 27
+
+
+# --- fase 5: cota de Cramér–Rao -------------------------------------------------------
+from piramide import cota_informacion as ci  # noqa: E402
+
+
+def test_la_camara_del_rey_mejora_la_cota_de_inclinacion():
+    P = rb.puestos_estandar(dias_kc=60.0)
+    v0 = (17.0, 63.0, 32.0, 6.0, 2.0, 13.0)
+    F_qc = ci.fisher(P["QC"], v0)
+    F_kc = ci.fisher(P["KC"], v0)
+    assert np.all(np.linalg.eigvalsh(F_qc) > 0)
+    s_qc = np.sqrt(np.linalg.inv(ci.combinar(F_qc))[5, 5])
+    s_ambos = np.sqrt(np.linalg.inv(ci.combinar(F_qc, F_kc))[5, 5])
+    assert s_ambos < 0.6 * s_qc

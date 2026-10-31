@@ -12,7 +12,7 @@ We present an open, reproducible framework that links three questions about the 
 
 **(ii) Reanalysis of the published data.** We digitize the published data — 679 KEK hodoscope points and the Nagoya emulsion profiles — and reanalyse them. Calibrating only on the simulated Grand Gallery, our geometry recovers the published emulsion positions to within 0.2 m. The void lies on the Grand Gallery axis (±0.3 m) at ~60–65 m height, with a cross-section of ~10–13 m². Its **inclination cannot be determined robustly from the public data**: the emulsions favour horizontal or shallow geometries, KEK favours inclined ones, and no tested shape (straight, two-segment, two-level) reconciles them (Δχ² ≈ 78). This points to a systematic, not a geometric, cause.
 
-**(iii) A decisive measurement.** Using a joint fit with profiled normalization, gradient and spectral systematics, 225 shape/position variants per hypothesis and blind tests with deliberately altered physics, we show the following. From the Queen's Chamber, five candidate geometries are nearly degenerate: about 2σ. A ~1 m² detector in the **King's Chamber**, a publicly accessible room, separates them, identifying the true hypothesis in 96–98.5 % of blind trials after 60 days; **Campbell's Chamber** does so in about one week.
+**(iii) A decisive measurement.** Using a joint fit with profiled normalization, gradient and spectral systematics, 225 shape/position variants per hypothesis and blind tests with deliberately altered physics, we show the following. With a single Queen's Chamber detector, five candidate geometries are nearly degenerate (about 2σ). A Cramér–Rao bound shows that the real 2017 stereo emulsion configuration (NE1 + NE2) could fix the inclination to ±2.5–3.3° if the shape were exactly a straight corridor. In realistic blind tests, the full 2017 maps would pick the right hypothesis ~92 % of the time, but only at ~3σ: a free stereo reanalysis of the original maps would already give a strong hint. A ~1 m² detector in the **King's Chamber**, a publicly accessible room, makes the test decisive, identifying the true hypothesis in 96–98.5 % of blind trials after 60 days, with margins of 4.3–9σ.
 
 **(iv) Ramp construction.** In a flow model of ramp construction, the corner-turn time of loaded sledges controls feasibility (rank correlation 0.97). Deriving it from mechanics gives 0.8–2.8 min for stop-and-pivot, or 0.3 min with a rope-redirecting corner post (as suggested by the post holes of the Khufu-era Hatnub ramp), the latter at the cost of 1.4–1.9× larger crews. With these values a single cornered ramp is **possible but tight** (median 20–23 years), while parallel systems leave ample margin.
 
@@ -68,6 +68,18 @@ The counterweight interpretation (H3) is the most sensitive to flux mismodelling
 
 ![Blind-test confusion matrices.](../figuras/05a_prueba_a_ciegas.png)
 
+# 5b. The information limit (Cramér–Rao)
+
+For counting data, Var(θ̂) ≥ (F⁻¹)_jj, where F_jk = Σ ∂_jμ_i ∂_kμ_i / (μ_i + f²μ_i²). Systematics are marginalized.
+
+| True void | 2017 stereo (NE1 + NE2) | + King's Chamber 60 d |
+|---|---|---|
+| Horizontal | σ(incl.) ≥ 2.5° | ≥ 1.1° |
+| Inclined 13° | ≥ 3.3° | ≥ 1.6° |
+| Inclined 26° | ≥ 3.0° | ≥ 1.9° |
+
+Blind tests with the stereo configuration give 92 % accuracy with ~3σ margins (2017 only), and 98.5 % with 4.3–9σ margins when 60 days in the King's Chamber are added. Campbell's Chamber sees a horizontal void almost edge-on; with a 70° zenith cut it adds no information in that case, so the King's Chamber is the robust choice.
+
 # 6. Reanalysis of the published 2017 data
 
 The fits are robust in three respects:
@@ -108,6 +120,7 @@ An earlier version of our model assumed corner times of 2–15 min and concluded
 The full list is in `PREDICCIONES.md`, dated in git. The main ones:
 
 1. From the King's Chamber, the five hypotheses produce distinct signatures, separable in ≤ 2 months with 1 m².
+1b. A stereo analysis of the full 2017 NE1 + NE2 maps prefers the true shape at ~2–3σ and fixes the void height to ≤ 1 m.
 2. The void centre lies within ±0.5 m of the Grand Gallery's vertical plane, at 56–66 m height, with a cross-section of 10–13 m².
 3. An open internal spiral ramp does not exist.
 4. If edge-integrated ramps were used and back-filled with material ≥5 % lighter, an external detector sees helical bands in ~30–300 days.

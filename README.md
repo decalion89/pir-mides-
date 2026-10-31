@@ -48,7 +48,7 @@ Extrajimos de la figura del artículo los **679 puntos reales de KEK** y los per
   - bajo un mismo corredor, recto o compuesto, los dos conjuntos son incompatibles (Δχ² ≈ 78). Ninguna forma lo arregla, así que es un sistemático y no la geometría.
 - **Un error nuestro, contado**: una primera versión daba "18° a 4–6σ" por un fallo de extracción, y lo detectamos y corregimos.
 
-Conclusión: los datos de 2017 no deciden la forma del Vacío. Hace falta medir desde otro punto.
+Conclusión: las figuras publicadas no deciden la forma del Vacío. La cota de Cramér–Rao ([docs/13](docs/13-limite-de-informacion.md)) indica que los **datos completos de 2017, analizados en estéreo**, darían un indicio de ~3σ. Hace falta medir desde la Cámara del Rey para llegar a 4–9σ.
 
 ### 7. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
@@ -68,6 +68,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [10 — Qué cambiaría la historia](docs/10-que-cambiaria-la-historia.md) | Qué significaría cada resultado y hoja de ruta |
 | [11 — Reanálisis de los datos de 2017](docs/11-reanalisis-datos-2017.md) | Datos reales de KEK y Nagoya ajustados con nuestro modelo |
 | [12 — La física de la esquina](docs/12-la-fisica-de-la-esquina.md) | Corrección de una conclusión y protocolo del experimento del trineo |
+| [13 — El límite de la información](docs/13-limite-de-informacion.md) | Cota de Cramér–Rao: qué pueden decir como máximo los datos de 2017 y la Cámara del Rey |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** (7 páginas), con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |

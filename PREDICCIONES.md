@@ -46,6 +46,13 @@ La prueba a ciegas ([docs/09](docs/09-robustez-y-prueba-a-ciegas.md)) muestra qu
 3. la geometría láser de las cámaras conocidas, con un error < 0,5 m;
 4. confirmación desde un segundo puesto (Cámara de Campbell o cabeza de la Gran Galería).
 
+## P9 — Los datos completos de 2017 ya contienen un indicio (doc. 13)
+Un análisis estéreo de los mapas 2D originales de las emulsiones NE1 + NE2 debería:
+- preferir la forma correcta del Vacío con un margen de **~2–3σ**, sin llegar a 5σ;
+- fijar su altura con una precisión de **≤ 1 m** (cota de Cramér–Rao: σ(z) ≥ 0,5–0,6 m).
+
+**Qué la refutaría**: un análisis completo que diera márgenes ≥ 5σ (los datos tendrían más información de la que modelamos), o una altura indeterminada a más de ±3 m (tendrían mucha menos).
+
 ## P8 — Posición del Gran Vacío según los datos publicados (reanálisis, docs/11)
 Cualquier medición nueva debería encontrar el centro del Vacío:
 - **en el plano vertical del eje de la Gran Galería**, a ±0,5 m;

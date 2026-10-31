@@ -1,5 +1,7 @@
 # 09 — ¿Resiste el experimento decisivo? Ajuste conjunto y prueba a ciegas
 
+> ⚠️ **Nota (doc. 13).** Aquí la Cámara de la Reina se modela como **un solo** detector. Con la configuración estéreo real de 2017 (NE1 + NE2, separadas 10,3 m), los datos completos identificarían la hipótesis correcta ~92 % de las veces, con un margen de ~3σ: más de lo que se dice aquí, aunque sigue sin ser decisivo. La Cámara de Campbell no aporta nada si el Vacío es horizontal, por el corte de cenit de 70°. **La Cámara del Rey es el puesto robusto.**
+
 Archivos:
 - código: [`simulador/piramide/robustez.py`](../simulador/piramide/robustez.py) y [`simulador/ejecutar_profundo.py`](../simulador/ejecutar_profundo.py);
 - datos: [`resultados/05_robustez.json`](../resultados/05_robustez.json);

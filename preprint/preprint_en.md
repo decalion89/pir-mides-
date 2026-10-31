@@ -1,6 +1,6 @@
 ---
 title: "Khufu's Big Void, ramp logistics and the pyramid alignments: an open reanalysis with pre-registered tests"
-author: "[AUTHOR NAME(S) AND AFFILIATION — to be completed before submission] · Proyecto Pirámides, https://github.com/decalion89/pir-mides-"
+author: "[AUTHOR NAME(S) AND AFFILIATION — to be completed before submission] · Proyecto Pirámides, https://github.com/decalion89/pir-mides- · Contact: labix7@gmail.com"
 date: "Preprint draft v2, 31 October 2026"
 ---
 

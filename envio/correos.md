@@ -1,4 +1,4 @@
-# Borradores de correo (rellenar [TU NOMBRE], [TU CORREO] y el enlace de arXiv)
+# Borradores de correo (rellenar [TU NOMBRE] y el enlace de arXiv)
 
 Envíalos **después** de subir el preprint, para poder incluir el enlace. Sé breve, adjunta el PDF y deja que el trabajo hable.
 
@@ -20,7 +20,7 @@ Main points:
 The code and data are open: https://github.com/decalion89/pir-mides-. I would be grateful for any feedback, and happy to collaborate if useful.
 
 Best regards,
-[TU NOMBRE] · [TU CORREO]
+[TU NOMBRE] · labix7@gmail.com
 
 ---
 
@@ -37,7 +37,7 @@ Do your experiments include turning times or rope-redirect measurements? If not,
 Preprint: [arXiv link] · Code: https://github.com/decalion89/pir-mides-
 
 Best regards,
-[TU NOMBRE] · [TU CORREO]
+[TU NOMBRE] · labix7@gmail.com
 
 ---
 
@@ -54,4 +54,4 @@ I would value your critical opinion. If you find the work sound, I would also be
 Preprint draft: [enlace o PDF adjunto] · Code: https://github.com/decalion89/pir-mides-
 
 Best regards,
-[TU NOMBRE] · [TU CORREO]
+[TU NOMBRE] · labix7@gmail.com

@@ -50,7 +50,14 @@ Extrajimos de la figura del artículo los **679 puntos reales de KEK** y los per
 
 Conclusión: las figuras publicadas no deciden la forma del Vacío. La cota de Cramér–Rao ([docs/13](docs/13-limite-de-informacion.md)) indica que los **datos completos de 2017, analizados en estéreo**, darían un indicio de ~3σ. Hace falta medir desde la Cámara del Rey para llegar a 4–9σ.
 
-### 7. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 7. Los canales de la Gran Pirámide → [docs/14](docs/14-canales-estrellas-o-proporciones.md)
+Recalculamos con precisión (catálogo de Yale, precesión IAU 2006) a qué estrellas apuntaban los cuatro canales:
+- **Las fechas no cuadran**: Alnitak da 2497 ± 41 a. C. y Thuban 2338 ± 53 a. C., ninguna en el reinado de Keops.
+- **La alineación con cuatro estrellas no es significativa**: cuatro ángulos al azar la logran el 59 % de las veces.
+- **Los ángulos encajan con pendientes n/11** (7/11, 9/11 y 11/11), como la cara de la pirámide (14/11). La probabilidad de que sea casualidad es del 1,3 % si el 11 se fija de antemano y del 16 % si se busca el mejor denominador.
+- **Medición que lo decide**: el tramo alto del canal norte de la Cámara de la Reina (P10).
+
+### 8. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -69,6 +76,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [11 — Reanálisis de los datos de 2017](docs/11-reanalisis-datos-2017.md) | Datos reales de KEK y Nagoya ajustados con nuestro modelo |
 | [12 — La física de la esquina](docs/12-la-fisica-de-la-esquina.md) | Corrección de una conclusión y protocolo del experimento del trineo |
 | [13 — El límite de la información](docs/13-limite-de-informacion.md) | Cota de Cramér–Rao: qué pueden decir como máximo los datos de 2017 y la Cámara del Rey |
+| [14 — Los canales: ¿estrellas o proporciones?](docs/14-canales-estrellas-o-proporciones.md) | Astronomía de precisión y prueba contra el azar de la hipótesis estelar; patrón de pendientes n/11 |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** (7 páginas), con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |

@@ -60,3 +60,8 @@ Cualquier medición nueva debería encontrar el centro del Vacío:
 - con una sección de **~10–13 m²**.
 
 **Qué la refutaría**: un centro desplazado más de 1,5 m al este o al oeste del eje, o una sección menor de 6 m².
+
+## P10 — Los canales siguen proporciones n/11, no las estrellas del reinado de Keops (doc. 14)
+Una medición precisa (±0,2°) del tramo alto, hoy sin medir, del canal norte de la Cámara de la Reina debería dar **39,29° ± 0,3°** (pendiente 9/11), y no 39,8–39,9° (Kochab culminando en 2589–2566 a. C.). El canal sur de la Reina, medido en toda su longitud con láser, debería dar 39,29° y no 38,9–39,0° (Sirio en el reinado).
+
+**Qué la refutaría**: ángulos de 39,8–39,9° (norte) y 38,9–39,0° (sur) en ambos canales a la vez. Eso apoyaría la orientación estelar en la época de Keops.

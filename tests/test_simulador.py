@@ -212,3 +212,18 @@ def test_la_camara_del_rey_mejora_la_cota_de_inclinacion():
     s_qc = np.sqrt(np.linalg.inv(ci.combinar(F_qc))[5, 5])
     s_ambos = np.sqrt(np.linalg.inv(ci.combinar(F_qc, F_kc))[5, 5])
     assert s_ambos < 0.6 * s_qc
+
+
+# --- fase 6: astronomía de los canales ------------------------------------------------
+from piramide import astronomia as astro  # noqa: E402
+
+
+def test_thuban_era_la_estrella_polar_hacia_2800_aC():
+    cat = astro.cargar(vmax=4.0)
+    j = [i for i, n in enumerate(cat.nombre) if "Alp Dra" in n][0]
+    assert astro.declinacion(cat, -2799)[j] > 89.7
+    assert abs(astro.declinacion(cat, 2000)[j] - 64.38) < 0.02
+
+
+def test_declinacion_objetivo_canal_sur_del_rey():
+    assert abs(astro.declinacion_objetivo(45.0, "S") - (-15.04)) < 0.05

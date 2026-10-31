@@ -65,3 +65,14 @@ Cualquier medición nueva debería encontrar el centro del Vacío:
 Una medición precisa (±0,2°) del tramo alto, hoy sin medir, del canal norte de la Cámara de la Reina debería dar **39,29° ± 0,3°** (pendiente 9/11), y no 39,8–39,9° (Kochab culminando en 2589–2566 a. C.). El canal sur de la Reina, medido en toda su longitud con láser, debería dar 39,29° y no 38,9–39,0° (Sirio en el reinado).
 
 **Qué la refutaría**: ángulos de 39,8–39,9° (norte) y 38,9–39,0° (sur) en ambos canales a la vez. Eso apoyaría la orientación estelar en la época de Keops.
+
+## P11 — La deriva de orientación continúa en la V dinastía, y no sirve para fechar (doc. 15)
+Si la práctica de orientación siguió igual, mediciones precisas de los ejes de las pirámides de la V dinastía deberían dar errores hacia el este de:
+- Userkaf: **+23′ a +31′**;
+- Sahure: **+25′ a +34′**;
+- Neferirkare: **+29′ a +40′**;
+- Niuserre: **+38′ a +54′**.
+
+Además, **ningún par de estrellas podrá preferirse por encima de Δχ² ≈ 2** con las orientaciones solas. La datación astronómica de las pirámides requiere identificar las estrellas por otra vía.
+
+**Qué la refutaría**: errores de orientación cercanos a 0′ o negativos en esas pirámides. Indicarían un cambio de método, por ejemplo el paso al Sol.

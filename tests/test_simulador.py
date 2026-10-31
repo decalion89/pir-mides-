@@ -227,3 +227,15 @@ def test_thuban_era_la_estrella_polar_hacia_2800_aC():
 
 def test_declinacion_objetivo_canal_sur_del_rey():
     assert abs(astro.declinacion_objetivo(45.0, "S") - (-15.04)) < 0.05
+
+
+from piramide import orientacion as orient  # noqa: E402
+
+
+def test_reproduce_la_correccion_de_spence_con_kochab_y_mizar():
+    cat = astro.cargar(vmax=3.5)
+    i = lambda s: [j for j, n in enumerate(cat.nombre) if s in n][0]
+    anios = np.arange(-3000, -1999, 5.0)
+    c = orient.curva_par(cat, i("Bet UMi"), i("Zet UMa"), anios)
+    chi, dT, _ = orient.ajustar_par(anios, c, False)
+    assert -130 < dT < -60          # Spence: Keops ~2467-2480 a. C., unos 100 años más tarde

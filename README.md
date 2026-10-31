@@ -57,7 +57,12 @@ Recalculamos con precisión (catálogo de Yale, precesión IAU 2006) a qué estr
 - **Los ángulos encajan con pendientes n/11** (7/11, 9/11 y 11/11), como la cara de la pirámide (14/11). La probabilidad de que sea casualidad es del 1,3 % si el 11 se fija de antemano y del 16 % si se busca el mejor denominador.
 - **Medición que lo decide**: el tramo alto del canal norte de la Cámara de la Reina (P10).
 
-### 8. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 8. La orientación al norte → [docs/15](docs/15-orientacion-al-norte.md)
+- **La propuesta**: Spence (*Nature* 2000) atribuyó la deriva de los errores de orientación a las estrellas Kochab y Mizar y propuso retrasar la cronología egipcia unos 100 años. Reproducimos su resultado.
+- **El problema**: **15 pares de estrellas ajustan igual de bien**, con desfases de **−228 a +132 años**, y una tendencia lineal cualquiera ajusta igual. Kochab y Mizar quedan en el puesto 27 de 92.
+- **Conclusión**: la deriva apoya un método estelar, pero **las orientaciones no pueden fechar las pirámides**.
+
+### 9. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -77,6 +82,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [12 — La física de la esquina](docs/12-la-fisica-de-la-esquina.md) | Corrección de una conclusión y protocolo del experimento del trineo |
 | [13 — El límite de la información](docs/13-limite-de-informacion.md) | Cota de Cramér–Rao: qué pueden decir como máximo los datos de 2017 y la Cámara del Rey |
 | [14 — Los canales: ¿estrellas o proporciones?](docs/14-canales-estrellas-o-proporciones.md) | Astronomía de precisión y prueba contra el azar de la hipótesis estelar; patrón de pendientes n/11 |
+| [15 — ¿Cómo encontraron el norte?](docs/15-orientacion-al-norte.md) | 92 pares de estrellas contra las orientaciones medidas: la deriva es real, pero no sirve para fechar |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** (7 páginas), con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |

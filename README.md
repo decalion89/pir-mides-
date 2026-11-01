@@ -115,7 +115,10 @@ Un hueco de 8 m es un déficit de ~1 100 toneladas, y eso se nota en la gravedad
 ### 15. Hasta dónde se puede explorar sin tocar una piedra → [docs/22](docs/22-plan-completo-de-exploracion.md)
 Combinando todas las sondas desde puntos ya accesibles, se puede pasar del **34 % al ~85 %** del volumen explorado para huecos de 8 m. El orden: muones desde la Cámara Subterránea, gravedad en los escalones, muones en los pasajes bajo la base y telescopios exteriores. El ~15 % restante, la base de los lados este y oeste, no se alcanza sin un acceso nuevo: multiplicar el área de los telescopios exteriores por 16 apenas ayuda.
 
-### 16. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 16. ¿Una ley de aprendizaje? Un techo, no una curva → [docs/23](docs/23-ley-de-aprendizaje.md)
+Ritmo de construcción (m³/año) de todas las pirámides del Reino Antiguo frente a la experiencia acumulada. **No se cumple la ley de Wright.** Snefru multiplicó por 4–13 el ritmo de Djoser en una generación, y tres reinados seguidos se mantuvieron en ~85 000–150 000 m³/año (~340 m³/día). Después el ritmo cae ×6–90 justo cuando la experiencia es máxima. La "tecnología" no se perdió: se alcanzó el límite del Estado y luego se redirigió. Es una regularidad sugerente con solo 4 puntos, no una ley.
+
+### 17. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -143,6 +146,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [20 — Lo que excluyen de verdad los datos de Alvarez](docs/20-lo-que-excluyen-los-datos-de-alvarez.md) | Mapa de exclusión de Kefrén con los residuos reales de 1970: 22 % al 95 %, 6,5 % nuevo fuera del cono |
 | [21 — Gravedad y muones](docs/21-gravedad-y-muones.md) | Microgravimetría para la base que los muones no ven: plan combinado que cubre el 79 % |
 | [22 — Plan completo de exploración](docs/22-plan-completo-de-exploracion.md) | Del 34 % al ~85 % con lo que ya existe; el límite físico del ~15 % restante |
+| [23 — ¿Una ley de aprendizaje?](docs/23-ley-de-aprendizaje.md) | Ritmo de construcción por reinado: techo de ~340 m³/día y caída por decisión |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

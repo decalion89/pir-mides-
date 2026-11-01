@@ -77,6 +77,58 @@
   "todo el Foso Seco (3,5 Mm³, 20 m); demanda optimizada 6 Mm³; aporte 0.6 Mm³/año": 0.991,
   "todo el Foso Seco (3,5 Mm³, 20 m); demanda optimizada 6 Mm³; aporte 1.8 Mm³/año": 0.994
  },
+ "fraccion_cubierta_por_riadas_al_ano": {
+  "Gisr el-Mudir (330 000 m³, 1,5 m); demanda autores 18 Mm³": {
+   "0.25/año": 0.07,
+   "0.5/año": 0.12,
+   "1/año": 0.22,
+   "2/año": 0.34,
+   "5/año": 0.53,
+   "20/año": 0.7,
+   "100/año": 0.8
+  },
+  "Gisr el-Mudir (330 000 m³, 1,5 m); demanda optimizada 6 Mm³": {
+   "0.25/año": 0.14,
+   "0.5/año": 0.23,
+   "1/año": 0.41,
+   "2/año": 0.6,
+   "5/año": 0.84,
+   "20/año": 0.99,
+   "100/año": 1.0
+  },
+  "Foso Seco entero (3,5 Mm³, 20 m); demanda autores 18 Mm³": {
+   "0.25/año": 0.39,
+   "0.5/año": 0.5,
+   "1/año": 0.62,
+   "2/año": 0.66,
+   "5/año": 0.74,
+   "20/año": 0.79,
+   "100/año": 0.84
+  },
+  "Foso Seco entero (3,5 Mm³, 20 m); demanda optimizada 6 Mm³": {
+   "0.25/año": 0.63,
+   "0.5/año": 0.73,
+   "1/año": 0.88,
+   "2/año": 0.94,
+   "5/año": 0.99,
+   "20/año": 1.0,
+   "100/año": 1.0
+  }
+ },
+ "regimen_casi_perenne_aporte_uniforme": {
+  "autores 18 Mm³": {
+   "mediana": 0.993,
+   "p05": 0.488,
+   "p95": 1.0,
+   "prob_90": 0.69
+  },
+  "optimizada 6 Mm³": {
+   "mediana": 1.0,
+   "p05": 0.992,
+   "p95": 1.0,
+   "prob_90": 0.987
+  }
+ },
  "meses_para_secarse_el_embalse_lleno": {
   "prof 1.0 m, evap 1.5, infil 0.1 m/año": 15.0,
   "prof 1.0 m, evap 2.1, infil 0.5 m/año": 9.2,

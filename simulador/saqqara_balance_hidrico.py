@@ -106,6 +106,34 @@ def main():
                 mejores[f"{emb}; demanda {dem_nom}; aporte {aporte / 1e6:g} Mm³/año"] = round(float(np.mean(vals)), 3)
     res["mejores_casos_fraccion_cubierta"] = mejores
     print(json.dumps(mejores, ensure_ascii=False, indent=1))
+    # tabla por régimen hídrico: de riadas raras a flujo casi continuo (el artículo propone que el wadi
+    # de Abusir era "probably a perennial stream" en el Imperio Antiguo, con riadas frecuentes)
+    tabla = {}
+    for emb, cap, prof in (("Gisr el-Mudir (330 000 m³, 1,5 m)", 330e3, 1.5), ("Foso Seco entero (3,5 Mm³, 20 m)", 3.5e6, 20.0)):
+        for dem_nom, total in (("autores 18 Mm³", 18e6), ("optimizada 6 Mm³", 6e6)):
+            fila = {}
+            for f in (0.25, 0.5, 1, 2, 5, 20, 100):
+                v = [simular(np.random.default_rng(k), 25, aporte_anual=0.6e6 + 3e4, riadas_ano=f, capacidad=cap, prof=prof,
+                             evap=2.1, infil=0.5, demanda=total / 25, trinchera=24e3)["cubierto"] for k in range(30)]
+                fila[f"{f:g}/año"] = round(float(np.mean(v)), 2)
+            tabla[f"{emb}; demanda {dem_nom}"] = fila
+            print("tabla", emb, dem_nom, fila, flush=True)
+    res["fraccion_cubierta_por_riadas_al_ano"] = tabla
+    # caso perenne con aporte uniforme (no log-uniforme) en el intervalo de los autores
+    rngp = np.random.default_rng(99)
+    per = {}
+    for dem_nom, total in (("autores 18 Mm³", 18e6), ("optimizada 6 Mm³", 6e6)):
+        v = []
+        for _ in range(300):
+            v.append(simular(rngp, 25, aporte_anual=rngp.uniform(0.2e6, 1.8e6) + 3e4, riadas_ano=100.0,
+                             capacidad=rngp.uniform(220e3, 440e3), prof=rngp.uniform(1, 2), evap=rngp.uniform(1.5, 2.7),
+                             infil=np.exp(rngp.uniform(np.log(0.1), np.log(3.0))), demanda=total / 25,
+                             trinchera=rngp.uniform(14e3, 33e3))["cubierto"])
+        v = np.array(v)
+        per[dem_nom] = dict(mediana=round(float(np.median(v)), 3), p05=round(float(np.percentile(v, 5)), 3),
+                            p95=round(float(np.percentile(v, 95)), 3), prob_90=round(float(np.mean(v >= 0.9)), 3))
+        print("perenne", dem_nom, per[dem_nom], flush=True)
+    res["regimen_casi_perenne_aporte_uniforme"] = per
     # tiempo que tarda en secarse el embalse lleno sin aportes
     secado = {}
     for prof in (1.0, 2.0):

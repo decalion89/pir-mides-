@@ -188,12 +188,12 @@ Giordano et al. (2025) dedujeron que el cerebro de una víctima del Vesubio se e
 
 La historia térmica propuesta no se sostiene.
 
-### 29. El "ascensor hidráulico" de Djoser no tenía dónde guardar el agua → [docs/36](docs/36-el-ascensor-sin-agua.md)
-Landreau et al. (2024) compararon el agua total disponible con la necesaria (18 Mm³), sin pérdidas.
-- **Con un balance día a día** (riadas episódicas, su embalse, evaporación e infiltración), el ascensor recibe el **27 %** de su propia demanda. Ninguna de 1 500 simulaciones llega al 90 %, ni siquiera sin pérdidas.
-- **Lo limita el almacenamiento:** la mitad de cada riada se desborda, y el embalse se seca en meses.
-- **Solo funciona** con un depósito profundo de millones de m³, uso optimizado y ≥ 1–2 riadas al año.
-- **Predicción:** limos lacustres en el fondo del Foso Seco.
+### 29. El "ascensor hidráulico" de Djoser: viable solo con crecidas frecuentes → [docs/36](docs/36-el-ascensor-sin-agua.md)
+Landreau et al. (2024) compararon el agua total disponible con la necesaria (18 Mm³). Con un balance día a día (crecidas, embalse, evaporación e infiltración) se ve que el límite es el almacenamiento entre crecidas:
+- con riadas episódicas de desierto (≤ 2 al año) el ascensor recibe el 7–34 % de su demanda;
+- con crecidas frecuentes o flujo casi perenne, como proponen los autores, funciona (~99 %).
+
+La hipótesis no queda refutada, sino condicionada al régimen hídrico, y eso se puede comprobar en los sedimentos (P16). *(Corregido tras revisión adversaria.)*
 
 ### 30. El patrón común: "ceguera al ritmo" → [preprint/ritmo](preprint/ritmo/rate_blindness_en.pdf)
 Los cinco casos auditados (Qin, Herculano, Djoser, el plomo romano y Tikal) fallan igual: razonan con totales, equilibrios o capacidades, e ignoran el ritmo máximo que impone la física (difusión, conducción del calor, almacenamiento entre riadas). Los desajustes van de ×2–9 a ×600–12 500. De diez afirmaciones revisadas, cinco fallan.
@@ -253,7 +253,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [33 — A cuántos metros está el Gran Vacío](docs/33-a-cuantos-metros-esta-el-gran-vacio.md) | Ningún espacio accesible a menos de 5 m; lo más cercano, las cámaras de descarga 4–5 (~8 m); sin endoscopio posible |
 | [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×42): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
 | [35 — El cerebro de vidrio](docs/35-el-cerebro-de-vidrio.md) | El enfriamiento a 1 000 K/s del cerebro vitrificado de Herculano es imposible dentro de un cráneo (0,1–1,7 K/s); su propia cinética contradice el escenario |
-| [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: con sus estructuras recibe el 27 % de su demanda; solo es viable con un depósito de Mm³ estanco (predicción: limos lacustres) |
+| [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: viable solo con crecidas frecuentes o flujo casi perenne; con riadas de desierto recibe el 7–34 % de su demanda (P16) |
 | [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–5: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |
 | [38 — El filtro de Tikal](docs/38-el-filtro-de-tikal.md) | Por caudal, un filtro de zeolita en la entrada solo trata ~2 % del agua si debe eliminar microbios; purificar el embalse exigiría ~6 300 m² y ~7 500 t traídas desde 30 km |
 | [39 — El mercurio de Tikal](docs/39-el-mercurio-de-tikal.md) | Con el Hg de los sedimentos más contaminados, el agua queda en ~17 % de la guía de la OMS: el mercurio no la hacía imbebible |

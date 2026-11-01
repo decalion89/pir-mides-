@@ -1,4 +1,4 @@
-# 36 — El "ascensor hidráulico" de Djoser: el problema no es cuánta agua había, sino dónde guardarla
+# 36 — El "ascensor hidráulico" de Djoser: viable solo con crecidas frecuentes o flujo casi perenne
 
 > **El artículo.** Landreau et al. (*PLOS ONE* 19:e0306690, 2024; eco mundial) proponen que la pirámide escalonada de Djoser se levantó con un flotador en el pozo norte, un pozo de 7 × 7 m y 28 m de profundidad.
 > - **Agua necesaria:** sus propios cálculos dan hasta **18 Mm³** en 20–30 años.
@@ -6,25 +6,20 @@
 > - **Conclusión de los autores:** comparando esos totales, el agua bastaría "con valores intermedios".
 > - **Lo que dejan fuera:** su suplemento dice que las cifras *"do not account for water losses caused by infiltration and other factors"*. La evaporación no aparece en el artículo.
 >
-> **Lo que nadie había calculado: un balance hídrico día a día.** El agua llega en riadas y hay que guardarla hasta usarla. Lo simulamos con:
-> - riadas de Poisson con el aporte que dan los autores;
-> - su embalse de Gisr el-Mudir (220 000–440 000 m³, 1–2 m de profundidad) y la Deep Trench;
-> - evaporación de 1,5–2,7 m/año e infiltración de 0,1–3 m/año.
+> **Corregido el 01/11/2026 tras una revisión adversaria independiente.** La primera versión concluía que el ascensor "recibe el 27 % de su demanda" y que solo funcionaba con un depósito de millones de m³. Eso suponía **riadas episódicas de desierto**. El artículo, en cambio, propone que el wadi de Abusir era *"probably a perennial stream during the Old Kingdom"*, con *"frequent flooding"*. Con ese régimen el ascensor funciona. Además, nuestro propio JSON ya mostraba que Gisr el-Mudir bastaba (95–98 %) con 5 riadas al año y uso optimizado. **La hipótesis no queda refutada: queda condicionada al régimen hídrico.**
 >
-> **Resultados.**
-> 1. **Con los elementos que proponen los autores, el ascensor solo recibe el 27 % de su propia demanda** (mediana; 12–55 %). **Ni una sola de 1 500 simulaciones llega al 90 %.** Ni siquiera **sin** evaporación ni infiltración se llega: 37 % (16–72 %).
-> 2. **El cuello de botella es el almacenamiento, no el volumen total:**
->    - una riada de un desierto llena el embalse en horas y **la mitad del agua se desborda** (mediana del 48 %);
->    - un embalse lleno de 1–2 m de profundidad **se seca en 4–30 meses** solo por evaporación e infiltración;
->    - el ascensor solo tendría agua en ~27 % de los días.
-> 3. **La hipótesis solo funciona si se cumplen tres condiciones a la vez:**
->    - **un embalse profundo y estanco de escala de millones de m³** (por ejemplo, todo el Foso Seco lleno de agua, algo que el artículo no propone como embalse);
->    - **el uso optimizado del flotador** (rampas al principio y elevar e izar en cada ciclo, que los autores sugieren como posibilidad);
->    - **≥ 1–2 riadas al año** durante 20–30 años, en una meseta desértica.
+> **Balance hídrico día a día** con el embalse de Gisr el-Mudir, evaporación (1,5–2,7 m/año), infiltración (0,1–3 m/año) y la demanda de los autores. Fracción de la demanda cubierta según el número de crecidas al año:
 >
->    Con las tres, se cubre el 88–99 %.
+> | Crecidas/año | 0,25 | 0,5 | 1 | 2 | 5 | 20 | ~100 (casi perenne) |
+> |---|---|---|---|---|---|---|---|
+> | Demanda de los autores (18 Mm³) | 7 % | 12 % | 22 % | 34 % | 53 % | 70 % | 80 % |
+> | Demanda optimizada (6 Mm³) | 14 % | 23 % | 41 % | 60 % | 84 % | 99 % | 100 % |
 >
-> **Conclusión.** El balance de volúmenes totales del artículo no basta para sostener la hipótesis. Para ser viable necesita un depósito de millones de m³ que retuviera agua durante décadas, y eso deja huella: **sedimentos lacustres laminados en el fondo del Foso Seco**. Es una predicción concreta y comprobable con un sondeo, en línea con lo que piden los propios autores en su respuesta de 2025.
+> Con flujo casi perenne y aporte uniforme en el intervalo de los autores, la mediana cubierta es del **99 %** (P ≥ 90 % = 69 %) para 18 Mm³, y del **100 %** para 6 Mm³.
+>
+> **Conclusión.** El argumento del artículo (comparar volúmenes totales) no basta, porque el almacenamiento entre crecidas es el cuello de botella. Pero la hipótesis **es viable si el Imperio Antiguo tuvo un régimen de crecidas frecuentes o un flujo casi perenne**, como sostienen los autores. Con riadas episódicas como las de hoy, no lo es. Esa es la condición que hay que comprobar, y se puede comprobar en los sedimentos del wadi de Abusir y de Gisr el-Mudir (P16).
+>
+> **Precedente:** el arqueólogo Oren Siegel (Toronto) ya objetó, de forma cualitativa, que Gisr el-Mudir *"could not have held enough water from occasional rains"* (Science News, 5 de agosto de 2024). Nuestro cálculo cuantifica esa objeción y muestra que depende del régimen hídrico.
 
 Archivos: [`simulador/saqqara_balance_hidrico.py`](../simulador/saqqara_balance_hidrico.py), [`resultados/45_saqqara_balance.json`](../resultados/45_saqqara_balance.json).
 

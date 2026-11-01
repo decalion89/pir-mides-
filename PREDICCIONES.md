@@ -119,7 +119,7 @@ Un estudio de gravedad con ~660 estaciones en los escalones de las cuatro caras 
 - Si el invierno no emite más que el verano, la vía (a) pierde fuerza.
 
 
-## P16 — Sedimentos lacustres en el Foso Seco si existió el ascensor de Djoser (doc. 36), registrada el 01/11/2026
-**Predicción.** Si la pirámide de Djoser se construyó con el ascensor hidráulico de Landreau et al. (2024), el agua tuvo que almacenarse durante décadas en un depósito profundo y estanco de escala de millones de m³. Un sondeo en el fondo del Foso Seco (o de la Deep Trench, bajo los rellenos posteriores) encontrará **limos y arcillas lacustres laminados**, de varios centímetros a decímetros, datables en la III dinastía.
+## P16 — El régimen hídrico que exige el ascensor de Djoser (doc. 36), registrada el 01/11/2026; reformulada tras revisión
+**Predicción.** Si la pirámide de Djoser se construyó con el ascensor hidráulico de Landreau et al. (2024), el wadi de Abusir y Gisr el-Mudir tuvieron en la III dinastía un régimen de **crecidas frecuentes (≥ 5–20 al año) o flujo casi perenne**. Los sedimentos de esa época en el cauce del wadi y en el interior de Gisr el-Mudir mostrarán depósitos de flujo frecuente o continuo (secuencias fluviales sin largas interrupciones eólicas) o de agua quieta, datables en la III dinastía.
 
-**Refutación.** Si solo aparecen gravas y arenas de riada, o rellenos eólicos, sin depósitos de agua quieta, la hipótesis no tiene un escenario hídrico viable.
+**Refutación.** Si los sedimentos de esa época muestran solo riadas aisladas separadas por largos periodos secos, con capas eólicas entre ellas, el balance hídrico no basta para el ascensor (cobertura < 35 % con ≤ 2 riadas al año).

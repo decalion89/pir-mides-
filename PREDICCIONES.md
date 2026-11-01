@@ -90,3 +90,10 @@ Cinco exposiciones de emulsión de 2 m² × 180 días en la Cámara de Belzoni (
 Igual que en P12, no predecimos que haya una cámara: predecimos qué parte quedará explorada.
 
 **Qué la refutaría**: que las aristas, que son contrastes de opacidad mucho mayores que una cámara, no se vieran con claridad. Indicaría que las heterogeneidades del núcleo rocoso de Kefrén dominan y que la cobertura calculada es optimista.
+
+## P14 — Microgravimetría en los escalones de la Gran Pirámide (doc. 21), registrada el 01/11/2026
+Un estudio de gravedad con ~660 estaciones en los escalones de las cuatro caras (a 5, 10, 15 y 20 m de altura, cada 5 m), con un ruido total de ≤ 3 µGal por estación, debería:
+1. **detectar a ≥ 5σ cualquier hueco de 8 m** en una banda de ~30–40 m de grosor por dentro de las caras en los 20 m inferiores: ~52 % del volumen de esa franja, que hoy está explorada en un 2 %;
+2. **ver la huella de las estructuras conocidas cercanas a las caras**, como el corredor descendente y el NFC en la cara norte, como comprobación.
+
+**Qué la refutaría**: que la dispersión de las medidas tras corregir el modelo de masas fuera ≫ 6 µGal. Indicaría que la heterogeneidad de los bloques domina y que la cobertura calculada es optimista. Y como en 1986, una anomalía de gravedad sola no prueba un hueco: hay que confirmarla con muones.

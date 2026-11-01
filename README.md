@@ -94,7 +94,13 @@ Comparamos cada posible cámara con los 801 residuos reales publicados en 1970.
 - **Al 95 % de confianza, una cámara del tamaño de la del Rey queda excluida en el 22 % de Kefrén** (12 % a 5σ). De ese volumen, **un 6,5 % está fuera del cono de 35° y nadie lo había analizado.**
 - El mejor "candidato" (3,5σ local) tiene una significación global de 0,85σ y cambia de sitio con la alineación. **No hay ninguna cámara en los datos de Alvarez.**
 
-### 14. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 14. Otra sonda: la gravedad ve lo que los muones no ven → [docs/21](docs/21-gravedad-y-muones.md)
+Un hueco de 8 m es un déficit de ~1 100 toneladas, y eso se nota en la gravedad desde cualquier dirección.
+- **La gravedad, medida desde los escalones de las caras, cubre el 52 % de la base** (0–20 m), donde los muones cubren el 2 %.
+- **Muones actuales + Cámara Subterránea + microgravimetría: 79 % del volumen explorado** para huecos de 8 m (70 % con ruido pesimista), frente al 34 % de hoy.
+- Queda sin cubrir un anillo a 40–75 m del eje en los 40 m inferiores.
+
+### 15. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -120,6 +126,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [18 — Kefrén: el experimento inacabado de Alvarez](docs/18-kefren-el-experimento-inacabado-de-alvarez.md) | Reconstrucción de la medición de 1969, cuánto de Kefrén está explorado (3–15 %) y cómo ampliarlo al ~61 % |
 | [19 — Los datos de Alvarez, 56 años después](docs/19-los-datos-de-alvarez-reanalizados.md) | Reanálisis del mapa de residuos de 1970: estructura espacial clara y ninguna cámara oculta |
 | [20 — Lo que excluyen de verdad los datos de Alvarez](docs/20-lo-que-excluyen-los-datos-de-alvarez.md) | Mapa de exclusión de Kefrén con los residuos reales de 1970: 22 % al 95 %, 6,5 % nuevo fuera del cono |
+| [21 — Gravedad y muones](docs/21-gravedad-y-muones.md) | Microgravimetría para la base que los muones no ven: plan combinado que cubre el 79 % |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [NOTA_TECNICA_cobertura_en.md](NOTA_TECNICA_cobertura_en.md) | **Nota técnica en inglés** para los equipos de muografía: el mapa de sensibilidad y la propuesta de la Cámara Subterránea |
@@ -133,7 +140,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 ## Reproducir
 ```bash
 pip install -r requirements.txt
-python -m pytest -q tests                      # 36 pruebas
+python -m pytest -q tests                      # 38 pruebas
 cd simulador && python ejecutar_todo.py        # ~5 min: resultados 01-04 y figuras
 python ejecutar_profundo.py                    # ~12 min: robustez, prueba a ciegas, aristas
 # Reanálisis de los datos publicados (requiere el PDF de arXiv:1711.01576):

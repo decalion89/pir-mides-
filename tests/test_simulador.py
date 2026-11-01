@@ -331,3 +331,32 @@ def test_transcripcion_de_la_figura_10_de_alvarez():
 def test_residuos_de_alvarez_tienen_correlacion_espacial():
     M, _ = ralv.cargar()
     assert ralv.moran(M) > 0.05
+
+
+from piramide import gravimetria as grav  # noqa: E402
+
+
+def _gz_bruto(st, c, l, drho, n=30):
+    h = np.array(l) / 2
+    ejes = [np.linspace(c[i] - h[i], c[i] + h[i], n + 1) for i in range(3)]
+    m = [(a[1:] + a[:-1]) / 2 for a in ejes]
+    X, Y, Z = np.meshgrid(*m, indexing="ij")
+    dv = np.prod([l[i] / n for i in range(3)])
+    dx, dy, dz = X - st[0], Y - st[1], Z - st[2]
+    r = np.sqrt(dx ** 2 + dy ** 2 + dz ** 2)
+    return -(grav.G * drho * dv * dz / r ** 3).sum()
+
+
+def test_prisma_de_nagy_coincide_con_integracion_numerica():
+    for st, c in (((0, 0, 0), (0, 0, 40)), ((0, 0, 46), (0, 0, 40)), ((3, 2, 1), (0, 0, 6)),
+                  ((5, -7, 50), (0, 0, 40)), ((-6, 9, 30), (0, 0, 40))):
+        a = grav.gz_prisma(np.array([st], float), c, (8, 8, 8), -2200.0)[0]
+        b = _gz_bruto(st, c, (8, 8, 8), -2200.0)
+        assert abs(a - b) <= 0.01 * abs(b) + 1e-10
+
+
+def test_un_hueco_de_8_m_bajo_los_escalones_se_ve_en_gravedad():
+    E = grav.estaciones()
+    z_cerca = grav.z_gravedad((80.0, 0.0, 10.0), (8, 8, 8), E, 3.0)      # a ~20 m de la cara este
+    z_lejos = grav.z_gravedad((0.0, 40.0, 10.0), (8, 8, 8), E, 3.0)      # en el anillo interior
+    assert z_cerca > 5 > z_lejos

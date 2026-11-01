@@ -28,3 +28,5 @@ Descartados por ya comprobados o no aptos: el radar de Tutankamón (Porcelli et 
 - Los autores lo atribuyen a que la sequedad reduce el ritmo "en al menos un orden de magnitud". Para que el ensayo sea invisible haría falta reducirlo ≥ 20–70 veces, y eso no se mide.
 - El amarilleo "muy pronunciado" que ellos mismos observan indica cambio químico. O el WAXS no sigue su cinética fuera de 90 °C (y entonces la extrapolación de 90 a 20 °C, de ~12 000 veces, también es dudosa), o los incendios (1532) sí afectan a la medida.
 - Depende de la dependencia del ritmo con la humedad, que no conocemos. Se deja como tensión documentada.
+
+**Hecho:** filtro de zeolita de Tikal (Tankersley et al., Sci. Rep. 2020), en el doc. 38: por caudal no pudo purificar el embalse. Recuento: 5 resultados nuevos de 10 casos revisados.

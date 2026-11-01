@@ -1,0 +1,46 @@
+{
+ "filtro lento (0,1–0,4 m/h, elimina microbios)": {
+  "escorrentia_anual_m3": {
+   "p05": 48400.0,
+   "mediana": 213000.0,
+   "p95": 411000.0
+  },
+  "fraccion_filtrada_con_50m2": {
+   "p05": 0.00688,
+   "mediana": 0.0182,
+   "p95": 0.0813
+  },
+  "area_para_90pc_m2": {
+   "p05": 1340.0,
+   "mediana": 6300.0,
+   "p95": 16800.0
+  },
+  "masa_a_transportar_30km_t": {
+   "p05": 1650.0,
+   "mediana": 7500.0,
+   "p95": 20800.0
+  }
+ },
+ "filtro rápido (5–10 m/h, solo aclara)": {
+  "escorrentia_anual_m3": {
+   "p05": 52500.0,
+   "mediana": 209000.0,
+   "p95": 420000.0
+  },
+  "fraccion_filtrada_con_50m2": {
+   "p05": 0.22,
+   "mediana": 0.408,
+   "p95": 0.886
+  },
+  "area_para_90pc_m2": {
+   "p05": 52.9,
+   "mediana": 221.0,
+   "p95": 463.0
+  },
+  "masa_a_transportar_30km_t": {
+   "p05": 62.2,
+   "mediana": 245.0,
+   "p95": 607.0
+  }
+ }
+}

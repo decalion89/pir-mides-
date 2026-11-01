@@ -89,7 +89,12 @@ Transcribimos y reanalizamos el mapa de residuos que Alvarez publicó en 1970: 8
 - **No hay ninguna agrupación significativa** que indique una cámara oculta: la mayor da p = 0,03–0,04, y ninguna pasa de ~2σ al contar que se buscó de seis maneras.
 - La pista de los estudiantes del CERN (acimut 62–72°) no aparece.
 
-### 13. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 13. Lo que excluyen de verdad los datos de Alvarez → [docs/20](docs/20-lo-que-excluyen-los-datos-de-alvarez.md)
+Comparamos cada posible cámara con los 801 residuos reales publicados en 1970.
+- **Al 95 % de confianza, una cámara del tamaño de la del Rey queda excluida en el 22 % de Kefrén** (12 % a 5σ). De ese volumen, **un 6,5 % está fuera del cono de 35° y nadie lo había analizado.**
+- El mejor "candidato" (3,5σ local) tiene una significación global de 0,85σ y cambia de sitio con la alineación. **No hay ninguna cámara en los datos de Alvarez.**
+
+### 14. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -114,6 +119,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [17 — El mapa de lo inexplorado](docs/17-mapa-de-lo-inexplorado.md) | Qué parte de la pirámide han explorado de verdad los muones (59–66 % sin explorar para huecos de 8 m), y dónde medir: la Cámara Subterránea |
 | [18 — Kefrén: el experimento inacabado de Alvarez](docs/18-kefren-el-experimento-inacabado-de-alvarez.md) | Reconstrucción de la medición de 1969, cuánto de Kefrén está explorado (3–15 %) y cómo ampliarlo al ~61 % |
 | [19 — Los datos de Alvarez, 56 años después](docs/19-los-datos-de-alvarez-reanalizados.md) | Reanálisis del mapa de residuos de 1970: estructura espacial clara y ninguna cámara oculta |
+| [20 — Lo que excluyen de verdad los datos de Alvarez](docs/20-lo-que-excluyen-los-datos-de-alvarez.md) | Mapa de exclusión de Kefrén con los residuos reales de 1970: 22 % al 95 %, 6,5 % nuevo fuera del cono |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [NOTA_TECNICA_cobertura_en.md](NOTA_TECNICA_cobertura_en.md) | **Nota técnica en inglés** para los equipos de muografía: el mapa de sensibilidad y la propuesta de la Cámara Subterránea |

@@ -79,9 +79,9 @@ Mapa de sensibilidad muográfica de la Gran Pirámide, construido con las 14 cam
 
 ### 11. Kefrén: el experimento inacabado de Alvarez → [docs/18](docs/18-kefren-el-experimento-inacabado-de-alvarez.md)
 Reconstruimos la medición de muones de Luis Alvarez de 1968–69 en la pirámide de Kefrén:
-- **Validación independiente del método.** El modelo reproduce su resultado: el cono de 35° es el 20,4 % del volumen (él dio 19 %), y una cámara del tamaño de la del Rey se detecta en el 80–97 % del cono.
-- **Kefrén está casi sin explorar.** Solo el 4–18 % de su volumen está explorado a 5σ para cámaras de ese tamaño.
-- **El 81 % que Alvarez quiso mirar se puede cubrir desde el mismo sitio.** Cinco exposiciones de emulsión en la Cámara de Belzoni (~6 meses) llevarían la cobertura al ~61 %.
+- **El modelo es compatible con lo que afirmó.** Su cono de 35° es el 19–20 % del volumen; él dio 19 %. Una cámara del tamaño de la del Rey se detecta en el 68–94 % del cono (lectura optimista).
+- **Kefrén está casi sin explorar.** Solo el 3–15 % de su volumen está explorado a 5σ para cámaras de ese tamaño. Fuera del cono no hay ninguna afirmación publicada.
+- **Se puede ampliar desde el mismo sitio.** Cinco exposiciones de emulsión en la Cámara de Belzoni (~6 meses) llevarían la cobertura total del ~20 % al ~61 %. Además resolverían la posible cámara que unos estudiantes (CERN *Beamline for Schools*) creyeron ver en los datos de Alvarez.
 
 ### 12. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
@@ -106,7 +106,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [15 — ¿Cómo encontraron el norte?](docs/15-orientacion-al-norte.md) | 92 pares de estrellas contra las orientaciones medidas: la deriva es real, pero no sirve para fechar |
 | [16 — De Giza a la Luna](docs/16-de-giza-a-la-luna.md) | La Gran Pirámide costó ~2,5 GWh de trabajo mecánico (25 h de una central de 100 MW); lecciones para construir en la Luna |
 | [17 — El mapa de lo inexplorado](docs/17-mapa-de-lo-inexplorado.md) | Qué parte de la pirámide han explorado de verdad los muones (59–66 % sin explorar para huecos de 8 m), y dónde medir: la Cámara Subterránea |
-| [18 — Kefrén: el experimento inacabado de Alvarez](docs/18-kefren-el-experimento-inacabado-de-alvarez.md) | Reconstrucción de la medición de 1969, validación del método y cómo explorar el 81 % restante |
+| [18 — Kefrén: el experimento inacabado de Alvarez](docs/18-kefren-el-experimento-inacabado-de-alvarez.md) | Reconstrucción de la medición de 1969, cuánto de Kefrén está explorado (3–15 %) y cómo ampliarlo al ~61 % |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [NOTA_TECNICA_cobertura_en.md](NOTA_TECNICA_cobertura_en.md) | **Nota técnica en inglés** para los equipos de muografía: el mapa de sensibilidad y la propuesta de la Cámara Subterránea |

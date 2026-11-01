@@ -4,8 +4,8 @@
  "volumen_m3": 2209856.0,
  "fraccion_cono_35": 0.20423412204234123,
  "alvarez_publicado": 0.19,
- "dias_equivalentes_alvarez_modelo": 7.4,
- "eventos_alvarez": 1000000.0,
+ "dias_equivalentes_alvarez_modelo": 5.2,
+ "eventos_alvarez": 700000.0,
  "propuesta": {
   "area_m2": 2.0,
   "dias": 180.0,
@@ -20,10 +20,10 @@
  "resultados": {
   "cámara tipo Rey": {
    "calibrado (×0,44, Nagoya)": {
-    "alvarez_explorado_5s": 0.03872107503837354,
-    "alvarez_explorado_3s": 0.11804570071534073,
-    "alvarez_fraccion_del_cono_5s": 0.172575155984118,
-    "alvarez_fraccion_del_cono_3s": 0.5375779920589904,
+    "alvarez_explorado_5s": 0.025659590489154043,
+    "alvarez_explorado_3s": 0.08633322714240203,
+    "alvarez_fraccion_del_cono_5s": 0.11259217243335225,
+    "alvarez_fraccion_del_cono_3s": 0.3920873511060692,
     "cenital_moderna_5s": 0.31758811433867185,
     "cinco_orientaciones_5s": 0.6049407744215007,
     "cinco_orientaciones_3s": 0.6157143270873758,
@@ -36,10 +36,10 @@
     }
    },
    "sin calibrar (×1)": {
-    "alvarez_explorado_5s": 0.1764603666483246,
-    "alvarez_explorado_3s": 0.21964146080106578,
-    "alvarez_fraccion_del_cono_5s": 0.7999149177538287,
-    "alvarez_fraccion_del_cono_3s": 0.9746171298922292,
+    "alvarez_explorado_5s": 0.14886037823278983,
+    "alvarez_explorado_3s": 0.21106895652929422,
+    "alvarez_fraccion_del_cono_5s": 0.6778218944980148,
+    "alvarez_fraccion_del_cono_3s": 0.9441293250141803,
     "cenital_moderna_5s": 0.35929218917431727,
     "cinco_orientaciones_5s": 0.6195372006139767,
     "cinco_orientaciones_3s": 0.625184627414637,
@@ -54,10 +54,10 @@
   },
   "cubo de 8 m": {
    "calibrado (×0,44, Nagoya)": {
-    "alvarez_explorado_5s": 0.10877812852964175,
-    "alvarez_explorado_3s": 0.19537200613976657,
-    "alvarez_fraccion_del_cono_5s": 0.49886557005104937,
-    "alvarez_fraccion_del_cono_3s": 0.8827283040272264,
+    "alvarez_explorado_5s": 0.07637058704277563,
+    "alvarez_explorado_3s": 0.1745778910481045,
+    "alvarez_fraccion_del_cono_5s": 0.3494044242768009,
+    "alvarez_fraccion_del_cono_3s": 0.7960862166761202,
     "cenital_moderna_5s": 0.3538764516782994,
     "cinco_orientaciones_5s": 0.6216803266819195,
     "cinco_orientaciones_3s": 0.6299342581598077,
@@ -70,9 +70,9 @@
     }
    },
    "sin calibrar (×1)": {
-    "alvarez_explorado_5s": 0.21883054823481712,
-    "alvarez_explorado_3s": 0.2309652755654667,
-    "alvarez_fraccion_del_cono_5s": 0.973057288712422,
+    "alvarez_explorado_5s": 0.20872310231978916,
+    "alvarez_explorado_3s": 0.2291117611283269,
+    "alvarez_fraccion_del_cono_5s": 0.9367555303460011,
     "alvarez_fraccion_del_cono_3s": 1.0,
     "cenital_moderna_5s": 0.36609806249818994,
     "cinco_orientaciones_5s": 0.6340467433172117,
@@ -88,10 +88,10 @@
   },
   "cubo de 5 m": {
    "calibrado (×0,44, Nagoya)": {
-    "alvarez_explorado_5s": 0.00790639752092444,
-    "alvarez_explorado_3s": 0.027686871904775697,
-    "alvarez_fraccion_del_cono_5s": 0.03530913216108905,
-    "alvarez_fraccion_del_cono_3s": 0.1267725467952354,
+    "alvarez_explorado_5s": 0.00501028121289351,
+    "alvarez_explorado_3s": 0.018564105534478265,
+    "alvarez_fraccion_del_cono_5s": 0.021837776517300057,
+    "alvarez_fraccion_del_cono_3s": 0.08423142370958593,
     "cenital_moderna_5s": 0.1755336094297547,
     "cinco_orientaciones_5s": 0.4545164933823742,
     "cinco_orientaciones_3s": 0.5929508529062527,
@@ -104,10 +104,10 @@
     }
    },
    "sin calibrar (×1)": {
-    "alvarez_explorado_5s": 0.05670595731124562,
-    "alvarez_explorado_3s": 0.13927423325320745,
-    "alvarez_fraccion_del_cono_5s": 0.26332955190017016,
-    "alvarez_fraccion_del_cono_3s": 0.6486103233125354,
+    "alvarez_explorado_5s": 0.03918445364765849,
+    "alvarez_explorado_3s": 0.11011034203133598,
+    "alvarez_fraccion_del_cono_5s": 0.1812251843448667,
+    "alvarez_fraccion_del_cono_3s": 0.5133295519001702,
     "cenital_moderna_5s": 0.3204842306467028,
     "cinco_orientaciones_5s": 0.6036375220828869,
     "cinco_orientaciones_3s": 0.6105013177329202,
@@ -121,6 +121,6 @@
    }
   }
  },
- "camara_del_rey_40m_sobre_belzoni_Z_modelo": 11.9,
- "tiempo_s": 180
+ "camara_del_rey_40m_sobre_belzoni_Z_modelo": 10.1,
+ "tiempo_s": 182
 }

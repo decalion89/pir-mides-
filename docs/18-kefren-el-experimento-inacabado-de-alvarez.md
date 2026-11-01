@@ -2,93 +2,95 @@
 
 > **Resumen.** En 1968–69, Luis Alvarez (premio Nobel de Física en 1968) puso detectores de muones en la Cámara de Belzoni, bajo el centro de la pirámide de Kefrén. Concluyó que no había cámaras del tamaño de la del Rey dentro de un cono de 35° alrededor de la vertical, que es "el 19 % del volumen de la pirámide". Escribió que esperaba "reorganizar el equipo para mirar a través del 81 % restante". No hemos encontrado que ese segundo experimento se publicara nunca.
 >
-> Reconstruimos su experimento con el modelo de muones del proyecto y obtenemos tres resultados:
-> 1. **El modelo reproduce a Alvarez.** Su cono contiene el 20,4 % del volumen (él dio 19 %). Con el modelo sin calibrar y su millón de muones, una cámara del tamaño de la del Rey se detectaría en el 80 % del cono a ≥ 5σ y en el 97,5 % a ≥ 3σ, que es lo que él afirmó. Es una **validación independiente** del método que usamos en Keops (docs/17), con un experimento distinto, de otra época y en otra pirámide.
-> 2. **Kefrén está menos explorada de lo que se cree.** El 19 % es un techo. Con criterio de 5σ, lo explorado de verdad para cámaras del tamaño de la del Rey está entre el **4 % y el 18 %** del volumen, según la calibración. Para huecos de 5 m, menos del 6 %.
-> 3. **El experimento se puede terminar desde el mismo sitio.** Cinco exposiciones de emulsión moderna en la Cámara de Belzoni (2 m² × 180 días cada una: una cenital y cuatro inclinadas 45° hacia cada cara) cubrirían el **~61 %** de la pirámide para cámaras del tamaño de la del Rey. Quedarían sin explorar sobre todo los 20 m inferiores, como en Keops.
+> Reconstruimos su experimento con el modelo de muones del proyecto:
+> 1. **El modelo es compatible con lo que afirmó Alvarez.** Su cono contiene el 20,4 % del volumen si el detector está a ras de la base; él dio 19 %. Con unos 700 000 muones en el cono, como en su análisis, el modelo sin calibrar detecta una cámara del tamaño de la del Rey en el 68 % del cono a ≥ 5σ y en el 94 % a ≥ 3σ. No es una validación en sentido estricto: en Kefrén no hay ninguna cavidad conocida con la que comprobarlo, y la afirmación de Alvarez salía de su propia simulación.
+> 2. **El 19 % es el techo de lo que él afirmó.** Con criterio de 5σ, lo explorado para cámaras del tamaño de la del Rey está entre el **3 %** (lectura pesimista, análisis tipo Nagoya) y el **15 %** (lectura optimista, el modelo tal cual). Para huecos de 5 m, menos del 4 %. Fuera del cono de 35° (≈ 80 % del volumen) **no hay ninguna afirmación publicada de sensibilidad**.
+> 3. **El experimento se puede ampliar desde el mismo sitio.** Cinco exposiciones de emulsión moderna en la Cámara de Belzoni (2 m² × 180 días cada una: una cenital y cuatro inclinadas 45° hacia cada cara) llevarían la cobertura total para cámaras del tamaño de la del Rey del ~20 % al **~61 %**. Ese techo lo fija la geometría (con el corte de 70° del cenit), no la estadística. Los 20 m inferiores seguirían sin explorar, como en Keops.
 
 Archivos:
-- código: [`simulador/piramide/kefren.py`](../simulador/piramide/kefren.py), [`simulador/estudio_kefren.py`](../simulador/estudio_kefren.py), [`simulador/figuras_kefren.py`](../simulador/figuras_kefren.py);
-- resultados: [`resultados/21_kefren.json`](../resultados/21_kefren.json);
+- código: [`simulador/piramide/kefren.py`](../simulador/piramide/kefren.py), [`simulador/estudio_kefren.py`](../simulador/estudio_kefren.py), [`simulador/estudio_kefren_variantes.py`](../simulador/estudio_kefren_variantes.py), [`simulador/figuras_kefren.py`](../simulador/figuras_kefren.py);
+- resultados: [`resultados/21_kefren.json`](../resultados/21_kefren.json), [`resultados/22_kefren_variantes.json`](../resultados/22_kefren_variantes.json);
 - figura: `figuras/09_kefren_alvarez.png`.
 
 ## 1. El experimento de 1968–69 (Alvarez et al., *Science* 167, 832–839, 1970)
-- **Detector**: dos pares de cámaras de chispas de 1,8 × 1,8 m (≈ 4 m²), separadas 0,3 m, con contadores de centelleo y 1,2 m de hierro, en la esquina sureste de la Cámara de Belzoni, "justo debajo de la base de la pirámide, cerca de su centro".
-- **Datos**: "más de un millón" de muones en varios meses, en bins de 3° × 3°, hasta ~45° del cenit.
+- **Detector**: dos cámaras de chispas de 1,8 × 1,8 m (≈ 4 m², cada una formada por dos módulos de 0,9 × 1,8 m), separadas 0,3 m, con contadores de centelleo y 1,2 m de hierro. Estaba en la esquina sureste de la Cámara de Belzoni, "justo debajo de la base de la pirámide, cerca de su centro".
+- **Datos**: "más de un millón" de muones en varios meses, en bins de 3° × 3°, hasta ~45° del cenit. El análisis del cono de 35° (su figura 13) usa unos 700 000.
 - **Método**: comparar con una pirámide simulada de densidad uniforme. Las cuatro aristas y el remate de caliza original se ven con claridad.
 - **Conclusión**: "no tenemos duda de que detectaríamos una Cámara del Rey en cualquier punto por encima de la Cámara de Belzoni dentro de un cono de 35°". Ese cono es "el 19 % del volumen de la pirámide".
 
 ## 2. Reconstrucción
-- **Geometría de Kefrén**: lado original 215,25 m (410 codos) y altura original 143,5 m. Hoy mide 136,4 m: el vértice está truncado.
-- **Detector**: a ras de la base, en (5, −1,5) m.
+- **Geometría de Kefrén**: lado original 215,25 m (410 codos) y altura original 143,5 m. Hoy mide 136,4 m: el vértice está truncado, lo que no cambia la fracción del cono.
+- **Detector**: a ras de la base, en (5, −1,5) m. La cámara está excavada en la roca y su suelo queda unos 3–6 m por debajo de la base. Con el vértice del cono a −3 m o a −6 m, el cono sería el 21,5 % o el 22,9 % del volumen. La coincidencia con el 19 % depende, por tanto, de esta suposición.
 - **Modelo de flujo**: el mismo que en Keops (docs/06), con caliza de 2,2 t/m³.
-- **Exposición**: se ajusta para que el análisis, restringido al cono de 35°, contenga **10⁶ muones**.
+- **Exposición**: se ajusta para que el análisis, restringido al cono de 35°, contenga **7 × 10⁵ muones**. Como variante se usa 10⁶.
 - **Hueco buscado**: del tamaño de la Cámara del Rey (10,47 × 5,23 × 5,84 m), y también cubos de 8 m y 5 m.
-- **Calibración**: se dan dos versiones. Sin calibrar (×1) y con el factor ×0,44 que reproduce las significaciones publicadas por Nagoya en Keops (docs/17).
+- **Dos lecturas**: **optimista** (el modelo tal cual) y **pesimista** (×0,44, el cociente entre las significaciones publicadas por Nagoya en Keops y las del modelo; docs/17). El factor ×0,44 procede de otro análisis y otro detector: no es una calibración del experimento de Alvarez, sino una forma de acotar el resultado.
 
-### Validación
+### Comparación con Alvarez
 | Magnitud | Modelo | Alvarez 1970 |
 |---|---|---|
-| Volumen dentro del cono de 35° | 20,4 % | 19 % |
-| Cámara del Rey detectable dentro del cono (sin calibrar) | 80 % a ≥ 5σ; 97,5 % a ≥ 3σ | "en cualquier punto del cono" |
-| Cámara del Rey a 40 m sobre Belzoni (su figura 11) | 11,9σ | señal "evidente" |
+| Volumen dentro del cono de 35° | 20,4 % (detector a ras de la base) | 19 % |
+| Cámara del Rey detectable dentro del cono (optimista) | 68 % a ≥ 5σ; 94 % a ≥ 3σ (con 10⁶: 79 % y 97 %) | "en cualquier punto del cono" |
+| Lo mismo, pesimista | 11 % a ≥ 5σ; 39 % a ≥ 3σ | — |
+| Cámara del Rey a 40 m sobre Belzoni (su figura 11), 10⁶ muones | 11,9σ optimista (5,2σ pesimista) | señal "evidente" |
 
-El modelo sin calibrar coincide con lo que Alvarez afirmó. Con la calibración de Nagoya, más conservadora, su afirmación solo se cumpliría a 3σ en la mitad del cono (54 %). La diferencia muestra cuánto depende la cobertura del criterio estadístico. Por eso damos siempre las dos versiones.
+La lectura optimista es compatible con lo que afirmó Alvarez, sobre todo a 3σ. La pesimista no lo es. La cobertura depende mucho del criterio estadístico, y por eso damos siempre las dos.
 
 ## 3. ¿Cuánto de Kefrén está explorado?
-| Hueco | Explorado a ≥ 5σ (calibrado / sin calibrar) | A ≥ 3σ |
+| Hueco | Explorado a ≥ 5σ (pesimista / optimista) | A ≥ 3σ |
 |---|---|---|
-| Del tamaño de la Cámara del Rey | **4 % / 18 %** | 12 % / 22 % |
-| Cubo de 8 m | 11 % / 22 % | 20 % / 23 % |
-| Cubo de 5 m | 1 % / 6 % | 3 % / 14 % |
+| Del tamaño de la Cámara del Rey | **3 % / 15 %** | 9 % / 21 % |
+| Cubo de 8 m | 8 % / 21 % | 18 % / 23 % |
+| Cubo de 5 m | 0,5 % / 4 % | 2 % / 11 % |
 
-**Más del 80 % de la segunda pirámide de Giza no se ha examinado nunca con muones**, con ningún criterio, según lo publicado. Es la misma cifra que dio el propio Alvarez hace 56 años.
+Con 10⁶ muones en el cono, la cámara del tamaño de la del Rey sube a 4 % / 18 %. Fuera del cono de 35° (≈ 80 % del volumen) no hay ninguna afirmación publicada de sensibilidad. Los datos de Alvarez llegan hasta ~45° del cenit, y Gutowski et al. reanalizaron la banda de 20–40° (§5), pero nadie ha publicado qué se puede descartar ahí.
 
-## 4. Cómo terminar el experimento
+## 4. Cómo ampliar el experimento
 Desde la misma Cámara de Belzoni, con emulsiones modernas analizadas con |tanθ| ≤ 1:
 
-| Configuración | Cámara tipo Rey a ≥ 5σ (calibrado / sin calibrar) | Cubo de 8 m | Cubo de 5 m |
+| Configuración | Cámara tipo Rey a ≥ 5σ (pesimista / optimista) | Cubo de 8 m | Cubo de 5 m |
 |---|---|---|---|
 | Una exposición cenital, 2 m² × 180 días | 32 % / 36 % | 35 % / 37 % | 18 % / 32 % |
-| **Cinco exposiciones (cenital + 4 inclinadas 45°), 2 m² × 180 días cada una** | **61 % / 62 %** | 62 % / 63 % | 46 % / 60 % |
+| **Cinco exposiciones (cenital + 4 inclinadas 45°), 2 m² × 180 días cada una** | **61 % / 62 %** | 62 % / 63 % | 45 % / 60 % |
 
-Tras la propuesta, lo que sigue sin explorar para cámaras del tamaño de la del Rey son los **20 m inferiores (88 %)** y, en parte, de 20 a 40 m (28 %). Para esa franja harían falta puestos en los pasajes bajos o fuera de la pirámide, como en Keops.
+**El ~61 % es un techo geométrico.** La unión de los cinco campos de visión, con el corte de 70° del cenit, contiene el 58,7 % del volumen, y el resto lo aportan cajas que asoman en el borde. Dentro de esos campos casi todo queda explorado. Por debajo de 20 m, solo el 8 % del volumen es alcanzable desde Belzoni con ese corte: de ahí que el 88 % de esa franja siga sin explorar. Con un corte de 80° el techo subiría a ~76 %. Para la franja inferior harían falta puestos en los pasajes bajos o fuera de la pirámide, como en Keops.
 
-Las cinco orientaciones se pueden exponer a la vez si hay película suficiente: Nagoya llegó a tener 8 m² instalados en Keops. Con 10 m² en total, todo el experimento cabe en **unos seis meses**.
+Las cinco orientaciones usan películas distintas, así que se pueden exponer a la vez si hay película suficiente (Nagoya llegó a tener 8 m² instalados en Keops). Con 10 m² en total, todo el experimento cabe en **unos seis meses**. Combinarlas en cuadratura no cuenta dos veces la estadística, pero sí trata como independientes los sistemáticos del modelo, lo que es algo optimista.
 
 ### Incertidumbre en la posición de la Cámara de Belzoni
 Las fuentes no coinciden. Aquí se usa la esquina sureste de la cámara en (5, −1,5) m. Gutowski et al. (arXiv:1712.08590) sitúan el centro de la cámara 13,5 m al este y 4 m al norte del centro de la pirámide, y Wikipedia sitúa los pasajes ~12 m al este del eje. Con la esquina en (19,5; 2) m ([`resultados/22_kefren_variantes.json`](../resultados/22_kefren_variantes.json), rejilla de 6 m):
-- el cono es el 19,4 % del volumen, aún más cerca del 19 % de Alvarez;
-- lo explorado por Alvarez queda en 4 % (calibrado) y 15 % (sin calibrar);
+- el cono es el 19,4 % del volumen;
+- lo explorado por Alvarez queda en 3 % (pesimista) y 13 % (optimista);
 - la propuesta llega al 59–61 %.
 
 Las conclusiones no cambian.
 
 ## 5. Una pista publicada que la propuesta resolvería
-Un grupo de estudiantes de secundaria, ganadores del concurso *Beamline for Schools* del CERN en 2016 (Gutowski et al., arXiv:1712.08590, sin revisión por pares), comparó un modelo sencillo con los datos de Alvarez a ~30° del cenit. Señalan "posiblemente" más muones de lo esperado entre 62° y 72° de acimut, compatible con una cámara del tamaño de la del Rey, y un pico inesperado a 270°. No es un resultado sólido, pero sí una hipótesis concreta que se puede poner a prueba.
+Un grupo de estudiantes de secundaria, ganadores del concurso *Beamline for Schools* del CERN en 2016 (Gutowski et al., arXiv:1712.08590, sin revisión por pares), comparó un modelo sencillo con los propios datos de Alvarez, entre 20° y 40° del cenit. Señalan "posiblemente" más muones de lo esperado entre 62° y 72° de acimut, compatible con una cámara del tamaño de la del Rey. También un pico inesperado a 270° y un déficit hacia 192–203°. Es un exceso débil en el mismo conjunto de datos, no un resultado sólido, pero sí una hipótesis concreta que se puede poner a prueba.
 
-Con nuestro modelo (calibrado), una cámara del tamaño de la del Rey a 30° del cenit, en cualquier acimut, daría:
+Con nuestro modelo en la **lectura pesimista** y 7 × 10⁵ muones, una cámara del tamaño de la del Rey a 30° del cenit daría lo que muestra la tabla. Cada rango junta todos los acimutes y las dos posiciones del detector, y **solo cuenta las posiciones en que la cámara cabe entera dentro de la pirámide**. A partir de ~70 m de altura, el anillo de 30° empieza a salirse.
 
-| Altura sobre Belzoni | Datos de Alvarez (10⁶ muones) | Exposición cenital propuesta (2 m² × 180 d) |
-|---|---|---|
-| 20 m | 10–20σ | ≥ 34σ |
-| 40 m | 5–11σ | ≥ 16σ |
-| 60 m | 3–7σ | ≥ 10σ |
-| 80 m | 2–4σ | ≥ 7σ |
-| 100 m | 1,6–4σ | ≥ 5σ |
+| Altura sobre Belzoni | Posiciones dentro (de 36) | Datos de Alvarez | Exposición cenital propuesta (2 m² × 180 d) |
+|---|---|---|---|
+| 20 m | 36 | 8,5–17σ | ≥ 34σ |
+| 40 m | 36 | 4,3–9σ | ≥ 16σ |
+| 60 m | 36 | 2,7–5,7σ | ≥ 10σ |
+| 70 m | 27–36 | 2,2–4,1σ | ≥ 8σ |
+| 80 m | 15–20 | 1,8–2,6σ | ≥ 7σ |
 
-**Los datos de 1969 descartan esa cámara a 40 m de altura o menos, pero no a 60–100 m.** La negativa de Alvarez y la pista de los estudiantes son compatibles si la cámara estuviera alta. Una sola exposición cenital moderna desde el mismo sitio la vería a ≥ 5σ a cualquier altura hasta ~100 m, o la descartaría.
+**Los datos de 1969 descartan esa cámara hasta unos 30–40 m de altura (a 40 m, solo por poco), pero no a 60–80 m.** La negativa de Alvarez y la pista de los estudiantes podrían ser compatibles si la cámara estuviera alta. Una sola exposición cenital moderna desde el mismo sitio la vería a ≥ 7σ en todas las posiciones de ese anillo que caben en la pirámide, o la descartaría.
 
 ![Kefrén: Alvarez frente a la propuesta](../figuras/09_kefren_alvarez.png)
 
 ## 6. Límites
 - **Modelo simplificado**: sin Geant4 y con densidad uniforme. No incluye las irregularidades del núcleo de roca natural, que en Kefrén es importante: la esquina noroeste está tallada en la roca y la sureste está construida sobre una plataforma. Para un análisis real, esas heterogeneidades serían el principal sistemático, como ya lo fue para Alvarez.
-- **Posición del detector**: incierta en ~15 m según la fuente. Se ha estudiado como variante (§4) y no cambia las conclusiones.
-- **Exposición de 1969**: no se modela su eficiencia real. Se ajusta el número de muones (10⁶), que es lo que fija la estadística.
+- **Posición del detector**: incierta en ~15 m en horizontal y 3–6 m en vertical según la fuente. Se ha estudiado como variante (§2 y §4) y no cambia las conclusiones.
+- **Exposición de 1969**: no se modela su eficiencia real. Se ajusta el número de muones (7 × 10⁵, variante 10⁶), que es lo que fija la estadística. La geometría del detector se simplifica: dos planos a 0,3 m, sin el hierro. Con la pila completa de ~1,8 m, la fracción del cono a ≥ 5σ cambia unos 5 puntos.
+- **Corte de cenit**: 70°, como en Keops. Marca el techo de la propuesta (§4).
 - **Datos no publicados**: puede haberlos. El mapa se refiere a lo publicado.
 - **No dice que haya cámaras en Kefrén.** Dice que la mayor parte de la pirámide no se ha examinado, y cómo examinarla.
 
 ## Referencias
 - Alvarez, L. W. et al. (1970). *Search for hidden chambers in the pyramids*. Science 167, 832–839.
 - Gutowski, B. et al. (2017). *The secret chambers in the Chephren Pyramid*. arXiv:1712.08590 (CERN Beamline for Schools).
-- Morishima, K. et al. (2017). Nature 552, 386–390 (calibración de Nagoya; docs/17).
+- Morishima, K. et al. (2017). Nature 552, 386–390 (factor de Nagoya; docs/17).

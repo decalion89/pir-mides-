@@ -82,9 +82,8 @@ No predecimos que haya una cámara. Predecimos **qué zona quedará explorada y 
 ## P13 — Kefrén desde la Cámara de Belzoni (doc. 18), registrada el 01/11/2026
 Cinco exposiciones de emulsión de 2 m² × 180 días en la Cámara de Belzoni (una cenital y cuatro inclinadas 45° hacia cada cara, analizadas con |tanθ| ≤ 1) deberían:
 1. **ver las cuatro aristas y el remate de caliza original** con mucha más claridad que en 1969, como comprobación de la geometría;
-2. tener sensibilidad de ≥ 5σ a una cámara del tamaño de la del Rey en el **~61 %** del volumen de Kefrén (hoy, 4–18 %), con todo el volumen por encima de ~40 m cubierto.
-
-3. **resolver la pista de Gutowski et al. (2017)**. Si hubiera una cámara del tamaño de la del Rey a ~30° del cenit sobre Belzoni, la exposición cenital la vería a ≥ 5σ a cualquier altura hasta ~100 m. Los datos de Alvarez solo la descartan hasta ~40 m.
+2. tener sensibilidad de ≥ 5σ a una cámara del tamaño de la del Rey en el **~61 %** del volumen de Kefrén (hoy, 3–15 %), con todo el volumen por encima de ~40 m cubierto. El techo lo fija la geometría con el corte de 70° del cenit;
+3. **resolver la pista de Gutowski et al. (2017)**. Si hubiera una cámara del tamaño de la del Rey a ~30° del cenit sobre Belzoni, la exposición cenital la vería a ≥ 7σ en todas las posiciones de ese anillo que caben en la pirámide (hasta ~80 m de altura). Los datos de Alvarez solo la descartan hasta ~30–40 m. (Corregido el 01/11/2026 tras una revisión independiente: la primera versión incluía posiciones fuera de la pirámide.)
 
 Igual que en P12, no predecimos que haya una cámara: predecimos qué parte quedará explorada.
 

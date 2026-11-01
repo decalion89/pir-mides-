@@ -22,7 +22,7 @@ from piramide import cobertura as cb
 from piramide import kefren as kf
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EVENTOS_ALVAREZ = 1.0e6          # "more than a million" (Alvarez et al. 1970)
+EVENTOS_ALVAREZ = 7.0e5          # análisis del cono (fig. 13): ~700 000 de "more than a million"
 FACTORES = {"calibrado (×0,44, Nagoya)": 0.437, "sin calibrar (×1)": 1.0}
 HUECOS = {"cámara tipo Rey": None, "cubo de 8 m": 8.0, "cubo de 5 m": 5.0}
 _E = {}

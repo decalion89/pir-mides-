@@ -390,3 +390,11 @@ def test_ley_media_senal():
         assert abs(p - p0) < 0.02 * abs(p0) + 1e-3
         assert (s2 * (1 - 2 * p) < 0) == (p > 0.5)
     assert 0.5 < p0 < 0.7
+
+
+def test_qin_vapor_mercurio():
+    """Presión de vapor del Hg: 0,170 Pa a 20 °C (Huber et al. 2006) y saturación ~13 mg/m³."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "simulador"))
+    import qin_mercurio as qm
+    assert abs(qm.presion_vapor_hg(293.15) - 0.170) < 0.01
+    assert 12e-6 < qm.c_sat(293.15) < 14.5e-6

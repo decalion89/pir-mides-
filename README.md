@@ -172,7 +172,15 @@ Con posteriores de su geometría (emulsiones, KEK y conjunto), medimos cuánta p
 - **Lo más cercano, de forma robusta, es la pared norte de las cámaras de descarga 4 y 5:** ~8 m, y < 10 m con una probabilidad del 86–99,8 % en los tres análisis.
 - **Hallazgo de método:** los datos publicados solo miran hacia el norte. El extremo sur lo fija una frase del artículo, y con ella coincide con el final de la Gran Galería.
 
-### 27. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 27. La tumba del Primer Emperador respira → [docs/34](docs/34-la-tumba-que-respira.md)
+Un lidar midió en 2016 que del túmulo de Qin Shi Huang salen ~4 g de mercurio al día (Duan et al. 2020).
+- **La difusión a través de la tierra desde la cámara se queda corta** en un factor de 19 a 2 170 (mediana 163), y ninguna de 200 000 combinaciones de parámetros basta.
+- **El suelo contaminado del túmulo,** con ritmos típicos, se queda corto de 9 a 220 veces.
+- **Lo que basta es que el palacio subterráneo intercambie aire con la atmósfera** (~460 m³/día, bombeo barométrico).
+
+Si el flujo es correcto y viene de la tumba, **no está sellada**. Prueba barata: la emisión debe subir cuando baja la presión.
+
+### 28. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -211,6 +219,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [31 — KEK se certifica a sí mismo](docs/31-kek-se-certifica-a-si-mismo.md) | Los datos de KEK fijan su registro con la simulación a < 0,1–0,25 m: descartan el falso vacío; la tensión con las emulsiones no viene de ahí |
 | [32 — Sistemáticos de KEK](docs/32-sistematicos-de-kek.md) | Ni posición, ni paralaje, ni escala angular de KEK explican la tensión con las emulsiones (≥ 58 con valores plausibles) |
 | [33 — A cuántos metros está el Gran Vacío](docs/33-a-cuantos-metros-esta-el-gran-vacio.md) | Ningún espacio accesible a menos de 5 m; lo más cercano, las cámaras de descarga 4–5 (~8 m); sin endoscopio posible |
+| [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×163): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

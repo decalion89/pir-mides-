@@ -97,3 +97,15 @@ Un estudio de gravedad con ~660 estaciones en los escalones de las cuatro caras 
 2. **ver la huella de las estructuras conocidas cercanas a las caras**, como el corredor descendente y el NFC en la cara norte, como comprobación.
 
 **Qué la refutaría**: que la dispersión de las medidas tras corregir el modelo de masas fuera ≫ 6 µGal. Indicaría que la heterogeneidad de los bloques domina y que la cobertura calculada es optimista. Y como en 1986, una anomalía de gravedad sola no prueba un hueco: hay que confirmarla con muones.
+
+## P15 — La tumba de Qin Shi Huang respira (doc. 34), registrada el 01/11/2026
+**Condición:** que la emisión de mercurio medida por lidar (~5×10⁻⁸ kg/s, Duan et al. 2020) sea correcta y venga de la cámara.
+
+**Predicción:**
+1. **Presión.** Una serie continua de Hg en el aire (o en el gas del suelo a 1–5 m) sobre el túmulo, medida junto a la presión atmosférica durante ≥ 2 semanas, mostrará **correlación negativa entre la emisión y la tendencia de la presión** (más emisión cuando la presión baja), con un retraso de horas.
+2. **Perfil vertical.** El Hg en el gas del suelo **aumentará con la profundidad**.
+3. **Total.** El flujo total integrado con cámaras de flujo será del orden de 10⁻⁸–10⁻⁷ kg/s y saldrá por puntos localizados.
+
+**Refutación:**
+- Si la emisión sigue al sol y a la temperatura del suelo sin relación con la presión, y el gas del suelo tiene su máximo en superficie, la fuente es superficial (vía b).
+- Si el flujo total medido con cámaras es ≪ 10⁻⁸ kg/s, el lidar sobrestimaba (vía c).

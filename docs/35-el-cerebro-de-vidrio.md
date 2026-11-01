@@ -1,5 +1,11 @@
 # 35 — El "cerebro de vidrio" de Herculano no pudo enfriarse a 1 000 K/s
 
+> **Corregido el 01/11/2026 tras una revisión adversaria independiente.**
+> - Se retira la atribución a Morton-Hayward et al. 2020 de un argumento sobre el ritmo de enfriamiento. Su texto completo (leído) no habla de enfriamiento: argumenta temperaturas más bajas (carbón a 240–370 °C) y la inestabilidad de los ácidos grasos.
+> - Se responde al argumento de la fragmentación, que el propio artículo propone (§2b).
+> - La energía para secar y calentar el cerebro es 2,96 MJ, no "~3,3 MJ". Los tiempos ya usaban el valor correcto.
+> - Se sustituye la prueba propuesta, porque el material no se puede volver a medir tras el primer barrido.
+
 > **El artículo.** Giordano et al. (*Scientific Reports* 15:5955, 2025; doi:10.1038/s41598-025-88894-5) tuvo eco mundial. Según los autores:
 > - unos fragmentos vítreos negros de 0,5–5 mm, sacados del **interior del cráneo** de una víctima del Vesubio, son el cerebro convertido en vidrio;
 > - el material pasó a vidrio a ~510 °C;
@@ -9,7 +15,7 @@
 > Citan para ese ritmo un estudio sobre partículas de ceniza que caen **libres en el aire** (Thomas y Sparks 1992). Después, depósitos de 315–465 °C enterraron el cuerpo.
 >
 > **Lo que dice la física, con los propios parámetros del artículo.**
-> 1. **El enfriamiento dentro de un cráneo es de 0,1–1,7 K/s, no de 1 000 K/s:** entre 600 y 10 000 veces más lento. Ni siquiera un fragmento suelto en aire quieto llega a 1 000 K/s: da 17–720 K/s según su tamaño (5 a 0,5 mm).
+> 1. **El enfriamiento dentro de un cráneo es de 0,1–1,7 K/s, no de 1 000 K/s:** entre 600 y 12 500 veces más lento. Ni siquiera un fragmento suelto en aire quieto llega a 1 000 K/s: da 17–720 K/s según su tamaño (5 a 0,5 mm).
 > 2. **Con un ritmo físicamente posible, su propia cinética da una temperatura ficticia de ~405–440 °C, no 510 °C.** Esos valores se solapan con la temperatura de los depósitos que enterraron el cuerpo. Su argumento para descartar 420 °C ("comparable o menor que la temperatura de los depósitos") deja entonces de funcionar.
 > 3. **Secar y calentar el cerebro por encima de 510 °C** exige **3–40 minutos** de exposición plena a una nube de 550–750 °C. Eso sin contar el límite de la conducción a través del cuero cabelludo y el hueso. Está al límite, o fuera, de una nube que dura "minutos".
 > 4. **Con su propia energía de activación (390 kJ/mol), el material se ablanda en 0,4 s a 465 °C, en 3 min a 400 °C y en 13,5 h a 350 °C.** Para que el vidrio sobreviviera al enterramiento, el entorno del cráneo tuvo que quedarse por debajo de ~330–350 °C, el extremo inferior del intervalo. Además, a esas temperaturas el vidrio **se recuece en minutos u horas**: su temperatura ficticia actual reflejaría el enterramiento, no el paso de la nube.
@@ -50,8 +56,15 @@ Con viento fuerte (h = 200 W/m²K), un fragmento de 1 mm llega a 330 K/s.
 
 **Resultado:** los fragmentos estaban dentro del cráneo, y allí el ritmo es **~0,1–2 K/s**. Aun suponiendo que el cerebro se hubiera fragmentado y los trozos quedaran expuestos al aire, solo los de ≤ 0,5 mm se acercarían a 1 000 K/s. Los fragmentos medidos miden 0,5–5 mm.
 
+## 2b. ¿Y si el cerebro se fragmentó?
+**Lo que dice el propio artículo:** el cerebro estaba *"severely damaged and disaggregated in small sub-centimetric pieces … favouring the heat exchange during cooling"*. Es su respuesta implícita al problema del enfriamiento. Hay que examinarla:
+- **Fragmentos expuestos al aire libre:** se enfriarían a 17–720 K/s según el tamaño. Su propia cinética daría entonces T_f = **460–506 °C**, por encima del intervalo de los depósitos. En ese caso, el punto 2 de este documento no se sostendría.
+- **Pero los fragmentos estaban dentro del cráneo:** *"sampled intact, directly from within the skull"*. Un fragmento dentro de una cavidad cerrada intercambia calor con gas y hueso que están a su misma temperatura. El calor tiene que salir igualmente a través del cráneo, así que los fragmentos se enfrían al ritmo de la cavidad (~0,1–2 K/s), por pequeños que sean.
+- **El artículo usa la protección del cráneo en una sola dirección:** dice que *"the thick bones of the skull and spine … may have helped to prevent complete devolatilization"* durante el calentamiento. Esa misma protección frena el enfriamiento.
+- **Conclusión:** el argumento de la temperatura ficticia vale si los fragmentos se enfriaron dentro del cráneo cerrado, que es donde se encontraron. Si el cráneo estuvo abierto y los fragmentos quedaron expuestos, deja de valer. Los puntos 3 (tiempo de calentamiento) y 4 (supervivencia durante el enterramiento) no dependen de esto.
+
 ## 3. ¿Cuánto tarda en calentarse el cerebro por encima de 510 °C?
-**Planteamiento:** el cerebro pesa ~1,35 kg, con un 77 % de agua. Hay que calentar y evaporar el agua y llevar el resto a 510 °C: ~3,3 MJ. Se supone que **toda** la potencia que entra por la cabeza (convección + radiación de la nube, sobre 0,06–0,12 m²) llega al cerebro, sin límite de conducción. Es una cota inferior del tiempo.
+**Planteamiento:** el cerebro pesa ~1,35 kg, con un 77 % de agua. Hay que calentar y evaporar el agua y llevar el resto a 510 °C: ~2,96 MJ. Se supone que **toda** la potencia que entra por la cabeza (convección + radiación de la nube, sobre 0,06–0,12 m²) llega al cerebro, sin límite de conducción. Es una cota inferior del tiempo.
 
 | Nube | ε = 0,3, h = 30 | ε = 1, h = 100 |
 |---|---|---|
@@ -83,11 +96,14 @@ El recocido se calcula con el modelo de Tool–Narayanaswamy–Moynihan, con x =
   - un sólido vítreo formado por **pirólisis lenta** (carbonización) del tejido, a temperaturas de enterramiento de ~300–350 °C y durante horas o días;
   - un vidrio cuya historia de enfriamiento real (~0,1–1 K/s) da T_f ≈ 405–430 °C.
 
-  Las dos se pueden poner a prueba con el método de igualación de áreas (Moynihan): un primer calentamiento y luego un segundo tras un enfriamiento controlado. Así se mide la T_f natural en lugar de suponerla.
+  El artículo dice que *"subsequent upscans at the same rates did not exhibit any thermal events"*: el material se transforma en el primer barrido. Por eso no sirve el método clásico de igualación de áreas, que necesita volver a medir la misma muestra. La prueba posible es medir solo el primer barrido sobre varios fragmentos nuevos, a varios ritmos de calentamiento, y compararlos con vidrios de referencia de tejido preparados con ritmos de enfriamiento conocidos. Así se mide la T_f natural en lugar de suponerla.
 
 ## Qué es nuevo y qué no
-- **No es nuevo** *(revisado el 01/11/2026)*: que el enfriamiento fuera demasiado lento como idea. **Morton-Hayward et al. (2020, *STAR* 6:87–95)**, en su respuesta a la primera publicación (Petrone et al., *NEJM* 2020), ya argumentaron cualitativamente que los flujos piroclásticos de Herculano no estaban lo bastante calientes ni se enfriaron lo bastante rápido para vitrificar el tejido. Giordano et al. 2025 responden con un escenario nuevo, una nube de ceniza previa y más caliente. Otras críticas: Mauro dudó de que el tejido aguantara >510 °C; otros, de que el material sea cerebro.
-- **No lo hemos encontrado publicado** (búsqueda extendida del 01/11/2026; el texto completo de Morton-Hayward et al. 2020 no estaba accesible y ningún resumen menciona cálculos):
+- **No es nuevo:**
+  - **Morton-Hayward et al. (2020, *STAR* 6:87–95)**, en respuesta a Petrone et al. (*NEJM* 2020), argumentaron temperaturas más bajas (carbón a 240–370 °C) y la inestabilidad de los ácidos grasos a esas temperaturas. No tratan el ritmo de enfriamiento.
+  - Que los flujos piroclásticos se enfriaron despacio lo dicen los propios Giordano et al., y por eso proponen la nube previa.
+  - Mauro dudó de que el tejido aguantara >510 °C. Otros dudan de que el material sea cerebro.
+- **No lo hemos encontrado publicado** (búsqueda extendida del 01/11/2026; texto completo de Morton-Hayward et al. 2020 leído en White Rose):
   - un cálculo de transferencia de calor para el cráneo, aplicado al escenario de la nube de 2025;
   - la temperatura ficticia que corresponde a ritmos físicamente posibles;
   - el análisis de supervivencia y recocido con la propia cinética del artículo.

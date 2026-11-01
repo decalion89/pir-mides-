@@ -16,10 +16,10 @@ We test that thermal history against heat transfer, using the authors' own kinet
 3. Drying and heating the brain above 510 °C needs 3–40 min of full exposure to a 550–750 °C cloud, even before conduction limits are counted.
 4. With E = 390 kJ mol⁻¹, the material would soften within ~0.4 s at 465 °C and ~13 h at 350 °C. Any high T_f would anneal in minutes to hours at 315–350 °C.
 
-The calorimetric data may be correct, but the inferred cooling rate and scenario are not supported by heat transfer.
+Point 2 assumes the fragments cooled inside the skull, where they were found. If the skull was open and the fragments were exposed to air, it no longer holds, but points 3 and 4 still do. The calorimetric data may be correct, but the inferred cooling rate and scenario are not supported by heat transfer.
 
 ## 0. Prior work
-Morton-Hayward et al. (2020) argued qualitatively, in reply to the first report (Petrone et al. 2020), that the Herculaneum pyroclastic flows were neither hot enough nor fast-cooling enough to vitrify brain tissue. Giordano et al. (2025) answer this with a new scenario: an earlier, hotter ash cloud followed by fast cooling. Here we test that specific scenario quantitatively.
+Morton-Hayward et al. (2020), replying to the first report (Petrone et al. 2020), questioned the temperatures (charcoal evidence of 240–370 °C) and the survival of fatty acids. They did not address cooling rates. Giordano et al. (2025) note that the pyroclastic flows "would have cooled slowly" and propose an earlier, hotter, short-lived ash cloud followed by fast cooling. Here we test that specific scenario quantitatively.
 
 ## 1. The inference being tested
 The two onsets, 420 °C at 0.42 K s⁻¹ and 510 °C at 1000 K s⁻¹, define E/R through ln q = const − (E/R)/T. That is how the authors obtain 390.1 kJ mol⁻¹. Because the onsets shift with heating rate, they describe the material's glass transition *at each heating rate*. They do not measure the natural cooling rate. Equating the natural T_f with the 1000 K s⁻¹ onset rests on an assumed "balanced thermal history", that is, a cooling rate equal to the heating rate.
@@ -34,7 +34,9 @@ When each point crosses 510 °C, the cooling rate is:
 - 0.12–0.57 K s⁻¹ at 1 cm depth;
 - 0.08–0.17 K s⁻¹ at the centre.
 
-These are 600–10,000 times below 1000 K s⁻¹ (Fig. 1a).
+These are 600–12,500 times below 1000 K s⁻¹ (Fig. 1a).
+
+**Fragmentation.** Giordano et al. suggest the brain was "disaggregated in small sub-centimetric pieces … favouring the heat exchange during cooling". Fragments exposed to open air would indeed cool at 17–720 K s⁻¹, implying T_f = 460–506 °C. But the fragments were "sampled intact, directly from within the skull". Inside a closed cavity, fragments exchange heat with gas and bone at nearly their own temperature, so heat must still leave through the skull. The paper itself invokes "the thick bones of the skull" as protection during heating; the same protection slows cooling. Our fictive-temperature argument (Section 3) therefore holds if the fragments cooled inside the skull, where they were found. It fails if the skull was open and the fragments were exposed. Sections 4 and 5 do not depend on this.
 
 As an upper bound we also take a fragment *outside* any skull, in still air (Nu = 2) and radiating. It cools at 720, 210, 66 and 17 K s⁻¹ for diameters of 0.5, 1, 2 and 5 mm. Only sub-0.5 mm particles exposed to strong forced convection approach 1000 K s⁻¹.
 
@@ -42,7 +44,7 @@ As an upper bound we also take a fragment *outside* any skull, in still air (Nu 
 Using the paper's own kinetics, T_f = 384, 406, 429, 454, 481 and 510 °C for cooling at 0.01, 0.1, 1, 10, 100 and 1000 K s⁻¹ (Fig. 1b). Cooling at 0.1–2 K s⁻¹ gives T_f ≈ 405–440 °C. The authors reject a natural T_f of 420 °C because it is "comparable or lower than the temperature of the embedding deposits". The same argument then excludes the T_f that heat transfer actually allows.
 
 ## 4. Heating in a minutes-long cloud
-The brain weighs ~1.35 kg and is 77% water. Warming it, evaporating the water and bringing the dry residue to 510 °C needs ≈3.3 MJ. We assume all the convective and radiative input on 0.06–0.12 m² of head reaches the brain, which ignores the conduction limit through scalp and bone. Even so, a cloud at 550/650/750 °C needs 6–39, 4–29 and 3–22 min, depending on emissivity (0.3–1) and h (30–100 W m⁻² K⁻¹). This is at best marginal for a cloud lasting "on order of minutes".
+The brain weighs ~1.35 kg and is 77% water. Warming it, evaporating the water and bringing the dry residue to 510 °C needs ≈3.0 MJ. We assume all the convective and radiative input on 0.06–0.12 m² of head reaches the brain, which ignores the conduction limit through scalp and bone. Even so, a cloud at 550/650/750 °C needs 6–39, 4–29 and 3–22 min, depending on emissivity (0.3–1) and h (30–100 W m⁻² K⁻¹). This is at best marginal for a cloud lasting "on order of minutes".
 
 ## 5. Survival during burial
 With the paper's E, the equilibrium relaxation time τ ≈ (RT²/E)/q at the measured onset extrapolates to:
@@ -61,7 +63,7 @@ We do not question the glassy character of the material or the DSC data. What he
 - slow pyrolysis of tissue to a glassy carbonaceous solid, at burial temperatures of ~300–350 °C over hours to days;
 - conventional cooling at ~0.1–1 K s⁻¹, giving T_f ≈ 405–430 °C.
 
-Both can be tested by measuring the natural T_f directly with the enthalpy area-matching method (Moynihan et al. 1976): a first upscan, then a rescan after controlled cooling at a known rate. Today the natural T_f is assumed rather than measured.
+Because "subsequent upscans at the same rates did not exhibit any thermal events", the classical area-matching rescan cannot be done on the same fragment. Instead, first-scan onsets at several heating rates on fresh fragments can be compared with reference tissue glasses prepared at known cooling rates. This would measure the natural T_f rather than assume it.
 
 ## Data and code
 All calculations are in `simulador/herculano_vidrio.py` (results: `resultados/44_herculano_vidrio.json`; figure: `simulador/figuras_herculano.py`) at [REPOSITORY URL].

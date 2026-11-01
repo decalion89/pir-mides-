@@ -224,7 +224,7 @@ Para no elegir los casos a dedo, se tomaron **40 artículos al azar** (semilla f
   - un **error aritmético** en un artículo de radiocarbono en paleosuelos, que infravalora el carbono moderno ×3–72 (doc. 40);
   - un mecanismo de **carbonatación imposible por estequiometría** (×570) en una cal "orgánica" (doc. 41).
 
-### 35. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md) → [PREDICCIONES.md](PREDICCIONES.md)
+### 35. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica

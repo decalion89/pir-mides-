@@ -118,7 +118,10 @@ Combinando todas las sondas desde puntos ya accesibles, se puede pasar del **34 
 ### 16. ¿Una ley de aprendizaje? Un techo, no una curva → [docs/23](docs/23-ley-de-aprendizaje.md)
 Ritmo de construcción (m³/año) de todas las pirámides del Reino Antiguo frente a la experiencia acumulada. **No se cumple la ley de Wright.** Snefru multiplicó por 4–13 el ritmo de Djoser en una generación, y tres reinados seguidos se mantuvieron en ~85 000–150 000 m³/año (~340 m³/día). Después el ritmo cae ×6–90 justo cuando la experiencia es máxima. La "tecnología" no se perdió: se alcanzó el límite del Estado y luego se redirigió. Es una regularidad sugerente con solo 4 puntos, no una ley.
 
-### 17. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 17. ¿Hay algo más en los datos de 2017? → [docs/24](docs/24-busqueda-de-anomalias-en-kek.md)
+Búsqueda de una segunda señal en los residuos de KEK tras restar el Gran Vacío, con nula correlacionada y significación global. El mejor candidato (p = 0,031; ≈ 1,9σ contando excesos y déficits) **no lo confirma el segundo detector** por paralaje. No hay una segunda anomalía en esos datos.
+
+### 18. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -147,6 +150,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [21 — Gravedad y muones](docs/21-gravedad-y-muones.md) | Microgravimetría para la base que los muones no ven: plan combinado que cubre el 79 % |
 | [22 — Plan completo de exploración](docs/22-plan-completo-de-exploracion.md) | Del 34 % al ~85 % con lo que ya existe; el límite físico del ~15 % restante |
 | [23 — ¿Una ley de aprendizaje?](docs/23-ley-de-aprendizaje.md) | Ritmo de construcción por reinado: techo de ~340 m³/día y caída por decisión |
+| [24 — Anomalías en los datos de KEK](docs/24-busqueda-de-anomalias-en-kek.md) | Búsqueda de una segunda señal en los residuos de 2017: ninguna confirmada |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

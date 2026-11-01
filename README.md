@@ -200,7 +200,13 @@ Los tres casos anteriores (Qin, Herculano, Djoser) fallan igual: razonan con tot
 
 Artículo de síntesis en inglés, con figura, para enviarlo con el nombre del autor.
 
-### 31. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 31. El plomo de Roma: el efecto sobre el CI está sobrestimado entre 2 y 5 veces → [docs/37](docs/37-el-plomo-de-roma.md)
+McConnell et al. (PNAS 2025) calcularon 2,5–3 puntos de CI perdidos en todo el Imperio por el plomo del aire. Para ello tomaron como "aumento" la plombemia **total** que predice una regresión moderna (niños de EE. UU. de 1988–94) y le sumaron una base neolítica.
+- Con su propia regresión bien diferenciada salen **1,4 puntos**.
+- Con un balance de ingesta (aire, cultivos y suelo) salen **0,6**.
+- La regresión se extrapola 10–100 veces por debajo de su rango de calibración.
+
+### 32. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -242,6 +248,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×163): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
 | [35 — El cerebro de vidrio](docs/35-el-cerebro-de-vidrio.md) | El enfriamiento a 1 000 K/s del cerebro vitrificado de Herculano es imposible dentro de un cráneo (0,1–1,7 K/s); su propia cinética contradice el escenario |
 | [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: con sus estructuras recibe el 27 % de su demanda; solo es viable con un depósito de Mm³ estanco (predicción: limos lacustres) |
+| [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–5: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

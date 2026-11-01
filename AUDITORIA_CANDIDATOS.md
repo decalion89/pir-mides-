@@ -20,3 +20,5 @@ Descartados por ya comprobados o no aptos: el radar de Tutankamón (Porcelli et 
 **Hecho fuera de la lista:** el ascensor hidráulico de Djoser (Landreau et al. 2024), en el doc. 36.
 
 **Recuento al 01/11/2026:** de seis casos revisados, tres dan un resultado nuevo (Qin, Herculano, Djoser) y tres no (Teotihuacán, Monte Echia, Hierápolis).
+
+**Hecho:** plomo romano y CI (McConnell et al., PNAS 2025), en el doc. 37: sobrestimado ×2–5. Pendientes de la segunda búsqueda: la Sábana Santa por WAXS (De Caro et al. 2022), el mercurio de Tikal (Lentz et al. 2020), el oxígeno de las antorchas en cuevas (Kedar et al. 2021), el filtro de zeolita de Tikal (Tankersley et al. 2020) y los embalses de Tikal (Lucero 2023).

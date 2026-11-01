@@ -422,3 +422,13 @@ def test_saqqara_balance():
     r = sb.simular(np.random.default_rng(0), 25, aporte_anual=0.6e6, riadas_ano=0.5, capacidad=3e5, prof=1.5,
                    evap=2.1, infil=0.5, demanda=0.72e6, trinchera=2.4e4)
     assert r["cubierto"] < 0.4
+
+
+def test_plomo_romano_reproduce_articulo():
+    """La regresión reproduce los 2,0–5,3 µg/dl de McConnell et al. (2025) y su déficit de ~2,6 puntos."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "simulador"))
+    import plomo_romano as pr
+    assert abs(pr.bll_regresion(0.16e-3) - 2.03) < 0.02
+    assert abs(pr.bll_regresion(157e-3) - 5.33) < 0.02
+    assert abs(pr.deficit_ci(2.4) - 2.61) < 0.02
+    assert pr.bll_regresion(3e-5) > 1.5            # aire casi limpio: la regresión ya predice >1,5 µg/dl

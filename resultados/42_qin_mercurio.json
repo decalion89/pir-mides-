@@ -18,28 +18,43 @@
    "mediana": 2.42e-07,
    "p95": 9.68e-07
   },
-  "flujo_max_kg_s": {
+  "flujo_max_1d_kg_s": {
    "p05": 2.98e-11,
    "mediana": 3.25e-10,
    "p95": 1.77e-09
   },
-  "cociente_lidar_sobre_difusion": {
+  "cociente_lidar_sobre_difusion_1d": {
    "p05": 19.2,
    "mediana": 163.0,
    "p95": 2170.0
   },
-  "prob_difusion_basta": 0.0,
+  "factor_3d_sobre_1d": {
+   "p05": 2.72,
+   "mediana": 3.8,
+   "p95": 5.57
+  },
+  "flujo_max_kg_s": {
+   "p05": 1.24e-10,
+   "mediana": 1.27e-09,
+   "p95": 5.79e-09
+  },
+  "cociente_lidar_sobre_difusion": {
+   "p05": 5.59,
+   "mediana": 41.9,
+   "p95": 522.0
+  },
+  "prob_difusion_basta": 0.00023,
   "cota_aire_libre_kg_s": {
-   "p05": 8.14e-09,
-   "mediana": 1.81e-08,
-   "p95": 4.12e-08
+   "p05": 4.31e-08,
+   "mediana": 6.84e-08,
+   "p95": 1.16e-07
   },
   "cociente_lidar_sobre_aire_libre": {
-   "p05": 0.68,
-   "mediana": 2.77,
-   "p95": 11.2
+   "p05": 0.207,
+   "mediana": 0.722,
+   "p95": 2.51
   },
-  "prob_aire_libre_basta": 0.11645
+  "prob_aire_libre_basta": 0.665605
  },
  "B_suelo": {
   "flujo_suelo_tipico_kg_s": {

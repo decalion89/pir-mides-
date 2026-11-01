@@ -1,15 +1,18 @@
 """¿Puede el mercurio de la tumba de Qin Shi Huang llegar a la superficie por difusión?
 
-Datos: Duan, Zhang y Svanberg (Sci. Rep. 10, 10387, 2020), lidar de mercurio atómico sobre el
-túmulo (julio–agosto de 2016): flujo de emisión estimado ≈ 5×10⁻⁸ kg/s (incertidumbre ~×2).
+Datos: Zhao, G., Zhang, W., Duan, Z., … Svanberg, S. (Sci. Rep. 10, 10414, 2020;
+doi:10.1038/s41598-020-67305-x), lidar de mercurio atómico sobre el túmulo (julio–agosto de 2016):
+flujo de emisión estimado ≈ 5×10⁻⁸ kg/s (incertidumbre ~×2).
 Geometría (misma fuente): cámara central ~80 × 50 × 15 m con el techo a ~30 m bajo el suelo
 circundante; palacio subterráneo ~140 × 110 × 30 m; túmulo ~380 × 330 m en planta y ~50 m de alto.
 Suelo del túmulo: Hg medio ~190 ppb (Chang y Li 1983/85; Jin et al. 2008).
 
 Si en la cámara hay mercurio líquido, su aire está saturado de vapor (C_sat ≈ 9 mg/m³ a 15 °C).
 Tres vías para el flujo medido:
-  A. difusión a través de la tierra: F ≤ D_ef · C_sat · A / L (cota superior de estado estacionario;
-     la adsorción del Hg en el suelo solo la reduce);
+  A. difusión a través de la tierra en estado estacionario. Se da la versión 1-D (D_ef·C_sat·A/L) y la
+     de un disco enterrado en un medio semiinfinito con superficie a concentración cero, que incluye el
+     flujo lateral: S = 2πD/(π/2 − atan(D/4L)), con D el diámetro del disco de igual área (Incropera,
+     tabla de factores de forma). La adsorción del Hg en el suelo solo reduce el flujo;
   B. emisión del propio suelo del túmulo (Hg ~190 ppb) a ritmos típicos de suelos así;
   C. advección: la cámara "respira" (bombeo barométrico o térmico por grietas). Caudal necesario
      Q = F / C_sat, que se compara con la capacidad del bombeo barométrico del volumen subterráneo.
@@ -52,8 +55,11 @@ def main():
     theta_a = phi * (1 - S)
     D_ef = D_aire * theta_a ** (10 / 3) / phi ** 2               # Millington–Quirk (1961)
     # A. difusión
-    F_dif = D_ef * C * A / L
-    F_aire = D_aire * C * A / L                                  # cota absoluta: canal de aire libre
+    F_dif_1d = D_ef * C * A / L
+    Dd = np.sqrt(4 * A / np.pi)                                  # diámetro del disco de igual área
+    S = 2 * np.pi * Dd / (np.pi / 2 - np.arctan(Dd / (4 * L)))   # factor de forma 3-D (m)
+    F_dif = D_ef * C * S
+    F_aire = D_aire * C * S                                      # cota absoluta: medio de aire libre
     # B. suelo del túmulo: área 380×330 m², flujos típicos 10–100 ng/m²/h para suelos de 0,1–1 µg/g
     A_tumulo = 380 * 330
     f_suelo = np.exp(rng.uniform(np.log(10), np.log(100), N))    # ng/m²/h
@@ -77,7 +83,9 @@ def main():
         entrada=dict(flujo_lidar_kg_s="5e-8 (×2)", temperatura_C="13–17", area_fuente_m2="4000–15400",
                      espesor_m="30–80", porosidad="0,30–0,45", saturacion_agua="0,3–0,8"),
         c_sat_mg_m3=pc(C * 1e6),
-        A_difusion=dict(D_efectiva_m2_s=pc(D_ef), flujo_max_kg_s=pc(F_dif),
+        A_difusion=dict(D_efectiva_m2_s=pc(D_ef), flujo_max_1d_kg_s=pc(F_dif_1d),
+                        cociente_lidar_sobre_difusion_1d=pc(F / F_dif_1d),
+                        factor_3d_sobre_1d=pc(F_dif / F_dif_1d), flujo_max_kg_s=pc(F_dif),
                         cociente_lidar_sobre_difusion=pc(F / F_dif),
                         prob_difusion_basta=float(np.mean(F_dif >= F)),
                         cota_aire_libre_kg_s=pc(F_aire), cociente_lidar_sobre_aire_libre=pc(F / F_aire),

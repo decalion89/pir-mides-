@@ -173,10 +173,10 @@ Con posteriores de su geometría (emulsiones, KEK y conjunto), medimos cuánta p
 - **Hallazgo de método:** los datos publicados solo miran hacia el norte. El extremo sur lo fija una frase del artículo, y con ella coincide con el final de la Gran Galería.
 
 ### 27. La tumba del Primer Emperador respira → [docs/34](docs/34-la-tumba-que-respira.md)
-Un lidar midió en 2016 que del túmulo de Qin Shi Huang salen ~4 g de mercurio al día (Duan et al. 2020).
-- **La difusión a través de la tierra desde la cámara se queda corta** en un factor de 19 a 2 170 (mediana 163), y ninguna de 200 000 combinaciones de parámetros basta.
+Un lidar midió en 2016 que del túmulo de Qin Shi Huang salen ~4 g de mercurio al día (Zhao et al. 2020).
+- **La difusión a través de la tierra desde la cámara se queda corta** en un factor de 6 a 520 (mediana 42, contando el flujo lateral). Solo el 0,02 % de 200 000 combinaciones basta.
 - **El suelo contaminado del túmulo,** con ritmos típicos, se queda corto de 9 a 220 veces.
-- **Lo que basta es que el palacio subterráneo intercambie aire con la atmósfera** (~460 m³/día, bombeo barométrico).
+- **Lo que basta es que la tumba intercambie aire con la atmósfera por grietas** (~460 m³/día), como sugieren los propios autores. El bombeo barométrico lo explica si buena parte del palacio subterráneo es hueco.
 
 Si el flujo es correcto y viene de la tumba, **no está sellada**. Prueba barata: la emisión debe subir cuando baja la presión.
 
@@ -251,7 +251,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [31 — KEK se certifica a sí mismo](docs/31-kek-se-certifica-a-si-mismo.md) | Los datos de KEK fijan su registro con la simulación a < 0,1–0,25 m: descartan el falso vacío; la tensión con las emulsiones no viene de ahí |
 | [32 — Sistemáticos de KEK](docs/32-sistematicos-de-kek.md) | Ni posición, ni paralaje, ni escala angular de KEK explican la tensión con las emulsiones (≥ 58 con valores plausibles) |
 | [33 — A cuántos metros está el Gran Vacío](docs/33-a-cuantos-metros-esta-el-gran-vacio.md) | Ningún espacio accesible a menos de 5 m; lo más cercano, las cámaras de descarga 4–5 (~8 m); sin endoscopio posible |
-| [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×163): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
+| [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×42): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
 | [35 — El cerebro de vidrio](docs/35-el-cerebro-de-vidrio.md) | El enfriamiento a 1 000 K/s del cerebro vitrificado de Herculano es imposible dentro de un cráneo (0,1–1,7 K/s); su propia cinética contradice el escenario |
 | [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: con sus estructuras recibe el 27 % de su demanda; solo es viable con un depósito de Mm³ estanco (predicción: limos lacustres) |
 | [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–5: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |

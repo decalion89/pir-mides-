@@ -1,13 +1,20 @@
 # 34 — La tumba del Primer Emperador no puede estar sellada (si el mercurio sale de ella)
 
-> **Pregunta.** Sima Qian (siglo I a. C.) escribió que la cámara funeraria de Qin Shi Huang tenía ríos y mares de mercurio. En 2016 un lidar midió mercurio atómico sobre el túmulo, con una emisión estimada de **~5×10⁻⁸ kg/s, unos 4 g al día** (Duan, Zhang y Svanberg, *Sci. Rep.* 2020). ¿Puede ese mercurio venir de la cámara, a ~30 m bajo el suelo y con un túmulo de 50 m encima? ¿Por qué camino?
+> **Corregido el 01/11/2026 tras una revisión adversaria independiente.**
+> - La cita era incorrecta. El artículo es Zhao et al., *Sci. Rep.* 10:**10414**.
+> - La cota de difusión 1-D (D·C·A/L) no era una cota superior, porque ignoraba el flujo lateral. Con el factor de forma de un disco enterrado, el flujo máximo sube ×3,8 y el desajuste baja de 163 a **42** (5,6–520). La difusión sigue sin bastar (P = 0,02 %).
+> - Se retira la afirmación de que "ni un canal de aire libre basta": con la geometría 3-D sí bastaría en el 67 % de los casos.
+> - El bombeo barométrico solo basta con certeza si es aire **todo** el volumen del palacio. Con solo la cámara central, basta en el 11 % de los casos.
+> - Se retira la autocomprobación que llamaba "conservador" al flujo publicado: usaba un exceso y una anchura de pluma mayores que los del artículo.
+
+> **Pregunta.** Sima Qian (siglo I a. C.) escribió que la cámara funeraria de Qin Shi Huang tenía ríos y mares de mercurio. En 2016 un lidar midió mercurio atómico sobre el túmulo, con una emisión estimada de **~5×10⁻⁸ kg/s, unos 4 g al día** (Zhao, Zhang, Duan… Svanberg, *Sci. Rep.* 10:10414, 2020). ¿Puede ese mercurio venir de la cámara, a ~30 m bajo el suelo y con un túmulo de 50 m encima? ¿Por qué camino?
 >
 > **Respuesta.**
 > - **No puede salir por difusión a través de la tierra.**
->   - El flujo medido es **19–2 170 veces** (mediana 163) mayor que el máximo que permite la difusión desde una cámara saturada de vapor de mercurio. En 200 000 combinaciones de parámetros, ninguna basta.
->   - Ni siquiera un canal de **aire libre** con la superficie de todo el techo basta en el 88 % de los casos.
+>   - El flujo medido es **5,6–520 veces** (mediana 42) mayor que el máximo que permite la difusión en estado estacionario desde una cámara saturada de vapor de mercurio, contando el flujo lateral (disco enterrado en 3-D). Basta en solo 46 de 200 000 combinaciones de parámetros (0,02 %).
+>   - Un camino de aire libre (grietas abiertas) sí podría bastar (67 % de los casos). Eso ya es la vía (a).
 > - **La emisión del propio suelo del túmulo,** con 190 ppb de mercurio, se queda corta en un factor de 9 a 220. Haría falta un ritmo medio de ~1 400 ng/m²/h, propio de terrenos mineros.
-> - **Lo que sí basta es que la tumba "respire":** que intercambie aire con la atmósfera por grietas. Haría falta un caudal de **~460 m³/día de aire saturado** (145–1 460). El bombeo barométrico del volumen del palacio subterráneo, es decir, cómo entra y sale el aire al subir y bajar la presión atmosférica, da ~1 400 m³/día. **Basta en el 93 % de los casos.**
+> - **Lo que sí basta es que la tumba "respire":** que intercambie aire con la atmósfera por grietas. Haría falta un caudal de **~460 m³/día de aire saturado** (145–1 460). El bombeo barométrico, es decir, cómo entra y sale el aire al subir y bajar la presión atmosférica, basta en el 93 % de los casos **si todo el volumen del palacio subterráneo (140 × 110 × 30 m) es aire conectado**. Con solo la cámara central (80 × 50 × 15 m), basta en el 11 %. Qué parte del palacio está hueca no se sabe.
 >
 > **Consecuencia.** Si el lidar mide bien y el mercurio viene de la tumba, **el palacio subterráneo no es una cápsula sellada**. Renovaría su aire en una escala de **~1–9 años**, con entrada de oxígeno y humedad. Eso importa para el estado de su contenido y para cualquier decisión sobre abrirla.
 >
@@ -22,33 +29,33 @@ Archivos: [`simulador/qin_mercurio.py`](../simulador/qin_mercurio.py), [`resulta
 ## Datos
 | Magnitud | Valor | Fuente |
 |---|---|---|
-| Emisión de Hg del túmulo | 5×10⁻⁸ kg/s (incertidumbre ~×2) | Duan, Zhang y Svanberg 2020 (lidar DIAL, julio–agosto de 2016) |
+| Emisión de Hg del túmulo | 5×10⁻⁸ kg/s (incertidumbre ~×2) | Zhao et al. 2020 (lidar DIAL, julio–agosto de 2016) |
 | Mercurio en el aire sobre el túmulo | hasta 27 ng/m³ (fondo 5–10) | ídem |
 | Cámara central | ~80 × 50 × 15 m; techo a ~30 m bajo el suelo circundante | ídem (de estudios geofísicos chinos) |
 | Palacio subterráneo | ~140 × 110 × 30 m | ídem |
 | Túmulo | ~380 × 330 m, ~50 m de alto | ídem |
-| Hg en el suelo | media ~190–205 ppb, máximos de 1 440–2 204 ppb | Chang y Li 1983/85; Jin et al. 2008 (citados en Duan et al.) |
+| Hg en el suelo | media ~190–205 ppb, máximos de 1 440–2 204 ppb | Chang y Li 1983/85; Jin et al. 2008 (citados en Zhao et al.) |
 
 ## Física
 1. **Vapor saturado.** Si hay mercurio líquido expuesto, el aire de la cámara se satura: **C_sat ≈ 9,4 mg/m³** a 15 °C (8,1–11,0 mg/m³ entre 13 y 17 °C). Para reponer lo que sale bastan **~1–14 m² de mercurio expuesto**. La medición no puede distinguir unos charcos de unos "ríos".
-2. **Difusión (cota superior).** F ≤ D_ef · C_sat · A / L, con:
+2. **Difusión.** Se calcula en estado estacionario de dos formas: 1-D (D_ef · C_sat · A / L) y la de un **disco enterrado en un medio semiinfinito**, con factor de forma S = 2πD/(π/2 − atan(D/4L)) y D el diámetro del disco de igual área (Incropera). La segunda incluye el flujo lateral y es ×2,7–5,6 mayor. Parámetros:
    - A = 4 000–15 400 m² (de la cámara central a todo el palacio);
    - L = 30–80 m de tierra;
    - D_ef de Millington–Quirk, con porosidad 0,30–0,45 y saturación de agua 0,3–0,8: D_ef ≈ 2×10⁻⁸ … 1×10⁻⁶ m²/s.
 
-   Es una cota generosa: supone estado estacionario y nada de adsorción, cuando el mercurio se adsorbe con fuerza en el suelo.
+   Se supone estado estacionario y nada de adsorción, cuando el mercurio se adsorbe con fuerza en el suelo. Esto favorece a la difusión.
 3. **Suelo.** Superficie del túmulo ~125 000 m², con 10–100 ng/m²/h, el intervalo típico de suelos con 0,1–1 µg/g según las síntesis de Gustin, Eckley et al.
 4. **Advección.** Caudal necesario Q = F / C_sat. Bombeo barométrico: oscilaciones de presión del 1–2 % cada 3–7 días. En cada ciclo sale y entra esa fracción del volumen conectado.
 
 ## Resultados (Monte Carlo, 200 000 combinaciones; mediana e intervalo del 90 %)
 | | Valor |
 |---|---|
-| Flujo máximo por difusión | 3×10⁻¹⁰ kg/s (3×10⁻¹¹ – 2×10⁻⁹) |
-| Lidar / difusión | **163** (19 – 2 170); P(la difusión basta) = 0 |
-| Lidar / canal de aire libre | 2,8 (0,7 – 11); P(basta) = 12 % |
+| Flujo máximo por difusión, 1-D | 3×10⁻¹⁰ kg/s (3×10⁻¹¹ – 2×10⁻⁹); lidar / difusión = 163 (19 – 2 170) |
+| Flujo máximo por difusión, 3-D (disco enterrado) | ×3,8 (2,7 – 5,6) el 1-D; **lidar / difusión = 42** (5,6 – 520); P(basta) = 0,02 % |
+| Lidar / camino de aire libre (3-D) | 0,72 (0,21 – 2,5); P(basta) = 67 % |
 | Lidar / suelo típico | 45 (9 – 220); P(basta) ≈ 0 |
 | Caudal de aire saturado necesario | **460 m³/día** (145 – 1 460) |
-| Bombeo barométrico del palacio (40 000 m³ de aire por ciclo) | 1 390 m³/día (840 – 2 380); P(basta) = **93 %** |
+| Bombeo barométrico si todo el palacio es aire | 1 390 m³/día (840 – 2 380); P(basta) = 93 % |
 | Bombeo de la cámara central sola | 180 m³/día; P(basta) = 11 % |
 | Renovación del aire del palacio | ~1 000 días (320 – 3 200) |
 | Mercurio perdido en 2 200 años | 3,5 t (1,1 – 11) |
@@ -63,13 +70,15 @@ El Monte Carlo suponía oscilaciones de presión del 1–2 % cada 3–7 días. C
 
 **Por tanto, la vía (a) sigue siendo la única que puede llegar al flujo medido, pero en verano va justa.** Esto da una predicción nueva: **si la tumba respira, en invierno debe emitir bastante más que en verano** (más bombeo sinóptico y tiro térmico a favor). Si una campaña invernal mide el mismo flujo o menos, la vía (a) pierde fuerza.
 
-## Autocomprobación: ¿sobrestima el lidar el flujo?
-Hacemos un balance de masa con los datos del propio artículo: flujo = exceso de concentración × viento × sección de la pluma.
-- **Datos:** exceso de 12–18 ng/m³ (22–23 sobre el túmulo frente a un fondo de 5–10) y viento de 2,3–2,7 m/s en la cima.
-- **Pluma:** de 10–30 m de alto (los autores suponen ~20 m) y de 150–380 m de ancho.
-- **Resultado:** el balance da **1–3,5×10⁻⁷ kg/s**, 2–7 veces *más* que el 5×10⁻⁸ publicado. El valor publicado es conservador.
+## Autocomprobación: ¿sobrestima el lidar el flujo? *(corregida)*
+- **Cómo lo calculan los autores:** usan *"about 10 ng/m³ excess"*, viento de ~2,5 m/s, una pluma de ~20 m de alto y *"the experimentally determined size of the area"*. Con 5×10⁻⁸ kg/s, eso equivale a una pluma de unos 100 m de ancho, coherente con las manchas calientes que describen.
+- **Lo que retiramos:** una versión anterior usaba un exceso de 12–18 ng/m³ y anchos de 150–380 m, y concluía que el flujo publicado era "conservador". No está justificado: el flujo publicado es coherente con sus propios datos, ni conservador ni exagerado.
+- **Contexto que también importa:**
+  - en el emplazamiento 3, con viento de 5,4 m/s, no se vio mancha caliente (media de 6 ng/m³);
+  - los autores señalan que el calor de esos días favorecía la emisión;
+  - su propia extrapolación a 2 200 años da ~1 t.
 
-Por tanto, la vía (c) solo funcionaría si el **exceso mismo** no fuera real. Con la precisión declarada (±5 ng/m³), cada medida del exceso tiene 2,4–3,6σ. Hay varias exploraciones en dos emplazamientos, pero no se publica la serie completa. **El punto débil de la conclusión es la realidad del exceso, no el modelo de pluma.** Una medición independiente lo resolvería: un analizador puntual en la cima, o cámaras de flujo (P15).
+La vía (c) solo funcionaría si el **exceso mismo** no fuera real. Con la precisión declarada (±5 ng/m³), cada medida del exceso tiene 2,4–3,6σ. Hay varias exploraciones en dos emplazamientos, pero no se publica la serie completa. **El punto débil de la conclusión es la realidad del exceso, no el modelo de pluma.** Una medición independiente lo resolvería: un analizador puntual en la cima, o cámaras de flujo (P15).
 
 ## Qué significa
 1. **La lectura habitual no se sostiene físicamente.** Se suele decir que el mercurio "se escapa lentamente a través del suelo". La difusión no puede producir el flujo medido.
@@ -94,7 +103,7 @@ La prueba (a) solo necesita un analizador portátil de mercurio (tipo Lumex) y u
 - **No es nuevo:**
   - la anomalía de mercurio en el suelo (años 80);
   - la medición con lidar (2020);
-  - la idea de que el mercurio sale "por grietas", que el resumen de Duan et al. menciona de pasada.
+  - la idea de que el mercurio sale por grietas, que es la hipótesis de los propios autores (*"may be escaping through cracks"*). Nuestro cálculo la refuerza: muestra que la difusión no basta y que hace falta un camino abierto.
 - **No lo hemos encontrado publicado (búsqueda del 01/11/2026):**
   - la comparación cuantitativa con el límite de difusión;
   - la conclusión de que solo la advección (una tumba que respira) es compatible con el flujo medido;

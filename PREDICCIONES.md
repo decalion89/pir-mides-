@@ -99,7 +99,7 @@ Un estudio de gravedad con ~660 estaciones en los escalones de las cuatro caras 
 **Qué la refutaría**: que la dispersión de las medidas tras corregir el modelo de masas fuera ≫ 6 µGal. Indicaría que la heterogeneidad de los bloques domina y que la cobertura calculada es optimista. Y como en 1986, una anomalía de gravedad sola no prueba un hueco: hay que confirmarla con muones.
 
 ## P15 — La tumba de Qin Shi Huang respira (doc. 34), registrada el 01/11/2026
-**Condición:** que la emisión de mercurio medida por lidar (~5×10⁻⁸ kg/s, Duan et al. 2020) sea correcta y venga de la cámara.
+**Condición:** que la emisión de mercurio medida por lidar (~5×10⁻⁸ kg/s, Zhao et al. 2020) sea correcta y venga de la cámara.
 
 **Predicción:**
 1. **Presión.** Una serie continua de Hg en el aire (o en el gas del suelo a 1–5 m) sobre el túmulo, medida junto a la presión atmosférica durante ≥ 2 semanas, mostrará **correlación negativa entre la emisión y la tendencia de la presión** (más emisión cuando la presión baja), con un retraso de horas.

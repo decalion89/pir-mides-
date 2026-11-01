@@ -6,9 +6,9 @@
 
 Dear Prof. Svanberg, dear Dr. Duan,
 
-Your 2020 *Scientific Reports* paper (Mercury as a geophysical tracer gas: emissions from the Emperor Qin tomb studied by laser radar) estimates an outflux of about 5×10⁻⁸ kg/s from the mound. We compared that number with physical limits, and it has a strong implication.
+Your 2020 *Scientific Reports* paper (Zhao, Zhang, Duan et al., Sci. Rep. 10, 10414; mercury as a geophysical tracer gas) estimates an outflux of about 5×10⁻⁸ kg/s from the mound. We compared that number with physical limits, and it has a strong implication.
 
-1. **Diffusion cannot supply it.** If the chamber holds liquid mercury, its air is saturated (≈9 mg/m³ at 15 °C). Steady-state diffusion through 30–80 m of compacted loess cannot deliver your flux: the gap is a factor of 19–2,200 (median 160, Monte Carlo over porosity, moisture, depth, source area and temperature). Even a free-air channel spanning the whole chamber roof falls short in most cases. Typical emission from soils with ~190 ppb Hg also falls short, by a factor of ~10–200.
+1. **Diffusion cannot supply it.** If the chamber holds liquid mercury, its air is saturated (≈9 mg/m³ at 15 °C). Steady-state diffusion through 30–80 m of compacted loess, including lateral spreading (buried-disk shape factor), cannot deliver your flux: the gap is a factor of 6–520 (median 42; Monte Carlo over porosity, moisture, depth, source area and temperature). This supports your suggestion that mercury escapes through cracks: an open air path is needed. Typical emission from soils with ~190 ppb Hg also falls short, by a factor of ~10–200.
 2. **Advection can.** If the source is the tomb, the underground palace must exchange air with the atmosphere at ~150–1,500 m³/day through cracks. Barometric pumping of the palace volume can supply this, marginally in summer and more easily in winter.
 
 This gives tests that need no excavation. We have pre-registered them (git-timestamped) **before seeing any time-resolved data**:

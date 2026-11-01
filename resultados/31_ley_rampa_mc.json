@@ -1,0 +1,141 @@
+{
+ "n": 400,
+ "techo_historico": [
+  85000,
+  150000
+ ],
+ "tecnicas": {
+  "parametrica": {
+   "Rampas integradas en las aristas": {
+    "p05": 59374,
+    "mediana": 117981,
+    "p95": 230605,
+    "fraccion_en_rango_historico": 0.4975,
+    "fraccion_por_debajo": 0.24,
+    "fraccion_por_encima": 0.2625,
+    "sensibilidades_principales": {
+     "t_giro_min": -0.97,
+     "horas_dia": 0.2,
+     "dias_anio": 0.13,
+     "volumen_bloque": 0.11
+    }
+   },
+   "Zigzag en las 4 caras": {
+    "p05": 59374,
+    "mediana": 117979,
+    "p95": 230600,
+    "fraccion_en_rango_historico": 0.4975,
+    "fraccion_por_debajo": 0.24,
+    "fraccion_por_encima": 0.2625,
+    "sensibilidades_principales": {
+     "t_giro_min": -0.97,
+     "horas_dia": 0.2,
+     "dias_anio": 0.13,
+     "volumen_bloque": 0.11
+    }
+   },
+   "Híbrido: recta hasta 45 m + zigzag": {
+    "p05": 40580,
+    "mediana": 73647,
+    "p95": 125710,
+    "fraccion_en_rango_historico": 0.3375,
+    "fraccion_por_debajo": 0.6525,
+    "fraccion_por_encima": 0.01,
+    "sensibilidades_principales": {
+     "t_giro_min": -0.96,
+     "horas_dia": 0.23,
+     "dias_anio": 0.14,
+     "mu": -0.12
+    }
+   }
+  },
+  "pivote": {
+   "Rampas integradas en las aristas": {
+    "p05": 290282,
+    "mediana": 436852,
+    "p95": 635314,
+    "fraccion_en_rango_historico": 0.0,
+    "fraccion_por_debajo": 0.0,
+    "fraccion_por_encima": 1.0,
+    "sensibilidades_principales": {
+     "sobrecarga_giro_s": -0.83,
+     "horas_dia": 0.35,
+     "mu": -0.3,
+     "volumen_bloque": 0.2
+    }
+   },
+   "Zigzag en las 4 caras": {
+    "p05": 292939,
+    "mediana": 444922,
+    "p95": 649357,
+    "fraccion_en_rango_historico": 0.0,
+    "fraccion_por_debajo": 0.0,
+    "fraccion_por_encima": 1.0,
+    "sensibilidades_principales": {
+     "sobrecarga_giro_s": -0.84,
+     "horas_dia": 0.35,
+     "mu": -0.3,
+     "volumen_bloque": 0.2
+    }
+   },
+   "Híbrido: recta hasta 45 m + zigzag": {
+    "p05": 142364,
+    "mediana": 194533,
+    "p95": 277562,
+    "fraccion_en_rango_historico": 0.0825,
+    "fraccion_por_debajo": 0.0,
+    "fraccion_por_encima": 0.9175,
+    "sensibilidades_principales": {
+     "sobrecarga_giro_s": -0.61,
+     "horas_dia": 0.41,
+     "mu": -0.36,
+     "v_cargado": 0.28
+    }
+   }
+  },
+  "poste": {
+   "Rampas integradas en las aristas": {
+    "p05": 299875,
+    "mediana": 446607,
+    "p95": 682911,
+    "fraccion_en_rango_historico": 0.0,
+    "fraccion_por_debajo": 0.0,
+    "fraccion_por_encima": 1.0,
+    "sensibilidades_principales": {
+     "v_cargado": 0.58,
+     "metros_por_hombre": -0.39,
+     "mu": -0.36,
+     "horas_dia": 0.29
+    }
+   },
+   "Zigzag en las 4 caras": {
+    "p05": 317533,
+    "mediana": 468774,
+    "p95": 702570,
+    "fraccion_en_rango_historico": 0.0,
+    "fraccion_por_debajo": 0.0,
+    "fraccion_por_encima": 1.0,
+    "sensibilidades_principales": {
+     "v_cargado": 0.58,
+     "mu": -0.38,
+     "metros_por_hombre": -0.38,
+     "horas_dia": 0.29
+    }
+   },
+   "Híbrido: recta hasta 45 m + zigzag": {
+    "p05": 136752,
+    "mediana": 204626,
+    "p95": 309831,
+    "fraccion_en_rango_historico": 0.095,
+    "fraccion_por_debajo": 0.0,
+    "fraccion_por_encima": 0.905,
+    "sensibilidades_principales": {
+     "v_cargado": 0.6,
+     "metros_por_hombre": -0.37,
+     "mu": -0.36,
+     "horas_dia": 0.3
+    }
+   }
+  }
+ }
+}

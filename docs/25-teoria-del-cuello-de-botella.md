@@ -1,4 +1,14 @@
-# 25 — Una teoría propia: el cuello de botella de las rampas
+# 25 — Una teoría propia: el cuello de botella de las rampas (refutada)
+
+> **RESULTADO FINAL (01/11/2026): LA TEORÍA QUEDA REFUTADA por nuestra propia física.** Un Monte Carlo sobre todos los parámetros inciertos ([`simulador/ley_rampa_montecarlo.py`](../simulador/ley_rampa_montecarlo.py), [`resultados/31_ley_rampa_mc.json`](../resultados/31_ley_rampa_mc.json)) muestra dos cosas:
+> - **La coincidencia dependía del tiempo de giro.** Con el tiempo de giro "paramétrico" del simulador original (2–15 min por esquina), el techo de las rampas múltiples cae en el rango histórico en el 50 % de los casos, pero depende casi solo de ese parámetro (correlación de rangos −0,97).
+> - **Con la física de las esquinas del documento 12** (pivotar o girar con poste), el techo de las rampas es de **290 000–700 000 m³/año**, entre 2 y 5 veces el techo histórico (~124 000). Y con solo 10 000 obreros el modelo ya produce 250 000–380 000 m³/año.
+>
+> **Ni las rampas ni el número de obreros explican, en nuestro modelo, el techo de ~340 m³/día.** Quedan dos posibilidades:
+> 1. el modelo es 2–4 veces demasiado productivo: cuenta solo la pirámide y no templos, calzadas, puertos, mastabas de la corte, canteras lejanas ni abastecimiento;
+> 2. el límite era organizativo o económico, no físico.
+>
+> Lo que sigue en pie es la regularidad empírica del documento 23: el techo existe y se repitió en tres reinados. Su causa sigue abierta. Dejamos el resto del documento como estaba, porque así es como avanza la ciencia: una teoría propia, una predicción arriesgada y una prueba que la tumba.
 
 > **Teoría.** El techo de ~340 m³ de piedra al día que se repite en tres reinados (Snefru, Keops y Kefrén; doc. 23) **no lo ponía la riqueza del Estado ni el número de obreros, sino un límite físico de la logística**: cuántos trineos caben a la vez en las rampas y cuánto tarda cada uno en subir y girar.
 >

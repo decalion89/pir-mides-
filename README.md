@@ -216,7 +216,15 @@ Un filtro lento de zeolita, el que elimina microbios, necesita ~550–2 300 m² 
 ### 33. El mercurio de Tikal no hacía el agua imbebible → [docs/39](docs/39-el-mercurio-de-tikal.md)
 Lentz et al. (2020) dedujeron agua potable "seriamente comprometida" porque el mercurio de los sedimentos supera un umbral ecológico. Con la partición sedimento-agua y las partículas en suspensión, aun con las muestras más contaminadas el agua tiene ~1 µg/L: el 17 % de la guía de la OMS y el 3 % de la ingesta tolerable. Las cianobacterias son otro argumento y no se evalúan aquí.
 
-### 34. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 34. Auditoría aleatoria, con protocolo registrado → [auditoria_aleatoria/RESULTADO.md](auditoria_aleatoria/RESULTADO.md)
+Para no elegir los casos a dedo, se tomaron **40 artículos al azar** (semilla fija) de los 225 de *Scientific Reports* 2020–2025 sobre arqueología, con el protocolo subido a git antes de leer ninguno.
+- **Aplicables:** 7, el 17,5 %. Son los que basan su conclusión en un mecanismo con ritmo físico.
+- **De esos 7:** 1 FALLA, 2 CONDICIONALES, 3 PASAN y 1 queda INDETERMINADO. Es decir, ~43 % no superan la comprobación sin supuestos adicionales, con un IC del 10 % al 82 %.
+- **Dos hallazgos verificados que nadie había señalado:**
+  - un **error aritmético** en un artículo de radiocarbono en paleosuelos, que infravalora el carbono moderno ×3–72 (doc. 40);
+  - un mecanismo de **carbonatación imposible por estequiometría** (×570) en una cal "orgánica" (doc. 41).
+
+### 35. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md) → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -261,6 +269,8 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–3: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |
 | [38 — El filtro de Tikal](docs/38-el-filtro-de-tikal.md) | Filtro lento de Tikal: ~550–2 300 m² si el agua llega directa con cada aguacero, ~34–200 m² si se remansa delante; condicional, no refutado |
 | [39 — El mercurio de Tikal](docs/39-el-mercurio-de-tikal.md) | Con el Hg de los sedimentos más contaminados, el agua queda en ~17 % de la guía de la OMS: el mercurio no la hacía imbebible |
+| [40 — Carbono moderno en paleosuelos](docs/40-el-carbono-moderno-de-los-paleosuelos.md) | Muestra aleatoria: Broz et al. 2023 infravaloran el carbono moderno ×3–72 por un error de unidades en la tabla 2 |
+| [41 — La cal orgánica](docs/41-la-cal-organica.md) | Muestra aleatoria: el CO₂ de los extractos fermentados carbonata como mucho el ~0,2 % de la cal; la "carbonatación interna" es imposible (×570) |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

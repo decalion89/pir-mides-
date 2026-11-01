@@ -1,0 +1,21 @@
+{
+ "fraccion_carbonatable_solo_CO2_disuelto": {
+  "p05": 0.000245,
+  "mediana": 0.000811,
+  "p95": 0.0027,
+  "maximo": 0.00564
+ },
+ "fraccion_carbonatable_fermentando_todo_el_azucar": {
+  "p05": 0.000408,
+  "mediana": 0.00174,
+  "p95": 0.00789,
+  "maximo": 0.0173
+ },
+ "cociente_carbonatacion_completa_sobre_maximo": {
+  "p05": 127.0,
+  "mediana": 574.0,
+  "p95": 2450.0,
+  "maximo": 7180.0
+ },
+ "prob_cociente_mayor_3": 1.0
+}

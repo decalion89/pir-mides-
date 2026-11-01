@@ -7,6 +7,8 @@
 > 2. **El 19 % es el techo de lo que él afirmó.** Con criterio de 5σ, lo explorado para cámaras del tamaño de la del Rey está entre el **3 %** (lectura pesimista, análisis tipo Nagoya) y el **15 %** (lectura optimista, el modelo tal cual). Para huecos de 5 m, menos del 4 %. Fuera del cono de 35° (≈ 80 % del volumen) **no hay ninguna afirmación publicada de sensibilidad**.
 > 3. **El experimento se puede ampliar desde el mismo sitio.** Cinco exposiciones de emulsión moderna en la Cámara de Belzoni (2 m² × 180 días cada una: una cenital y cuatro inclinadas 45° hacia cada cara) llevarían la cobertura total para cámaras del tamaño de la del Rey del ~20 % al **~61 %**. Ese techo lo fija la geometría (con el corte de 70° del cenit), no la estadística. Los 20 m inferiores seguirían sin explorar, como en Keops.
 
+> **Trabajo previo (comprobado el 01/11/2026).** El proyecto **ScIDEP** (Gamal, Aly, Kouzes et al., arXiv:2503.21959, 2025; Aly et al., JAIS 2022 y 2024) **ya está construyendo** telescopios de centelleo para medir Kefrén con un detector mirando hacia arriba desde la cámara funeraria (la de Belzoni) y otro desde fuera. Por tanto, **medir desde Belzoni no es una propuesta nueva**: ScIDEP va por delante. Lo que aporta este documento es cuantitativo: cuánto exploró realmente Alvarez, y cuánto ganaría una configuración con una exposición cenital y cuatro inclinadas frente a una sola cenital (36 % frente a ~61 % para cámaras del tamaño de la del Rey). Puede servir a ScIDEP para elegir orientaciones.
+
 Archivos:
 - código: [`simulador/piramide/kefren.py`](../simulador/piramide/kefren.py), [`simulador/estudio_kefren.py`](../simulador/estudio_kefren.py), [`simulador/estudio_kefren_variantes.py`](../simulador/estudio_kefren_variantes.py), [`simulador/figuras_kefren.py`](../simulador/figuras_kefren.py);
 - resultados: [`resultados/21_kefren.json`](../resultados/21_kefren.json), [`resultados/22_kefren_variantes.json`](../resultados/22_kefren_variantes.json);
@@ -91,6 +93,8 @@ Con nuestro modelo en la **lectura pesimista** y 7 × 10⁵ muones, una cámara 
 - **No dice que haya cámaras en Kefrén.** Dice que la mayor parte de la pirámide no se ha examinado, y cómo examinarla.
 
 ## Referencias
+- Gamal, M., Aly, S., Kouzes, R. et al. (2025). *The ScIDEP muon radiography project at the Egyptian Pyramid of Khafre*. arXiv:2503.21959.
+- Aly, S. et al. (2022). *Simulation studies of a novel muography detector for the Great Pyramids*. JAIS (arXiv:2202.07434).
 - Alvarez, L. W. et al. (1970). *Search for hidden chambers in the pyramids*. Science 167, 832–839.
 - Gutowski, B. et al. (2017). *The secret chambers in the Chephren Pyramid*. arXiv:1712.08590 (CERN Beamline for Schools).
 - Morishima, K. et al. (2017). Nature 552, 386–390 (factor de Nagoya; docs/17).

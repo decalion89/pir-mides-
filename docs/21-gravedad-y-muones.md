@@ -16,6 +16,8 @@ Archivos:
 - figura: `figuras/12_muones_y_gravedad.png`.
 
 ## 1. Lo que ya se hizo
+- **2022: Pašteka, Zahorec, Papčo, Mrlina, Götze y Schmidt** (*J. Archaeol. Sci. Reports* 43, 103464) estudiaron con modelos 3D si una microgravimetría de alta precisión **en las caras de la pirámide** podría cartografiar el Gran Vacío. Concluyeron que en condiciones ideales se pueden resolver efectos de ~1 × 10⁻⁷ m/s² (10 µGal), lo que bastaría para detectarlo. **La idea de medir gravedad sobre las caras de la Gran Pirámide no es nuestra.** Lo que añade este documento es un mapa de cobertura de la base para huecos genéricos y su combinación con la cobertura de los muones.
+- **2023:** una evaluación sencilla de la posibilidad de usar microgravímetros para buscar huecos dentro de Keops (*Glob. J. Archaeol. Anthropol.*; también en Research Square).
 - **1986: microgravimetría francesa** dentro de la Gran Pirámide. Concluyó que "no hay grandes cámaras ocultas". La operación terminó con perforaciones fallidas en la zona que se creía anómala (Bui, *Imaging the Cheops Pyramid*, Springer 2012). No hemos encontrado publicadas la cobertura y la sensibilidad de aquel estudio. Su desenlace es una advertencia: con la gravedad, una anomalía puede ser un hueco o simplemente relleno menos denso.
 - **2016–2023: radar, ultrasonidos y resistividad eléctrica** (ScanPyramids y TUM) junto al corredor de la cara norte. Penetran unos pocos metros, así que sirven para la piel de la pirámide, no para el interior.
 
@@ -79,6 +81,7 @@ Para huecos de 5 m, la gravedad sola cubre el 13 % (8 % con 6 µGal), y la combi
 - **Huecos de otras formas:** un corredor estrecho y largo da menos señal gravimétrica que un cubo del mismo volumen visto de lado.
 
 ## Referencias
+- Pašteka, R., Zahorec, P., Papčo, J., Mrlina, J., Götze, H.-J., Schmidt, S. (2022). *The discovery of the "muons-chamber" in the Great pyramid; could high-precision microgravimetry also map the chamber?* J. Archaeol. Sci. Reports 43, 103464.
 - Bui, H. D. (2012). *Imaging the Cheops Pyramid*. Springer (microgravimetría de 1986).
 - Nagy, D. (1966). *The gravitational attraction of a right rectangular prism*. Geophysics 31, 362–371.
 - Grosse, C. et al. (2021–2023). Ensayos no destructivos (radar, ultrasonidos y resistividad eléctrica) en la Gran Pirámide, TUM / ScanPyramids.

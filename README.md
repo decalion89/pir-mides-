@@ -6,6 +6,18 @@ Estado de la evidencia: octubre de 2026.
 
 ![Corte de la pirámide con las hipótesis sobre el Gran Vacío y los puestos de detector](figuras/04a_corte_hipotesis.png)
 
+## Qué es nuevo y qué no (búsqueda bibliográfica del 01/11/2026)
+| Aportación | Estado |
+|---|---|
+| Reanálisis del mapa de residuos de Alvarez (1970): estructura espacial y mapa de exclusión con sus datos (docs/19–20) | **No encontrado publicado.** El único trabajo cercano (Gutowski et al. 2017, estudiantes del CERN) compara un perfil acimutal, no el mapa |
+| Mapa de lo explorado y lo inexplorado en la Gran Pirámide con todas las campañas publicadas (docs/17) | **No encontrado publicado.** Nadie ha cuantificado la cobertura; EGP (2022) propone un sistema nuevo, no un balance de lo hecho |
+| Detectores de muones en la Cámara Subterránea y los pasajes bajo la base de Keops (docs/17, 22) | **No encontrado publicado.** No he visto ninguna medición ni propuesta |
+| Medir Kefrén desde la cámara de Belzoni (docs/18) | **Ya existe:** el proyecto ScIDEP lo está preparando (arXiv:2503.21959). Lo nuestro es solo la cuantificación de la cobertura y de las orientaciones |
+| Microgravimetría sobre las caras de la Gran Pirámide (docs/21) | **Ya existe la idea:** Pašteka et al. 2022 para el Gran Vacío; hubo un estudio de gravedad en 1986. Lo nuestro es el mapa de cobertura de la base y su combinación con los muones |
+| Reconstrucción del experimento de Alvarez con un modelo moderno (docs/18) | Parcialmente: Gutowski et al. 2017 compararon un modelo sencillo con sus datos |
+
+"No encontrado" no significa "seguro que no existe": puede haber trabajos no indexados, en otros idiomas o sin publicar.
+
 ## Resultados principales
 
 ### 1. Una sola rampa con esquinas va justa; los sistemas en paralelo dejan margen → [docs/07](docs/07-resultados-construccion.md) y [docs/12](docs/12-la-fisica-de-la-esquina.md)
@@ -81,7 +93,7 @@ Mapa de sensibilidad muográfica de la Gran Pirámide, construido con las 14 cam
 Reconstruimos la medición de muones de Luis Alvarez de 1968–69 en la pirámide de Kefrén:
 - **El modelo es compatible con lo que afirmó.** Su cono de 35° es el 19–20 % del volumen; él dio 19 %. Una cámara del tamaño de la del Rey se detecta en el 68–94 % del cono (lectura optimista).
 - **Kefrén está casi sin explorar.** Solo el 3–15 % de su volumen está explorado a 5σ para cámaras de ese tamaño. Fuera del cono no hay ninguna afirmación publicada.
-- **Se puede ampliar desde el mismo sitio.** Cinco exposiciones de emulsión en la Cámara de Belzoni (~6 meses) llevarían la cobertura total del ~20 % al ~61 %. Además resolverían la posible cámara que unos estudiantes (CERN *Beamline for Schools*) creyeron ver en los datos de Alvarez.
+- **Se puede ampliar desde el mismo sitio, como ya prepara el proyecto ScIDEP.** Cinco exposiciones de emulsión en la Cámara de Belzoni (~6 meses) llevarían la cobertura total del ~20 % al ~61 %; una sola cenital, al ~36 %. Además resolverían la posible cámara que unos estudiantes (CERN *Beamline for Schools*) creyeron ver en los datos de Alvarez.
 
 ### 12. Los datos de Alvarez, 56 años después → [docs/19](docs/19-los-datos-de-alvarez-reanalizados.md)
 Transcribimos y reanalizamos el mapa de residuos que Alvarez publicó en 1970: 801 casillas, medido menos predicho.
@@ -95,7 +107,7 @@ Comparamos cada posible cámara con los 801 residuos reales publicados en 1970.
 - El mejor "candidato" (3,5σ local) tiene una significación global de 0,85σ y cambia de sitio con la alineación. **No hay ninguna cámara en los datos de Alvarez.**
 
 ### 14. Otra sonda: la gravedad ve lo que los muones no ven → [docs/21](docs/21-gravedad-y-muones.md)
-Un hueco de 8 m es un déficit de ~1 100 toneladas, y eso se nota en la gravedad desde cualquier dirección.
+Un hueco de 8 m es un déficit de ~1 100 toneladas, y eso se nota en la gravedad desde cualquier dirección. La idea de medir gravedad en las caras ya la estudiaron Pašteka et al. (2022) para el Gran Vacío; lo nuevo aquí es el mapa de la base y su combinación con los muones.
 - **La gravedad, medida desde los escalones de las caras, cubre el 52 % de la base** (0–20 m), donde los muones cubren el 2 %.
 - **Muones actuales + Cámara Subterránea + microgravimetría: 79 % del volumen explorado** para huecos de 8 m (70 % con ruido pesimista), frente al 34 % de hoy.
 - Queda sin cubrir un anillo a 40–75 m del eje en los 40 m inferiores.

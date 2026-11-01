@@ -271,7 +271,7 @@ def test_cobertura_calibrada_reproduce_lo_publicado():
     ref = g.estructuras_conocidas()
     an = g.anomalias_detectadas()
     por = {c.nombre: cob.preparar(c, ref) for c in C}
-    # CEA calibrado en conjunto; por separado publicó 5,2σ y 3,6σ
+    # CEA calibrado en conjunto (5,8σ); por separado publicó 5,0σ (Alhazen) y 3,7σ (Brahic)
     z1 = f["cea"] * cob.z_hueco(por["CEA G1 Alhazen (2017)"], an[1])
     z2 = f["cea"] * cob.z_hueco(por["CEA G2 Brahic (2017)"], an[1])
     assert 3.0 < z1 < 6.5 and 2.5 < z2 < 5.5
@@ -287,7 +287,7 @@ def test_submuestreo_no_se_salta_huecos_estrechos():
     assert cob.z_hueco(c, g.anomalias_detectadas()[1]) > 0.5
 
 
-def test_la_base_de_la_piramide_no_esta_en_el_campo_de_ninguna_campana():
+def test_con_corte_de_70_grados_la_base_queda_fuera_de_campo():
     P = cob.voxeles(6.0)
     vis = np.zeros(len(P), bool)
     for c in cob.campanas_publicadas():

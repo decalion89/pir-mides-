@@ -26,6 +26,7 @@ _E = {}
 def _preparar(variante, semilla):
     rng = np.random.default_rng(semilla)
     cb.F_SIS = {"sis_1pc": 0.01, "sis_3pc": 0.03}.get(variante, 0.02)
+    cb.CENIT_MAX = {"corte_80": 80.0, "corte_85": 85.0}.get(variante, 70.0)
     C = cb.campanas_publicadas()
     if variante == "posiciones":
         C = [replace(c, origen=c.origen + rng.normal(0, 2.0, 3) * np.array([1, 1, 0.5]), _pre={})
@@ -56,7 +57,8 @@ def main():
     paso = float(sys.argv[1]) if len(sys.argv) > 1 else 8.0
     P = cb.voxeles(paso)
     P = P[~cb.ocupado_por_conocidas(P, cb.referencia_actual())]
-    variantes = [("nominal", 0), ("sin_calibrar", 0), ("sis_1pc", 0), ("sis_3pc", 0)] + \
+    variantes = [("nominal", 0), ("corte_80", 0), ("corte_85", 0), ("sin_calibrar", 0),
+                 ("sis_1pc", 0), ("sis_3pc", 0)] + \
                 [("posiciones", s) for s in range(1, 6)]
     trozos = np.array_split(np.arange(len(P)), 16)
     res = {}
@@ -65,7 +67,10 @@ def main():
             Z = np.vstack(pool.map(_trabajo, [(v, s, P[t]) for t in trozos]))
             clave = v if v != "posiciones" else f"posiciones_{s}"
             res[clave] = {f"{t:g}": dict(nominal=float(np.mean(Z[:, j] < 5.0)),
-                                         optimista=float(np.mean(Z[:, j] < 3.0)))
+                                         optimista=float(np.mean(Z[:, j] < 3.0)),
+                                         nominal_0_20=float(np.mean(Z[P[:, 2] < 20, j] < 5.0)),
+                                         nominal_20_40=float(np.mean(
+                                             Z[(P[:, 2] >= 20) & (P[:, 2] < 40), j] < 5.0)))
                           for j, t in enumerate(TAMANOS)}
             print(clave, res[clave], flush=True)
     out = dict(paso_m=paso, n_voxeles=int(len(P)), sin_explorar=res,

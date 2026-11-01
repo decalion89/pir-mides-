@@ -30,10 +30,14 @@ usan el factor de su familia (Nagoya para emulsiones y centelleadores interiores
 Micromegas).
 
 Las posiciones son aproximadas (±1–3 m); los artículos no dan coordenadas exactas para las
-campañas de 2019. Donde hay duda se elige la opción **optimista** (más sensibilidad: área
-efectiva plana, combinación en cuadratura de todas las campañas, sin ensuciar por estructuras
-conocidas cercanas), de modo que el volumen "sin explorar" que se obtiene es una **cota
-inferior**.
+campañas de 2019. Suposiciones y en qué sentido sesgan el volumen "sin explorar":
+- hacia abajo (más sensibilidad): área efectiva plana de los telescopios, suma en cuadratura de
+  todas las campañas, un hueco que solapa estructuras conocidas o el aire exterior resta
+  densidad igualmente;
+- hacia arriba (menos sensibilidad): el corte de cenit (70° por defecto; se estudian 80° y 85°)
+  descarta muones casi horizontales que los telescopios exteriores sí reciben; la calibración
+  se hace con significaciones publicadas de un solo corte, no de todo el mapa.
+No es, por tanto, una cota estricta en ningún sentido: el estudio de robustez da el intervalo.
 """
 from __future__ import annotations
 
@@ -50,7 +54,9 @@ PASO_TAN = 0.02
 SIGMA_RES = 1.0                     # bins (~20 mrad: dispersión múltiple en ~100 m de roca)
 F_SIS = 0.02                        # sistemático relativo por bin
 SUB_MAX = 6                         # subrayos por eje y bin (adaptativo: ≥4 por ancho del hueco)
-COS_CENIT_MIN = math.cos(math.radians(70.0))
+CENIT_MAX = 70.0                    # grados: SUPUESTO (validez del espectro; ver docs/17 §5)
+COS_CENIT_MIN = math.cos(math.radians(CENIT_MAX))
+TAN_CANDIDATAS = 1.0                # aceptancia de los análisis publicados con emulsiones
 DENSIDAD_ROCA_MADRE = 2.3           # t/m3, caliza de la meseta (formación Mokattam)
 
 # Significaciones publicadas del Gran Vacío para calibrar
@@ -145,18 +151,18 @@ def campanas_candidatas(area_m2: float = 1.0, dias: float = 100.0) -> list[Campa
     C = []
     # Cámara Subterránea: excavada en la roca ~30 m bajo la base, casi bajo el vértice.
     # Techo a ~ -26,5 m; detector en el suelo, mirando arriba.
-    C.append(Campana("Cámara Subterránea", "nagoya", np.array([2.0, -3.0, -27.0]), arriba, 1.3,
+    C.append(Campana("Cámara Subterránea", "nagoya", np.array([2.0, -3.0, -27.0]), arriba, TAN_CANDIDATAS,
                      area_m2, dias, referencia="propuesta"))
     C.append(Campana("Cámara del Rey (cenital)", "nagoya",
                      np.array([kc.centro[0], kc.centro[1], kc.centro[2] - kc.tam[2] / 2 + 0.3]),
-                     arriba, 1.3, area_m2, dias, referencia="propuesta"))
+                     arriba, TAN_CANDIDATAS, area_m2, dias, referencia="propuesta"))
     C.append(Campana("Cámara de Campbell (cenital)", "nagoya",
-                     np.array([d5.centro[0], d5.centro[1], d5.centro[2] - 0.2]), arriba, 1.3,
+                     np.array([d5.centro[0], d5.centro[1], d5.centro[2] - 0.2]), arriba, TAN_CANDIDATAS,
                      area_m2, dias, referencia="propuesta"))
     C.append(Campana("Cabeza de la Gran Galería", "nagoya", np.array([g.X_PASAJES, -0.6, 42.5]),
-                     arriba, 1.3, area_m2, dias, referencia="propuesta"))
+                     arriba, TAN_CANDIDATAS, area_m2, dias, referencia="propuesta"))
     C.append(Campana("Cámara Subterránea (4 m², 1 año)", "nagoya", np.array([2.0, -3.0, -27.0]),
-                     arriba, 1.3, 4.0, 365, referencia="propuesta"))
+                     arriba, TAN_CANDIDATAS, 4.0, 365, referencia="propuesta"))
     for nom, base in (("Exterior sur", (0, -1)), ("Exterior este", (1, 0)),
                       ("Exterior oeste", (-1, 0))):
         o = np.array([base[0] * (g.SEMILADO + 15), base[1] * (g.SEMILADO + 15), 1.0])
@@ -197,7 +203,7 @@ def preparar(c: Campana, referencia: list[g.Caja]) -> Campana:
     X0 = opacidad_total(c.origen, dirs, referencia)
     cos = dirs[:, 2]
     F0 = mu.flujo_integral(mu.energia_minima(X0), cos)
-    ok = cos > COS_CENIT_MIN
+    ok = cos > math.cos(math.radians(CENIT_MAX))
     ang = (PASO_TAN ** 2 / (1 + TX ** 2 + TY ** 2) ** 1.5).reshape(-1)
     if c.separacion_planos > 0:     # hodoscopio: área de solapamiento de los dos planos
         fx = np.clip(1 - c.separacion_planos * np.abs(TX) / c.lado_m, 0, 1)
@@ -267,7 +273,10 @@ def z_hueco(c: Campana, caja: g.Caja) -> float:
     dNs = gaussian_filter(dNp, SIGMA_RES, mode="constant", truncate=3.0)
     N0s = np.pad(p["N0s"], m, mode="edge")[j0:j1 + 2 * m, i0:i1 + 2 * m]
     var = N0s + (F_SIS * N0s) ** 2
-    ok = var > 0
+    jj = np.arange(j0 - m, j1 + m)[:, None]
+    ii = np.arange(i0 - m, i1 + m)[None, :]
+    dentro = (jj >= 0) & (jj < n) & (ii >= 0) & (ii < n)   # como muones: solo la rejilla
+    ok = (var > 0) & dentro
     return float(math.sqrt(np.sum(dNs[ok] ** 2 / var[ok])))
 
 
@@ -341,4 +350,4 @@ def en_campo(c: Campana, P: np.ndarray) -> np.ndarray:
     with np.errstate(divide="ignore", invalid="ignore"):
         tx, ty = (v @ e1) / w, (v @ e2) / w
     cos_z = v[:, 2] / np.linalg.norm(v, axis=1)
-    return (w > 0) & (np.abs(tx) <= c.tan_max) & (np.abs(ty) <= c.tan_max) & (cos_z > COS_CENIT_MIN)
+    return (w > 0) & (np.abs(tx) <= c.tan_max) & (np.abs(ty) <= c.tan_max) & (cos_z > math.cos(math.radians(CENIT_MAX)))

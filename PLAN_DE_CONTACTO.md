@@ -23,3 +23,10 @@ Como Le Verrier con Galle: cada predicción va a quien tiene el instrumento para
 
 ## Norma
 Escribir de forma breve y honesta, con lo que pedimos y lo que ofrecemos, mencionando los errores propios que corregimos. Nunca presentar como descubrimiento lo que es una predicción.
+
+
+## Equipo de Lund (lidar de mercurio, tumba de Qin) — añadido el 01/11/2026
+- **A quién:** Sune Svanberg y Zheng Duan (Duan, Zhang y Svanberg, *Sci. Rep.* 2020).
+- **Qué pedimos:** la serie con fecha y hora del lidar de 2016 y los registros de la estación meteorológica de la cima del túmulo.
+- **Para qué:** la prueba prerregistrada P15 (¿respira la tumba?) se podría hacer con datos que ya existen.
+- **Borrador:** [`CARTA_LUND_en.md`](CARTA_LUND_en.md). Falta el nombre del autor. No se ha enviado.

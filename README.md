@@ -196,9 +196,11 @@ Landreau et al. (2024) compararon el agua total disponible con la necesaria (18 
 La hipótesis no queda refutada, sino condicionada al régimen hídrico, y eso se puede comprobar en los sedimentos (P16). *(Corregido tras revisión adversaria.)*
 
 ### 30. El patrón común: "ceguera al ritmo" → [preprint/ritmo](preprint/ritmo/rate_blindness_en.pdf)
-Los cinco casos auditados (Qin, Herculano, Djoser, el plomo romano y Tikal) fallan igual: razonan con totales, equilibrios o capacidades, e ignoran el ritmo máximo que impone la física (difusión, conducción del calor, almacenamiento entre riadas). Los desajustes van de ×2–9 a ×600–12 500. De diez afirmaciones revisadas, cinco fallan.
+Seis afirmaciones famosas, auditadas con el límite de ritmo físico que les corresponde y revisadas después por un revisor adversario independiente:
+- **Cuatro no superan la comprobación:** Qin (×42), Herculano (×600–12 500), el plomo romano (×2–3) y el mercurio de Tikal.
+- **Dos quedan condicionadas:** Djoser (exige crecidas frecuentes) y el filtro de Tikal (exige agua remansada).
 
-Artículo de síntesis en inglés, con figura, para enviarlo con el nombre del autor.
+La selección no fue aleatoria, así que no se afirma con qué frecuencia ocurre. Lo que sí se muestra es que la comprobación es barata y cambia conclusiones.
 
 ### 31. El plomo de Roma: el efecto sobre el CI está sobrestimado unas 2–3 veces → [docs/37](docs/37-el-plomo-de-roma.md)
 McConnell et al. (PNAS 2025) calcularon 2,5–3 puntos de CI perdidos en todo el Imperio por el plomo del aire. Para ello tomaron como "aumento" la plombemia **total** que predice una regresión moderna (niños de EE. UU. de 1988–94) y le sumaron una base neolítica.

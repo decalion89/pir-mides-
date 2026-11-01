@@ -125,7 +125,10 @@ Búsqueda de una segunda señal en los residuos de KEK tras restar el Gran Vací
 ### 18. Una teoría propia, puesta a prueba y refutada → [docs/25](docs/25-teoria-del-cuello-de-botella.md)
 Propusimos que el techo histórico (~340 m³/día) lo fijaba un límite físico de las rampas. Con el simulador original parecía encajar, pero un Monte Carlo mostró que la coincidencia dependía de un solo parámetro, el tiempo de giro. Con la física de las esquinas del documento 12, las rampas permiten 2–5 veces más. **La teoría queda refutada.** La causa del techo sigue abierta: o el modelo sobrestima la productividad, o el límite era organizativo o económico.
 
-### 19. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 19. El límite físico del gnomon → [docs/26](docs/26-el-limite-del-gnomon.md)
+El método solar de las sombras iguales tiene en Giza un error sistemático máximo de ~5,8′. Solo Keops (−3,4′) y Kefrén (−6,0′, en el límite) caben dentro; las otras siete pirámides (8,7–30′) no. El gnomon no puede ser el único método de la serie. Encaja mejor un método estelar o un cambio de técnica entre la pirámide Roja y Keops.
+
+### 20. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -156,6 +159,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [23 — ¿Una ley de aprendizaje?](docs/23-ley-de-aprendizaje.md) | Ritmo de construcción por reinado: techo de ~340 m³/día y caída por decisión |
 | [24 — Anomalías en los datos de KEK](docs/24-busqueda-de-anomalias-en-kek.md) | Búsqueda de una segunda señal en los residuos de 2017: ninguna confirmada |
 | [25 — Teoría del cuello de botella (refutada)](docs/25-teoria-del-cuello-de-botella.md) | Una teoría propia sobre el techo de construcción, y la prueba que la tumba |
+| [26 — El límite del gnomon](docs/26-el-limite-del-gnomon.md) | El método solar no puede producir errores de más de ~6′: solo explica Keops y Kefrén |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

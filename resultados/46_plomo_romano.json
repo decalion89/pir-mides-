@@ -1,4 +1,6 @@
 {
+ "pendiente_richmond_bryant_a_bajo_PbA_ug_dl_por_ug_m3": "15,3–16,5 (Richmond-Bryant et al. 2014)",
+ "aumento_con_pendiente_16_ug_dl": 0.0166,
  "reproduccion_del_articulo": {
   "aumento_a_1_04_ng": 2.64,
   "a_0_16_ng": 2.03,
@@ -25,25 +27,50 @@
    "mediana": 2.26,
    "p95": 3.44
   },
-  "plomo_en_vegetales_ug_kg": {
-   "p05": 1.33,
-   "mediana": 4.69,
-   "p95": 16.6
+  "plomo_en_verduras_ug_kg": {
+   "p05": 1.89,
+   "mediana": 4.68,
+   "p95": 11.7
+  },
+  "plomo_en_cereal_ug_kg": {
+   "p05": 2.88,
+   "mediana": 8.75,
+   "p95": 23.3
+  },
+  "ingesta_verduras_ug_dia": {
+   "p05": 0.178,
+   "mediana": 0.553,
+   "p95": 1.63
+  },
+  "ingesta_cereal_ug_dia": {
+   "p05": 0.607,
+   "mediana": 1.93,
+   "p95": 5.44
   },
   "ingesta_dieta_ug_dia": {
-   "p05": 0.565,
-   "mediana": 2.07,
-   "p95": 7.62
+   "p05": 1.01,
+   "mediana": 2.59,
+   "p95": 6.46
+  },
+  "plomo_cisterna_ug_L": {
+   "p05": 0.771,
+   "mediana": 1.31,
+   "p95": 2.32
+  },
+  "ingesta_cisterna_ug_dia": {
+   "p05": 0.587,
+   "mediana": 1.27,
+   "p95": 2.63
   },
   "aumento_suelo_mg_kg": {
-   "p05": 0.986,
+   "p05": 0.985,
    "mediana": 1.93,
-   "p95": 5.0
+   "p95": 5.01
   },
   "ingesta_suelo_ug_dia": {
-   "p05": 0.0851,
+   "p05": 0.085,
    "mediana": 0.235,
-   "p95": 0.693
+   "p95": 0.698
   },
   "aumento_por_inhalacion_ug_dl": {
    "p05": 0.00114,
@@ -51,19 +78,19 @@
    "p95": 0.00302
   },
   "aumento_total_ug_dl": {
-   "p05": 0.123,
-   "mediana": 0.394,
-   "p95": 1.4
+   "p05": 0.321,
+   "mediana": 0.713,
+   "p95": 1.58
   },
   "deficit_ci": {
-   "p05": 0.197,
-   "mediana": 0.596,
-   "p95": 1.76
+   "p05": 0.494,
+   "mediana": 1.01,
+   "p95": 1.93
   },
   "cociente_articulo_sobre_balance": {
-   "p05": 1.72,
-   "mediana": 6.1,
-   "p95": 19.6
+   "p05": 1.52,
+   "mediana": 3.37,
+   "p95": 7.47
   }
  }
 }

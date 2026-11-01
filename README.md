@@ -200,11 +200,13 @@ Los cinco casos auditados (Qin, Herculano, Djoser, el plomo romano y Tikal) fall
 
 Artículo de síntesis en inglés, con figura, para enviarlo con el nombre del autor.
 
-### 31. El plomo de Roma: el efecto sobre el CI está sobrestimado entre 2 y 5 veces → [docs/37](docs/37-el-plomo-de-roma.md)
+### 31. El plomo de Roma: el efecto sobre el CI está sobrestimado unas 2–3 veces → [docs/37](docs/37-el-plomo-de-roma.md)
 McConnell et al. (PNAS 2025) calcularon 2,5–3 puntos de CI perdidos en todo el Imperio por el plomo del aire. Para ello tomaron como "aumento" la plombemia **total** que predice una regresión moderna (niños de EE. UU. de 1988–94) y le sumaron una base neolítica.
-- Con su propia regresión bien diferenciada salen **1,4 puntos**.
-- Con un balance de ingesta (aire, cultivos y suelo) salen **0,6**.
-- La regresión se extrapola 10–100 veces por debajo de su rango de calibración.
+- Con su propia regresión diferenciada salen **1,4 puntos**, aunque sigue siendo una extrapolación.
+- Con un balance de ingesta (aire, cereales, verduras, cisternas y suelo) sale **1,0**.
+- La regresión se extrapola ~35 veces por debajo de su rango de calibración.
+
+*(Corregido tras revisión adversaria.)*
 
 ### 32. El "filtro más antiguo de América" (Tikal) no pudo purificar el embalse → [docs/38](docs/38-el-filtro-de-tikal.md)
 Un filtro de zeolita en la entrada del embalse que eliminara microbios (filtración lenta) solo trataría un **2 %** del agua. Para tratar el 90 % harían falta ~6 300 m² de filtro y ~7 500 t de material traído desde 30 km. Un filtro rápido sí es viable, pero solo aclara el agua.
@@ -254,7 +256,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×42): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
 | [35 — El cerebro de vidrio](docs/35-el-cerebro-de-vidrio.md) | El enfriamiento a 1 000 K/s del cerebro vitrificado de Herculano es imposible dentro de un cráneo (0,1–1,7 K/s); su propia cinética contradice el escenario |
 | [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: viable solo con crecidas frecuentes o flujo casi perenne; con riadas de desierto recibe el 7–34 % de su demanda (P16) |
-| [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–5: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |
+| [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–3: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |
 | [38 — El filtro de Tikal](docs/38-el-filtro-de-tikal.md) | Por caudal, un filtro de zeolita en la entrada solo trata ~2 % del agua si debe eliminar microbios; purificar el embalse exigiría ~6 300 m² y ~7 500 t traídas desde 30 km |
 | [39 — El mercurio de Tikal](docs/39-el-mercurio-de-tikal.md) | Con el Hg de los sedimentos más contaminados, el agua queda en ~17 % de la guía de la OMS: el mercurio no la hacía imbebible |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |

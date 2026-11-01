@@ -1,0 +1,493 @@
+{
+ "fuente": "Alvarez et al., Science 167, 832 (1970), fig. 10",
+ "n_bins": 801,
+ "chi2_publicado": 905,
+ "n_dudosos": 3,
+ "combinaciones": {
+  "+++": {
+   "suma_r2": 1074.0,
+   "media": 0.05742821473158552,
+   "desv": 1.1565145784598636,
+   "n_abs_ge_3": 24,
+   "moran": 0.10901306695880021,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  },
+  "++-": {
+   "suma_r2": 1074.0,
+   "media": 0.05493133583021224,
+   "desv": 1.1566358624828132,
+   "n_abs_ge_3": 24,
+   "moran": 0.10726851079051147,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  },
+  "+-+": {
+   "suma_r2": 1074.0,
+   "media": 0.05493133583021224,
+   "desv": 1.1566358624828132,
+   "n_abs_ge_3": 24,
+   "moran": 0.10339298391225304,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  },
+  "+--": {
+   "suma_r2": 1074.0,
+   "media": 0.052434456928838954,
+   "desv": 1.156751744223466,
+   "n_abs_ge_3": 24,
+   "moran": 0.10164088796839552,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  },
+  "-++": {
+   "suma_r2": 1074.0,
+   "media": 0.049937578027465665,
+   "desv": 1.1568622253052452,
+   "n_abs_ge_3": 24,
+   "moran": 0.12118745249301034,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  },
+  "-+-": {
+   "suma_r2": 1074.0,
+   "media": 0.04744069912609238,
+   "desv": 1.1569673072753097,
+   "n_abs_ge_3": 24,
+   "moran": 0.11941464864530427,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  },
+  "--+": {
+   "suma_r2": 1074.0,
+   "media": 0.04744069912609238,
+   "desv": 1.1569673072753097,
+   "n_abs_ge_3": 24,
+   "moran": 0.11554134194941498,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  },
+  "---": {
+   "suma_r2": 1074.0,
+   "media": 0.0449438202247191,
+   "desv": 1.1570669916046614,
+   "n_abs_ge_3": 24,
+   "moran": 0.11376091940105038,
+   "moran_p": 0.0,
+   "exceso_2x2": {
+    "valor": 4.0,
+    "p_global": 0.4405,
+    "theta": 63.0,
+    "phi": 96.0
+   },
+   "deficit_2x2": {
+    "valor": 5.0,
+    "p_global": 0.004,
+    "theta": 126.0,
+    "phi": 69.0
+   },
+   "exceso_3x3": {
+    "valor": 4.67,
+    "p_global": 0.0505,
+    "theta": 109.5,
+    "phi": 52.5
+   },
+   "deficit_3x3": {
+    "valor": 5.33,
+    "p_global": 0.0005,
+    "theta": 127.5,
+    "phi": 70.5
+   },
+   "exceso_4x4": {
+    "valor": 5.25,
+    "p_global": 0.0055,
+    "theta": 108.0,
+    "phi": 54.0
+   },
+   "deficit_4x4": {
+    "valor": 5.0,
+    "p_global": 0.0015,
+    "theta": 126.0,
+    "phi": 72.0
+   }
+  }
+ },
+ "zona_gutowski": {
+  "N→E (67° desde el norte hacia el este)": {
+   "fila": 10,
+   "columna": 24,
+   "suma_3x3_sobre_raiz_n": 0.67,
+   "valores": [
+    [
+     1.0,
+     2.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ],
+    [
+     1.0,
+     -2.0,
+     -1.0
+    ]
+   ]
+  },
+  "E→N (67° desde el este hacia el norte)": {
+   "fila": 5,
+   "columna": 19,
+   "suma_3x3_sobre_raiz_n": 1.0,
+   "valores": [
+    [
+     1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     0.0,
+     -2.0
+    ],
+    [
+     1.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "N→O": {
+   "fila": 10,
+   "columna": 5,
+   "suma_3x3_sobre_raiz_n": -0.33,
+   "valores": [
+    [
+     -1.0,
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     -1.0,
+     -1.0
+    ],
+    [
+     -1.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "E→S": {
+   "fila": 24,
+   "columna": 19,
+   "suma_3x3_sobre_raiz_n": 2.0,
+   "valores": [
+    [
+     -1.0,
+     2.0,
+     0.0
+    ],
+    [
+     0.0,
+     2.0,
+     1.0
+    ],
+    [
+     3.0,
+     0.0,
+     -1.0
+    ]
+   ]
+  }
+ },
+ "nota": "p_global: fracción de permutaciones con un máximo igual o mayor en cualquier lugar del mapa (incluye el efecto de mirar en todas partes).",
+ "nula_correlada": {
+  "sigma_nucleo_bins": 0.4200000000000001,
+  "moran_simulado": 0.10792667178674165,
+  "moran_observado": 0.10901306695880021,
+  "n_sim": 4000,
+  "exceso_2x2": {
+   "valor": 4.0,
+   "p_global": 0.73775,
+   "theta": 63.0,
+   "phi": 96.0
+  },
+  "deficit_2x2": {
+   "valor": 5.0,
+   "p_global": 0.0935,
+   "theta": 126.0,
+   "phi": 69.0
+  },
+  "exceso_3x3": {
+   "valor": 4.67,
+   "p_global": 0.19375,
+   "theta": 109.5,
+   "phi": 52.5
+  },
+  "deficit_3x3": {
+   "valor": 5.33,
+   "p_global": 0.033,
+   "theta": 127.5,
+   "phi": 70.5
+  },
+  "exceso_4x4": {
+   "valor": 5.25,
+   "p_global": 0.0385,
+   "theta": 108.0,
+   "phi": 54.0
+  },
+  "deficit_4x4": {
+   "valor": 5.0,
+   "p_global": 0.074,
+   "theta": 126.0,
+   "phi": 72.0
+  }
+ }
+}

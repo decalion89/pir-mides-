@@ -83,7 +83,13 @@ Reconstruimos la medición de muones de Luis Alvarez de 1968–69 en la pirámid
 - **Kefrén está casi sin explorar.** Solo el 3–15 % de su volumen está explorado a 5σ para cámaras de ese tamaño. Fuera del cono no hay ninguna afirmación publicada.
 - **Se puede ampliar desde el mismo sitio.** Cinco exposiciones de emulsión en la Cámara de Belzoni (~6 meses) llevarían la cobertura total del ~20 % al ~61 %. Además resolverían la posible cámara que unos estudiantes (CERN *Beamline for Schools*) creyeron ver en los datos de Alvarez.
 
-### 12. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 12. Los datos de Alvarez, 56 años después → [docs/19](docs/19-los-datos-de-alvarez-reanalizados.md)
+Transcribimos y reanalizamos el mapa de residuos que Alvarez publicó en 1970: 801 casillas, medido menos predicho.
+- **Tienen estructura espacial clara** (p < 0,0005). Su exceso de χ² (905 para ~750) se debe a errores sistemáticos con correlación espacial, no a ruido.
+- **No hay ninguna agrupación significativa** que indique una cámara oculta: la mayor da p = 0,03–0,04, y ninguna pasa de ~2σ al contar que se buscó de seis maneras.
+- La pista de los estudiantes del CERN (acimut 62–72°) no aparece.
+
+### 13. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -107,6 +113,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [16 — De Giza a la Luna](docs/16-de-giza-a-la-luna.md) | La Gran Pirámide costó ~2,5 GWh de trabajo mecánico (25 h de una central de 100 MW); lecciones para construir en la Luna |
 | [17 — El mapa de lo inexplorado](docs/17-mapa-de-lo-inexplorado.md) | Qué parte de la pirámide han explorado de verdad los muones (59–66 % sin explorar para huecos de 8 m), y dónde medir: la Cámara Subterránea |
 | [18 — Kefrén: el experimento inacabado de Alvarez](docs/18-kefren-el-experimento-inacabado-de-alvarez.md) | Reconstrucción de la medición de 1969, cuánto de Kefrén está explorado (3–15 %) y cómo ampliarlo al ~61 % |
+| [19 — Los datos de Alvarez, 56 años después](docs/19-los-datos-de-alvarez-reanalizados.md) | Reanálisis del mapa de residuos de 1970: estructura espacial clara y ninguna cámara oculta |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [NOTA_TECNICA_cobertura_en.md](NOTA_TECNICA_cobertura_en.md) | **Nota técnica en inglés** para los equipos de muografía: el mapa de sensibilidad y la propuesta de la Cámara Subterránea |
@@ -120,7 +127,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 ## Reproducir
 ```bash
 pip install -r requirements.txt
-python -m pytest -q tests                      # 34 pruebas
+python -m pytest -q tests                      # 36 pruebas
 cd simulador && python ejecutar_todo.py        # ~5 min: resultados 01-04 y figuras
 python ejecutar_profundo.py                    # ~12 min: robustez, prueba a ciegas, aristas
 # Reanálisis de los datos publicados (requiere el PDF de arXiv:1711.01576):

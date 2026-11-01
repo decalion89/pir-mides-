@@ -313,3 +313,21 @@ def test_alvarez_veria_una_camara_del_rey_a_40_m():
     c = cob.preparar(kf.campana_alvarez(dias), [], opacidad_fn=kf.opacidad)
     z = cob.z_hueco(c, kf.camara_del_rey(kf.ORIGEN_ALVAREZ + np.array([0, 0, 40.0])))
     assert z > 5
+
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "simulador"))
+import reanalisis_alvarez as ralv  # noqa: E402
+
+
+def test_transcripcion_de_la_figura_10_de_alvarez():
+    M, dudosos = ralv.cargar()
+    assert np.isnan(M[0]).all()                     # primera fila vacía
+    assert int((~np.isnan(M)).sum()) == 801
+    assert dudosos == 3
+    assert np.nanmax(np.abs(M)) <= 3
+    assert abs(np.nanmean(M)) < 0.1
+
+
+def test_residuos_de_alvarez_tienen_correlacion_espacial():
+    M, _ = ralv.cargar()
+    assert ralv.moran(M) > 0.05

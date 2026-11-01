@@ -85,6 +85,8 @@ Cinco exposiciones de emulsión de 2 m² × 180 días en la Cámara de Belzoni (
 2. tener sensibilidad de ≥ 5σ a una cámara del tamaño de la del Rey en el **~61 %** del volumen de Kefrén (hoy, 3–15 %), con todo el volumen por encima de ~40 m cubierto. El techo lo fija la geometría con el corte de 70° del cenit;
 3. **resolver la pista de Gutowski et al. (2017)**. Si hubiera una cámara del tamaño de la del Rey a ~30° del cenit sobre Belzoni, la exposición cenital la vería a ≥ 7σ en todas las posiciones de ese anillo que caben en la pirámide (hasta ~80 m de altura). Los datos de Alvarez solo la descartan hasta ~30–40 m. (Corregido el 01/11/2026 tras una revisión independiente: la primera versión incluía posiciones fuera de la pirámide.)
 
+4. **mirar con más cuidado dos direcciones** que destacan, sin llegar a ser significativas (p ≈ 0,03–0,04 con nula correlada; doc. 19), en los residuos publicados por Alvarez: un exceso de muones a ~38° del cenit hacia el oeste-suroeste (acimut ~246°) y un déficit en el borde sur-suroeste. Si no aparecen con la nueva exposición, eran sistemáticos de 1969.
+
 Igual que en P12, no predecimos que haya una cámara: predecimos qué parte quedará explorada.
 
 **Qué la refutaría**: que las aristas, que son contrastes de opacidad mucho mayores que una cámara, no se vieran con claridad. Indicaría que las heterogeneidades del núcleo rocoso de Kefrén dominan y que la cobertura calculada es optimista.

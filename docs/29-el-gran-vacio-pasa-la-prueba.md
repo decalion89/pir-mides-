@@ -64,7 +64,7 @@ Unidades: calibradas a Nagoya.
 
 ## Límites
 - **El barrido grueso con error común** (tabla anterior) usa todavía la versión de un rayo por casilla. Es orientativo.
-- **Geometría simplificada:** la Gran Galería se modela como una caja horizontal, no inclinada 26° con muros en voladizo. El mecanismo de la franja paralela es general, pero los umbrales (0,5–0,75 m) son aproximados, quizá en un factor ~1,5.
+- **Geometría simplificada:** la Gran Galería se modela como una caja inclinada 26° de sección rectangular (1,55 × 8,6 m), sin los muros en voladizo. El mecanismo de la franja paralela es general, pero los umbrales (0,5–0,75 m) son aproximados, quizá en un factor ~1,5. *(Corregido: una versión anterior decía, por error, que la galería se modelaba como una caja horizontal.)*
 - **Solo se prueban traslaciones.** Un error de orientación de 10 mrad, como el que declaran para las emulsiones, equivale a ~0,15 m a la altura de la galería. Está por debajo del umbral.
 - **Datos sin ruido:** el ruido estadístico solo añade fluctuaciones simétricas.
 - **Los Δχ² absolutos de KEK** usan la calibración de Nagoya y están sobrestimados. Por eso las conclusiones se dan en valores relativos.

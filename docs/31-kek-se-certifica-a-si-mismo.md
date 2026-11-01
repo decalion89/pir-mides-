@@ -46,7 +46,7 @@ Archivos: [`simulador/tension_kek_normalizacion.py`](../simulador/tension_kek_no
 Por eso el mismo detector que sería el más vulnerable a un falso vacío (doc. 30) es también el que mejor certifica que no lo hay.
 
 ## Límites
-- **La galería modelada es una caja horizontal,** no la galería inclinada real. La forma exacta del residuo y, por tanto, el límite de 0,1 m son aproximados. Por eso damos también el límite conservador de ~0,25 m, donde Δχ² ya es ≥ 63.
+- **La galería modelada es una caja inclinada 26° de sección rectangular,** sin el voladizo de sus muros. *(Corregido: decía "caja horizontal" por error.)* La forma exacta del residuo en los bordes y, por tanto, el límite de 0,1 m son aproximados. Por eso damos también el límite conservador de ~0,25 m, donde Δχ² ya es ≥ 63.
 - **Solo se ha barrido la dirección este-oeste,** la sensible según el doc. 30. Un error norte-sur o vertical no fabricaba el Vacío en el doc. 29.
 - **Datos leídos de las figuras,** no los originales.
 

@@ -1,0 +1,1 @@
+{"posicion_x": 0.0, "delta_x": -1.5, "delta_z": 0.0, "chi2_kek_sin_vacio": 6190.2, "chi2_kek_solo": 3744.8, "params_kek_solo": [9.15, 12.4, 44.17, 28.46, 9.49, 1.1, 0.91], "chi2_conjunto": 6094.7, "chi2_conjunto_emulsiones": 261.3, "chi2_conjunto_kek": 5833.4, "params_conjunto": [11.18, 19.68, 84.94, 34.57, 2.89, 2.61, 0.37], "tension": 2271.9} 54s

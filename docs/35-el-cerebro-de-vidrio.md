@@ -16,6 +16,8 @@
 >
 > **Conclusión.** La medición calorimétrica puede ser correcta. Lo que no se sostiene físicamente es la historia térmica que se deduce de ella. Hay además un problema de método: los dos inicios (420 °C a 0,42 K/s y 510 °C a 1 000 K/s) son la transición vítrea del material **a cada ritmo de calentamiento**, de ahí sale precisamente su energía de activación. No miden el ritmo natural de enfriamiento. La equivalencia con 1 000 K/s es una suposición ("balanced thermal history"), no una medida.
 
+Borrador de comentario en inglés: [`preprint/herculano/comment_en.md`](../preprint/herculano/comment_en.md), con la figura [`fig1_cooling.png`](../preprint/herculano/fig1_cooling.png).
+
 Archivos: [`simulador/herculano_vidrio.py`](../simulador/herculano_vidrio.py), [`resultados/44_herculano_vidrio.json`](../resultados/44_herculano_vidrio.json).
 
 ## 1. Cinética del propio artículo

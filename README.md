@@ -209,7 +209,10 @@ McConnell et al. (PNAS 2025) calcularon 2,5–3 puntos de CI perdidos en todo el
 ### 32. El "filtro más antiguo de América" (Tikal) no pudo purificar el embalse → [docs/38](docs/38-el-filtro-de-tikal.md)
 Un filtro de zeolita en la entrada del embalse que eliminara microbios (filtración lenta) solo trataría un **2 %** del agua. Para tratar el 90 % harían falta ~6 300 m² de filtro y ~7 500 t de material traído desde 30 km. Un filtro rápido sí es viable, pero solo aclara el agua.
 
-### 33. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 33. El mercurio de Tikal no hacía el agua imbebible → [docs/39](docs/39-el-mercurio-de-tikal.md)
+Lentz et al. (2020) dedujeron agua potable "seriamente comprometida" porque el mercurio de los sedimentos supera un umbral ecológico. Con la partición sedimento-agua y las partículas en suspensión, aun con las muestras más contaminadas el agua tiene ~1 µg/L: el 17 % de la guía de la OMS y el 3 % de la ingesta tolerable. Las cianobacterias son otro argumento y no se evalúan aquí.
+
+### 34. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -253,6 +256,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: con sus estructuras recibe el 27 % de su demanda; solo es viable con un depósito de Mm³ estanco (predicción: limos lacustres) |
 | [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–5: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |
 | [38 — El filtro de Tikal](docs/38-el-filtro-de-tikal.md) | Por caudal, un filtro de zeolita en la entrada solo trata ~2 % del agua si debe eliminar microbios; purificar el embalse exigiría ~6 300 m² y ~7 500 t traídas desde 30 km |
+| [39 — El mercurio de Tikal](docs/39-el-mercurio-de-tikal.md) | Con el Hg de los sedimentos más contaminados, el agua queda en ~17 % de la guía de la OMS: el mercurio no la hacía imbebible |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

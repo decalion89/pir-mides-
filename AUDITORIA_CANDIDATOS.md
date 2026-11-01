@@ -30,3 +30,5 @@ Descartados por ya comprobados o no aptos: el radar de Tutankamón (Porcelli et 
 - Depende de la dependencia del ritmo con la humedad, que no conocemos. Se deja como tensión documentada.
 
 **Hecho:** filtro de zeolita de Tikal (Tankersley et al., Sci. Rep. 2020), en el doc. 38: por caudal no pudo purificar el embalse. Recuento: 5 resultados nuevos de 10 casos revisados.
+
+**Hecho:** mercurio de los embalses de Tikal (Lentz et al., Sci. Rep. 2020), en el doc. 39: el agua cumpliría la guía de la OMS. Recuento: 6 resultados nuevos de 11 casos revisados.

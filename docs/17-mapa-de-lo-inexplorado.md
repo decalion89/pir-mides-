@@ -91,7 +91,19 @@ Lo que añade la Cámara Subterránea está entre 6 y 58 m de altura (percentile
 ## 4. Robustez
 Ver [`resultados/20_cobertura_robustez.json`](../resultados/20_cobertura_robustez.json), calculado con una rejilla de 8 m:
 
-ROBUSTEZ_TABLA
+Cada celda da el % del volumen sin explorar: nominal (≥ 5σ) / optimista (≥ 3σ), y para el cubo de 8 m también la franja de 0–20 m (≥ 5σ).
+
+| Variante | Cubo de 8 m | 8 m, 0–20 m | Cubo de 5 m |
+|---|---|---|---|
+| Nominal (corte de 70°, rejilla de 8 m) | 66 / 65 | 99 | 73 / 69 |
+| Corte de cenit en 80° | 60 / 54 | 97 | 72 / 67 |
+| Corte de cenit en 85° | 59 / 51 | 94 | 72 / 67 |
+| Sin calibrar (factor 0,5 para todas las familias) | 68 / 66 | 99 | 76 / 72 |
+| Sistemático del 1 % por bin | 66 / 65 | 99 | 73 / 69 |
+| Sistemático del 3 % por bin | 66 / 65 | 99 | 73 / 69 |
+| Detectores desplazados al azar (σ = 2 m en horizontal, 1 m en vertical), 5 sorteos | 65–66 / 64–65 | 98–99 | 72–74 / 69–70 |
+
+**Lo que cambia y lo que no.** El corte de cenit es la suposición que más pesa: lo inexplorado para huecos de 8 m varía entre el 59 % y el 68 % entre todas las variantes. En los 20 m inferiores no baja nunca del 94 %. La calibración, el sistemático y la posición exacta de los detectores mueven el resultado ≤ 3 puntos.
 
 ## 5. Límites (lo que este mapa NO dice)
 - **No dice que haya cámaras ocultas.** Dice dónde no se puede descartar que las haya. La mayor parte de la pirámide es, casi con seguridad, mampostería maciza.

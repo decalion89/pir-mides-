@@ -22,3 +22,9 @@ Descartados por ya comprobados o no aptos: el radar de Tutankamón (Porcelli et 
 **Recuento al 01/11/2026:** de seis casos revisados, tres dan un resultado nuevo (Qin, Herculano, Djoser) y tres no (Teotihuacán, Monte Echia, Hierápolis).
 
 **Hecho:** plomo romano y CI (McConnell et al., PNAS 2025), en el doc. 37: sobrestimado ×2–5. Pendientes de la segunda búsqueda: la Sábana Santa por WAXS (De Caro et al. 2022), el mercurio de Tikal (Lentz et al. 2020), el oxígeno de las antorchas en cuevas (Kedar et al. 2021), el filtro de zeolita de Tikal (Tankersley et al. 2020) y los embalses de Tikal (Lucero 2023).
+
+**Sábana Santa por WAXS (De Caro et al., Heritage 5:860, 2022). Revisado el 01/11: tensión interna, no refutación limpia.**
+- Con su propia E = 118,9 kJ/mol, media hora a 200 °C equivale a ~4 300–6 600 años de envejecimiento a 20–22,5 °C. Con su k(90 °C) = 0,0022 h⁻¹, k·t ≈ 10 a 200 °C, es decir, degradación completa. Aun así, el mapa WAXS salió "unaltered".
+- Los autores lo atribuyen a que la sequedad reduce el ritmo "en al menos un orden de magnitud". Para que el ensayo sea invisible haría falta reducirlo ≥ 20–70 veces, y eso no se mide.
+- El amarilleo "muy pronunciado" que ellos mismos observan indica cambio químico. O el WAXS no sigue su cinética fuera de 90 °C (y entonces la extrapolación de 90 a 20 °C, de ~12 000 veces, también es dudosa), o los incendios (1532) sí afectan a la medida.
+- Depende de la dependencia del ritmo con la humedad, que no conocemos. Se deja como tensión documentada.

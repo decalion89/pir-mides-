@@ -54,3 +54,5 @@ Por eso el mismo detector que sería el más vulnerable a un falso vacío (doc. 
 - **Para el Gran Vacío:** queda descartado con los datos publicados, y no solo con la precisión declarada, el mecanismo por el que un error de modelo fabricaría la señal en el detector más expuesto. Sumado a NE1, NE2 y al análisis sin modelo del CEA, la existencia del Vacío es robusta frente a este tipo de error.
 - **Para la tensión del doc. 11:** se descarta una de las tres explicaciones que propusimos (residuos de las estructuras conocidas en la normalización de KEK). Las otras dos siguen abiertas.
 - **Para la muografía en general:** una estructura conocida y contrastada cerca de la línea de visión actúa como **regla de calibración**: los datos fijan su propio registro. Es el complemento práctico de la ley de la mitad. La misma estructura que puede fabricar falsos huecos permite demostrar que no lo ha hecho.
+
+> **Nota (doc. 32).** La propuesta de usar la Gran Galería para fijar la posición *absoluta* de KEK no funciona: las estructuras conocidas se cancelan en sus cocientes. Lo que este documento fija es el desajuste *relativo* entre datos y simulación.

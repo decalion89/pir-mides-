@@ -1,0 +1,639 @@
+{
+ "chi2_emulsiones_solas": 78.0,
+ "posicion_h1_nominal": [
+  7.1,
+  -1.9,
+  21.5
+ ],
+ "separacion_nominal": 2.9,
+ "separacion_planos_nominal": {
+  "H1": 1.5,
+  "H2": 1.0
+ },
+ "filas": [
+  {
+   "parametro": "nominal",
+   "valor": 0.0,
+   "chi2_kek_solo": 662.8,
+   "params_kek_solo": [
+    7.96,
+    23.47,
+    49.64,
+    53.62,
+    2.52,
+    3.75,
+    24.28
+   ],
+   "chi2_conjunto": 811.6,
+   "chi2_conjunto_emulsiones": 143.1,
+   "params_conjunto": [
+    8.06,
+    23.45,
+    53.32,
+    51.9,
+    2.57,
+    4.15,
+    21.43
+   ],
+   "tension": 70.7
+  },
+  {
+   "parametro": "px_m",
+   "valor": -2.5,
+   "chi2_kek_solo": 662.4,
+   "params_kek_solo": [
+    5.43,
+    14.68,
+    52.9,
+    34.33,
+    2.71,
+    3.68,
+    24.3
+   ],
+   "chi2_conjunto": 867.3,
+   "chi2_conjunto_emulsiones": 165.3,
+   "params_conjunto": [
+    6.22,
+    24.56,
+    58.86,
+    55.43,
+    2.66,
+    4.74,
+    27.31
+   ],
+   "tension": 126.9
+  },
+  {
+   "parametro": "px_m",
+   "valor": -2.0,
+   "chi2_kek_solo": 662.9,
+   "params_kek_solo": [
+    5.92,
+    19.92,
+    50.52,
+    45.9,
+    2.67,
+    3.66,
+    24.38
+   ],
+   "chi2_conjunto": 839.7,
+   "chi2_conjunto_emulsiones": 140.6,
+   "params_conjunto": [
+    6.59,
+    16.89,
+    61.15,
+    37.34,
+    2.71,
+    4.45,
+    23.87
+   ],
+   "tension": 98.8
+  },
+  {
+   "parametro": "px_m",
+   "valor": -1.5,
+   "chi2_kek_solo": 667.5,
+   "params_kek_solo": [
+    6.41,
+    25.12,
+    48.34,
+    57.03,
+    2.63,
+    3.65,
+    23.67
+   ],
+   "chi2_conjunto": 822.0,
+   "chi2_conjunto_emulsiones": 125.3,
+   "params_conjunto": [
+    6.92,
+    28.11,
+    55.11,
+    60.69,
+    2.73,
+    4.2,
+    20.75
+   ],
+   "tension": 76.5
+  },
+  {
+   "parametro": "px_m",
+   "valor": -1.0,
+   "chi2_kek_solo": 667.6,
+   "params_kek_solo": [
+    6.82,
+    19.17,
+    49.98,
+    43.92,
+    2.58,
+    3.62,
+    22.82
+   ],
+   "chi2_conjunto": 807.0,
+   "chi2_conjunto_emulsiones": 122.5,
+   "params_conjunto": [
+    7.19,
+    24.42,
+    55.23,
+    51.9,
+    2.66,
+    4.14,
+    16.03
+   ],
+   "tension": 61.5
+  },
+  {
+   "parametro": "px_m",
+   "valor": -0.5,
+   "chi2_kek_solo": 665.4,
+   "params_kek_solo": [
+    7.43,
+    16.97,
+    52.28,
+    39.09,
+    2.54,
+    3.7,
+    23.31
+   ],
+   "chi2_conjunto": 801.9,
+   "chi2_conjunto_emulsiones": 127.9,
+   "params_conjunto": [
+    7.59,
+    24.58,
+    53.09,
+    54.09,
+    2.62,
+    4.17,
+    21.53
+   ],
+   "tension": 58.5
+  },
+  {
+   "parametro": "px_m",
+   "valor": 0.5,
+   "chi2_kek_solo": 657.3,
+   "params_kek_solo": [
+    8.45,
+    15.92,
+    52.96,
+    36.79,
+    2.57,
+    3.73,
+    23.73
+   ],
+   "chi2_conjunto": 832.8,
+   "chi2_conjunto_emulsiones": 170.9,
+   "params_conjunto": [
+    8.42,
+    16.4,
+    54.19,
+    37.65,
+    2.56,
+    3.95,
+    23.05
+   ],
+   "tension": 97.5
+  },
+  {
+   "parametro": "px_m",
+   "valor": 1.0,
+   "chi2_kek_solo": 650.9,
+   "params_kek_solo": [
+    8.98,
+    14.18,
+    53.44,
+    32.53,
+    2.68,
+    3.58,
+    22.48
+   ],
+   "chi2_conjunto": 859.0,
+   "chi2_conjunto_emulsiones": 189.7,
+   "params_conjunto": [
+    8.87,
+    12.41,
+    55.11,
+    28.53,
+    2.48,
+    3.85,
+    3.11
+   ],
+   "tension": 130.1
+  },
+  {
+   "parametro": "pz_m",
+   "valor": -1.0,
+   "chi2_kek_solo": 662.2,
+   "params_kek_solo": [
+    7.95,
+    23.67,
+    48.64,
+    53.88,
+    2.53,
+    3.74,
+    23.85
+   ],
+   "chi2_conjunto": 813.8,
+   "chi2_conjunto_emulsiones": 145.2,
+   "params_conjunto": [
+    8.08,
+    23.19,
+    52.88,
+    51.18,
+    2.57,
+    4.19,
+    20.99
+   ],
+   "tension": 73.6
+  },
+  {
+   "parametro": "pz_m",
+   "valor": -0.5,
+   "chi2_kek_solo": 662.5,
+   "params_kek_solo": [
+    7.96,
+    18.24,
+    51.61,
+    41.94,
+    2.52,
+    3.76,
+    23.72
+   ],
+   "chi2_conjunto": 812.7,
+   "chi2_conjunto_emulsiones": 144.0,
+   "params_conjunto": [
+    8.07,
+    23.75,
+    53.02,
+    52.38,
+    2.57,
+    4.17,
+    20.98
+   ],
+   "tension": 72.2
+  },
+  {
+   "parametro": "pz_m",
+   "valor": 0.5,
+   "chi2_kek_solo": 663.2,
+   "params_kek_solo": [
+    7.96,
+    23.83,
+    50.1,
+    54.11,
+    2.53,
+    3.75,
+    23.65
+   ],
+   "chi2_conjunto": 810.5,
+   "chi2_conjunto_emulsiones": 141.9,
+   "params_conjunto": [
+    8.05,
+    15.72,
+    56.69,
+    35.3,
+    2.58,
+    4.13,
+    21.73
+   ],
+   "tension": 69.3
+  },
+  {
+   "parametro": "pz_m",
+   "valor": 1.0,
+   "chi2_kek_solo": 663.5,
+   "params_kek_solo": [
+    7.95,
+    15.41,
+    54.27,
+    35.71,
+    2.53,
+    3.74,
+    23.63
+   ],
+   "chi2_conjunto": 809.5,
+   "chi2_conjunto_emulsiones": 140.9,
+   "params_conjunto": [
+    8.04,
+    23.8,
+    53.64,
+    52.85,
+    2.59,
+    4.11,
+    22.23
+   ],
+   "tension": 68.0
+  },
+  {
+   "parametro": "pz_m",
+   "valor": 2.0,
+   "chi2_kek_solo": 664.3,
+   "params_kek_solo": [
+    7.95,
+    23.47,
+    51.59,
+    53.38,
+    2.54,
+    3.73,
+    23.88
+   ],
+   "chi2_conjunto": 807.9,
+   "chi2_conjunto_emulsiones": 138.2,
+   "params_conjunto": [
+    8.0,
+    22.5,
+    54.6,
+    50.05,
+    2.61,
+    4.08,
+    22.31
+   ],
+   "tension": 65.6
+  },
+  {
+   "parametro": "separacion_H1_H2_m",
+   "valor": 2.3,
+   "chi2_kek_solo": 654.7,
+   "params_kek_solo": [
+    7.81,
+    24.47,
+    40.49,
+    57.72,
+    2.54,
+    3.05,
+    27.83
+   ],
+   "chi2_conjunto": 848.1,
+   "chi2_conjunto_emulsiones": 163.3,
+   "params_conjunto": [
+    8.17,
+    26.01,
+    50.13,
+    56.85,
+    2.46,
+    3.96,
+    18.52
+   ],
+   "tension": 115.4
+  },
+  {
+   "parametro": "separacion_H1_H2_m",
+   "valor": 2.6,
+   "chi2_kek_solo": 658.4,
+   "params_kek_solo": [
+    7.92,
+    12.65,
+    50.96,
+    30.06,
+    2.55,
+    3.36,
+    24.92
+   ],
+   "chi2_conjunto": 826.6,
+   "chi2_conjunto_emulsiones": 152.5,
+   "params_conjunto": [
+    8.1,
+    23.0,
+    51.63,
+    51.46,
+    2.52,
+    4.09,
+    22.54
+   ],
+   "tension": 90.2
+  },
+  {
+   "parametro": "separacion_H1_H2_m",
+   "valor": 3.2,
+   "chi2_kek_solo": 666.6,
+   "params_kek_solo": [
+    8.02,
+    16.99,
+    56.46,
+    39.02,
+    2.51,
+    4.15,
+    24.05
+   ],
+   "chi2_conjunto": 802.5,
+   "chi2_conjunto_emulsiones": 131.5,
+   "params_conjunto": [
+    7.9,
+    22.31,
+    54.71,
+    49.28,
+    2.56,
+    4.4,
+    20.77
+   ],
+   "tension": 57.9
+  },
+  {
+   "parametro": "separacion_H1_H2_m",
+   "valor": 3.5,
+   "chi2_kek_solo": 669.9,
+   "params_kek_solo": [
+    8.14,
+    19.86,
+    59.74,
+    44.79,
+    2.5,
+    4.62,
+    23.52
+   ],
+   "chi2_conjunto": 800.8,
+   "chi2_conjunto_emulsiones": 127.4,
+   "params_conjunto": [
+    7.87,
+    22.46,
+    56.11,
+    49.39,
+    2.6,
+    4.44,
+    20.82
+   ],
+   "tension": 52.9
+  },
+  {
+   "parametro": "separacion_H1_H2_m",
+   "valor": 4.0,
+   "chi2_kek_solo": 674.5,
+   "params_kek_solo": [
+    8.23,
+    15.71,
+    67.79,
+    35.07,
+    2.46,
+    5.42,
+    21.74
+   ],
+   "chi2_conjunto": 808.2,
+   "chi2_conjunto_emulsiones": 125.4,
+   "params_conjunto": [
+    7.89,
+    15.6,
+    62.81,
+    33.83,
+    2.63,
+    4.86,
+    17.98
+   ],
+   "tension": 55.6
+  },
+  {
+   "parametro": "escala_angular_k",
+   "valor": 0.85,
+   "chi2_kek_solo": 661.1,
+   "params_kek_solo": [
+    7.96,
+    25.95,
+    44.38,
+    58.04,
+    2.45,
+    3.75,
+    21.08
+   ],
+   "chi2_conjunto": 830.9,
+   "chi2_conjunto_emulsiones": 155.6,
+   "params_conjunto": [
+    8.17,
+    21.65,
+    50.92,
+    48.37,
+    2.43,
+    4.54,
+    21.93
+   ],
+   "tension": 91.8
+  },
+  {
+   "parametro": "escala_angular_k",
+   "valor": 0.9,
+   "chi2_kek_solo": 661.7,
+   "params_kek_solo": [
+    7.96,
+    25.92,
+    45.83,
+    58.2,
+    2.48,
+    3.75,
+    22.04
+   ],
+   "chi2_conjunto": 824.2,
+   "chi2_conjunto_emulsiones": 153.9,
+   "params_conjunto": [
+    8.17,
+    23.9,
+    51.26,
+    52.68,
+    2.49,
+    4.29,
+    20.51
+   ],
+   "tension": 84.5
+  },
+  {
+   "parametro": "escala_angular_k",
+   "valor": 0.95,
+   "chi2_kek_solo": 662.7,
+   "params_kek_solo": [
+    8.04,
+    14.73,
+    52.89,
+    33.98,
+    2.53,
+    3.75,
+    23.14
+   ],
+   "chi2_conjunto": 817.0,
+   "chi2_conjunto_emulsiones": 148.0,
+   "params_conjunto": [
+    8.1,
+    23.58,
+    52.31,
+    51.88,
+    2.53,
+    4.22,
+    20.26
+   ],
+   "tension": 76.3
+  },
+  {
+   "parametro": "escala_angular_k",
+   "valor": 1.05,
+   "chi2_kek_solo": 663.5,
+   "params_kek_solo": [
+    7.95,
+    23.46,
+    51.19,
+    53.56,
+    2.54,
+    3.74,
+    24.47
+   ],
+   "chi2_conjunto": 807.6,
+   "chi2_conjunto_emulsiones": 139.0,
+   "params_conjunto": [
+    8.03,
+    23.16,
+    54.28,
+    51.79,
+    2.61,
+    4.1,
+    23.31
+   ],
+   "tension": 66.1
+  },
+  {
+   "parametro": "escala_angular_k",
+   "valor": 1.1,
+   "chi2_kek_solo": 664.2,
+   "params_kek_solo": [
+    7.95,
+    21.19,
+    53.58,
+    48.92,
+    2.55,
+    3.74,
+    25.67
+   ],
+   "chi2_conjunto": 804.8,
+   "chi2_conjunto_emulsiones": 135.3,
+   "params_conjunto": [
+    7.94,
+    23.07,
+    54.78,
+    51.77,
+    2.63,
+    4.01,
+    23.48
+   ],
+   "tension": 62.6
+  },
+  {
+   "parametro": "escala_angular_k",
+   "valor": 1.15,
+   "chi2_kek_solo": 665.0,
+   "params_kek_solo": [
+    7.95,
+    23.5,
+    53.9,
+    54.28,
+    2.57,
+    3.73,
+    26.39
+   ],
+   "chi2_conjunto": 802.9,
+   "chi2_conjunto_emulsiones": 129.5,
+   "params_conjunto": [
+    7.81,
+    17.45,
+    57.77,
+    38.55,
+    2.64,
+    3.97,
+    18.42
+   ],
+   "tension": 59.9
+  }
+ ]
+}

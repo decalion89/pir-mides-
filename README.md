@@ -159,7 +159,14 @@ Reajustamos los 679 puntos publicados de KEK dejando libre un desplazamiento δ 
 
 En cambio, ese δ no explica la tensión entre KEK y las emulsiones (sigue en Δχ² ≈ 66), así que esa explicación queda descartada.
 
-### 25. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 25. Ningún parámetro de KEK explica la tensión → [docs/32](docs/32-sistematicos-de-kek.md)
+Probamos la posición este-oeste y vertical, la separación H1–H2 y la escala angular de los hodoscopios. La tensión KEK–emulsiones no baja de ~58 con valores plausibles, ni de ~53 con valores extremos. Las emulsiones son el conjunto que "no cabe".
+
+Dos cosas más:
+- La altura del Vacío que da KEK depende casi por completo de la separación H1–H2: es la paralaje.
+- Corregimos una propuesta del doc. 31. La Gran Galería no puede fijar la posición absoluta de KEK, porque se cancela en sus cocientes.
+
+### 26. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -196,6 +203,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [29 — El Gran Vacío pasa la prueba](docs/29-el-gran-vacio-pasa-la-prueba.md) | Un error de posición no fabrica el Gran Vacío: margen ~1,8× para KEK H1, ~4× o más para Nagoya; regla de la paralaje |
 | [30 — La ley de la mitad](docs/30-la-ley-de-la-mitad.md) | Un error de modelo fabrica un hueco vacío si imita más de la mitad de su señal (ρ > ½), sea cual sea la exposición; con contraste libre, Z_falso = ρ·Z_real |
 | [31 — KEK se certifica a sí mismo](docs/31-kek-se-certifica-a-si-mismo.md) | Los datos de KEK fijan su registro con la simulación a < 0,1–0,25 m: descartan el falso vacío; la tensión con las emulsiones no viene de ahí |
+| [32 — Sistemáticos de KEK](docs/32-sistematicos-de-kek.md) | Ni posición, ni paralaje, ni escala angular de KEK explican la tensión con las emulsiones (≥ 58 con valores plausibles) |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

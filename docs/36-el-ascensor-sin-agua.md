@@ -47,7 +47,7 @@ Monte Carlo de 1 500 casos para cada demanda.
 ## Resultados
 | Demanda | Cubierta, con pérdidas | Cubierta, sin pérdidas | P(≥ 90 %) con / sin pérdidas | Rebose | Evaporación | Infiltración |
 |---|---|---|---|---|---|---|
-| La de los autores (18 Mm³) | **27 %** (12–55 %) | 37 % (16–72 %) | **0 %** / 0 % | 48 % | 11 % | 3 % |
+| La de los autores (18 Mm³), con riadas episódicas (0,5–5 al año) | **27 %** (12–55 %) | 37 % (16–72 %) | **0 %** / 0 % | 48 % | 11 % | 3 % |
 | Optimizada (6 Mm³) | 50 % (23–85 %) | 81 % (43–99 %) | 2 % / 33 % | 52 % | 19 % | 5 % |
 
 **Fracción cubierta según el número de riadas al año** (valores centrales: aporte de 0,63 Mm³/año, evaporación de 2,1 m/año, infiltración de 0,5 m/año):
@@ -61,17 +61,18 @@ Monte Carlo de 1 500 casos para cada demanda.
 
 **Embalse lleno de Gisr el-Mudir sin nuevos aportes:** se seca en 4–15 meses con 1 m de profundidad y en 8–30 meses con 2 m.
 
-## Predicción comprobable
-Si el ascensor funcionó, el sistema tuvo que retener agua durante décadas en un depósito profundo de millones de m³. **En el fondo del Foso Seco o de la Deep Trench debe haber limos lacustres laminados**, con capas anuales o por riada. Las gravas de riada sueltas no bastan. Si un sondeo no los encuentra, la hipótesis pierde su único escenario viable.
+## Predicción comprobable (reformulada, P16)
+Si el ascensor funcionó, el wadi de Abusir y Gisr el-Mudir tuvieron **crecidas frecuentes o flujo casi perenne** en la III dinastía. Los sedimentos de esa época lo mostrarán: secuencias de flujo frecuente o continuo, sin largas interrupciones con capas eólicas. Si solo aparecen riadas aisladas separadas por periodos secos, el balance no basta. Los propios autores piden estudios edafológicos en el wadi; esta es la condición cuantitativa que esos estudios deberían comprobar.
 
 ## Qué es nuevo y qué no
 - **No es nuevo:**
+  - la objeción de que Gisr el-Mudir no podía guardar agua suficiente de lluvias ocasionales, hecha de forma cualitativa por O. Siegel (Science News, 2024);
   - las objeciones arqueológicas (Monnier, Budka, Kuraszkiewicz: bloques pequeños, falta de pruebas, esfuerzo excesivo);
   - el cálculo del agua necesaria, que es de los propios autores.
 - **No lo hemos encontrado publicado (búsqueda extendida del 01/11/2026):**
   - un balance hídrico con almacenamiento, rebose, evaporación e infiltración;
   - el resultado de que el volumen total no es la restricción, sino el almacenamiento;
-  - las tres condiciones necesarias para que la hipótesis funcione.
+  - la dependencia cuantitativa respecto del número de crecidas al año, y el umbral de ~5–20 crecidas al año (o flujo casi perenne) que necesita la hipótesis.
 
 ## Límites
 - **El clima del Imperio Antiguo es incierto.** Si hubo varias riadas al año y la evaporación era menor, la hipótesis mejora. Por eso damos las curvas en función del número de riadas.

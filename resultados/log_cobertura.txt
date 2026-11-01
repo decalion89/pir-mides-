@@ -13,3 +13,135 @@ calibración: {'nagoya': 0.437, 'cea': 2.609}
   CEA Joliot (2019-20)                          NFC   138.5σ   Gran Vacío    0.0σ
   CEA Degennes (2019-20)                        NFC   154.0σ   Gran Vacío    0.0σ
   CEA Charpak (2019-20)                         NFC   154.7σ   Gran Vacío    0.0σ
+publicadas: 308 s
+candidatas s=8.0: 365 s
+candidatas s=5.0: 437 s
+{
+ "fraccion_sin_explorar": {
+  "nominal": {
+   "12": 0.627058211800827,
+   "8": 0.6645950429593681,
+   "5": 0.733156708841954,
+   "3": 0.9554064426671949,
+   "2": 0.9910862406219824
+  },
+  "optimista": {
+   "12": 0.6174511600267413,
+   "8": 0.6522148216010102,
+   "5": 0.6942828137767103,
+   "3": 0.8842696907420705,
+   "2": 0.9816772723896303
+  }
+ },
+ "sin_explorar_5m_por_altura": {
+  "0-20": {
+   "nominal": 0.9885337039610841,
+   "optimista": 0.9872828353022932
+  },
+  "20-40": {
+   "nominal": 0.9078934809582896,
+   "optimista": 0.8765868092011072
+  },
+  "40-60": {
+   "nominal": 0.6674054578196426,
+   "optimista": 0.5517384679318466
+  },
+  "60-80": {
+   "nominal": 0.20620842572062084,
+   "optimista": 0.1476718403547672
+  },
+  "80-147": {
+   "nominal": 0.032972830387760485,
+   "optimista": 0.0
+  }
+ }
+}
+{
+ "8": {
+  "explorado_hoy": 0.3354049570406319,
+  "ganancia_individual": {
+   "Cámara Subterránea": 0.19553321613390448,
+   "Cámara del Rey (cenital)": 0.0,
+   "Cámara de Campbell (cenital)": 0.0,
+   "Cabeza de la Gran Galería": 0.0,
+   "Cámara Subterránea (4 m², 1 año)": 0.22985118973927254,
+   "Exterior sur": 0.06900735385148686,
+   "Exterior este": 0.046079183895808055,
+   "Exterior oeste": 0.060167875801619336
+  },
+  "voraz": [
+   {
+    "puesto": "Cámara Subterránea",
+    "explorado": 0.5309381731745364
+   },
+   {
+    "puesto": "Exterior oeste",
+    "explorado": 0.5739470621734717
+   },
+   {
+    "puesto": "Exterior sur",
+    "explorado": 0.6044519276004655
+   },
+   {
+    "puesto": "Exterior este",
+    "explorado": 0.6293114120880481
+   },
+   {
+    "puesto": "Cámara del Rey (cenital)",
+    "explorado": 0.6293114120880481
+   },
+   {
+    "puesto": "Cámara de Campbell (cenital)",
+    "explorado": 0.6293114120880481
+   },
+   {
+    "puesto": "Cabeza de la Gran Galería",
+    "explorado": 0.6293114120880481
+   }
+  ]
+ },
+ "5": {
+  "explorado_hoy": 0.2668432911580459,
+  "ganancia_individual": {
+   "Cámara Subterránea": 0.024042389877931017,
+   "Cámara del Rey (cenital)": 0.0027979300269888826,
+   "Cámara de Campbell (cenital)": 0.002847450912422314,
+   "Cabeza de la Gran Galería": 0.0027979300269888826,
+   "Cámara Subterránea (4 m², 1 año)": 0.166216851957313,
+   "Exterior sur": 0.019040780449154433,
+   "Exterior este": 0.015103870057196623,
+   "Exterior oeste": 0.018644613365686978
+  },
+  "voraz": [
+   {
+    "puesto": "Cámara Subterránea",
+    "explorado": 0.29088568103597695
+   },
+   {
+    "puesto": "Exterior sur",
+    "explorado": 0.31052071211033255
+   },
+   {
+    "puesto": "Exterior oeste",
+    "explorado": 0.3284472726372348
+   },
+   {
+    "puesto": "Exterior este",
+    "explorado": 0.3431054547255305
+   },
+   {
+    "puesto": "Cámara del Rey (cenital)",
+    "explorado": 0.3435759031371481
+   },
+   {
+    "puesto": "Cámara de Campbell (cenital)",
+    "explorado": 0.3435759031371481
+   },
+   {
+    "puesto": "Cabeza de la Gran Galería",
+    "explorado": 0.3435759031371481
+   }
+  ]
+ }
+}
+figuras 08a y 08b escritas

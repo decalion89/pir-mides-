@@ -398,3 +398,13 @@ def test_qin_vapor_mercurio():
     import qin_mercurio as qm
     assert abs(qm.presion_vapor_hg(293.15) - 0.170) < 0.01
     assert 12e-6 < qm.c_sat(293.15) < 14.5e-6
+
+
+def test_herculano_cinetica():
+    """La cinética reproduce los dos inicios del artículo y su energía de activación (390 kJ/mol)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "simulador"))
+    import herculano_vidrio as hv
+    assert abs(hv.t_ficticia(1000.0) - 783.15) < 0.01
+    assert abs(hv.t_ficticia(0.42) - 693.15) < 0.01
+    assert abs(hv.E_R * hv.R / 1000 - 390.1) < 1.0
+    assert hv.enfriamiento_particula(1e-3) < 1000.0

@@ -180,7 +180,15 @@ Un lidar midió en 2016 que del túmulo de Qin Shi Huang salen ~4 g de mercurio 
 
 Si el flujo es correcto y viene de la tumba, **no está sellada**. Prueba barata: la emisión debe subir cuando baja la presión.
 
-### 28. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 28. El "cerebro de vidrio" de Herculano no pudo enfriarse a 1 000 K/s → [docs/35](docs/35-el-cerebro-de-vidrio.md)
+Giordano et al. (2025) dedujeron que el cerebro de una víctima del Vesubio se enfrió a ~1 000 K/s tras pasar por encima de 510 °C.
+- **Dentro de un cráneo, la física da 0,1–1,7 K/s.**
+- **Con ritmos posibles, su propia cinética da una temperatura ficticia de ~405–440 °C,** que se solapa con la de los depósitos.
+- **Con su propia energía de activación, el material se ablanda en 0,4 s a 465 °C y se recuece en minutos a 315–350 °C.**
+
+La historia térmica propuesta no se sostiene.
+
+### 29. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -220,6 +228,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [32 — Sistemáticos de KEK](docs/32-sistematicos-de-kek.md) | Ni posición, ni paralaje, ni escala angular de KEK explican la tensión con las emulsiones (≥ 58 con valores plausibles) |
 | [33 — A cuántos metros está el Gran Vacío](docs/33-a-cuantos-metros-esta-el-gran-vacio.md) | Ningún espacio accesible a menos de 5 m; lo más cercano, las cámaras de descarga 4–5 (~8 m); sin endoscopio posible |
 | [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×163): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
+| [35 — El cerebro de vidrio](docs/35-el-cerebro-de-vidrio.md) | El enfriamiento a 1 000 K/s del cerebro vitrificado de Herculano es imposible dentro de un cráneo (0,1–1,7 K/s); su propia cinética contradice el escenario |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

@@ -1,0 +1,93 @@
+{
+ "tabla": {
+  "Lakim 0": {
+   "publicado": 1.7,
+   "cien_FM_por_TOC": 1.72,
+   "fraccion_moderna_del_COT_pct": 5.7,
+   "factor_infraestimacion": 3.4,
+   "carbono_moderno_mg_por_kg_roca": 172.0
+  },
+  "Lakim 25": {
+   "publicado": 1.56,
+   "cien_FM_por_TOC": 1.58,
+   "fraccion_moderna_del_COT_pct": 13.6,
+   "factor_infraestimacion": 8.7,
+   "carbono_moderno_mg_por_kg_roca": 158.0
+  },
+  "Lakim 50": {
+   "publicado": 1.0,
+   "cien_FM_por_TOC": 1.02,
+   "fraccion_moderna_del_COT_pct": 8.0,
+   "factor_infraestimacion": 8.0,
+   "carbono_moderno_mg_por_kg_roca": 102.0
+  },
+  "Lakim 75": {
+   "publicado": 1.36,
+   "cien_FM_por_TOC": 1.38,
+   "fraccion_moderna_del_COT_pct": 5.5,
+   "factor_infraestimacion": 4.0,
+   "carbono_moderno_mg_por_kg_roca": 138.0
+  },
+  "Lakim 100": {
+   "publicado": 2.36,
+   "cien_FM_por_TOC": 2.39,
+   "fraccion_moderna_del_COT_pct": 18.1,
+   "factor_infraestimacion": 7.7,
+   "carbono_moderno_mg_por_kg_roca": 239.0
+  },
+  "Luca 22": {
+   "publicado": 0.32,
+   "cien_FM_por_TOC": 0.32,
+   "fraccion_moderna_del_COT_pct": 23.2,
+   "factor_infraestimacion": 72.5,
+   "carbono_moderno_mg_por_kg_roca": 32.0
+  },
+  "TC 0": {
+   "publicado": 0.47,
+   "cien_FM_por_TOC": 0.48,
+   "fraccion_moderna_del_COT_pct": 2.8,
+   "factor_infraestimacion": 6.0,
+   "carbono_moderno_mg_por_kg_roca": 48.0
+  },
+  "TC 25": {
+   "publicado": 0.55,
+   "cien_FM_por_TOC": 0.55,
+   "fraccion_moderna_del_COT_pct": 2.8,
+   "factor_infraestimacion": 5.1,
+   "carbono_moderno_mg_por_kg_roca": 55.0
+  },
+  "TC 50": {
+   "publicado": 0.61,
+   "cien_FM_por_TOC": 0.63,
+   "fraccion_moderna_del_COT_pct": 2.4,
+   "factor_infraestimacion": 3.9,
+   "carbono_moderno_mg_por_kg_roca": 63.0
+  },
+  "TC 100": {
+   "publicado": 0.71,
+   "cien_FM_por_TOC": 0.71,
+   "fraccion_moderna_del_COT_pct": 6.2,
+   "factor_infraestimacion": 8.7,
+   "carbono_moderno_mg_por_kg_roca": 71.0
+  }
+ },
+ "ritmo": {
+  "carbono_moderno_necesario_g_m2": {
+   "p05": 60.9,
+   "mediana": 163.0,
+   "p95": 454.0
+  },
+  "aporte_COD_g_m2": {
+   "p05": 3.81,
+   "mediana": 29.0,
+   "p95": 205.0
+  },
+  "cociente_necesario_sobre_aporte": {
+   "p05": 0.644,
+   "mediana": 5.9,
+   "p95": 56.6
+  },
+  "prob_cociente_mayor_3": 0.685,
+  "prob_basta": 0.097
+ }
+}

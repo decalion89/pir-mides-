@@ -100,7 +100,10 @@ Un hueco de 8 m es un déficit de ~1 100 toneladas, y eso se nota en la gravedad
 - **Muones actuales + Cámara Subterránea + microgravimetría: 79 % del volumen explorado** para huecos de 8 m (70 % con ruido pesimista), frente al 34 % de hoy.
 - Queda sin cubrir un anillo a 40–75 m del eje en los 40 m inferiores.
 
-### 15. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 15. Hasta dónde se puede explorar sin tocar una piedra → [docs/22](docs/22-plan-completo-de-exploracion.md)
+Combinando todas las sondas desde puntos ya accesibles, se puede pasar del **34 % al ~85 %** del volumen explorado para huecos de 8 m. El orden: muones desde la Cámara Subterránea, gravedad en los escalones, muones en los pasajes bajo la base y telescopios exteriores. El ~15 % restante, la base de los lados este y oeste, no se alcanza sin un acceso nuevo: multiplicar el área de los telescopios exteriores por 16 apenas ayuda.
+
+### 16. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -127,6 +130,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [19 — Los datos de Alvarez, 56 años después](docs/19-los-datos-de-alvarez-reanalizados.md) | Reanálisis del mapa de residuos de 1970: estructura espacial clara y ninguna cámara oculta |
 | [20 — Lo que excluyen de verdad los datos de Alvarez](docs/20-lo-que-excluyen-los-datos-de-alvarez.md) | Mapa de exclusión de Kefrén con los residuos reales de 1970: 22 % al 95 %, 6,5 % nuevo fuera del cono |
 | [21 — Gravedad y muones](docs/21-gravedad-y-muones.md) | Microgravimetría para la base que los muones no ven: plan combinado que cubre el 79 % |
+| [22 — Plan completo de exploración](docs/22-plan-completo-de-exploracion.md) | Del 34 % al ~85 % con lo que ya existe; el límite físico del ~15 % restante |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [NOTA_TECNICA_cobertura_en.md](NOTA_TECNICA_cobertura_en.md) | **Nota técnica en inglés** para los equipos de muografía: el mapa de sensibilidad y la propuesta de la Cámara Subterránea |

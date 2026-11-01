@@ -25,6 +25,7 @@ Each case comes with a falsifiable test.
 
 # 1. The pattern
 Archaeological science often argues from *stocks*: how much mercury is in a tomb, what glass-transition temperature a material shows, how much water a catchment provides, how much lead a sediment holds. But a mechanism also needs a *flux* on the stated time scale, and every flux has a ceiling:
+
 - diffusion is limited by D·ΔC·S, with S the geometric shape factor;
 - conductive cooling is limited by k/(ρc·L²);
 - a reservoir fed by episodic events is limited by storage between events;
@@ -36,16 +37,19 @@ The check is cheap. Identify the flux the mechanism requires, compute its ceilin
 **Claim.** Zhao et al. (Sci. Rep. 10, 10414, 2020) measured atomic mercury above the mound by differential-absorption lidar. They estimated an outflux of ≈5×10⁻⁸ kg s⁻¹ and wrote that mercury "may be escaping through cracks". The chamber ceiling lies ≈30 m below the surrounding ground, under a ≈50 m mound.
 
 **Test.**
+
 - Air in contact with liquid mercury saturates at C_sat ≈ 9.4 mg m⁻³ (15 °C).
 - Steady diffusion through 30–80 m of compacted loess uses the Millington–Quirk diffusivity (porosity 0.30–0.45, water saturation 0.3–0.8). Lateral spreading is included through the shape factor of a disk buried in a semi-infinite medium.
 - The result is a maximum flux 42× below the measured one (5.6–520). Diffusion suffices in 0.02% of 2×10⁵ draws. Typical emission from the mound soil (~190 ppb) is 9–220× too small.
 - An open air path, on the other hand, could suffice. The required exchange is ~460 m³ of saturated air per day.
 
 **Caveats.**
+
 - Barometric pumping supplies this robustly only if much of the 140 × 110 × 30 m underground palace is open space.
 - The excess concentration is 2.4–3.6σ per scan and was absent at the windy third site.
 
 **Predictions (pre-registered).**
+
 - Emission rises when barometric pressure falls.
 - Soil-gas mercury increases with depth.
 - Winter emission exceeds summer emission.
@@ -55,6 +59,7 @@ The check is cheap. Identify the flux the mechanism requires, compute its ceilin
 **Claim.** Giordano et al. (Sci. Rep. 15, 5955, 2025) measured calorimetric onsets of 420 °C at 0.42 K s⁻¹ and 510 °C at 1000 K s⁻¹ on glassy fragments "sampled intact, directly from within the skull". They inferred a natural fictive temperature T_f ≈ 510 °C and cooling "at rates comparable with our experimental 1000 K s⁻¹" after a short-lived ash cloud.
 
 **Test.**
+
 - *Cooling.* Transient conduction in a heated head, with convective and radiative loss, gives 0.1–1.7 K s⁻¹ inside the cranium.
 - *Fragmentation.* The authors propose fragmentation into "sub-centimetric pieces … favouring the heat exchange". This helps only if the fragments were exposed to open air: free fragments reach 17–720 K s⁻¹, which would imply T_f = 460–506 °C. Enclosed fragments still lose heat through the skull. The paper itself invokes the skull's protection during heating.
 - *Fictive temperature.* At in-skull rates, the authors' kinetics (E = 390 kJ mol⁻¹) give T_f ≈ 405–440 °C. This overlaps the 315–465 °C burial deposits, the criterion the authors used to reject 420 °C.
@@ -69,6 +74,7 @@ The check is cheap. Identify the flux the mechanism requires, compute its ceilin
 **Claim.** McConnell et al. (PNAS 122, e2419630121, 2025) model +1.04 ng m⁻³ of air lead over Europe. They apply BLL = exp[1.932 + 0.140 ln(PbA)] from Richmond-Bryant et al. (2014; NHANES III, unadjusted). They obtain a 2.0–5.3 µg dl⁻¹ "enhancement", which they add to a 1 µg dl⁻¹ Neolithic baseline, and hence a deficit of 2.5–3 IQ points.
 
 **Test.**
+
 - *What the regression predicts.* It gives the total blood lead of children exposed to all 1988–94 sources: with almost clean air it already predicts 1.6 µg dl⁻¹.
 - *Extrapolation.* Roman air is ~35× below the calibration median (0.036–0.037 µg m⁻³). At 1 ng m⁻³ the implied slope is 355 µg dl⁻¹ per µg m⁻³, whereas Richmond-Bryant et al. report 15.3–16.5 at low air lead.
 - *Differencing the regression.* Taking the difference against a natural background gives +1.0 µg dl⁻¹ and 1.4 points, and this is still an extrapolation.
@@ -80,6 +86,7 @@ The effect is plausible, but 2–3× smaller than claimed for the European avera
 **Claim.** Lentz et al. (Sci. Rep. 10, 10316, 2020) report sediment mercury above the "toxic effect threshold" of 1 µg g⁻¹, a criterion for benthic organisms. They conclude that the reservoirs were "seriously compromised as sources of drinking water" and that the elite were "fed foods laced with mercury at every meal".
 
 **Test.**
+
 - Mercury reaches the water dissolved (sediment–water partitioning, log K_d = 4.5–6) and on suspended particles (5–100 mg L⁻¹).
 - For the most contaminated sediments (10–30 µg g⁻¹), the water carries ~1.0 µg L⁻¹ (0.26–2.4). That is ~17% of the WHO guideline of 6 µg L⁻¹, which no draw exceeds.
 - Intake at 3–5 L day⁻¹ is ~3% of the WHO tolerable intake.
@@ -94,6 +101,7 @@ The effect is plausible, but 2–3× smaller than claimed for the European avera
 In four of six claims, the step from measurement to mechanism fails a simple rate or intake check by factors of 3 to over 1,000. In two it reveals a hidden condition that the papers do not state.
 
 We do not claim this is the typical rate. The cases were chosen because they looked vulnerable. Five further claims we screened passed or could not be decided with public data:
+
 - the ScanPyramids Big Void;
 - Teotihuacan muography;
 - Mt Echia muography;
@@ -103,6 +111,7 @@ We do not claim this is the typical rate. The cases were chosen because they loo
 What the exercise shows is that the check is cheap, and that it changes conclusions often enough in prominent papers to be worth making routine.
 
 Our own drafts illustrate the point. An independent adversarial review of this work found:
+
 - a one-dimensional diffusion bound that understated lateral flux by 3–6×;
 - a filter target set at all runoff rather than the reservoir volume;
 - a flood regime that excluded the authors' own scenario;
@@ -112,6 +121,7 @@ All of these are corrected here. Rate checks need the same scrutiny as the claim
 
 # Data and code
 All calculations, Monte Carlo inputs and figures are open:
+
 - Qin: `simulador/qin_mercurio.py`, `simulador/qin_presion_prerregistro.py`;
 - Herculaneum: `simulador/herculano_vidrio.py`;
 - Djoser: `simulador/saqqara_balance_hidrico.py`;

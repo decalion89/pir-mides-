@@ -1,0 +1,69 @@
+{
+ "piramides": [
+  "Meidum",
+  "Acodada",
+  "Roja",
+  "Keops",
+  "Kefrén",
+  "Micerino"
+ ],
+ "errores": [
+  -20.6,
+  -17.3,
+  -8.7,
+  -3.4,
+  -6.0,
+  12.4
+ ],
+ "modelos": {
+  "A": {
+   "k": 2,
+   "logL": -22.71,
+   "AICc": 53.42,
+   "BIC": 49.0,
+   "loo_logpred": -27.75,
+   "parametros": [
+    -7.276,
+    10.614
+   ],
+   "sigma_ejecucion": 10.61
+  },
+  "B": {
+   "k": 1,
+   "logL": -23.86,
+   "AICc": 50.72,
+   "BIC": 49.51,
+   "loo_logpred": -24.49,
+   "parametros": [
+    12.424
+   ],
+   "sigma_ejecucion": 12.42
+  },
+  "C": {
+   "k": 3,
+   "logL": -16.76,
+   "AICc": 51.51,
+   "BIC": 38.89,
+   "loo_logpred": -28.08,
+   "parametros": [
+    -7.281,
+    0.259,
+    3.932
+   ],
+   "sigma_ejecucion": 3.93
+  },
+  "D": {
+   "k": 3,
+   "logL": -18.53,
+   "AICc": 55.07,
+   "BIC": 42.44,
+   "loo_logpred": -26.77,
+   "parametros": [
+    -1.133,
+    0.446,
+    4.179
+   ],
+   "sigma_ejecucion": 4.18
+  }
+ }
+}

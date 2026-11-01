@@ -37,3 +37,20 @@ Archivos: [`simulador/metodo_gnomon.py`](../simulador/metodo_gnomon.py), [`resul
 - **Con alturas por debajo de 15°** el límite crece un poco, aunque la sombra se vuelve muy larga y difusa.
 - **Hay otras variantes solares** (orto y ocaso en el equinoccio, sombra de mediodía) con errores distintos; no se han modelado aquí.
 - **El resultado no elige un método**, pero sí descarta que el gnomon por sí solo explique la serie completa.
+
+## Anexo: ¿un método o un cambio de método? (comparación de modelos)
+Se comparan cuatro modelos para los 6 errores de la dinastía IV ([`simulador/comparar_metodos_orientacion.py`](../simulador/comparar_metodos_orientacion.py), [`resultados/33_metodos_orientacion.json`](../resultados/33_metodos_orientacion.json)). En todos, el error de ejecución σ_e es libre.
+
+| Modelo | k | AICc | BIC | Validación cruzada (log-pred., más es mejor) | σ_e |
+|---|---|---|---|---|---|
+| A. Constante + ruido | 2 | 53,4 | 49,0 | −27,8 | 10,6′ |
+| B. Solo gnomon (sistemático en ±5,8′) + ruido | 1 | **50,7** | 49,5 | **−24,5** | 12,4′ |
+| C. Deriva lineal (como un método estelar) | 3 | 51,5 | **38,9** | −28,1 | 3,9′ |
+| D. Deriva hasta la Roja, gnomon desde Keops | 3 | 55,1 | 42,4 | −26,8 | 4,2′ |
+
+**Resultado: no concluyente.**
+- **BIC** favorece con claridad la deriva (C), con una pendiente de 0,26′/año, compatible con un método estelar.
+- **AICc y la validación cruzada** favorecen el gnomon con un error de ejecución grande (B). Pero ese modelo necesita σ_e ≈ 12′, lo que haría de la precisión de 3′ de Keops una cuestión de suerte.
+- **La hipótesis del cambio de método (D) no gana con ningún criterio.** Queda descartada como explicación preferida.
+
+Con 6 pirámides no se pueden distinguir estos modelos. Para hacerlo harían falta más datos: orientaciones precisas de más pirámides y mastabas fechadas de la misma época, o las orientaciones de cada lado por separado.

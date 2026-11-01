@@ -102,6 +102,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [17 — El mapa de lo inexplorado](docs/17-mapa-de-lo-inexplorado.md) | Qué parte de la pirámide han explorado de verdad los muones (59–66 % sin explorar para huecos de 8 m), y dónde medir: la Cámara Subterránea |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
+| [NOTA_TECNICA_cobertura_en.md](NOTA_TECNICA_cobertura_en.md) | **Nota técnica en inglés** para los equipos de muografía: el mapa de sensibilidad y la propuesta de la Cámara Subterránea |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |
 | [preprint/arxiv_paquete.zip](preprint/arxiv_paquete.zip) | **Paquete para arXiv** (main.tex + figuras); instrucciones en preprint/arxiv/LEEME.md |
 | [envio/correos.md](envio/correos.md) | Borradores de correo para ScanPyramids, el experimento del trineo y el aval de arXiv |

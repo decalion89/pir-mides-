@@ -1,0 +1,854 @@
+{
+ "chi2_emulsiones_solas": 78.0,
+ "posicion_h1_nominal": [
+  7.1,
+  -1.9,
+  21.5
+ ],
+ "filas": [
+  {
+   "posicion_x": 0.0,
+   "delta_x": -1.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 6190.2,
+   "chi2_kek_solo": 3744.8,
+   "params_kek_solo": [
+    9.15,
+    12.4,
+    44.17,
+    28.46,
+    9.49,
+    1.1,
+    0.91
+   ],
+   "chi2_conjunto": 6094.7,
+   "chi2_conjunto_emulsiones": 261.3,
+   "chi2_conjunto_kek": 5833.4,
+   "params_conjunto": [
+    11.18,
+    19.68,
+    84.94,
+    34.57,
+    2.89,
+    2.61,
+    0.37
+   ],
+   "tension": 2271.9
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": -1.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 5395.9,
+   "chi2_kek_solo": 2715.9,
+   "params_kek_solo": [
+    8.63,
+    -8.11,
+    44.98,
+    43.53,
+    8.85,
+    1.08,
+    15.7
+   ],
+   "chi2_conjunto": 3028.6,
+   "chi2_conjunto_emulsiones": 321.6,
+   "chi2_conjunto_kek": 2707.1,
+   "params_conjunto": [
+    8.61,
+    -9.02,
+    46.38,
+    46.01,
+    9.45,
+    0.99,
+    20.98
+   ],
+   "tension": 234.7
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": -1.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 4366.1,
+   "chi2_kek_solo": 2120.5,
+   "params_kek_solo": [
+    8.48,
+    -7.13,
+    46.28,
+    54.44,
+    8.98,
+    0.95,
+    21.94
+   ],
+   "chi2_conjunto": 2448.0,
+   "chi2_conjunto_emulsiones": 309.5,
+   "chi2_conjunto_kek": 2138.5,
+   "params_conjunto": [
+    8.47,
+    -3.64,
+    44.95,
+    34.79,
+    10.24,
+    0.83,
+    22.52
+   ],
+   "tension": 249.5
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": -0.75,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 3231.7,
+   "chi2_kek_solo": 2621.4,
+   "params_kek_solo": [
+    10.23,
+    19.28,
+    85.07,
+    43.08,
+    2.76,
+    3.66,
+    2.15
+   ],
+   "chi2_conjunto": 2447.1,
+   "chi2_conjunto_emulsiones": 266.5,
+   "chi2_conjunto_kek": 2180.6,
+   "params_conjunto": [
+    8.63,
+    -10.01,
+    44.97,
+    47.08,
+    2.33,
+    1.94,
+    4.99
+   ],
+   "tension": -252.3
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": -0.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 2219.4,
+   "chi2_kek_solo": 1151.3,
+   "params_kek_solo": [
+    8.19,
+    2.1,
+    44.96,
+    54.83,
+    6.7,
+    0.74,
+    42.78
+   ],
+   "chi2_conjunto": 1630.6,
+   "chi2_conjunto_emulsiones": 250.0,
+   "chi2_conjunto_kek": 1380.6,
+   "params_conjunto": [
+    8.86,
+    16.53,
+    44.78,
+    37.9,
+    3.78,
+    1.85,
+    24.52
+   ],
+   "tension": 401.4
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": -0.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1559.6,
+   "chi2_kek_solo": 928.5,
+   "params_kek_solo": [
+    8.11,
+    6.4,
+    44.98,
+    15.53,
+    2.89,
+    2.12,
+    35.94
+   ],
+   "chi2_conjunto": 1161.9,
+   "chi2_conjunto_emulsiones": 194.1,
+   "chi2_conjunto_kek": 967.8,
+   "params_conjunto": [
+    8.84,
+    14.81,
+    56.01,
+    39.8,
+    2.2,
+    4.18,
+    45.0
+   ],
+   "tension": 155.5
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": 0.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1351.5,
+   "chi2_kek_solo": 663.3,
+   "params_kek_solo": [
+    8.04,
+    23.52,
+    50.64,
+    53.31,
+    2.55,
+    3.75,
+    23.97
+   ],
+   "chi2_conjunto": 811.6,
+   "chi2_conjunto_emulsiones": 143.1,
+   "chi2_conjunto_kek": 668.4,
+   "params_conjunto": [
+    8.06,
+    18.93,
+    55.09,
+    42.18,
+    2.57,
+    4.15,
+    21.39
+   ],
+   "tension": 70.3
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": 0.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1807.2,
+   "chi2_kek_solo": 726.0,
+   "params_kek_solo": [
+    6.6,
+    5.53,
+    45.82,
+    44.93,
+    3.99,
+    1.79,
+    26.16
+   ],
+   "chi2_conjunto": 981.8,
+   "chi2_conjunto_emulsiones": 255.6,
+   "chi2_conjunto_kek": 726.2,
+   "params_conjunto": [
+    6.58,
+    6.63,
+    45.4,
+    19.45,
+    3.94,
+    1.83,
+    23.46
+   ],
+   "tension": 177.8
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": 0.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 2523.0,
+   "chi2_kek_solo": 1074.8,
+   "params_kek_solo": [
+    6.37,
+    3.23,
+    44.92,
+    69.74,
+    4.74,
+    1.59,
+    6.05
+   ],
+   "chi2_conjunto": 1303.4,
+   "chi2_conjunto_emulsiones": 250.0,
+   "chi2_conjunto_kek": 1053.4,
+   "params_conjunto": [
+    6.37,
+    4.68,
+    45.26,
+    22.72,
+    5.18,
+    1.59,
+    20.77
+   ],
+   "tension": 150.6
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": 0.75,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 4061.6,
+   "chi2_kek_solo": 1737.3,
+   "params_kek_solo": [
+    6.14,
+    -10.02,
+    44.78,
+    69.88,
+    8.91,
+    0.94,
+    2.97
+   ],
+   "chi2_conjunto": 2028.2,
+   "chi2_conjunto_emulsiones": 236.2,
+   "chi2_conjunto_kek": 1791.9,
+   "params_conjunto": [
+    6.08,
+    -7.1,
+    45.12,
+    44.31,
+    6.09,
+    1.37,
+    10.04
+   ],
+   "tension": 212.9
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": 1.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 5570.0,
+   "chi2_kek_solo": 2298.2,
+   "params_kek_solo": [
+    5.99,
+    -4.82,
+    49.18,
+    70.0,
+    8.92,
+    1.24,
+    30.1
+   ],
+   "chi2_conjunto": 2671.6,
+   "chi2_conjunto_emulsiones": 243.1,
+   "chi2_conjunto_kek": 2428.4,
+   "params_conjunto": [
+    6.03,
+    6.39,
+    44.44,
+    17.52,
+    8.73,
+    1.34,
+    21.68
+   ],
+   "tension": 295.4
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": 1.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 7133.4,
+   "chi2_kek_solo": 3984.3,
+   "params_kek_solo": [
+    2.5,
+    6.61,
+    44.32,
+    17.21,
+    7.85,
+    8.52,
+    -1.4
+   ],
+   "chi2_conjunto": 3647.9,
+   "chi2_conjunto_emulsiones": 252.8,
+   "chi2_conjunto_kek": 3395.1,
+   "params_conjunto": [
+    5.8,
+    17.85,
+    44.74,
+    40.73,
+    8.13,
+    1.27,
+    -8.47
+   ],
+   "tension": -414.4
+  },
+  {
+   "posicion_x": 0.0,
+   "delta_x": 1.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 7889.5,
+   "chi2_kek_solo": 4610.0,
+   "params_kek_solo": [
+    3.09,
+    17.96,
+    44.91,
+    42.7,
+    5.61,
+    6.95,
+    -20.04
+   ],
+   "chi2_conjunto": 4292.6,
+   "chi2_conjunto_emulsiones": 215.9,
+   "chi2_conjunto_kek": 4076.6,
+   "params_conjunto": [
+    5.64,
+    18.99,
+    44.76,
+    70.0,
+    5.37,
+    1.8,
+    -10.51
+   ],
+   "tension": -395.4
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": -1.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 5570.0,
+   "chi2_kek_solo": 5150.0,
+   "params_kek_solo": [
+    5.46,
+    11.67,
+    45.11,
+    26.94,
+    2.87,
+    1.59,
+    13.48
+   ],
+   "chi2_conjunto": 5390.2,
+   "chi2_conjunto_emulsiones": 210.8,
+   "chi2_conjunto_kek": 5179.4,
+   "params_conjunto": [
+    5.35,
+    7.84,
+    45.15,
+    21.37,
+    2.05,
+    2.14,
+    23.86
+   ],
+   "tension": 162.2
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": -1.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 4725.8,
+   "chi2_kek_solo": 4289.1,
+   "params_kek_solo": [
+    5.46,
+    20.46,
+    45.61,
+    44.03,
+    2.57,
+    1.92,
+    3.86
+   ],
+   "chi2_conjunto": 4490.4,
+   "chi2_conjunto_emulsiones": 204.7,
+   "chi2_conjunto_kek": 4285.7,
+   "params_conjunto": [
+    5.4,
+    20.58,
+    44.97,
+    63.92,
+    2.84,
+    1.7,
+    3.83
+   ],
+   "tension": 123.3
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": -1.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 3631.7,
+   "chi2_kek_solo": 3218.5,
+   "params_kek_solo": [
+    5.4,
+    12.29,
+    45.65,
+    45.46,
+    2.57,
+    1.7,
+    3.41
+   ],
+   "chi2_conjunto": 3414.4,
+   "chi2_conjunto_emulsiones": 201.6,
+   "chi2_conjunto_kek": 3212.8,
+   "params_conjunto": [
+    5.47,
+    9.54,
+    45.0,
+    61.65,
+    3.01,
+    1.54,
+    21.8
+   ],
+   "tension": 117.9
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": -0.75,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 2685.5,
+   "chi2_kek_solo": 2294.1,
+   "params_kek_solo": [
+    5.36,
+    16.34,
+    45.87,
+    41.86,
+    2.45,
+    1.8,
+    4.23
+   ],
+   "chi2_conjunto": 2519.7,
+   "chi2_conjunto_emulsiones": 212.3,
+   "chi2_conjunto_kek": 2307.4,
+   "params_conjunto": [
+    5.38,
+    16.27,
+    45.77,
+    43.36,
+    2.35,
+    2.07,
+    4.48
+   ],
+   "tension": 147.6
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": -0.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1605.5,
+   "chi2_kek_solo": 1385.9,
+   "params_kek_solo": [
+    8.65,
+    20.05,
+    80.73,
+    70.01,
+    1.1,
+    8.05,
+    -0.19
+   ],
+   "chi2_conjunto": 1598.3,
+   "chi2_conjunto_emulsiones": 197.9,
+   "chi2_conjunto_kek": 1400.3,
+   "params_conjunto": [
+    8.0,
+    20.25,
+    72.8,
+    39.13,
+    1.36,
+    7.73,
+    1.93
+   ],
+   "tension": 134.4
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": -0.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1168.7,
+   "chi2_kek_solo": 807.8,
+   "params_kek_solo": [
+    7.94,
+    16.67,
+    69.05,
+    34.94,
+    1.72,
+    6.21,
+    13.99
+   ],
+   "chi2_conjunto": 966.8,
+   "chi2_conjunto_emulsiones": 143.1,
+   "chi2_conjunto_kek": 823.7,
+   "params_conjunto": [
+    7.5,
+    19.29,
+    61.08,
+    39.66,
+    1.96,
+    5.12,
+    16.1
+   ],
+   "tension": 81.0
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": 0.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1351.5,
+   "chi2_kek_solo": 667.6,
+   "params_kek_solo": [
+    6.82,
+    19.17,
+    49.98,
+    43.92,
+    2.58,
+    3.62,
+    22.82
+   ],
+   "chi2_conjunto": 807.0,
+   "chi2_conjunto_emulsiones": 122.6,
+   "chi2_conjunto_kek": 684.5,
+   "params_conjunto": [
+    7.19,
+    19.07,
+    56.75,
+    40.79,
+    2.66,
+    4.14,
+    16.24
+   ],
+   "tension": 61.5
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": 0.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 2211.1,
+   "chi2_kek_solo": 839.6,
+   "params_kek_solo": [
+    6.43,
+    7.39,
+    47.39,
+    19.32,
+    4.32,
+    2.17,
+    20.9
+   ],
+   "chi2_conjunto": 1094.7,
+   "chi2_conjunto_emulsiones": 243.2,
+   "chi2_conjunto_kek": 851.5,
+   "params_conjunto": [
+    6.42,
+    14.89,
+    45.76,
+    49.59,
+    3.95,
+    2.25,
+    16.66
+   ],
+   "tension": 177.1
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": 0.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 3556.6,
+   "chi2_kek_solo": 1091.4,
+   "params_kek_solo": [
+    6.3,
+    2.67,
+    47.15,
+    26.73,
+    6.38,
+    1.67,
+    22.75
+   ],
+   "chi2_conjunto": 1388.9,
+   "chi2_conjunto_emulsiones": 232.6,
+   "chi2_conjunto_kek": 1156.3,
+   "params_conjunto": [
+    6.27,
+    6.57,
+    45.19,
+    19.79,
+    5.5,
+    1.68,
+    8.26
+   ],
+   "tension": 219.5
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": 0.75,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 5165.9,
+   "chi2_kek_solo": 1402.7,
+   "params_kek_solo": [
+    6.18,
+    6.53,
+    45.24,
+    66.09,
+    8.38,
+    1.53,
+    21.99
+   ],
+   "chi2_conjunto": 1773.0,
+   "chi2_conjunto_emulsiones": 356.6,
+   "chi2_conjunto_kek": 1416.4,
+   "params_conjunto": [
+    6.18,
+    5.32,
+    45.84,
+    40.19,
+    7.95,
+    1.54,
+    19.72
+   ],
+   "tension": 292.3
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": 1.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 7043.1,
+   "chi2_kek_solo": 1938.8,
+   "params_kek_solo": [
+    6.04,
+    6.61,
+    45.27,
+    19.4,
+    9.77,
+    1.49,
+    7.64
+   ],
+   "chi2_conjunto": 2159.2,
+   "chi2_conjunto_emulsiones": 273.2,
+   "chi2_conjunto_kek": 1886.0,
+   "params_conjunto": [
+    6.06,
+    0.21,
+    47.76,
+    31.84,
+    10.31,
+    1.44,
+    20.24
+   ],
+   "tension": 142.4
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": 1.25,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 8951.5,
+   "chi2_kek_solo": 2753.4,
+   "params_kek_solo": [
+    5.88,
+    17.99,
+    44.64,
+    70.0,
+    11.22,
+    1.44,
+    4.8
+   ],
+   "chi2_conjunto": 2880.8,
+   "chi2_conjunto_emulsiones": 274.2,
+   "chi2_conjunto_kek": 2606.5,
+   "params_conjunto": [
+    5.85,
+    -7.48,
+    49.83,
+    47.47,
+    11.2,
+    1.49,
+    18.9
+   ],
+   "tension": 49.3
+  },
+  {
+   "posicion_x": -1.0,
+   "delta_x": 1.5,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 9753.3,
+   "chi2_kek_solo": 3160.2,
+   "params_kek_solo": [
+    5.72,
+    0.91,
+    47.01,
+    34.86,
+    11.12,
+    1.58,
+    19.99
+   ],
+   "chi2_conjunto": 3439.0,
+   "chi2_conjunto_emulsiones": 269.6,
+   "chi2_conjunto_kek": 3169.4,
+   "params_conjunto": [
+    5.71,
+    6.24,
+    45.1,
+    19.12,
+    10.99,
+    1.58,
+    17.9
+   ],
+   "tension": 200.7
+  }
+ ],
+ "mejor_conjunto": {
+  "posicion_x": -1.0,
+  "delta_x": 0.0,
+  "delta_z": 0.0,
+  "chi2_kek_sin_vacio": 1351.5,
+  "chi2_kek_solo": 667.6,
+  "params_kek_solo": [
+   6.82,
+   19.17,
+   49.98,
+   43.92,
+   2.58,
+   3.62,
+   22.82
+  ],
+  "chi2_conjunto": 807.0,
+  "chi2_conjunto_emulsiones": 122.6,
+  "chi2_conjunto_kek": 684.5,
+  "params_conjunto": [
+   7.19,
+   19.07,
+   56.75,
+   40.79,
+   2.66,
+   4.14,
+   16.24
+  ],
+  "tension": 61.5
+ },
+ "tension_global": 65.7,
+ "referencia_sin_desajuste": {
+  "0.0": {
+   "posicion_x": 0.0,
+   "delta_x": 0.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1351.5,
+   "chi2_kek_solo": 663.3,
+   "params_kek_solo": [
+    8.04,
+    23.52,
+    50.64,
+    53.31,
+    2.55,
+    3.75,
+    23.97
+   ],
+   "chi2_conjunto": 811.6,
+   "chi2_conjunto_emulsiones": 143.1,
+   "chi2_conjunto_kek": 668.4,
+   "params_conjunto": [
+    8.06,
+    18.93,
+    55.09,
+    42.18,
+    2.57,
+    4.15,
+    21.39
+   ],
+   "tension": 70.3
+  },
+  "-1.0": {
+   "posicion_x": -1.0,
+   "delta_x": 0.0,
+   "delta_z": 0.0,
+   "chi2_kek_sin_vacio": 1351.5,
+   "chi2_kek_solo": 667.6,
+   "params_kek_solo": [
+    6.82,
+    19.17,
+    49.98,
+    43.92,
+    2.58,
+    3.62,
+    22.82
+   ],
+   "chi2_conjunto": 807.0,
+   "chi2_conjunto_emulsiones": 122.6,
+   "chi2_conjunto_kek": 684.5,
+   "params_conjunto": [
+    7.19,
+    19.07,
+    56.75,
+    40.79,
+    2.66,
+    4.14,
+    16.24
+   ],
+   "tension": 61.5
+  }
+ }
+}

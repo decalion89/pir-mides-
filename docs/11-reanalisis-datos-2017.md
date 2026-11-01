@@ -71,6 +71,8 @@ Por tanto, **no damos por bueno el "4σ contra la horizontal" del ajuste conjunt
 
 Para resolverlo harían falta los datos originales o, mejor, una medición nueva desde otro ángulo.
 
+> **Actualización (doc. 31).** La explicación 2 queda descartada. Un desplazamiento entre los datos de KEK y su simulación de normalización dejaría un residuo de la Gran Galería que los datos no muestran (|δ| < 0,1–0,25 m), y dejarlo libre no reduce la tensión.
+
 ### 5b. ¿Explica la forma del Vacío la tensión? No.
 Probamos formas compuestas ajustadas a la vez a los dos conjuntos de datos (`simulador/reanalisis_formas.py`, `resultados/11_formas_conjuntas.json`):
 

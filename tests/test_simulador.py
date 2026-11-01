@@ -358,5 +358,5 @@ def test_prisma_de_nagy_coincide_con_integracion_numerica():
 def test_un_hueco_de_8_m_bajo_los_escalones_se_ve_en_gravedad():
     E = grav.estaciones()
     z_cerca = grav.z_gravedad((80.0, 0.0, 10.0), (8, 8, 8), E, 3.0)      # a ~20 m de la cara este
-    z_lejos = grav.z_gravedad((0.0, 40.0, 10.0), (8, 8, 8), E, 3.0)      # en el anillo interior
+    z_lejos = grav.z_gravedad((-50.0, -50.0, 10.0), (8, 8, 8), E, 3.0)   # anillo inexplorado, lejos de corredores
     assert z_cerca > 5 > z_lejos

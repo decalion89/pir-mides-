@@ -1,0 +1,113 @@
+{
+ "origen": [
+  15.5,
+  4.0,
+  -0.5
+ ],
+ "ky": 1.08,
+ "n_sim": 4000,
+ "desplazamiento_filas": -1,
+ "camara_tipo_rey": {
+  "posiciones": 3633,
+  "min_dchi2": -16.63,
+  "posicion": [
+   -7.6,
+   -7.6,
+   28.0
+  ],
+  "sigma_local_nominal": 4.08,
+  "p_local_calibrado": 0.00475,
+  "sigma_local_calibrado": 2.59,
+  "p_global": 0.20025,
+  "sigma_global_una_cola": 0.84,
+  "nulo_mediana_minimo": -12.79,
+  "inflado_varianza_rs": 1.53
+ },
+ "cubo_8m": {
+  "posiciones": 2949,
+  "min_dchi2": -12.2,
+  "posicion": [
+   -15.6,
+   -15.6,
+   44.0
+  ],
+  "sigma_local_nominal": 3.49,
+  "p_local_calibrado": 0.00375,
+  "sigma_local_calibrado": 2.67,
+  "p_global": 0.38125,
+  "sigma_global_una_cola": 0.3,
+  "nulo_mediana_minimo": -10.84,
+  "inflado_varianza_rs": 1.59
+ },
+ "pista_gutowski_dchi2": {
+  "desde el norte hacia el este": {
+   "20": [
+    494.5,
+    631.4
+   ],
+   "40": [
+    104.1,
+    135.0
+   ],
+   "60": [
+    33.1,
+    59.2
+   ],
+   "70": null
+  },
+  "desde el este hacia el norte": {
+   "20": [
+    253.9,
+    274.7
+   ],
+   "40": [
+    50.3,
+    66.9
+   ],
+   "60": [
+    14.7,
+    25.3
+   ],
+   "70": [
+    10.2,
+    16.0
+   ]
+  },
+  "desde el norte hacia el oeste": {
+   "20": [
+    251.0,
+    264.9
+   ],
+   "40": [
+    41.1,
+    49.9
+   ],
+   "60": [
+    8.7,
+    28.2
+   ],
+   "70": [
+    3.8,
+    21.6
+   ]
+  },
+  "desde el este hacia el sur": {
+   "20": [
+    309.6,
+    388.5
+   ],
+   "40": [
+    52.2,
+    88.5
+   ],
+   "60": [
+    21.8,
+    29.6
+   ],
+   "70": [
+    14.8,
+    18.4
+   ]
+  }
+ }
+}

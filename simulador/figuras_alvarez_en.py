@@ -88,7 +88,7 @@ def exclusion():
             ax.spines[s].set_visible(False)
         ax.tick_params(colors=TINTA2, labelsize=8)
     axs[0].set_ylabel("height (m)", fontsize=8, color=TINTA2)
-    h = [Patch(color=COL[0], label="excluded at ≥ 5σ"), Patch(color=COL[1], label="excluded at 95% CL"),
+    h = [Patch(color=COL[0], label="excluded at nominal 5σ (≈4σ)"), Patch(color=COL[1], label="excluded at 95% CL"),
          Patch(color=COL[2], label="not excluded"),
          Line2D([], [], color=TINTA2, ls="--", label="35° cone analysed by Alvarez"),
          Line2D([], [], color=TINTA2, ls=":", label="45° (data limit)")]

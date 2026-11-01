@@ -91,9 +91,9 @@ Mapa de sensibilidad muográfica de la Gran Pirámide, construido con las 14 cam
 
 ### 11. Kefrén: el experimento inacabado de Alvarez → [docs/18](docs/18-kefren-el-experimento-inacabado-de-alvarez.md)
 Reconstruimos la medición de muones de Luis Alvarez de 1968–69 en la pirámide de Kefrén:
-- **El modelo es compatible con lo que afirmó.** Su cono de 35° es el 19–20 % del volumen; él dio 19 %. Una cámara del tamaño de la del Rey se detecta en el 68–94 % del cono (lectura optimista).
-- **Kefrén está casi sin explorar.** Solo el 3–15 % de su volumen está explorado a 5σ para cámaras de ese tamaño. Fuera del cono no hay ninguna afirmación publicada.
-- **Se puede ampliar desde el mismo sitio, como ya prepara el proyecto ScIDEP.** Cinco exposiciones de emulsión en la Cámara de Belzoni (~6 meses) llevarían la cobertura total del ~20 % al ~61 %; una sola cenital, al ~36 %. Además resolverían la posible cámara que unos estudiantes (CERN *Beamline for Schools*) creyeron ver en los datos de Alvarez.
+- **El modelo es compatible con lo que afirmó.** Su cono de 35° es el 19–20 % del volumen; él dio 19 %. Una cámara del tamaño de la del Rey se detecta en el 62–92 % del cono (lectura optimista).
+- **Kefrén está casi sin explorar.** Solo el 3–13 % de su volumen está explorado a 5σ para cámaras de ese tamaño.
+- **Se puede ampliar desde el mismo sitio, como ya prepara el proyecto ScIDEP.** Cinco exposiciones de emulsión en la Cámara de Belzoni (~6 meses) llevarían la cobertura total del ~20 % al ~60 %; una sola cenital, al 31–35 %. Además resolverían la posible cámara que unos estudiantes (CERN *Beamline for Schools*) creyeron ver en los datos de Alvarez.
 
 ### 12. Los datos de Alvarez, 56 años después → [docs/19](docs/19-los-datos-de-alvarez-reanalizados.md)
 Transcribimos y reanalizamos el mapa de residuos que Alvarez publicó en 1970: 801 casillas, medido menos predicho.
@@ -103,8 +103,9 @@ Transcribimos y reanalizamos el mapa de residuos que Alvarez publicó en 1970: 8
 
 ### 13. Lo que excluyen de verdad los datos de Alvarez → [docs/20](docs/20-lo-que-excluyen-los-datos-de-alvarez.md)
 Comparamos cada posible cámara con los 801 residuos reales publicados en 1970.
-- **Al 95 % de confianza, una cámara del tamaño de la del Rey queda excluida en el 22 % de Kefrén** (12 % a 5σ). De ese volumen, **un 6,5 % está fuera del cono de 35° y nadie lo había analizado.**
-- El mejor "candidato" (3,5σ local) tiene una significación global de 0,85σ y cambia de sitio con la alineación. **No hay ninguna cámara en los datos de Alvarez.**
+- **Al 95 % de confianza, una cámara del tamaño de la del Rey queda excluida en el 25 % de Kefrén** (11 % a 5σ nominal). De ese volumen, **un ~7 % está fuera del cono de 35° y nadie lo había analizado.**
+- El mejor "candidato" (3,5σ local nominal; 2,4σ calibrado) tiene p global = 0,61, o 0,20 con la alineación desplazada. **No hay ninguna cámara en los datos de Alvarez**, y la cámara que propusieron los estudiantes del CERN queda excluida al 95 %.
+- *Corregido el 01/11/2026 tras una revisión independiente: posición del detector según el propio Alvarez (15,5 m al este, 4 m al norte), regla de "cabe entera" en el código y nula con correlación de largo alcance.*
 
 ### 14. Otra sonda: la gravedad ve lo que los muones no ven → [docs/21](docs/21-gravedad-y-muones.md)
 Un hueco de 8 m es un déficit de ~1 100 toneladas, y eso se nota en la gravedad desde cualquier dirección. La idea de medir gravedad en las caras ya la estudiaron Pašteka et al. (2022) para el Gran Vacío; lo nuevo aquí es el mapa de la base y su combinación con los muones.
@@ -147,9 +148,9 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [15 — ¿Cómo encontraron el norte?](docs/15-orientacion-al-norte.md) | 92 pares de estrellas contra las orientaciones medidas: la deriva es real, pero no sirve para fechar |
 | [16 — De Giza a la Luna](docs/16-de-giza-a-la-luna.md) | La Gran Pirámide costó ~2,5 GWh de trabajo mecánico (25 h de una central de 100 MW); lecciones para construir en la Luna |
 | [17 — El mapa de lo inexplorado](docs/17-mapa-de-lo-inexplorado.md) | Qué parte de la pirámide han explorado de verdad los muones (59–66 % sin explorar para huecos de 8 m), y dónde medir: la Cámara Subterránea |
-| [18 — Kefrén: el experimento inacabado de Alvarez](docs/18-kefren-el-experimento-inacabado-de-alvarez.md) | Reconstrucción de la medición de 1969, cuánto de Kefrén está explorado (3–15 %) y cómo ampliarlo al ~61 % |
+| [18 — Kefrén: el experimento inacabado de Alvarez](docs/18-kefren-el-experimento-inacabado-de-alvarez.md) | Reconstrucción de la medición de 1969, cuánto de Kefrén está explorado (3–13 %) y cómo ampliarlo al ~60 % |
 | [19 — Los datos de Alvarez, 56 años después](docs/19-los-datos-de-alvarez-reanalizados.md) | Reanálisis del mapa de residuos de 1970: estructura espacial clara y ninguna cámara oculta |
-| [20 — Lo que excluyen de verdad los datos de Alvarez](docs/20-lo-que-excluyen-los-datos-de-alvarez.md) | Mapa de exclusión de Kefrén con los residuos reales de 1970: 22 % al 95 %, 6,5 % nuevo fuera del cono |
+| [20 — Lo que excluyen de verdad los datos de Alvarez](docs/20-lo-que-excluyen-los-datos-de-alvarez.md) | Mapa de exclusión de Kefrén con los residuos reales de 1970: 25 % al 95 %, ~7 % nuevo fuera del cono |
 | [21 — Gravedad y muones](docs/21-gravedad-y-muones.md) | Microgravimetría para la base que los muones no ven: plan combinado que cubre el 79 % |
 | [22 — Plan completo de exploración](docs/22-plan-completo-de-exploracion.md) | Del 34 % al ~85 % con lo que ya existe; el límite físico del ~15 % restante |
 | [23 — ¿Una ley de aprendizaje?](docs/23-ley-de-aprendizaje.md) | Ritmo de construcción por reinado: techo de ~340 m³/día y caída por decisión |

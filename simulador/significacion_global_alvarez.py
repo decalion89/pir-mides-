@@ -28,7 +28,8 @@ def main():
     n_sim = int(sys.argv[2]) if len(sys.argv) > 2 else 4000
     origen = kf.ORIGEN_ALVAREZ.copy()
     ky, _ = ea.ajustar_ky(origen)
-    A = ea.Alvarez(origen, 0, ky)
+    despl = int(os.environ.get("DESPL_FILAS", "0"))
+    A = ea.Alvarez(origen, despl, ky)
     P = kf.voxeles(paso)
     M, _ = ra.cargar()
     v = ~np.isnan(M)
@@ -38,7 +39,7 @@ def main():
     nulos = [ra.campo_correlado(v, cal["sigma_nucleo_bins"], desv * cal["escala"], rng,
                                 cal["fraccion_correlada"], media).reshape(-1)[A.valido] for _ in range(n_sim)]
     R = np.array(nulos)                                              # (n_sim, n_bins)
-    out = dict(origen=[float(x) for x in origen], ky=ky, n_sim=n_sim)
+    out = dict(origen=[float(x) for x in origen], ky=ky, n_sim=n_sim, desplazamiento_filas=despl)
     for nombre, hueco in (("camara_tipo_rey", kf.camara_del_rey), ("cubo_8m", lambda q: cb.cubo(q, 8.0))):
         Q = np.array([q for q in P if ea.cabe(hueco(q))])
         S = np.array([A.huella(hueco(q))[A.valido] for q in Q])
@@ -56,7 +57,7 @@ def main():
                            p_local_calibrado=p_loc, sigma_local_calibrado=round(float(norm.isf(max(p_loc, 1e-6))), 2),
                            p_global=p_glob, sigma_global_una_cola=round(float(norm.isf(max(p_glob, 1e-6))), 2),
                            nulo_mediana_minimo=round(float(np.median(mins)), 2),
-                           inflado_varianza_rs=round(float(np.mean(np.var(R @ S.T, axis=0) / (A.kappa * S2))), 2))
+                           inflado_varianza_rs=round(float(np.mean((np.var(R @ S.T, axis=0) / (A.kappa * np.where(S2 > 0, S2, np.nan)))[S2 > 0])), 2))
         print(nombre, json.dumps(out[nombre], ensure_ascii=False), flush=True)
     # pista de Gutowski et al.: cámara tipo Rey a 30° del cenit, acimut 62–72° (cuatro convenciones)
     pista = {}
@@ -77,11 +78,8 @@ def main():
         pista[conv] = filas
     out["pista_gutowski_dchi2"] = pista
     print(json.dumps(pista, ensure_ascii=False))
-    p = os.path.join(ra.RAIZ, "resultados", "24_exclusion_alvarez.json")
-    d = json.load(open(p)) if os.path.exists(p) else {}
-    d["significacion_global"] = out
-    json.dump(d, open(p, "w"), indent=1, ensure_ascii=False, allow_nan=False)
-
+    with open(os.path.join(ra.RAIZ, "resultados", "24b_significacion_alvarez.json" if despl == 0 else f"24b_significacion_alvarez_fila{despl:+d}.json"), "w") as fh:
+        json.dump(out, fh, indent=1, ensure_ascii=False, allow_nan=False)
 
 if __name__ == "__main__":
     main()

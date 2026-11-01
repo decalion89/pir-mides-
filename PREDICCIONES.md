@@ -82,8 +82,8 @@ No predecimos que haya una cámara. Predecimos **qué zona quedará explorada y 
 ## P13 — Kefrén desde la Cámara de Belzoni (doc. 18), registrada el 01/11/2026
 Cinco exposiciones de emulsión de 2 m² × 180 días en la Cámara de Belzoni (una cenital y cuatro inclinadas 45° hacia cada cara, analizadas con |tanθ| ≤ 1) deberían:
 1. **ver las cuatro aristas y el remate de caliza original** con mucha más claridad que en 1969, como comprobación de la geometría;
-2. tener sensibilidad de ≥ 5σ a una cámara del tamaño de la del Rey en el **~61 %** del volumen de Kefrén (hoy, 3–15 %), con todo el volumen por encima de ~40 m cubierto. El techo lo fija la geometría con el corte de 70° del cenit;
-3. **resolver la pista de Gutowski et al. (2017)**. Si hubiera una cámara del tamaño de la del Rey a ~30° del cenit sobre Belzoni, la exposición cenital la vería a ≥ 7σ en todas las posiciones de ese anillo que caben en la pirámide (hasta ~80 m de altura). Los datos de Alvarez solo la descartan hasta ~30–40 m. (Corregido el 01/11/2026 tras una revisión independiente: la primera versión incluía posiciones fuera de la pirámide.)
+2. tener sensibilidad de ≥ 5σ a una cámara del tamaño de la del Rey en el **~60 %** del volumen de Kefrén (hoy, 3–13 % a 5σ), con todo el volumen por encima de ~40 m cubierto. El techo lo fija la geometría con el corte de 70° del cenit;
+3. **confirmar la exclusión de la pista de Gutowski et al. (2017)**. Los propios residuos de Alvarez ya excluyen al 95 % una cámara del tamaño de la del Rey a ~30° del cenit entre 20 y 60 m de altura (doc. 20). La exposición cenital la vería a ≥ 7σ en todas las posiciones de ese anillo que caben en la pirámide. (Corregido el 01/11/2026: posición del detector según Alvarez y prueba directa con sus residuos.)
 
 4. **mirar con más cuidado dos direcciones** que destacan, sin llegar a ser significativas (p ≈ 0,03–0,04 con nula correlada; doc. 19), en los residuos publicados por Alvarez: un exceso de muones a ~38° del cenit hacia el oeste-suroeste (acimut ~246°) y un déficit en el borde sur-suroeste. Si no aparecen con la nueva exposición, eran sistemáticos de 1969.
 

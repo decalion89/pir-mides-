@@ -64,7 +64,7 @@ def main():
     panel(axs[0], P, dk, 0, "Corte este-oeste por el centro", paso)
     panel(axs[1], P, dk, 1, "Corte norte-sur por el centro", paso)
     axs[0].set_ylabel("altura (m)", fontsize=8, color=TINTA2)
-    h = [Patch(color=COL[0], label="excluida a ≥ 5σ"), Patch(color=COL[1], label="excluida al 95 %"),
+    h = [Patch(color=COL[0], label="excluida a 5σ nominal (≈4σ)"), Patch(color=COL[1], label="excluida al 95 %"),
          Patch(color=COL[2], label="no excluida"),
          Line2D([], [], color=TINTA2, ls="--", label="cono de 35° (lo que analizó Alvarez)"),
          Line2D([], [], color=TINTA2, ls=":", label="45° (límite de sus datos)")]

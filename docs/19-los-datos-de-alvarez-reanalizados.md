@@ -4,7 +4,7 @@
 >
 > Lo hemos transcrito (801 casillas) y analizado con pruebas de permutaciones y con una hipótesis nula que conserva la correlación espacial. Resultados:
 > 1. **Los residuos tienen estructura espacial clara.** La correlación entre casillas vecinas es I de Moran = +0,11, con p < 0,0005: ninguna de 2 000 permutaciones la iguala. El exceso de χ² de Alvarez no es ruido repartido al azar, sino errores sistemáticos con correlación espacial. Es un dato nuevo sobre su experimento.
-> 2. **No hay ninguna agrupación significativa que indique una cámara oculta.** Las dos más extremas son un exceso de muones hacia el oeste-suroeste, a ~38° del cenit, con p = 0,04, y un déficit hacia el sur-suroeste, en el borde del campo, con p = 0,03. Esos valores son ya globales y tienen en cuenta la correlación espacial, pero no que se han probado 6 estadísticos: contando eso, ninguna pasa de ~2σ.
+> 2. **No hay ninguna agrupación significativa que indique una cámara oculta.** Con una hipótesis nula que reproduce la correlación de los residuos a varias distancias, las agrupaciones más extremas dan p = 0,07–0,83. Combinando las seis búsquedas, **p = 0,19**. *(Corregido el 01/11/2026: la primera versión usaba una nula que solo reproducía la correlación entre vecinos inmediatos y daba p = 0,03–0,04.)*
 > 3. **La pista de Gutowski et al. (2017)** (un exceso entre 62° y 72° de acimut) **no aparece** en el mapa de residuos de Alvarez, con ninguna de las cuatro lecturas posibles del acimut.
 >
 > Es un resultado negativo, pero informativo: los datos de 1969 no esconden una cámara que Alvarez pasara por alto, y su principal limitación eran los errores sistemáticos con estructura, no la estadística. Por eso una medición nueva (P13) debería modelar la geometría y el instrumento mucho mejor de lo que se pudo en 1969.
@@ -40,23 +40,26 @@ El pie de la figura 10 da **χ² = 905**, y el texto dice que el número efectiv
 | Estadístico | Valor | p (permutaciones) | p (nula correlada) | Dirección (θ, φ) |
 |---|---|---|---|---|
 | I de Moran | +0,11 | < 0,0005 | — | — |
-| Exceso 2 × 2 | 4,0 | 0,44 | 0,74 | (63°, 96°) |
-| Exceso 3 × 3 | 4,7 | 0,05 | 0,19 | (110°, 53°) |
-| Exceso 4 × 4 | 5,3 | 0,005 | **0,04** | (108°, 54°) |
-| Déficit 2 × 2 | 5,0 | 0,004 | 0,09 | (126°, 69°) |
-| Déficit 3 × 3 | 5,3 | 0,001 | **0,03** | (128°, 71°) |
-| Déficit 4 × 4 | 5,0 | 0,002 | 0,07 | (126°, 72°) |
+| Exceso 2 × 2 | 4,0 | 0,44 | 0,83 | (63°, 96°) |
+| Exceso 3 × 3 | 4,7 | 0,05 | 0,55 | (110°, 53°) |
+| Exceso 4 × 4 | 5,3 | 0,005 | 0,36 | (108°, 54°) |
+| Déficit 2 × 2 | 5,0 | 0,004 | 0,07 | (126°, 69°) |
+| Déficit 3 × 3 | 5,3 | 0,0005 | 0,08 | (128°, 71°) |
+| Déficit 4 × 4 | 5,0 | 0,002 | 0,25 | (126°, 72°) |
+| **Las seis búsquedas a la vez** | | | **0,19** | |
+
+**La nula correlada.** Campos gaussianos con dos componentes: un 14 % de varianza suavizada con un núcleo de 1,5 casillas y el resto independiente. Se reescalan para que, tras redondear, tengan la dispersión y la media observadas. Reproducen las correlaciones medidas a distancias de 1 a 3 casillas (0,09–0,14 en los datos, 0,04–0,12 en la simulación). Se usaron 4 000 simulaciones.
 
 θ crece de norte a sur y φ de oeste a este; (90°, 90°) es la vertical. El exceso 4 × 4 está a ~18° al sur y ~36° al oeste de la vertical: unos 38° del cenit, con acimut ~246°. Queda justo fuera del cono de 35° que Alvarez analizó. El déficit está en el borde sur-suroeste del campo.
 
-**Zona de Gutowski et al.** Para una cámara a 30° del cenit y acimut 67°, se probaron cuatro lecturas de la convención del acimut. La suma normalizada en 3 × 3 casillas da +0,7, +1,0, −0,3 y +2,0: ninguna es destacable. Los estudiantes también mencionan un pico a 270° (oeste). Nuestro exceso más fuerte está a ~246°, pero ambos salen de los **mismos datos**, así que no son indicios independientes, y el nuestro no es significativo.
+**Zona de Gutowski et al.** Para una cámara a 30° del cenit y acimut 67°, se probaron cuatro lecturas de la convención del acimut. La suma normalizada en 3 × 3 casillas da +0,7, +1,0, −0,3 y +2,0: ninguna es destacable. Los estudiantes también mencionan un pico a 270° (oeste). Nuestro exceso más fuerte está a ~246°, pero ambos salen de los **mismos datos**, así que no son indicios independientes, y el nuestro no es significativo. La prueba directa con el modelo completo (doc. 20) **excluye al 95 % la cámara que proponen** a casi todas las alturas.
 
 ![Residuos de Alvarez](../figuras/10_residuos_alvarez.png)
 
 ## 4. Qué significa
 - **Para la pregunta "¿hay una cámara en Kefrén?"**: los residuos publicados no la muestran en el cono de 35°, ni en su borde. Concuerda con lo que dijo Alvarez.
 - **Para la pregunta "¿cuánto se puede fiar uno del análisis de 1969?"**: menos de lo que su χ² sugiere. Los residuos tienen estructura, probablemente por la geometría exterior, las zonas muertas entre las cámaras de chispas que él mismo describe, la variación norte-sur de sensibilidad que tuvo que "inventar" y la roca bajo la pirámide. Una agrupación debida a un sistemático se parece a una cámara pequeña. Esto refuerza el análisis del documento 18: la cobertura real de Alvarez está más cerca del extremo pesimista.
-- **Para el futuro (P13)**: una medición moderna desde la Cámara de Belzoni podrá comprobar, de paso, las dos direcciones señaladas aquí. El exceso a ~38° del cenit hacia el oeste-suroeste queda dentro del campo de la exposición inclinada hacia el oeste. No es una predicción de que haya algo, sino de dónde mirar con más cuidado.
+- **Para el futuro (P13)**: una medición moderna desde la Cámara de Belzoni podrá comprobar, de paso, las dos direcciones señaladas aquí, aunque ninguna es significativa. El exceso a ~38° del cenit hacia el oeste-suroeste queda dentro del campo de la exposición inclinada hacia el oeste. No es una predicción de que haya algo, sino de dónde mirar con más cuidado.
 
 ## 5. Límites
 - Los residuos están redondeados a σ enteras: se pierde resolución, sobre todo para señales de 1–2σ por casilla.

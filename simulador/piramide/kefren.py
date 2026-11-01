@@ -13,7 +13,9 @@ Alvarez et al., Science 167, 832–839 (1970):
 Geometría de Kefrén: lado original 215,25 m (410 codos), altura original 143,5 m (274 codos);
 hoy ~136,4 m. La Cámara de Belzoni (14,15 × 5 m) está excavada en la roca bajo la base, casi
 en el eje vertical; aquí se toma su esquina sureste en (5, −1,5) m y el detector a ras de la
-base (el aire de la cámara queda por encima).
+base (el aire de la cámara queda por encima). La posición exacta es incierta: Gutowski et al.
+(arXiv:1712.08590) sitúan la cámara 13,5 m al este y 4 m al norte del centro; se estudia como
+variante (ORIGEN_ALTERNATIVO).
 """
 from __future__ import annotations
 
@@ -31,6 +33,7 @@ SEMI = LADO / 2
 TAN_CARA = ALTURA / SEMI
 DENSIDAD = 2.2
 ORIGEN_ALVAREZ = np.array([5.0, -1.5, -0.5])
+ORIGEN_ALTERNATIVO = np.array([19.5, 2.0, -0.5])   # esquina SE si el centro está en (13,5; 4)
 
 
 def longitud(origen: np.ndarray, dirs: np.ndarray) -> np.ndarray:
@@ -69,8 +72,8 @@ def voxeles(paso: float = 4.0) -> np.ndarray:
     return P[(np.abs(P[:, 0]) <= lim) & (np.abs(P[:, 1]) <= lim)]
 
 
-def fraccion_en_cono(P: np.ndarray, origen=ORIGEN_ALVAREZ, semiangulo=35.0) -> float:
-    v = P - origen
+def fraccion_en_cono(P: np.ndarray, origen=None, semiangulo=35.0) -> float:
+    v = P - (ORIGEN_ALVAREZ if origen is None else origen)
     cosz = v[:, 2] / np.linalg.norm(v, axis=1)
     return float(np.mean(cosz >= math.cos(math.radians(semiangulo))))
 

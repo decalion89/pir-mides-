@@ -1,0 +1,70 @@
+{
+ "nominal": {
+  "cono": 0.20315961853385994,
+  "alv_cal": 0.03795395433965899,
+  "alv_raw": 0.17483864752913977,
+  "prop_cal": 0.599364223099894,
+  "prop_raw": 0.614488006935748,
+  "pista_30_grados": {
+   "20": {
+    "alvarez_min": 12.1,
+    "alvarez_max": 16.2,
+    "cenital_min": 37.2
+   },
+   "40": {
+    "alvarez_min": 6.1,
+    "alvarez_max": 8.4,
+    "cenital_min": 17.2
+   },
+   "60": {
+    "alvarez_min": 3.7,
+    "alvarez_max": 5.3,
+    "cenital_min": 10.6
+   },
+   "80": {
+    "alvarez_min": 2.5,
+    "alvarez_max": 3.5,
+    "cenital_min": 7.2
+   },
+   "100": {
+    "alvarez_min": 1.9,
+    "alvarez_max": 3.0,
+    "cenital_min": 5.3
+   }
+  }
+ },
+ "alternativo": {
+  "cono": 0.1937192948656199,
+  "alv_cal": 0.041903477506983915,
+  "alv_raw": 0.14825161352470861,
+  "prop_cal": 0.591176187265196,
+  "prop_raw": 0.6079375782679896,
+  "pista_30_grados": {
+   "20": {
+    "alvarez_min": 10.1,
+    "alvarez_max": 20.4,
+    "cenital_min": 33.9
+   },
+   "40": {
+    "alvarez_min": 5.1,
+    "alvarez_max": 10.6,
+    "cenital_min": 15.6
+   },
+   "60": {
+    "alvarez_min": 3.1,
+    "alvarez_max": 6.7,
+    "cenital_min": 9.6
+   },
+   "80": {
+    "alvarez_min": 2.2,
+    "alvarez_max": 4.4,
+    "cenital_min": 6.6
+   },
+   "100": {
+    "alvarez_min": 1.6,
+    "alvarez_max": 3.8,
+    "cenital_min": 4.8
+   }
+  }
+ }
+}

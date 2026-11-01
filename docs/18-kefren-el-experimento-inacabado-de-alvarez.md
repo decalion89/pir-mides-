@@ -56,15 +56,39 @@ Tras la propuesta, lo que sigue sin explorar para cámaras del tamaño de la del
 
 Las cinco orientaciones se pueden exponer a la vez si hay película suficiente: Nagoya llegó a tener 8 m² instalados en Keops. Con 10 m² en total, todo el experimento cabe en **unos seis meses**.
 
+### Incertidumbre en la posición de la Cámara de Belzoni
+Las fuentes no coinciden. Aquí se usa la esquina sureste de la cámara en (5, −1,5) m. Gutowski et al. (arXiv:1712.08590) sitúan el centro de la cámara 13,5 m al este y 4 m al norte del centro de la pirámide, y Wikipedia sitúa los pasajes ~12 m al este del eje. Con la esquina en (19,5; 2) m ([`resultados/22_kefren_variantes.json`](../resultados/22_kefren_variantes.json), rejilla de 6 m):
+- el cono es el 19,4 % del volumen, aún más cerca del 19 % de Alvarez;
+- lo explorado por Alvarez queda en 4 % (calibrado) y 15 % (sin calibrar);
+- la propuesta llega al 59–61 %.
+
+Las conclusiones no cambian.
+
+## 5. Una pista publicada que la propuesta resolvería
+Un grupo de estudiantes de secundaria, ganadores del concurso *Beamline for Schools* del CERN en 2016 (Gutowski et al., arXiv:1712.08590, sin revisión por pares), comparó un modelo sencillo con los datos de Alvarez a ~30° del cenit. Señalan "posiblemente" más muones de lo esperado entre 62° y 72° de acimut, compatible con una cámara del tamaño de la del Rey, y un pico inesperado a 270°. No es un resultado sólido, pero sí una hipótesis concreta que se puede poner a prueba.
+
+Con nuestro modelo (calibrado), una cámara del tamaño de la del Rey a 30° del cenit, en cualquier acimut, daría:
+
+| Altura sobre Belzoni | Datos de Alvarez (10⁶ muones) | Exposición cenital propuesta (2 m² × 180 d) |
+|---|---|---|
+| 20 m | 10–20σ | ≥ 34σ |
+| 40 m | 5–11σ | ≥ 16σ |
+| 60 m | 3–7σ | ≥ 10σ |
+| 80 m | 2–4σ | ≥ 7σ |
+| 100 m | 1,6–4σ | ≥ 5σ |
+
+**Los datos de 1969 descartan esa cámara a 40 m de altura o menos, pero no a 60–100 m.** La negativa de Alvarez y la pista de los estudiantes son compatibles si la cámara estuviera alta. Una sola exposición cenital moderna desde el mismo sitio la vería a ≥ 5σ a cualquier altura hasta ~100 m, o la descartaría.
+
 ![Kefrén: Alvarez frente a la propuesta](../figuras/09_kefren_alvarez.png)
 
-## 5. Límites
+## 6. Límites
 - **Modelo simplificado**: sin Geant4 y con densidad uniforme. No incluye las irregularidades del núcleo de roca natural, que en Kefrén es importante: la esquina noroeste está tallada en la roca y la sureste está construida sobre una plataforma. Para un análisis real, esas heterogeneidades serían el principal sistemático, como ya lo fue para Alvarez.
-- **Posición del detector**: se toma la esquina sureste de la cámara a ras de la base. Desplazarla unos metros cambia poco la cobertura de un cono tan ancho.
+- **Posición del detector**: incierta en ~15 m según la fuente. Se ha estudiado como variante (§4) y no cambia las conclusiones.
 - **Exposición de 1969**: no se modela su eficiencia real. Se ajusta el número de muones (10⁶), que es lo que fija la estadística.
 - **Datos no publicados**: puede haberlos. El mapa se refiere a lo publicado.
 - **No dice que haya cámaras en Kefrén.** Dice que la mayor parte de la pirámide no se ha examinado, y cómo examinarla.
 
 ## Referencias
 - Alvarez, L. W. et al. (1970). *Search for hidden chambers in the pyramids*. Science 167, 832–839.
+- Gutowski, B. et al. (2017). *The secret chambers in the Chephren Pyramid*. arXiv:1712.08590 (CERN Beamline for Schools).
 - Morishima, K. et al. (2017). Nature 552, 386–390 (calibración de Nagoya; docs/17).

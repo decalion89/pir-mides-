@@ -54,6 +54,15 @@ Archivos: [`simulador/qin_mercurio.py`](../simulador/qin_mercurio.py), [`resulta
 | Mercurio perdido en 2 200 años | 3,5 t (1,1 – 11) |
 | Años para perder 100 t | ~60 000 (20 000 – 200 000) |
 
+## Revisión con la presión real de la campaña (doc. añadido el 01/11/2026)
+El Monte Carlo suponía oscilaciones de presión del 1–2 % cada 3–7 días. Con la presión real medida en Jinghe (WMO 57131, a 27 km) durante la campaña del lidar (24 jul – 12 ago 2016), ese supuesto resulta **optimista para el verano** ([`simulador/qin_presion_prerregistro.py`](../simulador/qin_presion_prerregistro.py), [`resultados/43_qin_prerregistro.json`](../resultados/43_qin_prerregistro.json)):
+- **Rango de presión:** 998–1 009 hPa. Es una variación máxima del 1,1 % en 20 días, con desviación típica de 2,2 hPa.
+- **Bombeo del palacio con solo la parte sinóptica:** ~**330 m³/día**, por debajo de los ~460 necesarios (0,7 veces).
+- **Bombeo incluida la marea barométrica diaria** (2–3 hPa al día): ~**1 850 m³/día** (4 veces lo necesario). Pero la marea solo produce intercambio neto si el aire expulsado en cada ciclo (~0,2–0,3 % del volumen, ~1 000 m³) sale del todo del sistema de grietas y no vuelve a entrar. Eso depende del volumen de las grietas, que desconocemos.
+- **El tiro térmico** tampoco ayuda en verano: el aire del túmulo (~15 °C) es más frío y denso que el exterior (30–35 °C) y se queda quieto. En invierno es al revés.
+
+**Por tanto, la vía (a) sigue siendo la única que puede llegar al flujo medido, pero en verano va justa.** Esto da una predicción nueva: **si la tumba respira, en invierno debe emitir bastante más que en verano** (más bombeo sinóptico y tiro térmico a favor). Si una campaña invernal mide el mismo flujo o menos, la vía (a) pierde fuerza.
+
 ## Qué significa
 1. **La lectura habitual no se sostiene físicamente.** Se suele decir que el mercurio "se escapa lentamente a través del suelo". La difusión no puede producir el flujo medido.
 2. **Tres posibilidades, y solo tres:**

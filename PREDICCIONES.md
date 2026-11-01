@@ -106,6 +106,14 @@ Un estudio de gravedad con ~660 estaciones en los escalones de las cuatro caras 
 2. **Perfil vertical.** El Hg en el gas del suelo **aumentará con la profundidad**.
 3. **Total.** El flujo total integrado con cámaras de flujo será del orden de 10⁻⁸–10⁻⁷ kg/s y saldrá por puntos localizados.
 
+4. **Estación.** El flujo invernal (diciembre–febrero) será **mayor** que el de verano (julio–agosto de 2016), por el mayor bombeo sinóptico y el tiro térmico.
+5. **Prerregistro a ciegas para los datos de 2016.** Con la presión real de Jinghe, el orden de las noches por emisión esperada está en [`resultados/43_qin_prerregistro.json`](resultados/43_qin_prerregistro.json):
+   - **más emisión:** 27 y 28 de julio, 1, 2 y 12 de agosto;
+   - **menos emisión:** 30, 26 y 29 de julio, 6 y 10 de agosto.
+
+   Si el equipo de Lund comparte sus mediciones nocturnas, el exceso de Hg (corregido por el viento) debe correlacionar positivamente con ese índice.
+
 **Refutación:**
 - Si la emisión sigue al sol y a la temperatura del suelo sin relación con la presión, y el gas del suelo tiene su máximo en superficie, la fuente es superficial (vía b).
 - Si el flujo total medido con cámaras es ≪ 10⁻⁸ kg/s, el lidar sobrestimaba (vía c).
+- Si el invierno no emite más que el verano, la vía (a) pierde fuerza.

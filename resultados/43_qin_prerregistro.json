@@ -1,0 +1,155 @@
+{
+ "estacion": "Jinghe (WMO 57131), 27 km del mausoleo; NOAA ISD-Lite",
+ "presion_campana_hPa": {
+  "min": 998.1,
+  "max": 1009.3,
+  "desviacion": 2.22
+ },
+ "variacion_relativa_max_min": 0.0111,
+ "bombeo_palacio_m3_dia": 1855.0,
+ "bombeo_palacio_solo_sinoptico_m3_dia": 326.0,
+ "bombeo_camara_m3_dia": 241.0,
+ "caudal_necesario_doc34_m3_dia": 458.0,
+ "cociente_bombeo_palacio_sobre_necesario": 4.05,
+ "indice_emision_por_noche": {
+  "2016-07-24": {
+   "tau_6h": 0.1298,
+   "tau_12h": 0.1494,
+   "tau_24h": 0.1509
+  },
+  "2016-07-25": {
+   "tau_6h": 0.1377,
+   "tau_12h": 0.1569,
+   "tau_24h": 0.1589
+  },
+  "2016-07-26": {
+   "tau_6h": 0.0781,
+   "tau_12h": 0.0884,
+   "tau_24h": 0.108
+  },
+  "2016-07-27": {
+   "tau_6h": 0.2366,
+   "tau_12h": 0.2467,
+   "tau_24h": 0.2165
+  },
+  "2016-07-28": {
+   "tau_6h": 0.162,
+   "tau_12h": 0.2097,
+   "tau_24h": 0.2178
+  },
+  "2016-07-29": {
+   "tau_6h": 0.0924,
+   "tau_12h": 0.133,
+   "tau_24h": 0.163
+  },
+  "2016-07-30": {
+   "tau_6h": 0.0446,
+   "tau_12h": 0.0618,
+   "tau_24h": 0.0925
+  },
+  "2016-07-31": {
+   "tau_6h": 0.1872,
+   "tau_12h": 0.18,
+   "tau_24h": 0.1578
+  },
+  "2016-08-01": {
+   "tau_6h": 0.1632,
+   "tau_12h": 0.1983,
+   "tau_24h": 0.1927
+  },
+  "2016-08-02": {
+   "tau_6h": 0.1524,
+   "tau_12h": 0.1936,
+   "tau_24h": 0.1997
+  },
+  "2016-08-03": {
+   "tau_6h": 0.152,
+   "tau_12h": 0.1805,
+   "tau_24h": 0.1895
+  },
+  "2016-08-04": {
+   "tau_6h": 0.1252,
+   "tau_12h": 0.1536,
+   "tau_24h": 0.1687
+  },
+  "2016-08-05": {
+   "tau_6h": 0.1401,
+   "tau_12h": 0.1697,
+   "tau_24h": 0.1764
+  },
+  "2016-08-06": {
+   "tau_6h": 0.1015,
+   "tau_12h": 0.1413,
+   "tau_24h": 0.1601
+  },
+  "2016-08-07": {
+   "tau_6h": 0.1347,
+   "tau_12h": 0.1597,
+   "tau_24h": 0.1657
+  },
+  "2016-08-08": {
+   "tau_6h": 0.1228,
+   "tau_12h": 0.1435,
+   "tau_24h": 0.1521
+  },
+  "2016-08-09": {
+   "tau_6h": 0.1283,
+   "tau_12h": 0.1587,
+   "tau_24h": 0.1638
+  },
+  "2016-08-10": {
+   "tau_6h": 0.1178,
+   "tau_12h": 0.1436,
+   "tau_24h": 0.1529
+  },
+  "2016-08-11": {
+   "tau_6h": 0.127,
+   "tau_12h": 0.1594,
+   "tau_24h": 0.1652
+  },
+  "2016-08-12": {
+   "tau_6h": 0.1531,
+   "tau_12h": 0.1903,
+   "tau_24h": 0.1915
+  }
+ },
+ "orden_noches_mas_emision_primero": [
+  "2016-07-27",
+  "2016-07-28",
+  "2016-08-01",
+  "2016-08-02",
+  "2016-08-12",
+  "2016-07-31",
+  "2016-08-03",
+  "2016-08-05",
+  "2016-08-07",
+  "2016-07-25",
+  "2016-08-11",
+  "2016-08-09",
+  "2016-08-04",
+  "2016-07-24",
+  "2016-08-08",
+  "2016-08-10",
+  "2016-08-06",
+  "2016-07-29",
+  "2016-07-26",
+  "2016-07-30"
+ ],
+ "prediccion": {
+  "mas_emision": [
+   "2016-07-27",
+   "2016-07-28",
+   "2016-08-01",
+   "2016-08-02",
+   "2016-08-12"
+  ],
+  "menos_emision": [
+   "2016-08-10",
+   "2016-08-06",
+   "2016-07-29",
+   "2016-07-26",
+   "2016-07-30"
+  ],
+  "criterio": "Si la tumba respira por bombeo barométrico, el exceso de Hg medido por el lidar en cada noche debe correlacionar positivamente (Spearman > 0, p < 0,05 si hay ≥ 10 noches) con este índice. Si la fuente es superficial o el lidar no está limitado por la fuente, no debe haber correlación una vez descontado el viento."
+ }
+}

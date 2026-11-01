@@ -4,16 +4,22 @@
    inclinación) con Metropolis adaptativo, a partir de los datos publicados de 2017 (docs/11):
    emulsiones solas, KEK sola y conjunto (errores reescalados con el χ²/ndf de cada conjunto).
    Se exige que el Vacío no corte ningún espacio conocido (se habría visto).
+   Los datos extraídos solo cubren tanθy ≥ 0 (hacia el norte) y no fijan el extremo sur. Se usa
+   la información del artículo, sacada de la imagen 2D de KEK, que sí cubre el sur: "the
+   structure starts almost at the centre of the Pyramid". Se impone como información previa que
+   el extremo sur esté en y ∈ SUR (por defecto −5…+5 m; argumento `libre` para quitarlo).
 2. Para cada muestra, la piedra que lo separa de cada espacio accesible: Gran Galería,
    antecámara, Cámara del Rey y las cinco cámaras de descarga (accesibles por los túneles de
    Davison y Vyse).
 3. Para puntos del techo de la Gran Galería y de las cámaras de descarga: probabilidad de que el
    Vacío esté a menos de ℓ metros (lo que tendría que atravesar un endoscopio o una perforación).
 
-    cd simulador && PYTHONPATH=. python acceso_gran_vacio.py → ../resultados/41_acceso_gran_vacio.json
+    cd simulador && PYTHONPATH=. python acceso_gran_vacio.py [libre]
+        → ../resultados/41_acceso_gran_vacio[_sur_libre].json y 41_muestras_gran_vacio[...].npz
 """
 import json
 import math
+import sys
 import time
 
 import numpy as np
@@ -30,6 +36,13 @@ K = ra.Reanalisis(pos_h1=(7.1, -1.9, 21.5))
 CONOCIDAS = [c for c in g.estructuras_conocidas() if c.delta_densidad < 0]
 ACCESIBLES = [c for c in CONOCIDAS if c.nombre.startswith(("Gran Galería", "Antecámara", "Cámara del Rey", "Cámara de descarga"))]
 LIMS = [(3, 12), (-15, 50), (35, 85), (8, 75), (0.5, 15), (0.8, 8), (-20, 45)]
+SUR = None if "libre" in sys.argv[1:] else (-5.0, 5.0)
+
+
+def extremo_sur(v):
+    c = corr(v).caja()
+    ext = [np.asarray(c.centro) + s * (c.tam[1] / 2) * c._R[1] for s in (-1, 1)]
+    return min(e[1] for e in ext)
 
 
 def corr(v):
@@ -81,10 +94,13 @@ def chi2(v, cual):
 def logp(v, cual):
     if any(not (lo <= x <= hi) for x, (lo, hi) in zip(v, LIMS)):
         return -np.inf
+    if SUR is not None and not (SUR[0] <= extremo_sur(v) <= SUR[1]):
+        return -np.inf
     return -0.5 * chi2(v, cual)
 
 
-INICIOS = [(7.2, 18.9, 56.8, 40.4, 2.7, 4.1, 16.0), (7.3, 17.0, 62.0, 34.0, 2.5, 3.5, 3.0), (8.0, 23.5, 50.6, 53.3, 2.5, 3.7, 24.0)]
+INICIOS = [(7.2, 18.9, 56.8, 40.4, 2.7, 4.1, 16.0), (7.3, 17.0, 62.0, 34.0, 2.5, 3.5, 3.0), (8.0, 23.5, 50.6, 53.3, 2.5, 3.7, 24.0),
+           (7.4, 20.0, 60.0, 40.0, 3.0, 3.0, 10.0), (7.8, 22.0, 54.0, 44.0, 2.5, 4.0, 20.0)]
 
 
 def cadena(cual, n=9000, quemado=2500):
@@ -130,7 +146,9 @@ def main():
             for xx in (cx - 4, cx, cx + 4):
                 cand.append(dict(lugar=f"{c.nombre}, pared norte", punto=np.array([xx, cy + c.tam[1] / 2, cz])))
     P_cand = np.array([c["punto"] for c in cand])
-    out = dict(espacios_accesibles=[c.nombre for c in ACCESIBLES], posteriores={})
+    sufijo = "_sur_libre" if SUR is None else ""
+    out = dict(espacios_accesibles=[c.nombre for c in ACCESIBLES], prior_extremo_sur_y=SUR, posteriores={})
+    guardar = {}
     for cual in ("E", "K", "J"):
         M, chimin, best, acc = cadena(cual)
         sel = M[rng.choice(len(M), size=min(1500, len(M)), replace=False)]
@@ -151,7 +169,11 @@ def main():
             geo.append(v)
         dist_cand = np.array(dist_cand)
         geo = np.array(geo)
-        res = dict(chi2_minimo=round(chimin, 1), mejor_ajuste=best, aceptacion=round(acc, 2),
+        guardar[cual] = geo
+        sur = np.array([extremo_sur(v) for v in geo])
+        res = dict(extremo_sur_y=dict(p05=round(float(np.percentile(sur, 5)), 2), mediana=round(float(np.median(sur)), 2),
+                                      p95=round(float(np.percentile(sur, 95)), 2)),
+                   chi2_minimo=round(chimin, 1), mejor_ajuste=best, aceptacion=round(acc, 2),
                    muestras_validas=validas, muestras=len(sel),
                    geometria={k: dict(mediana=round(float(np.median(geo[:, i])), 2),
                                       p05=round(float(np.percentile(geo[:, i], 5)), 2),
@@ -178,7 +200,8 @@ def main():
         out["posteriores"][cual] = res
         print(cual, json.dumps({k: res[k] for k in ("geometria", "mejor_punto_por_profundidad")}, ensure_ascii=False), flush=True)
         print(cual, json.dumps(res["piedra_hasta_espacio"], ensure_ascii=False), flush=True)
-        json.dump(out, open("../resultados/41_acceso_gran_vacio.json", "w"), ensure_ascii=False, indent=1)
+        json.dump(out, open(f"../resultados/41_acceso_gran_vacio{sufijo}.json", "w"), ensure_ascii=False, indent=1)
+        np.savez_compressed(f"../resultados/41_muestras_gran_vacio{sufijo}.npz", **guardar)
 
 
 if __name__ == "__main__":

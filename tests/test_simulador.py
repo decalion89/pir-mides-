@@ -370,3 +370,23 @@ def test_cuentas_en_bruto_de_alvarez_coherentes_con_la_figura_10():
     z = (N8 - N9) / np.sqrt(np.maximum(N9, 1))
     assert N8.shape == (30, 30) and abs(N8.sum() - 650_000) < 5_000
     assert np.mean(np.abs(z[v] - r10[v]) <= 0.6) > 0.99
+
+
+def test_ley_media_senal():
+    """ρ > ½ ⇔ hueco vacío falso; ρ invariante con la exposición; amplitud libre = ρ."""
+    import importlib
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "simulador"))
+    lm = importlib.import_module("ley_media_senal")
+    rng = np.random.default_rng(1)
+    t = np.linspace(-0.5, 0.5, 20)
+    base = 1000 * (1 + 0.3 * rng.random(400))
+    s = np.zeros(400)
+    s[150:170] = 80.0
+    err = 0.6 * s + 30 * np.sin(np.arange(400))          # el error imita parte de la huella
+    for lam in (0.1, 1.0, 100.0):
+        p, s2, _ = lm.rho(lam * (base + err), lam * base, lam * s, t, f_sis=0.0)
+        if lam == 0.1:
+            p0 = p
+        assert abs(p - p0) < 0.02 * abs(p0) + 1e-3
+        assert (s2 * (1 - 2 * p) < 0) == (p > 0.5)
+    assert 0.5 < p0 < 0.7

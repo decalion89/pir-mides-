@@ -1,4 +1,5 @@
-"""¿Puede un error en la posición de los detectores de la Cámara de la Reina fabricar el Gran Vacío?
+"""[Versión inicial, superada por ley_media_senal.py: un rayo por casilla.]
+¿Puede un error en la posición de los detectores de la Cámara de la Reina fabricar el Gran Vacío?
 
 Se simulan (Asimov) las cuentas de NE1, NE2 y KEK H1 con las estructuras conocidas y SIN Gran
 Vacío. Se analizan con los detectores desplazados δ (error común: la misma referencia topográfica
@@ -17,6 +18,7 @@ Gran Vacío real en el mismo detector (independiente de la calibración).
 Uso: PYTHONPATH=. python gran_vacio_y_posicion.py [fino]
      → ../resultados/37_gran_vacio_y_posicion.json  (o 37b_..._fino.json)
 """
+import dataclasses
 import json
 import os
 import sys
@@ -33,7 +35,9 @@ DETECTORES = ("Nagoya NE1 (2016)", "Nagoya NE2 (2016)", "KEK H1 (2016-17)")
 
 
 def copia(c, origen=None):
-    return cb.Campana(c.nombre, c.familia, c.origen if origen is None else origen, c.eje, c.tan_max, c.area_m2, c.dias)
+    # Nota: la versión que generó resultados/37*.json copiaba solo los 7 primeros campos y daba a
+    # KEK la aceptancia plana de una emulsión; las cifras vigentes están en ley_media_senal.py (38).
+    return dataclasses.replace(c, origen=c.origen if origen is None else np.asarray(origen, float), _pre={})
 
 
 def huella(camp, caja):

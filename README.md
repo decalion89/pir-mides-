@@ -140,12 +140,21 @@ Con un experimento numérico calculamos cuánto error en la posición del detect
 ### 22. ¿Pudo un error de posición fabricar el Gran Vacío? → [docs/29](docs/29-el-gran-vacio-pasa-la-prueba.md)
 Aplicamos la misma prueba a los detectores de la Cámara de la Reina. **El Gran Vacío pasa la prueba.**
 - **Con la precisión declarada del modelo (~30 cm)** no se fabrica ninguna señal en su posición.
-- **El detector más expuesto** es KEK H1, casi bajo el eje de la Gran Galería. Necesitaría ~0,7 m de error para producir un vacío falso justo allí, con el 44 % de la señal real.
-- **Los de Nagoya**, desplazados 4,5–5,8 m del eje, no lo fabrican ni con 1,2 m de error.
+- **El detector más expuesto** es KEK H1, casi bajo el eje de la Gran Galería. Necesitaría 0,54–0,75 m de error para producir un vacío falso justo allí.
+- **Los de Nagoya**, desplazados 4,5–5,8 m del eje, necesitan ~1,2 m de error (NE2) o no lo fabrican nunca en ±1,2 m (NE1).
 
 De aquí sale una regla de diseño: la paralaje lateral protege frente a los vacíos falsos paralelos a un hueco conocido.
 
-### 23. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 23. La ley de la mitad de la señal → [docs/30](docs/30-la-ley-de-la-mitad.md)
+Una regla general detrás de los docs. 27–29. Si un error de modelo imita una fracción ρ de la señal de un hueco:
+- **Hueco vacío:** se "descubre" uno falso si y solo si **ρ > ½**, con probabilidad **Φ(Z_real(ρ − ½))**.
+- **Contraste libre** (análisis de "exceso del X %"): siempre aparece un exceso falso con **Z_falso = ρ·Z_real**.
+
+ρ no depende de la cantidad de datos (comprobado de ×0,01 a ×100, y con Monte Carlo de Poisson). Por eso más estadística no arregla un error de geometría.
+
+Las matemáticas son conocidas (sesgo por variable omitida). Su formulación y uso en muografía no los hemos encontrado publicados.
+
+### 24. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -179,7 +188,8 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [26 — El límite del gnomon](docs/26-el-limite-del-gnomon.md) | El método solar no puede producir errores de más de ~6′: solo explica Keops y Kefrén |
 | [27 — Alvarez desde cero](docs/27-alvarez-desde-cero.md) | Reconstrucción independiente del experimento de 1969 y un falso candidato desmontado |
 | [28 — Falsas cámaras](docs/28-falsas-camaras.md) | Regla práctica: la posición del detector debe conocerse mejor que ~1 m o se fabrican cámaras falsas |
-| [29 — El Gran Vacío pasa la prueba](docs/29-el-gran-vacio-pasa-la-prueba.md) | Un error de posición no fabrica el Gran Vacío: margen ~2× para KEK H1, >4× para Nagoya; regla de la paralaje |
+| [29 — El Gran Vacío pasa la prueba](docs/29-el-gran-vacio-pasa-la-prueba.md) | Un error de posición no fabrica el Gran Vacío: margen ~1,8× para KEK H1, ~4× o más para Nagoya; regla de la paralaje |
+| [30 — La ley de la mitad](docs/30-la-ley-de-la-mitad.md) | Un error de modelo fabrica un hueco vacío si imita más de la mitad de su señal (ρ > ½), sea cual sea la exposición; con contraste libre, Z_falso = ρ·Z_real |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

@@ -360,3 +360,13 @@ def test_un_hueco_de_8_m_bajo_los_escalones_se_ve_en_gravedad():
     z_cerca = grav.z_gravedad((80.0, 0.0, 10.0), (8, 8, 8), E, 3.0)      # a ~20 m de la cara este
     z_lejos = grav.z_gravedad((-50.0, -50.0, 10.0), (8, 8, 8), E, 3.0)   # anillo inexplorado, lejos de corredores
     assert z_cerca > 5 > z_lejos
+
+
+def test_cuentas_en_bruto_de_alvarez_coherentes_con_la_figura_10():
+    N8 = np.loadtxt(Path(__file__).resolve().parents[1] / "datos/alvarez_1970/fig8_medidos.csv", delimiter=",", comments="#")
+    N9 = np.loadtxt(Path(__file__).resolve().parents[1] / "datos/alvarez_1970/fig9_predichos.csv", delimiter=",", comments="#")
+    r10, _ = ralv.cargar()
+    v = ~np.isnan(r10)
+    z = (N8 - N9) / np.sqrt(np.maximum(N9, 1))
+    assert N8.shape == (30, 30) and abs(N8.sum() - 650_000) < 5_000
+    assert np.mean(np.abs(z[v] - r10[v]) <= 0.6) > 0.99

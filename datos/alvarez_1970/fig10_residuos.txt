@@ -7,6 +7,8 @@
 # derecha empiezan en la columna 16. Las casillas vacías (pocos muones predichos) están en los bordes.
 # La primera fila de la matriz (30 x 30) está vacía en la figura 10 y no se incluye aquí.
 # Valores dudosos (marcados con ?): se analizan con ambos signos.
+# Resueltos con las cuentas en bruto (figs. 8 y 9; ver LEEME.md): el '3?' de la fila 7 es +3 y los dos '1?'
+# (filas 20 y 27 de la matriz) son −1. Los análisis usan las 8 combinaciones y ninguna conclusión cambia.
 0 2 0 0 1 0 -1 0 | 0 1 -2 2 1 0 0 -1
 -1 0 -2 -1 2 1 -1 0 1 -1 1 | -2 2 2 0 -2 1 -1 -1 1 0 2
 0 0 1 -2 -1 0 1 1 2 0 1 -1 1 0 | 0 1 2 -1 1 0 0 1 -2 0 -2 0 -1 1

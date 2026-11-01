@@ -1,7 +1,7 @@
 ---
 title: "Alvarez's Chephren muon data, 56 years on: spatially structured residuals and a data-driven exclusion map"
 author: "[AUTHOR NAME(S) AND AFFILIATION — to be completed] · Proyecto Pirámides, https://github.com/decalion89/pir-mides- · Contact: labix7@gmail.com"
-date: "Draft v2, 1 November 2026"
+date: "Draft v3, 1 November 2026"
 ---
 
 ## Abstract
@@ -134,19 +134,42 @@ We place a King's-Chamber-sized cavity at 30° zenith and azimuth 62°–72°, u
 - 11–23 at 70 m for three conventions;
 - 0.1–11 at 70 m for the fourth.
 
-## 5. Discussion
+## 5. Cross-check with the raw counts (Figs. 8 and 9)
+
+We also transcribed Alvarez's measured (Fig. 8) and predicted (Fig. 9) counts, verifying all 1800 cells visually (`datos/alvarez_1970/fig8_medidos.csv`, `fig9_predichos.csv`).
+
+- **Consistency with Fig. 10:** they reproduce it in 799 of 801 bins.
+- **Totals:** the measured counts sum to 649 034, the "650,000" of the paper.
+- **Recomputed χ²:** the Pearson χ² of Alvarez's fit is 983 (published: 905).
+
+**A fully independent refit fails.** Replacing his prediction by our pyramid model, multiplied by a smooth acceptance polynomial, gives χ² = 5 000–11 000 for ≈790 degrees of freedom. His detector had inactive strips between spark-chamber halves and segmented counters, which produce sharp instrumental structure that no smooth correction reproduces. Without a reconstruction of the 1969 instrument, his prediction is needed as a template.
+
+**Poisson reanalysis with his template.**
+
+- **Fit:** N_pred = N_Fig9 · exp(degree-2 polynomial in θ, φ), by Poisson maximum likelihood. It gives χ² = 958 for 795 degrees of freedom, and the residuals correlate at 0.99 with his.
+- **Cavity footprint:** applied as our model's relative flux change, with the polynomial profiled out.
+- **Global significance:** from correlated nulls calibrated on these residuals.
+
+Results:
+
+- **King's-Chamber-sized cavity:** excluded in 26 % of the fitting positions at 95 % CL and 14 % at nominal 5σ; 95 % / 57 % of the cone; 7.3 % of the volume outside the cone at 95 % CL.
+- **8 m cube:** 34 % / 27 %.
+- **Best candidate:** Δχ² = −10.8 at (24, −16, 92) m, global p = 0.44.
+
+These agree with Section 4. The exclusion map depends neither on the integer rounding of Fig. 10 nor on the treatment of its dispersion.
+
+## 6. Discussion
 
 - **For Khafre's pyramid.** Alvarez's published residuals contain no evidence of a hidden chamber, consistent with his conclusion. At 95 % CL they exclude a King's-Chamber-sized cavity in about a quarter of the volume where such a cavity would fit, a little more than the 19 % he claimed. At a discovery threshold the excluded fraction drops to about a tenth.
 - **For new measurements.** Correlated residuals of the kind found here make 3.5–4σ local "cavities" common. Searches such as ScIDEP's [4] should calibrate global significances with nulls that preserve spatial correlation at several lags.
 - **For the method.** Published residual maps from the 1960s–70s can still yield quantitative constraints when combined with a modern forward model and appropriate nulls.
 
-## 6. Limitations
+## 7. Limitations
 
 - **Forward model:** simplified, without Geant4. The acceptance and normalisation agree with Alvarez's Fig. 9 only approximately (≈25 % at the edges), which matters most in the 35°–45° band.
-- **Alvarez's fit:** we do not refit it. Its free parameters, such as the north–south sensitivity variation he introduced, could have absorbed part of the footprint of a large diffuse cavity. The exclusion is therefore most reliable for compact cavities.
+- **Alvarez's fit:** we use his prediction as the template (Section 5). An independent refit would require reconstructing his instrument. A large diffuse cavity could have been partly absorbed by his fit; the exclusion is most reliable for compact cavities.
 - **Rounding:** the residuals are rounded to integer σ.
 - **Null model:** stationary and Gaussian. It reproduces the measured correlations only approximately.
-- **Next step:** transcribing Figs. 8 and 9 would allow a full refit.
 
 ## Data and code
 
@@ -156,7 +179,9 @@ Everything is open at https://github.com/decalion89/pir-mides-:
 - `simulador/reanalisis_alvarez.py`
 - `simulador/exclusion_alvarez.py`
 - `simulador/significacion_global_alvarez.py`
-- results in `resultados/23_*.json`, `resultados/24_*.json` and `resultados/24b_*.json`
+- `datos/alvarez_1970/fig8_medidos.csv`, `datos/alvarez_1970/fig9_predichos.csv`
+- `simulador/reajuste_alvarez.py`
+- results in `resultados/23_*.json`, `resultados/24_*.json`, `resultados/24b_*.json` and `resultados/34_*.json`
 
 ## References
 

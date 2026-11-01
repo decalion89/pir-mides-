@@ -100,6 +100,7 @@ Transcribimos y reanalizamos el mapa de residuos que Alvarez publicó en 1970: 8
 - **Tienen estructura espacial clara** (p < 0,0005). Su exceso de χ² (905 para ~750) se debe a errores sistemáticos con correlación espacial, no a ruido.
 - **No hay ninguna agrupación significativa** que indique una cámara oculta: la mayor da p = 0,03–0,04, y ninguna pasa de ~2σ al contar que se buscó de seis maneras.
 - La pista de los estudiantes del CERN (acimut 62–72°) no aparece.
+- **Comprobación con las cuentas en bruto (figs. 8 y 9, 1 800 casillas transcritas y verificadas):** un reanálisis con estadística de Poisson da la misma exclusión (26 % al 95 %) y ningún candidato significativo (p = 0,44). Un reajuste totalmente independiente de Alvarez no es posible: las zonas muertas de su detector no se pueden imitar con una corrección suave.
 
 ### 13. Lo que excluyen de verdad los datos de Alvarez → [docs/20](docs/20-lo-que-excluyen-los-datos-de-alvarez.md)
 Comparamos cada posible cámara con los 801 residuos reales publicados en 1970.

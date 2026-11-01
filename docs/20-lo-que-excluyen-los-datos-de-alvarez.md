@@ -74,3 +74,29 @@ Todas las casillas con Δχ² ≥ 3,84 están excluidas al 95 %. Los datos de Al
 - Alvarez, L. W. et al. (1970). *Search for hidden chambers in the pyramids*. Science 167, 832–839 (p. 834: posición del equipo; figuras 8–10, p. 836).
 - Gutowski, B. et al. (2017). *The secret chambers in the Chephren Pyramid*. arXiv:1712.08590.
 - Gamal, M., Aly, S., Kouzes, R. et al. (2025). *The ScIDEP muon radiography project at the Egyptian Pyramid of Khafre*. arXiv:2503.21959.
+
+## 5. Comprobación con las cuentas en bruto (figuras 8 y 9)
+Alvarez publicó también las cuentas medidas (figura 8) y las predichas por su ajuste (figura 9). Las hemos transcrito con verificación visual de las 1 800 casillas ([`datos/alvarez_1970/`](../datos/alvarez_1970/)).
+- **Coherencia con la figura 10:** coinciden con ella en 799 de 801 casillas, con una correlación de 0,96 respecto a la transcripción de la figura 10.
+- **Totales:** suman 649 034 muones medidos, los "~650 000" del artículo.
+- **χ² de Alvarez recalculado:** 983 (él publicó 905).
+
+**¿Un reajuste totalmente independiente?** Probamos a sustituir su predicción por nuestro modelo de la pirámide, con una corrección suave para la aceptancia ([`simulador/reajuste_alvarez.py`](../simulador/reajuste_alvarez.py), plantilla "modelo"). **No funciona:** χ² = 5 000–11 000 para ~790 grados de libertad. Su detector tenía zonas muertas entre las cámaras de chispas y secciones en los contadores, que dejan una huella con bordes nítidos que ninguna corrección suave reproduce. Sin reconstruir el instrumento de 1969, la predicción de Alvarez es imprescindible como plantilla.
+
+**Reanálisis con estadística de Poisson.**
+- **Ajuste:** N_pred = N_Alvarez · exp(polinomio de grado 2 en θ y φ), por máxima verosimilitud de Poisson. Da χ² = 958 para 795 grados de libertad, y sus residuos se correlacionan en 0,99 con los de Alvarez.
+- **Huella de cada cámara:** nuestro modelo da solo el cambio relativo de flujo, y se perfila sobre los parámetros de la corrección.
+- **Significación global:** se calcula con nulas correlacionadas calibradas en estos residuos.
+
+Así desaparecen dos aproximaciones del análisis anterior: el redondeo a σ enteras y el factor κ improvisado. El resultado está en [`resultados/34_reajuste_alvarez_alvarez_grado2.json`](../resultados/34_reajuste_alvarez_alvarez_grado2.json).
+
+| | Con los residuos (§2) | Con las cuentas en bruto |
+|---|---|---|
+| Cámara tipo Rey excluida al 95 % | 25 % | **26 %** |
+| A 5σ nominal | 11 % | **14 %** |
+| Dentro del cono, al 95 % / a 5σ | 92 % / 47 % | **95 % / 57 %** |
+| Fuera del cono, al 95 % (fracción del total) | 7,0 % | **7,3 %** |
+| Cubo de 8 m excluido al 95 % / a 5σ | 33 % / 24 % | **34 % / 27 %** |
+| Mejor candidato (cámara tipo Rey): Δχ², p global | −11,9; 0,61 | **−10,8 en (24, −16, 92) m; 0,44** |
+
+**Los dos métodos coinciden.** El mapa de exclusión no depende del redondeo de la figura 10 ni de cómo se trate la dispersión de los residuos.

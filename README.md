@@ -72,10 +72,10 @@ Con los datos de la tabla de Spence (2000) y solo estrellas visibles:
 - **La lección para la Luna**: núcleo basto y revestimiento fino, menos rozamiento antes que más potencia, y vías en paralelo.
 
 ### 10. El mapa de lo inexplorado → [docs/17](docs/17-mapa-de-lo-inexplorado.md)
-Primer mapa de exclusión muográfico de la Gran Pirámide, construido con las 14 campañas publicadas (2016–2020), calibradas con sus significaciones:
-- **En el 66 % del volumen podría haber un hueco de 8 m de lado sin que ningún detector lo hubiera visto** (73 % para 5 m).
-- El 85 % de lo inexplorado está por debajo de 40 m: ningún detector ha mirado nunca la base de la pirámide.
-- **Un detector de 1 m² en la Cámara Subterránea durante 100 días pasaría la cobertura del 34 % al 61 %.** Ningún otro puesto accesible se le acerca.
+Mapa de sensibilidad muográfica de la Gran Pirámide, construido con las 14 campañas publicadas (2016–2020) y calibrado con sus significaciones. Que sepamos, es el primero desde el de Alvarez para Kefrén (1970):
+- **En el 59–66 % del volumen podría haber un hueco de 8 m de lado sin que ningún detector lo hubiera visto a 5σ** (72–73 % para 5 m).
+- La base es lo menos explorado: en los 20 m inferiores, ≥ 94 %. Ningún detector interior la ha tenido nunca en su campo de visión.
+- **Un detector de 1 m² en la Cámara Subterránea durante 100 días pasaría la cobertura para huecos de 8 m del 34 % al 53 %.** Ningún otro puesto accesible se le acerca.
 
 ### 11. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
@@ -99,7 +99,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [14 — Los canales: ¿estrellas o proporciones?](docs/14-canales-estrellas-o-proporciones.md) | Astronomía de precisión y prueba contra el azar de la hipótesis estelar; patrón de pendientes n/11 |
 | [15 — ¿Cómo encontraron el norte?](docs/15-orientacion-al-norte.md) | 92 pares de estrellas contra las orientaciones medidas: la deriva es real, pero no sirve para fechar |
 | [16 — De Giza a la Luna](docs/16-de-giza-a-la-luna.md) | La Gran Pirámide costó ~2,5 GWh de trabajo mecánico (25 h de una central de 100 MW); lecciones para construir en la Luna |
-| [17 — El mapa de lo inexplorado](docs/17-mapa-de-lo-inexplorado.md) | Qué parte de la pirámide han explorado de verdad los muones, y dónde medir: la Cámara Subterránea |
+| [17 — El mapa de lo inexplorado](docs/17-mapa-de-lo-inexplorado.md) | Qué parte de la pirámide han explorado de verdad los muones (59–66 % sin explorar para huecos de 8 m), y dónde medir: la Cámara Subterránea |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |
 | [PROPUESTA_SCANPYRAMIDS_en.md](PROPUESTA_SCANPYRAMIDS_en.md) | Propuesta técnica en inglés para los equipos de muografía: la medición desde la Cámara del Rey |

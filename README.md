@@ -166,7 +166,13 @@ Dos cosas más:
 - La altura del Vacío que da KEK depende casi por completo de la separación H1–H2: es la paralaje.
 - Corregimos una propuesta del doc. 31. La Gran Galería no puede fijar la posición absoluta de KEK, porque se cancela en sus cocientes.
 
-### 26. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 26. ¿A cuántos metros está el Gran Vacío? → [docs/33](docs/33-a-cuantos-metros-esta-el-gran-vacio.md)
+Con posteriores de su geometría (emulsiones, KEK y conjunto), medimos cuánta piedra separa el Vacío de los espacios accesibles.
+- **Ninguno está a menos de 5 m** con probabilidad apreciable (≤ 15 %). Una confirmación con endoscopio como la del corredor norte no es posible.
+- **Lo más cercano, de forma robusta, es la pared norte de las cámaras de descarga 4 y 5:** ~8 m, y < 10 m con una probabilidad del 86–99,8 % en los tres análisis.
+- **Hallazgo de método:** los datos publicados solo miran hacia el norte. El extremo sur lo fija una frase del artículo, y con ella coincide con el final de la Gran Galería.
+
+### 27. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -204,6 +210,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [30 — La ley de la mitad](docs/30-la-ley-de-la-mitad.md) | Un error de modelo fabrica un hueco vacío si imita más de la mitad de su señal (ρ > ½), sea cual sea la exposición; con contraste libre, Z_falso = ρ·Z_real |
 | [31 — KEK se certifica a sí mismo](docs/31-kek-se-certifica-a-si-mismo.md) | Los datos de KEK fijan su registro con la simulación a < 0,1–0,25 m: descartan el falso vacío; la tensión con las emulsiones no viene de ahí |
 | [32 — Sistemáticos de KEK](docs/32-sistematicos-de-kek.md) | Ni posición, ni paralaje, ni escala angular de KEK explican la tensión con las emulsiones (≥ 58 con valores plausibles) |
+| [33 — A cuántos metros está el Gran Vacío](docs/33-a-cuantos-metros-esta-el-gran-vacio.md) | Ningún espacio accesible a menos de 5 m; lo más cercano, las cámaras de descarga 4–5 (~8 m); sin endoscopio posible |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

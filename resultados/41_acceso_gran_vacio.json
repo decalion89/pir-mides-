@@ -1,0 +1,1590 @@
+{
+ "espacios_accesibles": [
+  "Gran Galería",
+  "Antecámara y pasaje",
+  "Cámara del Rey",
+  "Cámara de descarga 1",
+  "Cámara de descarga 2",
+  "Cámara de descarga 3",
+  "Cámara de descarga 4",
+  "Cámara de descarga 5"
+ ],
+ "prior_extremo_sur_y": [
+  -5.0,
+  5.0
+ ],
+ "posteriores": {
+  "E": {
+   "extremo_sur_y": {
+    "p05": -4.68,
+    "mediana": -1.57,
+    "p95": 1.86
+   },
+   "chi2_minimo": 81.0,
+   "mejor_ajuste": [
+    7.49,
+    13.58,
+    61.88,
+    37.5,
+    4.82,
+    3.93,
+    7.6
+   ],
+   "aceptacion": 0.21,
+   "muestras_validas": 1500,
+   "muestras": 1500,
+   "geometria": {
+    "x": {
+     "mediana": 7.48,
+     "p05": 7.3,
+     "p95": 7.69
+    },
+    "y": {
+     "mediana": 15.29,
+     "p05": 13.22,
+     "p95": 17.43
+    },
+    "z": {
+     "mediana": 62.17,
+     "p05": 60.21,
+     "p95": 64.12
+    },
+    "largo": {
+     "mediana": 34.58,
+     "p05": 30.19,
+     "p95": 38.34
+    },
+    "alto": {
+     "mediana": 5.32,
+     "p05": 4.14,
+     "p95": 7.69
+    },
+    "ancho": {
+     "mediana": 3.44,
+     "p05": 2.02,
+     "p95": 4.69
+    },
+    "inclinacion": {
+     "mediana": 10.11,
+     "p05": -1.24,
+     "p95": 21.2
+    }
+   },
+   "piedra_hasta_espacio": {
+    "Gran Galería": {
+     "mediana": 12.04,
+     "p05": 8.48,
+     "p95": 15.08,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.171
+     }
+    },
+    "Antecámara y pasaje": {
+     "mediana": 15.5,
+     "p05": 11.61,
+     "p95": 18.8,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.008
+     }
+    },
+    "Cámara del Rey": {
+     "mediana": 15.59,
+     "p05": 11.43,
+     "p95": 19.44,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.013
+     }
+    },
+    "Cámara de descarga 1": {
+     "mediana": 13.73,
+     "p05": 9.68,
+     "p95": 17.53,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.065
+     }
+    },
+    "Cámara de descarga 2": {
+     "mediana": 11.28,
+     "p05": 7.45,
+     "p95": 14.87,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.001,
+      "10": 0.278
+     }
+    },
+    "Cámara de descarga 3": {
+     "mediana": 9.24,
+     "p05": 5.7,
+     "p95": 12.64,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.019,
+      "10": 0.641
+     }
+    },
+    "Cámara de descarga 4": {
+     "mediana": 7.87,
+     "p05": 4.76,
+     "p95": 11.0,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.07,
+      "10": 0.859
+     }
+    },
+    "Cámara de descarga 5": {
+     "mediana": 7.32,
+     "p05": 4.23,
+     "p95": 10.49,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.155,
+      "10": 0.904
+     }
+    }
+   },
+   "mejor_punto_por_profundidad": {
+    "2": {
+     "lugar": "techo de la Gran Galería",
+     "punto": [
+      7.3,
+      1.24,
+      49.58
+     ],
+     "probabilidad": 0.0
+    },
+    "3": {
+     "lugar": "techo de la Gran Galería",
+     "punto": [
+      7.3,
+      1.24,
+      49.58
+     ],
+     "probabilidad": 0.0
+    },
+    "5": {
+     "lugar": "Cámara de descarga 5, pared norte",
+     "punto": [
+      6.56,
+      -9.04,
+      62.84
+     ],
+     "probabilidad": 0.147
+    },
+    "10": {
+     "lugar": "Cámara de descarga 5, pared norte",
+     "punto": [
+      6.56,
+      -9.04,
+      62.84
+     ],
+     "probabilidad": 0.899
+    }
+   },
+   "perfil_techo_galeria": [
+    {
+     "y": 1.2,
+     "z": 49.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.171,
+     "distancia_mediana": 12.04
+    },
+    {
+     "y": 2.1,
+     "z": 49.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.123,
+     "distancia_mediana": 12.28
+    },
+    {
+     "y": 3.0,
+     "z": 48.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.091,
+     "distancia_mediana": 12.56
+    },
+    {
+     "y": 3.9,
+     "z": 48.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.066,
+     "distancia_mediana": 12.83
+    },
+    {
+     "y": 4.8,
+     "z": 47.8,
+     "prob_5m": 0.0,
+     "prob_10m": 0.041,
+     "distancia_mediana": 13.09
+    },
+    {
+     "y": 5.7,
+     "z": 47.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.021,
+     "distancia_mediana": 13.36
+    },
+    {
+     "y": 6.6,
+     "z": 47.0,
+     "prob_5m": 0.0,
+     "prob_10m": 0.013,
+     "distancia_mediana": 13.65
+    },
+    {
+     "y": 7.5,
+     "z": 46.5,
+     "prob_5m": 0.0,
+     "prob_10m": 0.005,
+     "distancia_mediana": 13.91
+    },
+    {
+     "y": 8.4,
+     "z": 46.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.003,
+     "distancia_mediana": 14.17
+    },
+    {
+     "y": 9.3,
+     "z": 45.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.001,
+     "distancia_mediana": 14.42
+    },
+    {
+     "y": 10.2,
+     "z": 45.2,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 14.71
+    },
+    {
+     "y": 11.1,
+     "z": 44.8,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 14.97
+    },
+    {
+     "y": 12.0,
+     "z": 44.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 15.19
+    },
+    {
+     "y": 12.9,
+     "z": 43.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 15.48
+    },
+    {
+     "y": 13.8,
+     "z": 43.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 15.77
+    },
+    {
+     "y": 14.7,
+     "z": 43.0,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 16.06
+    },
+    {
+     "y": 15.6,
+     "z": 42.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 16.34
+    },
+    {
+     "y": 16.5,
+     "z": 42.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 16.64
+    },
+    {
+     "y": 17.4,
+     "z": 41.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 16.9
+    },
+    {
+     "y": 18.3,
+     "z": 41.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 17.19
+    },
+    {
+     "y": 19.2,
+     "z": 40.8,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 17.47
+    },
+    {
+     "y": 20.1,
+     "z": 40.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 17.76
+    },
+    {
+     "y": 21.0,
+     "z": 39.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 18.06
+    },
+    {
+     "y": 21.9,
+     "z": 39.5,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 18.32
+    },
+    {
+     "y": 22.8,
+     "z": 39.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 18.64
+    },
+    {
+     "y": 23.7,
+     "z": 38.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 18.92
+    },
+    {
+     "y": 24.6,
+     "z": 38.2,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 19.21
+    },
+    {
+     "y": 25.5,
+     "z": 37.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 19.52
+    },
+    {
+     "y": 26.4,
+     "z": 37.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 19.82
+    },
+    {
+     "y": 27.3,
+     "z": 36.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 20.1
+    },
+    {
+     "y": 28.2,
+     "z": 36.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 20.41
+    },
+    {
+     "y": 29.1,
+     "z": 36.0,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 20.71
+    },
+    {
+     "y": 30.0,
+     "z": 35.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 21.04
+    },
+    {
+     "y": 30.9,
+     "z": 35.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 21.42
+    },
+    {
+     "y": 31.8,
+     "z": 34.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 21.83
+    },
+    {
+     "y": 32.7,
+     "z": 34.2,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 22.25
+    },
+    {
+     "y": 33.6,
+     "z": 33.8,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 22.77
+    },
+    {
+     "y": 34.5,
+     "z": 33.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 23.3
+    },
+    {
+     "y": 35.4,
+     "z": 32.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 23.83
+    },
+    {
+     "y": 36.3,
+     "z": 32.5,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 24.42
+    },
+    {
+     "y": 37.2,
+     "z": 32.0,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 25.03
+    },
+    {
+     "y": 38.1,
+     "z": 31.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 25.67
+    },
+    {
+     "y": 39.0,
+     "z": 31.2,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 26.33
+    },
+    {
+     "y": 39.9,
+     "z": 30.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 27.02
+    },
+    {
+     "y": 40.8,
+     "z": 30.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 27.73
+    },
+    {
+     "y": 41.7,
+     "z": 29.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 28.47
+    },
+    {
+     "y": 42.6,
+     "z": 29.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.0,
+     "distancia_mediana": 29.22
+    }
+   ]
+  },
+  "K": {
+   "extremo_sur_y": {
+    "p05": -3.96,
+    "mediana": -0.99,
+    "p95": 0.13
+   },
+   "chi2_minimo": 662.8,
+   "mejor_ajuste": [
+    7.96,
+    23.47,
+    49.64,
+    53.62,
+    2.52,
+    3.75,
+    24.28
+   ],
+   "aceptacion": 0.29,
+   "muestras_validas": 1460,
+   "muestras": 1500,
+   "geometria": {
+    "x": {
+     "mediana": 7.96,
+     "p05": 7.77,
+     "p95": 8.12
+    },
+    "y": {
+     "mediana": 22.12,
+     "p05": 11.67,
+     "p95": 32.35
+    },
+    "z": {
+     "mediana": 50.42,
+     "p05": 45.77,
+     "p95": 55.28
+    },
+    "largo": {
+     "mediana": 52.56,
+     "p05": 28.93,
+     "p95": 72.12
+    },
+    "alto": {
+     "mediana": 2.48,
+     "p05": 2.29,
+     "p95": 2.66
+    },
+    "ancho": {
+     "mediana": 3.81,
+     "p05": 3.48,
+     "p95": 4.1
+    },
+    "inclinacion": {
+     "mediana": 25.16,
+     "p05": 14.42,
+     "p95": 34.3
+    }
+   },
+   "piedra_hasta_espacio": {
+    "Gran Galería": {
+     "mediana": 7.04,
+     "p05": 3.36,
+     "p95": 9.86,
+     "prob_menos_de": {
+      "1": 0.015,
+      "2": 0.02,
+      "3": 0.041,
+      "5": 0.145,
+      "10": 0.962
+     }
+    },
+    "Antecámara y pasaje": {
+     "mediana": 11.93,
+     "p05": 9.03,
+     "p95": 14.54,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.143
+     }
+    },
+    "Cámara del Rey": {
+     "mediana": 13.5,
+     "p05": 10.39,
+     "p95": 16.5,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.027
+     }
+    },
+    "Cámara de descarga 1": {
+     "mediana": 11.82,
+     "p05": 8.89,
+     "p95": 14.74,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.168
+     }
+    },
+    "Cámara de descarga 2": {
+     "mediana": 9.61,
+     "p05": 7.15,
+     "p95": 12.3,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.007,
+      "10": 0.606
+     }
+    },
+    "Cámara de descarga 3": {
+     "mediana": 8.2,
+     "p05": 5.63,
+     "p95": 10.2,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.029,
+      "10": 0.936
+     }
+    },
+    "Cámara de descarga 4": {
+     "mediana": 7.74,
+     "p05": 4.98,
+     "p95": 9.06,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.051,
+      "10": 0.998
+     }
+    },
+    "Cámara de descarga 5": {
+     "mediana": 8.01,
+     "p05": 5.16,
+     "p95": 9.47,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.038,
+      "10": 0.984
+     }
+    }
+   },
+   "mejor_punto_por_profundidad": {
+    "2": {
+     "lugar": "techo de la Gran Galería",
+     "punto": [
+      7.3,
+      41.69,
+      29.86
+     ],
+     "probabilidad": 0.01
+    },
+    "3": {
+     "lugar": "techo de la Gran Galería",
+     "punto": [
+      7.3,
+      36.29,
+      32.49
+     ],
+     "probabilidad": 0.016
+    },
+    "5": {
+     "lugar": "techo de la Gran Galería",
+     "punto": [
+      7.3,
+      27.31,
+      36.87
+     ],
+     "probabilidad": 0.066
+    },
+    "10": {
+     "lugar": "Cámara de descarga 4, pared norte",
+     "punto": [
+      6.56,
+      -9.04,
+      59.74
+     ],
+     "probabilidad": 0.997
+    }
+   },
+   "perfil_techo_galeria": [
+    {
+     "y": 1.2,
+     "z": 49.6,
+     "prob_5m": 0.028,
+     "prob_10m": 0.864,
+     "distancia_mediana": 8.25
+    },
+    {
+     "y": 2.1,
+     "z": 49.1,
+     "prob_5m": 0.026,
+     "prob_10m": 0.866,
+     "distancia_mediana": 8.25
+    },
+    {
+     "y": 3.0,
+     "z": 48.7,
+     "prob_5m": 0.023,
+     "prob_10m": 0.87,
+     "distancia_mediana": 8.25
+    },
+    {
+     "y": 3.9,
+     "z": 48.3,
+     "prob_5m": 0.018,
+     "prob_10m": 0.873,
+     "distancia_mediana": 8.22
+    },
+    {
+     "y": 4.8,
+     "z": 47.8,
+     "prob_5m": 0.018,
+     "prob_10m": 0.882,
+     "distancia_mediana": 8.2
+    },
+    {
+     "y": 5.7,
+     "z": 47.4,
+     "prob_5m": 0.017,
+     "prob_10m": 0.873,
+     "distancia_mediana": 8.2
+    },
+    {
+     "y": 6.6,
+     "z": 47.0,
+     "prob_5m": 0.016,
+     "prob_10m": 0.878,
+     "distancia_mediana": 8.2
+    },
+    {
+     "y": 7.5,
+     "z": 46.5,
+     "prob_5m": 0.016,
+     "prob_10m": 0.875,
+     "distancia_mediana": 8.17
+    },
+    {
+     "y": 8.4,
+     "z": 46.1,
+     "prob_5m": 0.005,
+     "prob_10m": 0.867,
+     "distancia_mediana": 8.22
+    },
+    {
+     "y": 9.3,
+     "z": 45.6,
+     "prob_5m": 0.004,
+     "prob_10m": 0.862,
+     "distancia_mediana": 8.23
+    },
+    {
+     "y": 10.2,
+     "z": 45.2,
+     "prob_5m": 0.008,
+     "prob_10m": 0.855,
+     "distancia_mediana": 8.22
+    },
+    {
+     "y": 11.1,
+     "z": 44.8,
+     "prob_5m": 0.011,
+     "prob_10m": 0.851,
+     "distancia_mediana": 8.25
+    },
+    {
+     "y": 12.0,
+     "z": 44.3,
+     "prob_5m": 0.014,
+     "prob_10m": 0.842,
+     "distancia_mediana": 8.26
+    },
+    {
+     "y": 12.9,
+     "z": 43.9,
+     "prob_5m": 0.021,
+     "prob_10m": 0.842,
+     "distancia_mediana": 8.28
+    },
+    {
+     "y": 13.8,
+     "z": 43.4,
+     "prob_5m": 0.021,
+     "prob_10m": 0.84,
+     "distancia_mediana": 8.33
+    },
+    {
+     "y": 14.7,
+     "z": 43.0,
+     "prob_5m": 0.021,
+     "prob_10m": 0.836,
+     "distancia_mediana": 8.37
+    },
+    {
+     "y": 15.6,
+     "z": 42.6,
+     "prob_5m": 0.023,
+     "prob_10m": 0.831,
+     "distancia_mediana": 8.41
+    },
+    {
+     "y": 16.5,
+     "z": 42.1,
+     "prob_5m": 0.029,
+     "prob_10m": 0.818,
+     "distancia_mediana": 8.45
+    },
+    {
+     "y": 17.4,
+     "z": 41.7,
+     "prob_5m": 0.029,
+     "prob_10m": 0.812,
+     "distancia_mediana": 8.48
+    },
+    {
+     "y": 18.3,
+     "z": 41.3,
+     "prob_5m": 0.032,
+     "prob_10m": 0.8,
+     "distancia_mediana": 8.5
+    },
+    {
+     "y": 19.2,
+     "z": 40.8,
+     "prob_5m": 0.035,
+     "prob_10m": 0.79,
+     "distancia_mediana": 8.54
+    },
+    {
+     "y": 20.1,
+     "z": 40.4,
+     "prob_5m": 0.038,
+     "prob_10m": 0.784,
+     "distancia_mediana": 8.55
+    },
+    {
+     "y": 21.0,
+     "z": 39.9,
+     "prob_5m": 0.037,
+     "prob_10m": 0.777,
+     "distancia_mediana": 8.57
+    },
+    {
+     "y": 21.9,
+     "z": 39.5,
+     "prob_5m": 0.042,
+     "prob_10m": 0.766,
+     "distancia_mediana": 8.56
+    },
+    {
+     "y": 22.8,
+     "z": 39.1,
+     "prob_5m": 0.045,
+     "prob_10m": 0.744,
+     "distancia_mediana": 8.61
+    },
+    {
+     "y": 23.7,
+     "z": 38.6,
+     "prob_5m": 0.048,
+     "prob_10m": 0.733,
+     "distancia_mediana": 8.66
+    },
+    {
+     "y": 24.6,
+     "z": 38.2,
+     "prob_5m": 0.058,
+     "prob_10m": 0.709,
+     "distancia_mediana": 8.7
+    },
+    {
+     "y": 25.5,
+     "z": 37.7,
+     "prob_5m": 0.057,
+     "prob_10m": 0.695,
+     "distancia_mediana": 8.79
+    },
+    {
+     "y": 26.4,
+     "z": 37.3,
+     "prob_5m": 0.06,
+     "prob_10m": 0.673,
+     "distancia_mediana": 8.94
+    },
+    {
+     "y": 27.3,
+     "z": 36.9,
+     "prob_5m": 0.066,
+     "prob_10m": 0.657,
+     "distancia_mediana": 9.01
+    },
+    {
+     "y": 28.2,
+     "z": 36.4,
+     "prob_5m": 0.066,
+     "prob_10m": 0.625,
+     "distancia_mediana": 9.06
+    },
+    {
+     "y": 29.1,
+     "z": 36.0,
+     "prob_5m": 0.062,
+     "prob_10m": 0.613,
+     "distancia_mediana": 9.09
+    },
+    {
+     "y": 30.0,
+     "z": 35.6,
+     "prob_5m": 0.064,
+     "prob_10m": 0.598,
+     "distancia_mediana": 9.14
+    },
+    {
+     "y": 30.9,
+     "z": 35.1,
+     "prob_5m": 0.064,
+     "prob_10m": 0.595,
+     "distancia_mediana": 9.22
+    },
+    {
+     "y": 31.8,
+     "z": 34.7,
+     "prob_5m": 0.064,
+     "prob_10m": 0.577,
+     "distancia_mediana": 9.31
+    },
+    {
+     "y": 32.7,
+     "z": 34.2,
+     "prob_5m": 0.063,
+     "prob_10m": 0.56,
+     "distancia_mediana": 9.4
+    },
+    {
+     "y": 33.6,
+     "z": 33.8,
+     "prob_5m": 0.063,
+     "prob_10m": 0.546,
+     "distancia_mediana": 9.51
+    },
+    {
+     "y": 34.5,
+     "z": 33.4,
+     "prob_5m": 0.062,
+     "prob_10m": 0.534,
+     "distancia_mediana": 9.68
+    },
+    {
+     "y": 35.4,
+     "z": 32.9,
+     "prob_5m": 0.056,
+     "prob_10m": 0.516,
+     "distancia_mediana": 9.84
+    },
+    {
+     "y": 36.3,
+     "z": 32.5,
+     "prob_5m": 0.05,
+     "prob_10m": 0.504,
+     "distancia_mediana": 9.92
+    },
+    {
+     "y": 37.2,
+     "z": 32.0,
+     "prob_5m": 0.053,
+     "prob_10m": 0.497,
+     "distancia_mediana": 10.05
+    },
+    {
+     "y": 38.1,
+     "z": 31.6,
+     "prob_5m": 0.05,
+     "prob_10m": 0.49,
+     "distancia_mediana": 10.24
+    },
+    {
+     "y": 39.0,
+     "z": 31.2,
+     "prob_5m": 0.049,
+     "prob_10m": 0.473,
+     "distancia_mediana": 10.46
+    },
+    {
+     "y": 39.9,
+     "z": 30.7,
+     "prob_5m": 0.046,
+     "prob_10m": 0.468,
+     "distancia_mediana": 10.62
+    },
+    {
+     "y": 40.8,
+     "z": 30.3,
+     "prob_5m": 0.047,
+     "prob_10m": 0.456,
+     "distancia_mediana": 10.86
+    },
+    {
+     "y": 41.7,
+     "z": 29.9,
+     "prob_5m": 0.043,
+     "prob_10m": 0.441,
+     "distancia_mediana": 11.06
+    },
+    {
+     "y": 42.6,
+     "z": 29.4,
+     "prob_5m": 0.041,
+     "prob_10m": 0.42,
+     "distancia_mediana": 11.23
+    }
+   ]
+  },
+  "J": {
+   "extremo_sur_y": {
+    "p05": -3.13,
+    "mediana": -0.83,
+    "p95": 0.37
+   },
+   "chi2_minimo": 811.6,
+   "mejor_ajuste": [
+    8.06,
+    19.07,
+    55.04,
+    42.48,
+    2.57,
+    4.15,
+    21.43
+   ],
+   "aceptacion": 0.18,
+   "muestras_validas": 1500,
+   "muestras": 1500,
+   "geometria": {
+    "x": {
+     "mediana": 8.02,
+     "p05": 7.87,
+     "p95": 8.15
+    },
+    "y": {
+     "mediana": 21.11,
+     "p05": 12.71,
+     "p95": 32.33
+    },
+    "z": {
+     "mediana": 54.02,
+     "p05": 49.13,
+     "p95": 57.61
+    },
+    "largo": {
+     "mediana": 47.18,
+     "p05": 29.88,
+     "p95": 71.38
+    },
+    "alto": {
+     "mediana": 2.53,
+     "p05": 2.35,
+     "p95": 2.71
+    },
+    "ancho": {
+     "mediana": 4.17,
+     "p05": 3.9,
+     "p95": 4.5
+    },
+    "inclinacion": {
+     "mediana": 20.58,
+     "p05": 11.12,
+     "p95": 29.25
+    }
+   },
+   "piedra_hasta_espacio": {
+    "Gran Galería": {
+     "mediana": 9.71,
+     "p05": 7.27,
+     "p95": 11.52,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.001,
+      "5": 0.001,
+      "10": 0.608
+     }
+    },
+    "Antecámara y pasaje": {
+     "mediana": 13.49,
+     "p05": 11.06,
+     "p95": 15.99,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.014
+     }
+    },
+    "Cámara del Rey": {
+     "mediana": 14.47,
+     "p05": 11.73,
+     "p95": 17.68,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.005
+     }
+    },
+    "Cámara de descarga 1": {
+     "mediana": 12.74,
+     "p05": 10.12,
+     "p95": 15.9,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.0,
+      "10": 0.04
+     }
+    },
+    "Cámara de descarga 2": {
+     "mediana": 10.46,
+     "p05": 8.16,
+     "p95": 13.33,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.001,
+      "10": 0.339
+     }
+    },
+    "Cámara de descarga 3": {
+     "mediana": 8.78,
+     "p05": 6.89,
+     "p95": 11.07,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.006,
+      "10": 0.856
+     }
+    },
+    "Cámara de descarga 4": {
+     "mediana": 7.99,
+     "p05": 5.87,
+     "p95": 9.38,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.019,
+      "10": 0.987
+     }
+    },
+    "Cámara de descarga 5": {
+     "mediana": 8.02,
+     "p05": 5.95,
+     "p95": 9.33,
+     "prob_menos_de": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "5": 0.017,
+      "10": 0.998
+     }
+    }
+   },
+   "mejor_punto_por_profundidad": {
+    "2": {
+     "lugar": "techo de la Gran Galería",
+     "punto": [
+      7.3,
+      1.24,
+      49.58
+     ],
+     "probabilidad": 0.0
+    },
+    "3": {
+     "lugar": "techo de la Gran Galería",
+     "punto": [
+      7.3,
+      34.5,
+      33.36
+     ],
+     "probabilidad": 0.001
+    },
+    "5": {
+     "lugar": "Cámara de descarga 4, pared norte",
+     "punto": [
+      6.56,
+      -9.04,
+      59.74
+     ],
+     "probabilidad": 0.017
+    },
+    "10": {
+     "lugar": "Cámara de descarga 5, pared norte",
+     "punto": [
+      6.56,
+      -9.04,
+      62.84
+     ],
+     "probabilidad": 0.997
+    }
+   },
+   "perfil_techo_galeria": [
+    {
+     "y": 1.2,
+     "z": 49.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.544,
+     "distancia_mediana": 9.84
+    },
+    {
+     "y": 2.1,
+     "z": 49.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.515,
+     "distancia_mediana": 9.95
+    },
+    {
+     "y": 3.0,
+     "z": 48.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.488,
+     "distancia_mediana": 10.05
+    },
+    {
+     "y": 3.9,
+     "z": 48.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.459,
+     "distancia_mediana": 10.14
+    },
+    {
+     "y": 4.8,
+     "z": 47.8,
+     "prob_5m": 0.0,
+     "prob_10m": 0.415,
+     "distancia_mediana": 10.23
+    },
+    {
+     "y": 5.7,
+     "z": 47.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.386,
+     "distancia_mediana": 10.33
+    },
+    {
+     "y": 6.6,
+     "z": 47.0,
+     "prob_5m": 0.0,
+     "prob_10m": 0.349,
+     "distancia_mediana": 10.4
+    },
+    {
+     "y": 7.5,
+     "z": 46.5,
+     "prob_5m": 0.0,
+     "prob_10m": 0.297,
+     "distancia_mediana": 10.46
+    },
+    {
+     "y": 8.4,
+     "z": 46.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.253,
+     "distancia_mediana": 10.53
+    },
+    {
+     "y": 9.3,
+     "z": 45.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.215,
+     "distancia_mediana": 10.68
+    },
+    {
+     "y": 10.2,
+     "z": 45.2,
+     "prob_5m": 0.0,
+     "prob_10m": 0.184,
+     "distancia_mediana": 10.78
+    },
+    {
+     "y": 11.1,
+     "z": 44.8,
+     "prob_5m": 0.0,
+     "prob_10m": 0.158,
+     "distancia_mediana": 10.9
+    },
+    {
+     "y": 12.0,
+     "z": 44.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.132,
+     "distancia_mediana": 11.02
+    },
+    {
+     "y": 12.9,
+     "z": 43.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.116,
+     "distancia_mediana": 11.11
+    },
+    {
+     "y": 13.8,
+     "z": 43.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.095,
+     "distancia_mediana": 11.2
+    },
+    {
+     "y": 14.7,
+     "z": 43.0,
+     "prob_5m": 0.0,
+     "prob_10m": 0.088,
+     "distancia_mediana": 11.3
+    },
+    {
+     "y": 15.6,
+     "z": 42.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.078,
+     "distancia_mediana": 11.4
+    },
+    {
+     "y": 16.5,
+     "z": 42.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.072,
+     "distancia_mediana": 11.46
+    },
+    {
+     "y": 17.4,
+     "z": 41.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.067,
+     "distancia_mediana": 11.55
+    },
+    {
+     "y": 18.3,
+     "z": 41.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.068,
+     "distancia_mediana": 11.64
+    },
+    {
+     "y": 19.2,
+     "z": 40.8,
+     "prob_5m": 0.0,
+     "prob_10m": 0.065,
+     "distancia_mediana": 11.74
+    },
+    {
+     "y": 20.1,
+     "z": 40.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.061,
+     "distancia_mediana": 11.87
+    },
+    {
+     "y": 21.0,
+     "z": 39.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.061,
+     "distancia_mediana": 11.98
+    },
+    {
+     "y": 21.9,
+     "z": 39.5,
+     "prob_5m": 0.0,
+     "prob_10m": 0.061,
+     "distancia_mediana": 12.07
+    },
+    {
+     "y": 22.8,
+     "z": 39.1,
+     "prob_5m": 0.0,
+     "prob_10m": 0.065,
+     "distancia_mediana": 12.17
+    },
+    {
+     "y": 23.7,
+     "z": 38.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.066,
+     "distancia_mediana": 12.3
+    },
+    {
+     "y": 24.6,
+     "z": 38.2,
+     "prob_5m": 0.0,
+     "prob_10m": 0.064,
+     "distancia_mediana": 12.41
+    },
+    {
+     "y": 25.5,
+     "z": 37.7,
+     "prob_5m": 0.001,
+     "prob_10m": 0.063,
+     "distancia_mediana": 12.5
+    },
+    {
+     "y": 26.4,
+     "z": 37.3,
+     "prob_5m": 0.001,
+     "prob_10m": 0.063,
+     "distancia_mediana": 12.63
+    },
+    {
+     "y": 27.3,
+     "z": 36.9,
+     "prob_5m": 0.001,
+     "prob_10m": 0.063,
+     "distancia_mediana": 12.81
+    },
+    {
+     "y": 28.2,
+     "z": 36.4,
+     "prob_5m": 0.001,
+     "prob_10m": 0.061,
+     "distancia_mediana": 13.0
+    },
+    {
+     "y": 29.1,
+     "z": 36.0,
+     "prob_5m": 0.001,
+     "prob_10m": 0.055,
+     "distancia_mediana": 13.11
+    },
+    {
+     "y": 30.0,
+     "z": 35.6,
+     "prob_5m": 0.001,
+     "prob_10m": 0.057,
+     "distancia_mediana": 13.27
+    },
+    {
+     "y": 30.9,
+     "z": 35.1,
+     "prob_5m": 0.001,
+     "prob_10m": 0.057,
+     "distancia_mediana": 13.44
+    },
+    {
+     "y": 31.8,
+     "z": 34.7,
+     "prob_5m": 0.001,
+     "prob_10m": 0.049,
+     "distancia_mediana": 13.58
+    },
+    {
+     "y": 32.7,
+     "z": 34.2,
+     "prob_5m": 0.001,
+     "prob_10m": 0.049,
+     "distancia_mediana": 13.76
+    },
+    {
+     "y": 33.6,
+     "z": 33.8,
+     "prob_5m": 0.001,
+     "prob_10m": 0.051,
+     "distancia_mediana": 13.96
+    },
+    {
+     "y": 34.5,
+     "z": 33.4,
+     "prob_5m": 0.001,
+     "prob_10m": 0.049,
+     "distancia_mediana": 14.16
+    },
+    {
+     "y": 35.4,
+     "z": 32.9,
+     "prob_5m": 0.001,
+     "prob_10m": 0.045,
+     "distancia_mediana": 14.27
+    },
+    {
+     "y": 36.3,
+     "z": 32.5,
+     "prob_5m": 0.001,
+     "prob_10m": 0.045,
+     "distancia_mediana": 14.55
+    },
+    {
+     "y": 37.2,
+     "z": 32.0,
+     "prob_5m": 0.001,
+     "prob_10m": 0.045,
+     "distancia_mediana": 14.79
+    },
+    {
+     "y": 38.1,
+     "z": 31.6,
+     "prob_5m": 0.0,
+     "prob_10m": 0.046,
+     "distancia_mediana": 15.1
+    },
+    {
+     "y": 39.0,
+     "z": 31.2,
+     "prob_5m": 0.0,
+     "prob_10m": 0.04,
+     "distancia_mediana": 15.48
+    },
+    {
+     "y": 39.9,
+     "z": 30.7,
+     "prob_5m": 0.0,
+     "prob_10m": 0.041,
+     "distancia_mediana": 15.9
+    },
+    {
+     "y": 40.8,
+     "z": 30.3,
+     "prob_5m": 0.0,
+     "prob_10m": 0.041,
+     "distancia_mediana": 16.17
+    },
+    {
+     "y": 41.7,
+     "z": 29.9,
+     "prob_5m": 0.0,
+     "prob_10m": 0.038,
+     "distancia_mediana": 16.46
+    },
+    {
+     "y": 42.6,
+     "z": 29.4,
+     "prob_5m": 0.0,
+     "prob_10m": 0.036,
+     "distancia_mediana": 16.78
+    }
+   ]
+  }
+ }
+}

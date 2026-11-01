@@ -19,8 +19,8 @@ from piramide import geometria as g
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # rampa secuencial azul (más oscuro = hueco más pequeño ya detectable); gris = sin explorar
-COLORES = ["#0d366b", "#1c5cab", "#3987e5", "#6da7ec", "#9ec5f4", "#e4e2dd"]
-ETIQ = ["≤ 2 m", "3 m", "5 m", "8 m", "12 m", "no detectable (> 12 m)"]
+COLORES = ["#0d366b", "#1c5cab", "#3987e5", "#6da7ec", "#9ec5f4", "#e4e2dd", "#1f1f1d"]
+ETIQ = ["≤ 2 m", "3 m", "5 m", "8 m", "12 m", "sin explorar (> 12 m)", "hueco ya conocido"]
 TINTA, TINTA2 = "#1f1f1d", "#6b6a66"
 
 
@@ -53,7 +53,7 @@ def corte(ax, P, cls, eje_fijo, valor, paso, titulo, extra_detectores=()):
     img[iz, ix] = cls[sel]
     cmap = ListedColormap(COLORES)
     cmap.set_bad("white")
-    ax.imshow(np.ma.masked_invalid(img), origin="lower", cmap=cmap, vmin=-0.5, vmax=5.5,
+    ax.imshow(np.ma.masked_invalid(img), origin="lower", cmap=cmap, vmin=-0.5, vmax=6.5,
               extent=(ux[0] - paso / 2, ux[-1] + paso / 2, uz[0] - paso / 2, uz[-1] + paso / 2),
               interpolation="nearest", aspect="equal")
     L = g.SEMILADO
@@ -78,7 +78,7 @@ def main():
     P, Z, T, ocup = d["P"], d["Z_publicadas"], d["tamanos"], d["ocupado"]
     paso = float(np.min(np.diff(np.unique(P[:, 0]))))
     cls = clase(Z, T, 5.0)
-    cls[ocup] = 5
+    cls[ocup] = 6
     pub = cb.campanas_publicadas()
     det = [(c.nombre, c.origen, "o") for c in pub]
     sc = [("propuesto: Cámara Subterránea", np.array([2.0, -3.0, -27.0]), "D")]
@@ -95,8 +95,13 @@ def main():
     corte(axs[1], P, cls, 1, y_sec, paso, f"Corte este-oeste por el centro (y = {y_sec:.0f} m)",
           sc)
     axs[1].set_xlabel("x (m, este +)", fontsize=8, color=TINTA2)
+    from matplotlib.lines import Line2D
     hand = [Patch(color=c, label=l) for c, l in zip(COLORES, ETIQ)]
-    fig.legend(handles=hand, loc="outside lower center", ncol=6, fontsize=8, frameon=False,
+    hand += [Line2D([], [], ls="", marker="o", mfc="white", mec=TINTA, mew=1.2, ms=6,
+                    label="detectores 2016–2020"),
+             Line2D([], [], ls="", marker="D", mfc="white", mec="#c2410c", mew=1.2, ms=6,
+                    label="propuesto: Cámara Subterránea")]
+    fig.legend(handles=hand, loc="outside lower center", ncol=5, fontsize=8, frameon=False,
                title="Menor hueco cúbico que ya se habría detectado (≥ 5σ) con las campañas publicadas",
                title_fontsize=8)
     fig.savefig(os.path.join(RAIZ, "figuras", "08a_mapa_exclusion_cortes.png"), dpi=150)
@@ -122,7 +127,8 @@ def main():
             ax.annotate(nombre.replace("Cámara Subterránea", "+ C. Subterránea")
                         .replace(" (4 m², 1 año)", ", 4 m² × 1 año") +
                         ("" if "4 m²" in nombre else ", 1 m² × 100 d"),
-                        (float(s_key), v), textcoords="offset points", xytext=(8, -3),
+                        (float(s_key), v), textcoords="offset points",
+                        xytext=(8, -14) if (s_key == "5" and "4 m²" not in nombre) else (8, -3),
                         fontsize=7, color=TINTA2)
     ax.set_xlabel("lado del hueco cúbico (m)", fontsize=8, color=TINTA2)
     ax.set_ylabel("% del volumen donde NO se habría visto", fontsize=8, color=TINTA2)

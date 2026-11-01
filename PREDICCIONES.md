@@ -68,3 +68,13 @@ Una medición precisa (±0,2°) del tramo alto, hoy sin medir, del canal norte d
 
 ## P11 — RETIRADA (31/10/2026, revisión independiente)
 > La versión original "predecía" errores de orientación de +23′ a +54′ para las pirámides de la V dinastía. Esos valores **ya estaban publicados** en la tabla 1 de Spence (2000): Sahure −23′ ± 10, Neferirkare +30′ ± 10, Unas +17,1′. No encajan con aquella extrapolación lineal, así que no era una predicción y además era errónea. Ver docs/15 (v2): con el par de Spence, Sahure y Neferirkare encajan y Unas no.
+
+## P12 — Lo que vería un detector en la Cámara Subterránea (doc. 17), registrada el 01/11/2026
+Una campaña de emulsiones de **1 m² durante 100 días** en el suelo de la Cámara Subterránea, mirando hacia arriba (|tanθ| ≤ 1,3), debería:
+1. **ver las estructuras conocidas que tiene encima**, que sirven de calibración en el propio mapa (valores del modelo calibrado, con un margen de un factor ~2): el **bloque de granito de la Cámara del Rey** como déficit de muones a **~23σ**, la **Gran Galería** a **~7σ**, la Cámara de la Reina a ~4σ y la Cámara del Rey a ~4σ. El corredor descendente y el NFC quedan fuera de su campo de visión;
+2. tener sensibilidad de **≥ 5σ a huecos cúbicos de 8 m** en ~28 % del volumen de la pirámide que hoy no está explorado, entre ~6 y ~58 m de altura y en un radio de ~80 m alrededor del eje;
+3. con 4 m² durante 1 año, alcanzar huecos de **5 m** en ~26 % más del volumen.
+
+No predecimos que haya una cámara. Predecimos **qué zona quedará explorada y con qué sensibilidad**, para que un resultado negativo sea tan informativo como uno positivo.
+
+**Qué la refutaría**: que con esa exposición el granito de la Cámara del Rey no se viera por encima de ~10σ, o la Gran Galería por encima de ~3σ. Eso indicaría que la roca madre degrada la sensibilidad mucho más de lo modelado, y que la cobertura de los puntos 2 y 3 es optimista.

@@ -13,12 +13,16 @@ q = R("42_qin_mercurio.json")["A_difusion"]["cociente_lidar_sobre_difusion"]
 h = R("44_herculano_vidrio.json")["ritmo_enfriamiento_craneo_K_s"]
 hv = [v for c in h.values() for v in c.values()]
 s = R("45_saqqara_balance.json")["demanda_de_los_autores_18Mm3"]["fraccion_cubierta_con_perdidas"]
+pb = R("46_plomo_romano.json")["B_balance"]["cociente_articulo_sobre_balance"]
+tk = R("47_tikal_filtro.json")["filtro lento (0,1–0,4 m/h, elimina microbios)"]["fraccion_filtrada_con_50m2"]
 casos = [
     ("Qin Shi Huang tomb:\nmeasured Hg flux / max. diffusive flux", q["mediana"], q["p05"], q["p95"]),
     ("Herculaneum brain:\ninferred cooling rate / max. rate in skull", 1000 / np.median(hv), 1000 / max(hv), 1000 / min(hv)),
     ("Djoser hydraulic lift:\nrequired water / water deliverable", 1 / s["mediana"], 1 / s["p95"], 1 / s["p05"]),
+    ("Roman lead and IQ:\nclaimed blood-lead rise / intake budget", pb["mediana"], pb["p05"], pb["p95"]),
+    ("Tikal zeolite filter:\nreservoir inflow / slow-filter throughput (50 m²)", 1 / tk["mediana"], 1 / tk["p95"], 1 / tk["p05"]),
 ]
-fig, ax = plt.subplots(figsize=(7.2, 3.2))
+fig, ax = plt.subplots(figsize=(7.4, 4.3))
 y = np.arange(len(casos))[::-1]
 for yi, (nom, med, lo, hi) in zip(y, casos):
     ax.plot([lo, hi], [yi, yi], color="#4a6fa5", lw=6, alpha=0.45, solid_capstyle="butt")

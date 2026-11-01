@@ -196,7 +196,7 @@ Landreau et al. (2024) compararon el agua total disponible con la necesaria (18 
 - **Predicción:** limos lacustres en el fondo del Foso Seco.
 
 ### 30. El patrón común: "ceguera al ritmo" → [preprint/ritmo](preprint/ritmo/rate_blindness_en.pdf)
-Los tres casos anteriores (Qin, Herculano, Djoser) fallan igual: razonan con totales, equilibrios o capacidades, e ignoran el ritmo máximo que impone la física (difusión, conducción del calor, almacenamiento entre riadas). Los desajustes van de ×2–9 a ×600–12 500.
+Los cinco casos auditados (Qin, Herculano, Djoser, el plomo romano y Tikal) fallan igual: razonan con totales, equilibrios o capacidades, e ignoran el ritmo máximo que impone la física (difusión, conducción del calor, almacenamiento entre riadas). Los desajustes van de ×2–9 a ×600–12 500. De diez afirmaciones revisadas, cinco fallan.
 
 Artículo de síntesis en inglés, con figura, para enviarlo con el nombre del autor.
 

@@ -1,21 +1,25 @@
 ---
-title: "Rate blindness: three physical-limit audits of high-profile archaeometric claims"
+title: "Rate blindness: five physical-limit audits of high-profile archaeometric claims"
 author: "[AUTHOR NAME AND AFFILIATION — to be completed] · Contact: labix7@gmail.com · Code and data: [REPOSITORY URL]"
 date: "Draft, 1 November 2026"
 ---
 
 # Abstract
-Three recent and widely publicised archaeometric claims reason from a *total*, an *equilibrium* or a *capacity*, while the process they invoke is limited by a *rate*:
+Five recent and widely publicised archaeometric claims reason from a *total*, an *equilibrium*, a *capacity* or a statistical relationship used outside its range, while the process they invoke is limited by a *rate*:
 
 - that mercury vapour from the unopened tomb of Qin Shi Huang escapes through the soil (Duan et al. 2020);
 - that a Herculaneum victim's brain vitrified on cooling at ~1000 K s⁻¹ (Giordano et al. 2025);
-- that the Step Pyramid of Djoser was raised with a flood-fed hydraulic lift (Landreau et al. 2024).
+- that the Step Pyramid of Djoser was raised with a flood-fed hydraulic lift (Landreau et al. 2024);
+- that airborne lead from Roman mining cost 2.5–3 IQ points across the Empire (McConnell et al. 2025);
+- that a zeolite filter purified the drinking water of a Maya reservoir at Tikal (Tankersley et al. 2020).
 
 We call this *rate blindness*. In each case we test the claim against the relevant transport limit, using the authors' own numbers and Monte Carlo propagation of uncertainties. The results:
 
 1. **Qin.** The lidar-measured mercury outflux exceeds the maximum diffusive flux from a saturated chamber by a factor of 19–2,170 (median 163). Only advective exchange can supply it: the tomb would have to "breathe" ~460 m³ of saturated air per day.
 2. **Herculaneum.** The cooling rate inferred from calorimetry exceeds what heat conduction allows inside a skull by a factor of ~600–12,500. At physically possible rates, the authors' own kinetics give a fictive temperature that overlaps the burial temperatures.
 3. **Djoser.** Fed by episodic floods into the proposed reservoirs, the lift receives only 27% (12–55%) of the water the authors themselves compute. The binding constraint is storage between floods, not the total volume.
+4. **Roman lead.** The air-to-blood regression used gives the *total* blood lead of US children in 1988–94, not an increment, and it is applied 10–100× below its calibration range. Differenced correctly it gives 1.4 IQ points; an intake budget (inhalation, crop deposition, soil) gives 0.6 (0.2–1.8). The paper's 2.5–3 points is 2–5× too high.
+5. **Tikal.** A filter slow enough to remove microbes, placed at the reservoir inlet, can pass only ~2% of tropical storm runoff. Treating 90% would need ~6,300 m² of filter bed and ~7,500 t of material carried 30 km.
 
 For each case we give a falsifiable prediction that needs no excavation, or only a sediment core.
 
@@ -74,18 +78,38 @@ They state that the figures "do not account for water losses caused by infiltrat
 
 **Prediction.** If the lift operated, laminated lacustrine silts dating to the 3rd Dynasty will be found at the base of the Dry Moat or the Deep Trench. Flood gravels or aeolian fill alone would refute the only viable water scenario.
 
-# 5. Discussion
-All three papers are careful about their measurements; the gap lies in the step from measurement to mechanism. In each case a rate ceiling, fixed by geometry and textbook transport coefficients, was not checked:
+# 5. Roman lead: a regression's intercept counted as pollution
+**Claim.** McConnell et al. (PNAS 122, e2419630121, 2025) combine Arctic ice-core lead with atmospheric modelling and obtain +1.04 ng m⁻³ of air lead over Europe. They convert this to blood lead with BLL = exp[1.932 + 0.140 ln(PbA)], taking the coefficients from Richmond-Bryant et al. (2014; NHANES III, US children 1988–94, an unadjusted ln–ln model). The result, 2.0–5.3 µg dl⁻¹ (mean 2.4), is treated as an *enhancement* above a separately estimated Neolithic baseline of 1 µg dl⁻¹. It then becomes a deficit of 2.5–3 IQ points.
+
+**Test.**
+- *What the regression predicts.* It gives the total blood lead of children exposed to all sources then present (paint, dust, diet). With almost clean air (0.03 ng m⁻³) it already predicts 1.6 µg dl⁻¹.
+- *Extrapolation.* Its calibration medians are ≥0.011 µg m⁻³, so Roman air is 10–100× below the calibrated range. At that level the implied slope is 355 µg dl⁻¹ per µg m⁻³, against established aggregate slopes of ~2–9.
+- *Correct difference.* Taking BLL(background + ΔC) − BLL(background) for a natural background of 0.01–0.1 ng m⁻³ gives +1.0 µg dl⁻¹ and 1.4 IQ points.
+- *Intake budget.* Inhalation, deposition on food crops and soil enrichment, all using the paper's own >500 kt deposited, together with standard child slope factors, give +0.39 µg dl⁻¹ (0.12–1.4) and 0.6 IQ points (0.2–1.8).
+
+# 6. Tikal: a filter that cannot keep up with tropical rain
+**Claim.** Tankersley et al. (Sci. Rep. 10, 18021, 2020) report zeolite in the Corriental reservoir sediments (~58,000 m³). They propose, in a "hypothetical scheme", an inlet filter of zeolite and quartz sand that "removes harmful microbes" and toxins. The filter sits behind dry-laid walls, is periodically "ejected into the reservoir during flash floods", and is made of material from a tuff ~30 km away.
+
+**Test.** We generated stochastic hourly rainfall (1,500 mm yr⁻¹) over a 5–50 ha catchment with runoff coefficient 0.3–0.7. A filter of area A_f passes at most v·A_f. With slow-sand rates (0.1–0.4 m h⁻¹), the regime that removes pathogens, a 50 m² inlet filter treats 1.8% (0.7–8%) of the annual runoff. Treating 90% needs 6,300 m² (1,340–16,800) and ~7,500 t (1,650–20,800) of imported material, rebuilt after each flood. A rapid filter (5–10 m h⁻¹; ~220 m², ~250 t) is feasible but only clarifies the water.
+
+# 7. Discussion
+All five papers are careful about their measurements; the gap lies in the step from measurement to mechanism. In each case a rate ceiling, fixed by geometry and textbook transport coefficients, was not checked:
 
 - diffusion through soil (Qin);
 - conduction out of a skull (Herculaneum);
-- storage between episodic floods (Djoser).
+- storage between episodic floods (Djoser);
+- intake by an exposed child (Roman lead);
+- the throughput of a filter (Tikal).
 
 The audits change the conclusions in specific ways:
 
 - the Qin tomb is probably not sealed;
 - the Herculaneum glass did not record a 1000 K s⁻¹ quench;
-- the Djoser lift needs a reservoir that has not been identified.
+- the Djoser lift needs a reservoir that has not been identified;
+- the Roman IQ effect is 2–5× smaller than claimed;
+- the Tikal filter could have clarified the water, but not purified it.
+
+The selection is not random. We screened ten widely reported claims with a quick rate check. Five passed it or could not be decided with public data (the ScanPyramids Big Void, which passed a detector-position test; Teotihuacan muography; Mt Echia muography; the Hierapolis Plutonion; and X-ray dating of the Turin Shroud, which shows an internal tension that depends on unmeasured humidity effects), and five failed. A failure rate of five in ten among prominent papers suggests the omission is common rather than exceptional.
 
 Each audit also yields a cheap, decisive test. We suggest that a one-page "rate check" become routine for mechanism claims in archaeometry. The recipe: identify the flux the mechanism requires, compute its physical ceiling with the paper's own geometry, and report the ratio.
 
@@ -93,6 +117,8 @@ Each audit also yields a cheap, decisive test. We suggest that a one-page "rate 
 
 - Each audit uses simplified geometry and literature ranges for transport properties. The conclusions rest on the size of the mismatches (one to four orders of magnitude for Qin and Herculaneum) rather than on precise values.
 - For Djoser the mismatch is a factor of ~2–9 and depends on the palaeoclimate, so we present the result as conditions for viability rather than a refutation.
+- For Roman lead the effect is reduced, not eliminated. Exposure near the mines may have been much larger.
+- For Tikal the catchment and the hourly rainfall are regional ranges, not data from the paper.
 - The Qin result is conditional on the lidar flux.
 
 # Data and code
@@ -101,7 +127,9 @@ All calculations, Monte Carlo inputs and figures are open:
 - Qin: `simulador/qin_mercurio.py` and `simulador/qin_presion_prerregistro.py`;
 - Herculaneum: `simulador/herculano_vidrio.py`;
 - Djoser: `simulador/saqqara_balance_hidrico.py`;
-- results: `resultados/42–45_*.json`.
+- Roman lead: `simulador/plomo_romano.py`;
+- Tikal: `simulador/tikal_filtro.py`;
+- results: `resultados/42–47_*.json`.
 
 The pre-registered predictions are P15–P16 in `PREDICCIONES.md`.
 
@@ -109,6 +137,9 @@ The pre-registered predictions are P15–P16 in `PREDICCIONES.md`.
 - Duan, Z., Zhang, W. & Svanberg, S. Mercury as a geophysical tracer gas — emissions from the Emperor Qin tomb in Xi'an studied by laser radar. *Sci. Rep.* 10, 10387 (2020).
 - Giordano, G. et al. Unique formation of organic glass from a human brain in the Vesuvius eruption of 79 CE. *Sci. Rep.* 15, 5955 (2025).
 - Landreau, X. et al. On the possible use of hydraulic force to assist with building the step pyramid of Saqqara. *PLOS ONE* 19, e0306690 (2024).
+- McConnell, J. R. et al. Pan-European atmospheric lead pollution, enhanced blood lead levels, and cognitive decline from Roman-era mining and smelting. *PNAS* 122, e2419630121 (2025).
+- Richmond-Bryant, J. et al. The influence of declining air lead levels on blood lead–air lead slope factors in children. *Environ. Health Perspect.* 122, 754–760 (2014).
+- Tankersley, K. B. et al. Zeolite water purification at Tikal, an ancient Maya city in Guatemala. *Sci. Rep.* 10, 18021 (2020).
 - Millington, R. J. & Quirk, J. P. Permeability of porous solids. *Trans. Faraday Soc.* 57, 1200–1207 (1961).
 - Moynihan, C. T. et al. Dependence of the fictive temperature of glass on cooling rate. *J. Am. Ceram. Soc.* 59, 12–16 (1976).
 - Thomas, R. M. E. & Sparks, R. S. J. Cooling of tephra during fallout from eruption columns. *Bull. Volcanol.* 54, 542–553 (1992).

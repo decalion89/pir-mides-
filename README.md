@@ -195,7 +195,12 @@ Landreau et al. (2024) compararon el agua total disponible con la necesaria (18 
 - **Solo funciona** con un depósito profundo de millones de m³, uso optimizado y ≥ 1–2 riadas al año.
 - **Predicción:** limos lacustres en el fondo del Foso Seco.
 
-### 30. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 30. El patrón común: "ceguera al ritmo" → [preprint/ritmo](preprint/ritmo/rate_blindness_en.pdf)
+Los tres casos anteriores (Qin, Herculano, Djoser) fallan igual: razonan con totales, equilibrios o capacidades, e ignoran el ritmo máximo que impone la física (difusión, conducción del calor, almacenamiento entre riadas). Los desajustes van de ×2–9 a ×600–12 500.
+
+Artículo de síntesis en inglés, con figura, para enviarlo con el nombre del autor.
+
+### 31. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[AUTHOR NAME AND AFFILIATION — to be completed] · Contact: labix7@gmail.com · Code and data: [REPOSITORY URL]" />
+  <title>Rate blindness: three physical-limit audits of high-profile archaeometric claims</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">body{font-family:"Times New Roman",Georgia,serif;max-width:760px;margin:auto;line-height:1.45;font-size:11pt;color:#1f2933}
+  h1{font-size:14pt;margin-top:1.4em}h1.title{font-size:17pt;text-align:center}
+  p.author,p.date{text-align:center;color:#555}
+  table{border-collapse:collapse;margin:0.8em 0;font-size:9.5pt}td,th{border:1px solid #bbb;padding:3px 6px}
+  img{max-width:100%}figure{margin:1em 0;text-align:center}figcaption{font-size:9pt;color:#555}
+  code{font-size:9pt}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rate blindness: three physical-limit audits of
+high-profile archaeometric claims</h1>
+<p class="author">[AUTHOR NAME AND AFFILIATION — to be completed] ·
+Contact: labix7@gmail.com · Code and data: [REPOSITORY URL]</p>
+<p class="date">Draft, 1 November 2026</p>
+</header>
+<h1 id="abstract">Abstract</h1>
+<p>Three recent and widely publicised archaeometric claims reason from a
+<em>total</em>, an <em>equilibrium</em> or a <em>capacity</em>, while
+the process they invoke is limited by a <em>rate</em>:</p>
+<ul>
+<li>that mercury vapour from the unopened tomb of Qin Shi Huang escapes
+through the soil (Duan et al. 2020);</li>
+<li>that a Herculaneum victim’s brain vitrified on cooling at ~1000 K
+s⁻¹ (Giordano et al. 2025);</li>
+<li>that the Step Pyramid of Djoser was raised with a flood-fed
+hydraulic lift (Landreau et al. 2024).</li>
+</ul>
+<p>We call this <em>rate blindness</em>. In each case we test the claim
+against the relevant transport limit, using the authors’ own numbers and
+Monte Carlo propagation of uncertainties. The results:</p>
+<ol type="1">
+<li><strong>Qin.</strong> The lidar-measured mercury outflux exceeds the
+maximum diffusive flux from a saturated chamber by a factor of 19–2,170
+(median 163). Only advective exchange can supply it: the tomb would have
+to “breathe” ~460 m³ of saturated air per day.</li>
+<li><strong>Herculaneum.</strong> The cooling rate inferred from
+calorimetry exceeds what heat conduction allows inside a skull by a
+factor of ~600–12,500. At physically possible rates, the authors’ own
+kinetics give a fictive temperature that overlaps the burial
+temperatures.</li>
+<li><strong>Djoser.</strong> Fed by episodic floods into the proposed
+reservoirs, the lift receives only 27% (12–55%) of the water the authors
+themselves compute. The binding constraint is storage between floods,
+not the total volume.</li>
+</ol>
+<p>For each case we give a falsifiable prediction that needs no
+excavation, or only a sediment core.</p>
+<figure>
+<img src="fig1_rate_blindness.png"
+alt="Each claim divided by the relevant physical rate limit (median and 90% range of the Monte Carlo). A value of 1 is the largest the physics allows." />
+<figcaption aria-hidden="true">Each claim divided by the relevant
+physical rate limit (median and 90% range of the Monte Carlo). A value
+of 1 is the largest the physics allows.</figcaption>
+</figure>
+<h1 id="the-pattern">1. The pattern</h1>
+<p>Archaeological science often argues from <em>stocks</em>: how much
+mercury is in a tomb, what glass-transition temperature a material
+shows, how much water a catchment provides. Stocks are easy to estimate
+and easy to compare. But each mechanism also needs a <em>flux</em> to
+operate on the stated time scale, and every flux has a ceiling:</p>
+<ul>
+<li>diffusion is limited by D·ΔC/L;</li>
+<li>conductive cooling is limited by k/(ρc·L²);</li>
+<li>a reservoir fed by episodic events is limited by storage capacity,
+overflow and losses.</li>
+</ul>
+<p>When the required rate exceeds the ceiling, the conclusion fails
+however large the stock is. The test is cheap: an order-of-magnitude
+transport calculation with the paper’s own geometry and parameters. In
+the three cases below it changes the conclusion.</p>
+<h1 id="qin-shi-huang-a-tomb-that-cannot-be-sealed">2. Qin Shi Huang: a
+tomb that cannot be sealed</h1>
+<p><strong>Claim.</strong> Duan, Zhang &amp; Svanberg (Sci. Rep. 10,
+10387, 2020) measured atomic mercury above the mound by
+differential-absorption lidar. They estimated an outflux of ≈5×10⁻⁸ kg
+s⁻¹ (uncertain by a factor of ~2) and attributed it to mercury escaping
+from the burial chamber, “possibly through cracks”. The chamber ceiling
+lies ≈30 m below the surrounding ground, under a ≈50 m mound.</p>
+<p><strong>Test.</strong> Mercury vapour above liquid mercury saturates
+at C_sat ≈ 9.4 mg m⁻³ at 15 °C. Steady diffusion through L = 30–80 m of
+compacted loess, with Millington–Quirk diffusivity (porosity 0.30–0.45,
+water saturation 0.3–0.8) and a source area of 4,000–15,400 m², gives at
+most 3×10⁻¹⁰ kg s⁻¹ (90% range 3×10⁻¹¹ to 2×10⁻⁹). This bound ignores
+adsorption, which only lowers the flux further. The measured flux is
+<strong>163× larger (19–2,170×)</strong>, and none of 2×10⁵ Monte Carlo
+draws closes the gap. Even a free-air channel spanning the whole roof
+falls short in 88% of draws. Typical emission from the mound soil (~190
+ppb Hg; 10–100 ng m⁻² h⁻¹) also falls short, by a factor of 9–220.</p>
+<p><strong>Implication.</strong> If the lidar flux is right and the
+source is the tomb, the underground palace must exchange air with the
+atmosphere at ~460 m³ day⁻¹ (145–1,460). Barometric pumping of the
+palace volume can supply this. Using the measured 2016 pressure record
+(Jinghe station, 27 km away), the supply is marginal in summer, mostly
+through the daily pressure tide, and larger in winter.</p>
+<p><strong>Predictions</strong> (pre-registered in a git-timestamped
+repository):</p>
+<ul>
+<li>emission rises when barometric pressure falls;</li>
+<li>soil-gas mercury increases with depth;</li>
+<li>winter emission exceeds summer emission;</li>
+<li>a pre-registered night-by-night ranking of the 2016 campaign.</li>
+</ul>
+<h1 id="herculaneum-a-cooling-rate-heat-cannot-deliver">3. Herculaneum:
+a cooling rate heat cannot deliver</h1>
+<p><strong>Claim.</strong> Giordano et al. (Sci. Rep. 15, 5955, 2025)
+measured DSC onsets of 420 °C at 0.42 K s⁻¹ and 510 °C at 1000 K s⁻¹ on
+glassy fragments (0.5–5 mm) “sampled intact, directly from within the
+skull”. They inferred a natural T_f ≈ 510 °C and cooling “at rates
+comparable with our experimental 1000 K s⁻¹” once a short-lived ash
+cloud dissipated. For the rate they cite cooling of tephra falling
+through air.</p>
+<p><strong>Test.</strong></p>
+<ul>
+<li><em>Cooling.</em> Transient conduction in a heated head (7 cm brain
+plus 6.5 mm bone, initially at 560 °C, convective and radiative loss to
+ambient) gives 0.1–1.7 K s⁻¹ as each point crosses 510 °C. That is
+<strong>~600–12,500× below</strong> the inferred rate. Even free
+fragments in still air reach only 17–720 K s⁻¹ (5 to 0.5 mm).</li>
+<li><em>Fictive temperature.</em> At physically possible rates, the
+paper’s own kinetics (E = 390 kJ mol⁻¹) give T_f ≈ 405–440 °C. This
+overlaps the 315–465 °C burial deposits, the very criterion the authors
+used to reject 420 °C.</li>
+<li><em>Survival.</em> With the same E, the material would soften within
+0.4 s at 465 °C and anneal in minutes to hours at 315–350 °C. The
+present calorimetric signal would record the burial, not the cloud.</li>
+<li><em>Heating.</em> Drying and heating the brain above 510 °C needs
+≥3–40 min of full exposure, which is marginal for a cloud lasting
+“minutes”.</li>
+</ul>
+<p><strong>Prediction.</strong> Measuring the natural T_f with the
+enthalpy area-matching method, instead of equating it with a
+heating-rate onset, will give ≈400–440 °C or less.</p>
+<h1 id="djoser-enough-water-in-total-nowhere-to-keep-it">4. Djoser:
+enough water in total, nowhere to keep it</h1>
+<p><strong>Claim.</strong> Landreau et al. (PLOS ONE 19, e0306690, 2024)
+propose that a float in the 7 × 7 m north shaft raised the stones. Their
+own figures are:</p>
+<ul>
+<li>water needed: up to 18 Mm³ over 20–30 years;</li>
+<li>supply from the Wadi Taflah: 4–54 Mm³ over the same period, which
+they judge sufficient for intermediate values;</li>
+<li>storage: the Gisr el-Mudir basin (220,000–440,000 m³, 1–2 m deep)
+and the Deep Trench (&gt;14,000 m³).</li>
+</ul>
+<p>They state that the figures “do not account for water losses caused
+by infiltration and other factors”. Evaporation is not mentioned.</p>
+<p><strong>Test.</strong> We ran a daily water balance over the
+construction period. Floods arrive as a Poisson process at 0.5–5 per
+year, with the authors’ mean supply. The reservoir loses water to
+overflow, evaporation (1.5–2.7 m yr⁻¹) and infiltration (0.1–3 m yr⁻¹),
+and feeds the lift through the Deep Trench. The results:</p>
+<ul>
+<li>the lift receives <strong>27% (12–55%) of the authors’ own
+demand</strong>, and none of 1,500 runs reaches 90%;</li>
+<li>even with zero evaporation and infiltration it receives only
+37%;</li>
+<li>about half of every flood overflows the basin, and a full basin
+dries out in 4–30 months;</li>
+<li>the scheme becomes viable (88–99%) only with three things together:
+a sealed reservoir of Mm³ scale (for example the whole Dry Moat, 3.5
+Mm³, 20 m deep), optimised lift operation, and ≥1–2 floods per year for
+decades.</li>
+</ul>
+<p><strong>Prediction.</strong> If the lift operated, laminated
+lacustrine silts dating to the 3rd Dynasty will be found at the base of
+the Dry Moat or the Deep Trench. Flood gravels or aeolian fill alone
+would refute the only viable water scenario.</p>
+<h1 id="discussion">5. Discussion</h1>
+<p>All three papers are careful about their measurements; the gap lies
+in the step from measurement to mechanism. In each case a rate ceiling,
+fixed by geometry and textbook transport coefficients, was not
+checked:</p>
+<ul>
+<li>diffusion through soil (Qin);</li>
+<li>conduction out of a skull (Herculaneum);</li>
+<li>storage between episodic floods (Djoser).</li>
+</ul>
+<p>The audits change the conclusions in specific ways:</p>
+<ul>
+<li>the Qin tomb is probably not sealed;</li>
+<li>the Herculaneum glass did not record a 1000 K s⁻¹ quench;</li>
+<li>the Djoser lift needs a reservoir that has not been identified.</li>
+</ul>
+<p>Each audit also yields a cheap, decisive test. We suggest that a
+one-page “rate check” become routine for mechanism claims in
+archaeometry. The recipe: identify the flux the mechanism requires,
+compute its physical ceiling with the paper’s own geometry, and report
+the ratio.</p>
+<p><strong>Limitations.</strong></p>
+<ul>
+<li>Each audit uses simplified geometry and literature ranges for
+transport properties. The conclusions rest on the size of the mismatches
+(one to four orders of magnitude for Qin and Herculaneum) rather than on
+precise values.</li>
+<li>For Djoser the mismatch is a factor of ~2–9 and depends on the
+palaeoclimate, so we present the result as conditions for viability
+rather than a refutation.</li>
+<li>The Qin result is conditional on the lidar flux.</li>
+</ul>
+<h1 id="data-and-code">Data and code</h1>
+<p>All calculations, Monte Carlo inputs and figures are open:</p>
+<ul>
+<li>Qin: <code>simulador/qin_mercurio.py</code> and
+<code>simulador/qin_presion_prerregistro.py</code>;</li>
+<li>Herculaneum: <code>simulador/herculano_vidrio.py</code>;</li>
+<li>Djoser: <code>simulador/saqqara_balance_hidrico.py</code>;</li>
+<li>results: <code>resultados/42–45_*.json</code>.</li>
+</ul>
+<p>The pre-registered predictions are P15–P16 in
+<code>PREDICCIONES.md</code>.</p>
+<h1 id="references">References</h1>
+<ul>
+<li>Duan, Z., Zhang, W. &amp; Svanberg, S. Mercury as a geophysical
+tracer gas — emissions from the Emperor Qin tomb in Xi’an studied by
+laser radar. <em>Sci. Rep.</em> 10, 10387 (2020).</li>
+<li>Giordano, G. et al. Unique formation of organic glass from a human
+brain in the Vesuvius eruption of 79 CE. <em>Sci. Rep.</em> 15, 5955
+(2025).</li>
+<li>Landreau, X. et al. On the possible use of hydraulic force to assist
+with building the step pyramid of Saqqara. <em>PLOS ONE</em> 19,
+e0306690 (2024).</li>
+<li>Millington, R. J. &amp; Quirk, J. P. Permeability of porous solids.
+<em>Trans. Faraday Soc.</em> 57, 1200–1207 (1961).</li>
+<li>Moynihan, C. T. et al. Dependence of the fictive temperature of
+glass on cooling rate. <em>J. Am. Ceram. Soc.</em> 59, 12–16
+(1976).</li>
+<li>Thomas, R. M. E. &amp; Sparks, R. S. J. Cooling of tephra during
+fallout from eruption columns. <em>Bull. Volcanol.</em> 54, 542–553
+(1992).</li>
+<li>NOAA Integrated Surface Database, station 57131 (Jinghe), 2016.</li>
+</ul>
+</body>
+</html>

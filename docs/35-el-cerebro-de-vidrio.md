@@ -86,9 +86,9 @@ El recocido se calcula con el modelo de Tool–Narayanaswamy–Moynihan, con x =
   Las dos se pueden poner a prueba con el método de igualación de áreas (Moynihan): un primer calentamiento y luego un segundo tras un enfriamiento controlado. Así se mide la T_f natural en lugar de suponerla.
 
 ## Qué es nuevo y qué no
-- **No es nuevo:** las críticas cualitativas. Morton-Hayward dijo que los tejidos acuosos se vitrifican en frío, no en caliente; Mauro dudó de la temperatura de la nube; otros, de que el material sea cerebro.
-- **No lo hemos encontrado publicado (búsqueda extendida del 01/11/2026):**
-  - un cálculo de transferencia de calor para el cráneo;
+- **No es nuevo** *(revisado el 01/11/2026)*: que el enfriamiento fuera demasiado lento como idea. **Morton-Hayward et al. (2020, *STAR* 6:87–95)**, en su respuesta a la primera publicación (Petrone et al., *NEJM* 2020), ya argumentaron cualitativamente que los flujos piroclásticos de Herculano no estaban lo bastante calientes ni se enfriaron lo bastante rápido para vitrificar el tejido. Giordano et al. 2025 responden con un escenario nuevo, una nube de ceniza previa y más caliente. Otras críticas: Mauro dudó de que el tejido aguantara >510 °C; otros, de que el material sea cerebro.
+- **No lo hemos encontrado publicado** (búsqueda extendida del 01/11/2026; el texto completo de Morton-Hayward et al. 2020 no estaba accesible y ningún resumen menciona cálculos):
+  - un cálculo de transferencia de calor para el cráneo, aplicado al escenario de la nube de 2025;
   - la temperatura ficticia que corresponde a ritmos físicamente posibles;
   - el análisis de supervivencia y recocido con la propia cinética del artículo.
 

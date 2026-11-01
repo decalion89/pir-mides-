@@ -18,6 +18,9 @@ We test that thermal history against heat transfer, using the authors' own kinet
 
 The calorimetric data may be correct, but the inferred cooling rate and scenario are not supported by heat transfer.
 
+## 0. Prior work
+Morton-Hayward et al. (2020) argued qualitatively, in reply to the first report (Petrone et al. 2020), that the Herculaneum pyroclastic flows were neither hot enough nor fast-cooling enough to vitrify brain tissue. Giordano et al. (2025) answer this with a new scenario: an earlier, hotter ash cloud followed by fast cooling. Here we test that specific scenario quantitatively.
+
 ## 1. The inference being tested
 The two onsets, 420 °C at 0.42 K s⁻¹ and 510 °C at 1000 K s⁻¹, define E/R through ln q = const − (E/R)/T. That is how the authors obtain 390.1 kJ mol⁻¹. Because the onsets shift with heating rate, they describe the material's glass transition *at each heating rate*. They do not measure the natural cooling rate. Equating the natural T_f with the 1000 K s⁻¹ onset rests on an assumed "balanced thermal history", that is, a cooling rate equal to the heating rate.
 
@@ -65,6 +68,8 @@ All calculations are in `simulador/herculano_vidrio.py` (results: `resultados/44
 
 ## References
 - Giordano, G. et al. Sci. Rep. 15, 5955 (2025).
+- Morton-Hayward, A. L. et al. A conscious rethink: why is brain tissue commonly preserved in the archaeological record? STAR 6, 87–95 (2020).
+- Petrone, P. et al. Heat-induced brain vitrification from the Vesuvius eruption in C.E. 79. N. Engl. J. Med. 382, 383–384 (2020).
 - Moynihan, C. T., Easteal, A. J., De Bolt, M. A. & Tucker, J. J. Am. Ceram. Soc. 59, 12–16 (1976).
 - Thomas, R. M. E. & Sparks, R. S. J. Bull. Volcanol. 54, 542–553 (1992).
 - Narayanaswamy, O. S. J. Am. Ceram. Soc. 54, 491–498 (1971).

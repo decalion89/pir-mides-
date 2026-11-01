@@ -58,6 +58,8 @@ When the required rate exceeds the ceiling, the conclusion fails however large t
 - *Survival.* With the same E, the material would soften within 0.4 s at 465 °C and anneal in minutes to hours at 315–350 °C. The present calorimetric signal would record the burial, not the cloud.
 - *Heating.* Drying and heating the brain above 510 °C needs ≥3–40 min of full exposure, which is marginal for a cloud lasting "minutes".
 
+**Prior work.** Morton-Hayward et al. (2020) had already argued qualitatively that the pyroclastic flows did not cool fast enough. Giordano et al. (2025) proposed the hotter, short-lived ash cloud in response. Our contribution is the quantitative heat-transfer test of that newer scenario.
+
 **Prediction.** Measuring the natural T_f with the enthalpy area-matching method, instead of equating it with a heating-rate onset, will give ≈400–440 °C or less.
 
 # 4. Djoser: enough water in total, nowhere to keep it
@@ -140,6 +142,7 @@ The pre-registered predictions are P15–P16 in `PREDICCIONES.md`.
 - McConnell, J. R. et al. Pan-European atmospheric lead pollution, enhanced blood lead levels, and cognitive decline from Roman-era mining and smelting. *PNAS* 122, e2419630121 (2025).
 - Richmond-Bryant, J. et al. The influence of declining air lead levels on blood lead–air lead slope factors in children. *Environ. Health Perspect.* 122, 754–760 (2014).
 - Tankersley, K. B. et al. Zeolite water purification at Tikal, an ancient Maya city in Guatemala. *Sci. Rep.* 10, 18021 (2020).
+- Morton-Hayward, A. L. et al. A conscious rethink: why is brain tissue commonly preserved in the archaeological record? *STAR* 6, 87–95 (2020).
 - Millington, R. J. & Quirk, J. P. Permeability of porous solids. *Trans. Faraday Soc.* 57, 1200–1207 (1961).
 - Moynihan, C. T. et al. Dependence of the fictive temperature of glass on cooling rate. *J. Am. Ceram. Soc.* 59, 12–16 (1976).
 - Thomas, R. M. E. & Sparks, R. S. J. Cooling of tephra during fallout from eruption columns. *Bull. Volcanol.* 54, 542–553 (1992).

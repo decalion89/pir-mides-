@@ -295,3 +295,21 @@ def test_con_corte_de_70_grados_la_base_queda_fuera_de_campo():
     bajo = P[:, 2] < 20
     assert (~vis[bajo]).mean() > 0.95
     assert vis[P[:, 2] > 80].mean() > 0.95
+
+
+from piramide import kefren as kf  # noqa: E402
+
+
+def test_cono_de_alvarez_es_una_quinta_parte_de_kefren():
+    P = kf.voxeles(4.0)
+    assert abs(len(P) * 64 - kf.LADO ** 2 * kf.ALTURA / 3) / (kf.LADO ** 2 * kf.ALTURA / 3) < 0.03
+    assert 0.17 < kf.fraccion_en_cono(P) < 0.23          # Alvarez 1970: "19 percent"
+
+
+def test_alvarez_veria_una_camara_del_rey_a_40_m():
+    c = kf.campana_alvarez(100.0)
+    cob.preparar(c, [], opacidad_fn=kf.opacidad)
+    dias = 100.0 * 1e6 / kf.eventos_en_cono(c)              # un millón de muones en el cono
+    c = cob.preparar(kf.campana_alvarez(dias), [], opacidad_fn=kf.opacidad)
+    z = cob.z_hueco(c, kf.camara_del_rey(kf.ORIGEN_ALVAREZ + np.array([0, 0, 40.0])))
+    assert z > 5

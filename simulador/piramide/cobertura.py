@@ -193,14 +193,16 @@ def opacidad_total(origen, dirs, referencia):
     return X
 
 
-def preparar(c: Campana, referencia: list[g.Caja]) -> Campana:
+def preparar(c: Campana, referencia: list[g.Caja], opacidad_fn=None) -> Campana:
+    """Precalcula el mapa de referencia. `opacidad_fn(origen, dirs)` sustituye a la de Keops."""
     t = np.arange(-c.tan_max + PASO_TAN / 2, c.tan_max, PASO_TAN)
     e1, e2, e3 = _ejes(c.eje)
     TX, TY = np.meshgrid(t, t, indexing="xy")
     d = TX[..., None] * e1 + TY[..., None] * e2 + e3
     d /= np.linalg.norm(d, axis=-1, keepdims=True)
     dirs = d.reshape(-1, 3)
-    X0 = opacidad_total(c.origen, dirs, referencia)
+    X0 = (opacidad_fn(c.origen, dirs) if opacidad_fn is not None
+          else opacidad_total(c.origen, dirs, referencia))
     cos = dirs[:, 2]
     F0 = mu.flujo_integral(mu.energia_minima(X0), cos)
     ok = cos > math.cos(math.radians(CENIT_MAX))

@@ -78,3 +78,12 @@ Una campaña de emulsiones de **1 m² durante 100 días** en el suelo de la Cám
 No predecimos que haya una cámara. Predecimos **qué zona quedará explorada y con qué sensibilidad**, para que un resultado negativo sea tan informativo como uno positivo.
 
 **Qué la refutaría**: que con esa exposición el granito de la Cámara del Rey no se viera por encima de ~10σ, o la Gran Galería por encima de ~3σ. Eso indicaría que la roca madre degrada la sensibilidad mucho más de lo modelado, y que la cobertura de los puntos 2 y 3 es optimista. (Corregido el 01/11/2026 tras una revisión independiente: la primera versión usaba |tanθ| ≤ 1,3 y daba +28 %.)
+
+## P13 — Kefrén desde la Cámara de Belzoni (doc. 18), registrada el 01/11/2026
+Cinco exposiciones de emulsión de 2 m² × 180 días en la Cámara de Belzoni (una cenital y cuatro inclinadas 45° hacia cada cara, analizadas con |tanθ| ≤ 1) deberían:
+1. **ver las cuatro aristas y el remate de caliza original** con mucha más claridad que en 1969, como comprobación de la geometría;
+2. tener sensibilidad de ≥ 5σ a una cámara del tamaño de la del Rey en el **~61 %** del volumen de Kefrén (hoy, 4–18 %), con todo el volumen por encima de ~40 m cubierto.
+
+Igual que en P12, no predecimos que haya una cámara: predecimos qué parte quedará explorada.
+
+**Qué la refutaría**: que las aristas, que son contrastes de opacidad mucho mayores que una cámara, no se vieran con claridad. Indicaría que las heterogeneidades del núcleo rocoso de Kefrén dominan y que la cobertura calculada es optimista.

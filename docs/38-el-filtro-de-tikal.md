@@ -1,4 +1,12 @@
-# 38 — El "filtro de agua más antiguo de América" (Tikal) no pudo purificar el agua del embalse
+# 38 — El "filtro de agua más antiguo de América" (Tikal): viable solo con agua remansada delante del filtro
+
+> **Corregido el 01/11/2026 tras una revisión adversaria independiente. Este caso deja de ser un fallo.** La primera versión exigía tratar el 90 % de **toda** la escorrentía, que es ~3,7 veces el embalse. Basta con tratar el volumen del embalse, 58 000 m³ al año. También suponía, sin decirlo, que no había agua almacenada delante del filtro. Recalculado:
+> - **Sin agua almacenada delante:** con filtración lenta harían falta **~550–2 300 m²**, según las horas de lluvia al año (600 a 150; ~1 070 m² con 300 h), y **~660–2 800 t** de material traído desde 30 km. En una parte de los casos la escorrentía anual ni siquiera llega al volumen del embalse.
+> - **Con agua remansada delante del filtro** (los muros de piedra seca del propio esquema la retendrían) y filtrado continuo durante la estación de lluvias (120–180 días): bastan **~34–200 m²**. Es plausible.
+> - **Conclusión revisada:** el filtro lento que elimina microbios es viable si el agua se remansaba antes de pasar por él. Si el agua le llegaba directamente con cada aguacero, no lo es. Además, el propio artículo ya distingue el cuarzo, que solo aclara, de la zeolita, que adsorbe; esa distinción no es nuestra.
+> - **Argumento a favor del escepticismo, solo cualitativo:** un filtro lento depende de una capa biológica que muere si el filtro se seca, y en un clima con estación seca larga se secaría cada año.
+>
+> El texto que sigue es la versión original, con el objetivo del 90 % de la escorrentía, y se conserva como registro.
 
 > **El artículo.** Tankersley et al. (*Sci. Rep.* 10:18021, 2020) tuvo eco mundial. Según los autores:
 > - *"the drinking water in the Corriental reservoir water was filtered through a mixture of zeolite and coarse, sand-sized crystalline quartz"*;

@@ -208,8 +208,8 @@ McConnell et al. (PNAS 2025) calcularon 2,5–3 puntos de CI perdidos en todo el
 
 *(Corregido tras revisión adversaria.)*
 
-### 32. El "filtro más antiguo de América" (Tikal) no pudo purificar el embalse → [docs/38](docs/38-el-filtro-de-tikal.md)
-Un filtro de zeolita en la entrada del embalse que eliminara microbios (filtración lenta) solo trataría un **2 %** del agua. Para tratar el 90 % harían falta ~6 300 m² de filtro y ~7 500 t de material traído desde 30 km. Un filtro rápido sí es viable, pero solo aclara el agua.
+### 32. El "filtro más antiguo de América" (Tikal): viable solo con agua remansada → [docs/38](docs/38-el-filtro-de-tikal.md)
+Un filtro lento de zeolita, el que elimina microbios, necesita ~550–2 300 m² si el agua le llega directamente con cada aguacero. Si se remansaba delante, bastan ~34–200 m². No queda refutado; queda condicionado. *(Corregido tras revisión adversaria: la primera versión exigía tratar el 90 % de toda la escorrentía.)*
 
 ### 33. El mercurio de Tikal no hacía el agua imbebible → [docs/39](docs/39-el-mercurio-de-tikal.md)
 Lentz et al. (2020) dedujeron agua potable "seriamente comprometida" porque el mercurio de los sedimentos supera un umbral ecológico. Con la partición sedimento-agua y las partículas en suspensión, aun con las muestras más contaminadas el agua tiene ~1 µg/L: el 17 % de la guía de la OMS y el 3 % de la ingesta tolerable. Las cianobacterias son otro argumento y no se evalúan aquí.
@@ -257,7 +257,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [35 — El cerebro de vidrio](docs/35-el-cerebro-de-vidrio.md) | El enfriamiento a 1 000 K/s del cerebro vitrificado de Herculano es imposible dentro de un cráneo (0,1–1,7 K/s); su propia cinética contradice el escenario |
 | [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: viable solo con crecidas frecuentes o flujo casi perenne; con riadas de desierto recibe el 7–34 % de su demanda (P16) |
 | [37 — El plomo de Roma](docs/37-el-plomo-de-roma.md) | El déficit de CI por plomo romano (PNAS 2025) está sobrestimado ×2–3: doble contabilidad de la constante de la regresión y extrapolación fuera de rango |
-| [38 — El filtro de Tikal](docs/38-el-filtro-de-tikal.md) | Por caudal, un filtro de zeolita en la entrada solo trata ~2 % del agua si debe eliminar microbios; purificar el embalse exigiría ~6 300 m² y ~7 500 t traídas desde 30 km |
+| [38 — El filtro de Tikal](docs/38-el-filtro-de-tikal.md) | Filtro lento de Tikal: ~550–2 300 m² si el agua llega directa con cada aguacero, ~34–200 m² si se remansa delante; condicional, no refutado |
 | [39 — El mercurio de Tikal](docs/39-el-mercurio-de-tikal.md) | Con el Hg de los sedimentos más contaminados, el agua queda en ~17 % de la guía de la OMS: el mercurio no la hacía imbebible |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |

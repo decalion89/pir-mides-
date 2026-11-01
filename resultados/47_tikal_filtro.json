@@ -42,5 +42,41 @@
    "mediana": 245.0,
    "p95": 607.0
   }
+ },
+ "revision_objetivo_volumen_del_embalse": {
+  "sin almacenamiento, 150 h de lluvia/año": {
+   "area_m2": {
+    "p05": 1184,
+    "mediana": 2312,
+    "p95": 1000000
+   },
+   "masa_t_mediana": 2775
+  },
+  "sin almacenamiento, 300 h de lluvia/año": {
+   "area_m2": {
+    "p05": 586,
+    "mediana": 1073,
+    "p95": 1000000
+   },
+   "masa_t_mediana": 1288
+  },
+  "sin almacenamiento, 600 h de lluvia/año": {
+   "area_m2": {
+    "p05": 293,
+    "mediana": 553,
+    "p95": 1000000
+   },
+   "masa_t_mediana": 664
+  },
+  "con agua embalsada delante, 120 días de filtrado": {
+   "v=0.1 m/h": 201.0,
+   "v=0.25 m/h": 81.0,
+   "v=0.4 m/h": 50.0
+  },
+  "con agua embalsada delante, 180 días de filtrado": {
+   "v=0.1 m/h": 134.0,
+   "v=0.25 m/h": 54.0,
+   "v=0.4 m/h": 34.0
+  }
  }
 }

@@ -34,6 +34,44 @@ def fraccion_filtrada(rng, area_cuenca_m2, C, v_m_h, area_filtro_m2, anos=20, ll
     return filt / tot, tot / anos
 
 
+def area_para_volumen(rng_seed, A, C, v, objetivo_m3, horas):
+    """Área mínima para que el filtro (sin agua almacenada delante) deje pasar `objetivo_m3` al año."""
+    lo, hi = 0.1, 1e6
+    for _ in range(30):
+        mid = np.sqrt(lo * hi)
+        f, anual = fraccion_filtrada(np.random.default_rng(rng_seed), A, C, v, mid, anos=5, horas_lluvia=horas)
+        if f * anual >= objetivo_m3:
+            hi = mid
+        else:
+            lo = mid
+    return hi
+
+
+def revisado():
+    """Tras la revisión: objetivo = volumen del embalse (58 000 m³/año), caso con agua embalsada delante
+    del filtro y sensibilidad a las horas de lluvia."""
+    rng = np.random.default_rng(470)
+    out = {}
+    for horas in (150, 300, 600):
+        areas = []
+        for _ in range(150):
+            A = rng.uniform(5e4, 5e5)
+            C = rng.uniform(0.3, 0.7)
+            v = rng.uniform(0.1, 0.4)
+            areas.append(area_para_volumen(int(rng.integers(1e9)), A, C, v, 58_000.0, horas))
+        a = np.array(areas)
+        out[f"sin almacenamiento, {horas} h de lluvia/año"] = dict(
+            area_m2=dict(p05=round(float(np.percentile(a, 5))), mediana=round(float(np.median(a))), p95=round(float(np.percentile(a, 95)))),
+            masa_t_mediana=round(float(np.median(a) * 0.75 * 1.6)))
+        print(horas, out[f"sin almacenamiento, {horas} h de lluvia/año"], flush=True)
+    # con agua embalsada delante: el filtro trabaja de forma continua durante la estación de lluvias
+    v = np.array([0.1, 0.25, 0.4])
+    for dias in (120, 180):
+        out[f"con agua embalsada delante, {dias} días de filtrado"] = {f"v={x} m/h": round(float(58_000 / (x * 24 * dias)), 0) for x in v}
+    print(out, flush=True)
+    return out
+
+
 def main():
     rng = np.random.default_rng(47)
     res = {}
@@ -61,6 +99,7 @@ def main():
         res[nombre] = dict(escorrentia_anual_m3=pc("anual"), fraccion_filtrada_con_50m2=pc("f50"),
                            area_para_90pc_m2=pc("area90"), masa_a_transportar_30km_t=pc("masa90"))
         print(nombre, json.dumps(res[nombre], ensure_ascii=False), flush=True)
+    res["revision_objetivo_volumen_del_embalse"] = revisado()
     json.dump(res, open(os.path.join(RAIZ, "resultados", "47_tikal_filtro.json"), "w"), ensure_ascii=False, indent=1)
 
 

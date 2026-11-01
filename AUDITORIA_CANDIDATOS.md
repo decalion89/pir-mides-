@@ -32,3 +32,7 @@ Descartados por ya comprobados o no aptos: el radar de Tutankamón (Porcelli et 
 **Hecho:** filtro de zeolita de Tikal (Tankersley et al., Sci. Rep. 2020), en el doc. 38: por caudal no pudo purificar el embalse. Recuento: 5 resultados nuevos de 10 casos revisados.
 
 **Hecho:** mercurio de los embalses de Tikal (Lentz et al., Sci. Rep. 2020), en el doc. 39: el agua cumpliría la guía de la OMS. Recuento: 6 resultados nuevos de 11 casos revisados.
+
+**Revisión adversaria (01/11/2026).** Tras ella, la clasificación queda así:
+- **Robustos:** Qin (×42 sobre la difusión; condicionado a que el exceso medido sea real), Herculano (condicionado a que los fragmentos se enfriaran dentro del cráneo), plomo romano (×2–3) y mercurio de Tikal (este último no lo revisó el revisor adversario).
+- **Condicionales, no fallos:** Djoser (viable con crecidas frecuentes o flujo casi perenne) y el filtro de Tikal (viable con agua remansada delante).

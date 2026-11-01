@@ -260,3 +260,38 @@ def test_todos_los_resultados_son_json_valido():
         txt = f.read_text(encoding="utf-8")
         assert "NaN" not in txt and "Infinity" not in txt, f.name
         json.loads(txt)
+
+
+from piramide import cobertura as cob  # noqa: E402
+
+
+def test_cobertura_calibrada_reproduce_lo_publicado():
+    C = cob.campanas_publicadas()
+    f = cob.calibrar(C)
+    ref = g.estructuras_conocidas()
+    an = g.anomalias_detectadas()
+    por = {c.nombre: cob.preparar(c, ref) for c in C}
+    # CEA calibrado en conjunto; por separado publicó 5,2σ y 3,6σ
+    z1 = f["cea"] * cob.z_hueco(por["CEA G1 Alhazen (2017)"], an[1])
+    z2 = f["cea"] * cob.z_hueco(por["CEA G2 Brahic (2017)"], an[1])
+    assert 3.0 < z1 < 6.5 and 2.5 < z2 < 5.5
+    # el NFC: "muy por encima de 10σ" desde el corredor descendente (2019); invisible desde la QC
+    assert f["nagoya"] * cob.z_hueco(por["Nagoya EM2 N/C/S (2019)"], an[0]) > 10
+    assert cob.z_hueco(por["Nagoya NE1 (2016)"], an[0]) == 0.0
+
+
+def test_submuestreo_no_se_salta_huecos_estrechos():
+    C = {c.nombre: c for c in cob.campanas_publicadas()}
+    c = cob.preparar(C["CEA G2 Brahic (2017)"], g.estructuras_conocidas())
+    # el Gran Vacío (1,6 m de ancho a ~125 m) cae entre rayos de bin; con subrayos se ve
+    assert cob.z_hueco(c, g.anomalias_detectadas()[1]) > 0.5
+
+
+def test_la_base_de_la_piramide_no_esta_en_el_campo_de_ninguna_campana():
+    P = cob.voxeles(6.0)
+    vis = np.zeros(len(P), bool)
+    for c in cob.campanas_publicadas():
+        vis |= cob.en_campo(c, P)
+    bajo = P[:, 2] < 20
+    assert (~vis[bajo]).mean() > 0.95
+    assert vis[P[:, 2] > 80].mean() > 0.95

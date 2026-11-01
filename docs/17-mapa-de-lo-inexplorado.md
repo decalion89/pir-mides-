@@ -80,7 +80,17 @@ Lo que la Cámara Subterránea añade está entre 6 y 58 m de altura, en un radi
 ## 4. Robustez
 Ver [`resultados/20_cobertura_robustez.json`](../resultados/20_cobertura_robustez.json), calculado con una rejilla de 8 m:
 
-ROBUSTEZ_TABLA
+Cada celda da el % del volumen sin explorar con el criterio nominal (≥ 5σ) / optimista (≥ 3σ).
+
+| Variante | Cubo de 8 m | Cubo de 5 m |
+|---|---|---|
+| Nominal (rejilla de 8 m) | 66 / 65 | 73 / 69 |
+| Sin calibrar (factor 0,5 para todas las familias) | 68 / 66 | 76 / 72 |
+| Sistemático del 1 % por bin | 66 / 65 | 73 / 69 |
+| Sistemático del 3 % por bin | 66 / 65 | 73 / 69 |
+| Detectores desplazados al azar (σ = 2 m en horizontal, 1 m en vertical), 5 sorteos | 65–66 / 64–65 | 72–74 / 69–70 |
+
+**El resultado no depende de los detalles.** Ni la calibración, ni el sistemático, ni la posición exacta de los detectores mueven la fracción más de 3 puntos. Lo que deja la base sin explorar es dónde estuvieron los detectores, no la sensibilidad del modelo.
 
 ## 5. Límites (lo que este mapa NO dice)
 - **No dice que haya cámaras ocultas.** Dice dónde no se puede descartar que las haya. La mayor parte de la pirámide es, casi con seguridad, mampostería maciza: la ausencia de pruebas no es prueba de nada en ningún sentido.

@@ -1,0 +1,573 @@
+{
+ "origen_verdadero": [
+  15.5,
+  4.0,
+  -0.5
+ ],
+ "posiciones": 713,
+ "casos": [
+  {
+   "N": 650000.0,
+   "direccion": "este",
+   "delta_m": 0.25,
+   "chi2_fondo": 1.4,
+   "dchi2_falso": 3.78,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "este",
+   "delta_m": 0.5,
+   "chi2_fondo": 5.7,
+   "dchi2_falso": 3.47,
+   "donde": [
+    -7.6,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "este",
+   "delta_m": 1.0,
+   "chi2_fondo": 22.7,
+   "dchi2_falso": 1.21,
+   "donde": [
+    -7.6,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "este",
+   "delta_m": 2.0,
+   "chi2_fondo": 89.4,
+   "dchi2_falso": -7.08,
+   "donde": [
+    0.4,
+    0.4,
+    68.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "este",
+   "delta_m": 3.5,
+   "chi2_fondo": 267.1,
+   "dchi2_falso": -35.7,
+   "donde": [
+    0.4,
+    0.4,
+    52.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "norte",
+   "delta_m": 0.25,
+   "chi2_fondo": 1.9,
+   "dchi2_falso": 3.36,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "norte",
+   "delta_m": 0.5,
+   "chi2_fondo": 7.7,
+   "dchi2_falso": 2.85,
+   "donde": [
+    0.4,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "norte",
+   "delta_m": 1.0,
+   "chi2_fondo": 30.8,
+   "dchi2_falso": 0.14,
+   "donde": [
+    0.4,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "norte",
+   "delta_m": 2.0,
+   "chi2_fondo": 123.1,
+   "dchi2_falso": -9.43,
+   "donde": [
+    8.4,
+    -15.6,
+    92.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "norte",
+   "delta_m": 3.5,
+   "chi2_fondo": 374.9,
+   "dchi2_falso": -46.49,
+   "donde": [
+    8.4,
+    -7.6,
+    52.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "abajo",
+   "delta_m": 0.25,
+   "chi2_fondo": 0.0,
+   "dchi2_falso": 3.54,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "abajo",
+   "delta_m": 0.5,
+   "chi2_fondo": 0.1,
+   "dchi2_falso": 3.53,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "abajo",
+   "delta_m": 1.0,
+   "chi2_fondo": 0.2,
+   "dchi2_falso": 3.52,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "abajo",
+   "delta_m": 2.0,
+   "chi2_fondo": 1.0,
+   "dchi2_falso": 3.47,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 650000.0,
+   "direccion": "abajo",
+   "delta_m": 3.5,
+   "chi2_fondo": 2.9,
+   "dchi2_falso": 3.41,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "este",
+   "delta_m": 0.25,
+   "chi2_fondo": 14.3,
+   "dchi2_falso": 37.82,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "este",
+   "delta_m": 0.5,
+   "chi2_fondo": 57.0,
+   "dchi2_falso": 35.17,
+   "donde": [
+    -7.6,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "este",
+   "delta_m": 1.0,
+   "chi2_fondo": 226.7,
+   "dchi2_falso": 12.13,
+   "donde": [
+    -15.6,
+    -7.6,
+    108.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "este",
+   "delta_m": 2.0,
+   "chi2_fondo": 894.1,
+   "dchi2_falso": -69.3,
+   "donde": [
+    0.4,
+    0.4,
+    68.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "este",
+   "delta_m": 3.5,
+   "chi2_fondo": 2671.3,
+   "dchi2_falso": -356.4,
+   "donde": [
+    0.4,
+    0.4,
+    52.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "norte",
+   "delta_m": 0.25,
+   "chi2_fondo": 19.2,
+   "dchi2_falso": 33.68,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "norte",
+   "delta_m": 0.5,
+   "chi2_fondo": 77.0,
+   "dchi2_falso": 28.5,
+   "donde": [
+    0.4,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "norte",
+   "delta_m": 1.0,
+   "chi2_fondo": 308.0,
+   "dchi2_falso": 1.22,
+   "donde": [
+    0.4,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "norte",
+   "delta_m": 2.0,
+   "chi2_fondo": 1231.4,
+   "dchi2_falso": -93.89,
+   "donde": [
+    8.4,
+    -15.6,
+    92.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "norte",
+   "delta_m": 3.5,
+   "chi2_fondo": 3748.9,
+   "dchi2_falso": -462.51,
+   "donde": [
+    8.4,
+    -7.6,
+    52.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "abajo",
+   "delta_m": 0.25,
+   "chi2_fondo": 0.2,
+   "dchi2_falso": 35.48,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "abajo",
+   "delta_m": 0.5,
+   "chi2_fondo": 0.6,
+   "dchi2_falso": 35.38,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "abajo",
+   "delta_m": 1.0,
+   "chi2_fondo": 2.5,
+   "dchi2_falso": 35.14,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "abajo",
+   "delta_m": 2.0,
+   "chi2_fondo": 9.7,
+   "dchi2_falso": 34.67,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 6500000.0,
+   "direccion": "abajo",
+   "delta_m": 3.5,
+   "chi2_fondo": 29.3,
+   "dchi2_falso": 33.97,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "este",
+   "delta_m": 0.25,
+   "chi2_fondo": 142.8,
+   "dchi2_falso": 376.08,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "este",
+   "delta_m": 0.5,
+   "chi2_fondo": 570.1,
+   "dchi2_falso": 352.3,
+   "donde": [
+    -7.6,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "este",
+   "delta_m": 1.0,
+   "chi2_fondo": 2267.0,
+   "dchi2_falso": 126.27,
+   "donde": [
+    -15.6,
+    -7.6,
+    108.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "este",
+   "delta_m": 2.0,
+   "chi2_fondo": 8940.9,
+   "dchi2_falso": -694.69,
+   "donde": [
+    0.4,
+    0.4,
+    68.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "este",
+   "delta_m": 3.5,
+   "chi2_fondo": 26713.2,
+   "dchi2_falso": -3545.0,
+   "donde": [
+    0.4,
+    0.4,
+    52.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "norte",
+   "delta_m": 0.25,
+   "chi2_fondo": 192.4,
+   "dchi2_falso": 336.05,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "norte",
+   "delta_m": 0.5,
+   "chi2_fondo": 770.0,
+   "dchi2_falso": 285.19,
+   "donde": [
+    0.4,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "norte",
+   "delta_m": 1.0,
+   "chi2_fondo": 3080.1,
+   "dchi2_falso": 16.1,
+   "donde": [
+    0.4,
+    -7.6,
+    116.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "norte",
+   "delta_m": 2.0,
+   "chi2_fondo": 12314.2,
+   "dchi2_falso": -939.08,
+   "donde": [
+    8.4,
+    -15.6,
+    92.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "norte",
+   "delta_m": 3.5,
+   "chi2_fondo": 37488.5,
+   "dchi2_falso": -4662.23,
+   "donde": [
+    8.4,
+    -7.6,
+    52.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "abajo",
+   "delta_m": 0.25,
+   "chi2_fondo": 1.6,
+   "dchi2_falso": 354.76,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "abajo",
+   "delta_m": 0.5,
+   "chi2_fondo": 6.2,
+   "dchi2_falso": 353.78,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "abajo",
+   "delta_m": 1.0,
+   "chi2_fondo": 24.7,
+   "dchi2_falso": 351.67,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "abajo",
+   "delta_m": 2.0,
+   "chi2_fondo": 97.5,
+   "dchi2_falso": 346.43,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  },
+  {
+   "N": 65000000.0,
+   "direccion": "abajo",
+   "delta_m": 3.5,
+   "chi2_fondo": 293.0,
+   "dchi2_falso": 341.39,
+   "donde": [
+    -23.6,
+    -39.6,
+    84.0
+   ]
+  }
+ ],
+ "ley": {
+  "este": {
+   "exponente_N": 0.997,
+   "exponente_delta": 2.91,
+   "k": 1.4946363632739471e-06,
+   "delta_max_para_falso_5sigma_m": {
+    "6e+05": 3.053,
+    "1e+08": 0.541,
+    "1e+10": 0.111
+   }
+  },
+  "norte": {
+   "exponente_N": 1.0,
+   "exponente_delta": 2.854,
+   "k": 2.0047494640382125e-06,
+   "delta_max_para_falso_5sigma_m": {
+    "6e+05": 2.815,
+    "1e+08": 0.482,
+    "1e+10": 0.096
+   }
+  },
+  "nota": "El ajuste de una ley de potencias (−Δχ² ∝ N·δ^a) se conserva solo como registro: los datos muestran un UMBRAL (sin falsas cámaras por debajo de ~1–1,5 m de error horizontal) y, por encima, una intensidad proporcional a N. Ver docs/28."
+ }
+}

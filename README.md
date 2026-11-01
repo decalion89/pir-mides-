@@ -134,7 +134,10 @@ Reconstruimos la pirámide (con su remate y su revestimiento perdido), la posici
 - Dentro de su cono, el ajuste es casi tan bueno como el suyo (χ²/casilla 1,4 frente a 0,93), y su conclusión negativa se reproduce: 85 % del cono excluido al 95 %.
 - El modelo propio produjo una "cámara" muy significativa (Δχ² = −43) que resultó ser un artefacto: desaparece al mover el detector a su posición topográfica y el modelo de Alvarez la excluye.
 
-### 21. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 21. Cuándo fabrica un detector una cámara que no existe → [docs/28](docs/28-falsas-camaras.md)
+Con un experimento numérico calculamos cuánto error en la posición del detector hace falta para "descubrir" una cámara inexistente. Sale un umbral de ~1–1,5 m de error horizontal: por encima, la falsa señal crece con el número de muones. Con 10⁸ muones y 2 m de error aparece una cámara falsa a ~30σ. El simulador reproduce el falso candidato real de los datos de Alvarez (−46 frente a −43). La hipótesis inicial, una ley de potencias, era incorrecta.
+
+### 22. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -167,6 +170,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [25 — Teoría del cuello de botella (refutada)](docs/25-teoria-del-cuello-de-botella.md) | Una teoría propia sobre el techo de construcción, y la prueba que la tumba |
 | [26 — El límite del gnomon](docs/26-el-limite-del-gnomon.md) | El método solar no puede producir errores de más de ~6′: solo explica Keops y Kefrén |
 | [27 — Alvarez desde cero](docs/27-alvarez-desde-cero.md) | Reconstrucción independiente del experimento de 1969 y un falso candidato desmontado |
+| [28 — Falsas cámaras](docs/28-falsas-camaras.md) | Regla práctica: la posición del detector debe conocerse mejor que ~1 m o se fabrican cámaras falsas |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

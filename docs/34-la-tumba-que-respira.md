@@ -63,6 +63,14 @@ El Monte Carlo suponía oscilaciones de presión del 1–2 % cada 3–7 días. C
 
 **Por tanto, la vía (a) sigue siendo la única que puede llegar al flujo medido, pero en verano va justa.** Esto da una predicción nueva: **si la tumba respira, en invierno debe emitir bastante más que en verano** (más bombeo sinóptico y tiro térmico a favor). Si una campaña invernal mide el mismo flujo o menos, la vía (a) pierde fuerza.
 
+## Autocomprobación: ¿sobrestima el lidar el flujo?
+Hacemos un balance de masa con los datos del propio artículo: flujo = exceso de concentración × viento × sección de la pluma.
+- **Datos:** exceso de 12–18 ng/m³ (22–23 sobre el túmulo frente a un fondo de 5–10) y viento de 2,3–2,7 m/s en la cima.
+- **Pluma:** de 10–30 m de alto (los autores suponen ~20 m) y de 150–380 m de ancho.
+- **Resultado:** el balance da **1–3,5×10⁻⁷ kg/s**, 2–7 veces *más* que el 5×10⁻⁸ publicado. El valor publicado es conservador.
+
+Por tanto, la vía (c) solo funcionaría si el **exceso mismo** no fuera real. Con la precisión declarada (±5 ng/m³), cada medida del exceso tiene 2,4–3,6σ. Hay varias exploraciones en dos emplazamientos, pero no se publica la serie completa. **El punto débil de la conclusión es la realidad del exceso, no el modelo de pluma.** Una medición independiente lo resolvería: un analizador puntual en la cima, o cámaras de flujo (P15).
+
 ## Qué significa
 1. **La lectura habitual no se sostiene físicamente.** Se suele decir que el mercurio "se escapa lentamente a través del suelo". La difusión no puede producir el flujo medido.
 2. **Tres posibilidades, y solo tres:**

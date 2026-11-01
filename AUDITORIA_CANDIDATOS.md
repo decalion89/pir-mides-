@@ -15,3 +15,6 @@ Esta lista salió de una búsqueda amplia del 01/11/2026. **No está verificada:
 | 7 | Mausoleo Xianling (Ming) | Mercurio en suelo y gas del suelo (Guo et al. 2015, actas) | Mismo modelo que Qin (doc. 34) | Débil |
 
 Descartados por ya comprobados o no aptos: el radar de Tutankamón (Porcelli et al. 2019 no encontró nada), Biondi y Malanga (retractado), Gunung Padang (retractado), el etileno de Delfos (Foster y Lehoux 2007), la acústica de 110 Hz, Ħal Saflieni (ya modelado con CFD) y la muralla de Xi'an (resultado plausible).
+
+
+**Hecho fuera de la lista:** el ascensor hidráulico de Djoser (Landreau et al. 2024), en el doc. 36.

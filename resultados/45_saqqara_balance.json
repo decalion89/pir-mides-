@@ -1,0 +1,88 @@
+{
+ "demanda_de_los_autores_18Mm3": {
+  "fraccion_cubierta_con_perdidas": {
+   "p05": 0.117,
+   "mediana": 0.271,
+   "p95": 0.548
+  },
+  "fraccion_cubierta_sin_perdidas": {
+   "p05": 0.16,
+   "mediana": 0.374,
+   "p95": 0.715
+  },
+  "prob_cubre_90pc_con_perdidas": 0.0,
+  "prob_cubre_90pc_sin_perdidas": 0.0,
+  "perdida_evaporacion": {
+   "p05": 0.031,
+   "mediana": 0.11,
+   "p95": 0.223
+  },
+  "perdida_infiltracion": {
+   "p05": 0.004,
+   "mediana": 0.029,
+   "p95": 0.141
+  },
+  "rebose": {
+   "p05": 0.044,
+   "mediana": 0.483,
+   "p95": 0.857
+  },
+  "dias_operativos": {
+   "p05": 0.116,
+   "mediana": 0.27,
+   "p95": 0.545
+  }
+ },
+ "demanda_optimizada_6Mm3": {
+  "fraccion_cubierta_con_perdidas": {
+   "p05": 0.229,
+   "mediana": 0.504,
+   "p95": 0.849
+  },
+  "fraccion_cubierta_sin_perdidas": {
+   "p05": 0.428,
+   "mediana": 0.813,
+   "p95": 0.993
+  },
+  "prob_cubre_90pc_con_perdidas": 0.024,
+  "prob_cubre_90pc_sin_perdidas": 0.327,
+  "perdida_evaporacion": {
+   "p05": 0.054,
+   "mediana": 0.188,
+   "p95": 0.398
+  },
+  "perdida_infiltracion": {
+   "p05": 0.008,
+   "mediana": 0.049,
+   "p95": 0.223
+  },
+  "rebose": {
+   "p05": 0.049,
+   "mediana": 0.524,
+   "p95": 0.857
+  },
+  "dias_operativos": {
+   "p05": 0.228,
+   "mediana": 0.502,
+   "p95": 0.849
+  }
+ },
+ "mejores_casos_fraccion_cubierta": {
+  "Gisr el-Mudir (440 000 m³, 2 m); demanda autores 18 Mm³; aporte 0.6 Mm³/año": 0.641,
+  "Gisr el-Mudir (440 000 m³, 2 m); demanda autores 18 Mm³; aporte 1.8 Mm³/año": 0.839,
+  "Gisr el-Mudir (440 000 m³, 2 m); demanda optimizada 6 Mm³; aporte 0.6 Mm³/año": 0.949,
+  "Gisr el-Mudir (440 000 m³, 2 m); demanda optimizada 6 Mm³; aporte 1.8 Mm³/año": 0.983,
+  "todo el Foso Seco (3,5 Mm³, 20 m); demanda autores 18 Mm³; aporte 0.6 Mm³/año": 0.805,
+  "todo el Foso Seco (3,5 Mm³, 20 m); demanda autores 18 Mm³; aporte 1.8 Mm³/año": 0.988,
+  "todo el Foso Seco (3,5 Mm³, 20 m); demanda optimizada 6 Mm³; aporte 0.6 Mm³/año": 0.991,
+  "todo el Foso Seco (3,5 Mm³, 20 m); demanda optimizada 6 Mm³; aporte 1.8 Mm³/año": 0.994
+ },
+ "meses_para_secarse_el_embalse_lleno": {
+  "prof 1.0 m, evap 1.5, infil 0.1 m/año": 15.0,
+  "prof 1.0 m, evap 2.1, infil 0.5 m/año": 9.2,
+  "prof 1.0 m, evap 2.7, infil 3.0 m/año": 4.2,
+  "prof 2.0 m, evap 1.5, infil 0.1 m/año": 30.0,
+  "prof 2.0 m, evap 2.1, infil 0.5 m/año": 18.5,
+  "prof 2.0 m, evap 2.7, infil 3.0 m/año": 8.4
+ }
+}

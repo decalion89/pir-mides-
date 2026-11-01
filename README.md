@@ -188,7 +188,14 @@ Giordano et al. (2025) dedujeron que el cerebro de una víctima del Vesubio se e
 
 La historia térmica propuesta no se sostiene.
 
-### 29. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 29. El "ascensor hidráulico" de Djoser no tenía dónde guardar el agua → [docs/36](docs/36-el-ascensor-sin-agua.md)
+Landreau et al. (2024) compararon el agua total disponible con la necesaria (18 Mm³), sin pérdidas.
+- **Con un balance día a día** (riadas episódicas, su embalse, evaporación e infiltración), el ascensor recibe el **27 %** de su propia demanda. Ninguna de 1 500 simulaciones llega al 90 %, ni siquiera sin pérdidas.
+- **Lo limita el almacenamiento:** la mitad de cada riada se desborda, y el embalse se seca en meses.
+- **Solo funciona** con un depósito profundo de millones de m³, uso optimizado y ≥ 1–2 riadas al año.
+- **Predicción:** limos lacustres en el fondo del Foso Seco.
+
+### 30. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -229,6 +236,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [33 — A cuántos metros está el Gran Vacío](docs/33-a-cuantos-metros-esta-el-gran-vacio.md) | Ningún espacio accesible a menos de 5 m; lo más cercano, las cámaras de descarga 4–5 (~8 m); sin endoscopio posible |
 | [34 — La tumba que respira](docs/34-la-tumba-que-respira.md) | El mercurio medido sobre la tumba de Qin no puede salir por difusión (×163): solo un intercambio de aire (~460 m³/día) lo explica; prueba barométrica |
 | [35 — El cerebro de vidrio](docs/35-el-cerebro-de-vidrio.md) | El enfriamiento a 1 000 K/s del cerebro vitrificado de Herculano es imposible dentro de un cráneo (0,1–1,7 K/s); su propia cinética contradice el escenario |
+| [36 — El ascensor sin agua](docs/36-el-ascensor-sin-agua.md) | Balance hídrico del ascensor de Djoser: con sus estructuras recibe el 27 % de su demanda; solo es viable con un depósito de Mm³ estanco (predicción: limos lacustres) |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

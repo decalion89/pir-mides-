@@ -117,3 +117,9 @@ Un estudio de gravedad con ~660 estaciones en los escalones de las cuatro caras 
 - Si la emisión sigue al sol y a la temperatura del suelo sin relación con la presión, y el gas del suelo tiene su máximo en superficie, la fuente es superficial (vía b).
 - Si el flujo total medido con cámaras es ≪ 10⁻⁸ kg/s, el lidar sobrestimaba (vía c).
 - Si el invierno no emite más que el verano, la vía (a) pierde fuerza.
+
+
+## P16 — Sedimentos lacustres en el Foso Seco si existió el ascensor de Djoser (doc. 36), registrada el 01/11/2026
+**Predicción.** Si la pirámide de Djoser se construyó con el ascensor hidráulico de Landreau et al. (2024), el agua tuvo que almacenarse durante décadas en un depósito profundo y estanco de escala de millones de m³. Un sondeo en el fondo del Foso Seco (o de la Deep Trench, bajo los rellenos posteriores) encontrará **limos y arcillas lacustres laminados**, de varios centímetros a decímetros, datables en la III dinastía.
+
+**Refutación.** Si solo aparecen gravas y arenas de riada, o rellenos eólicos, sin depósitos de agua quieta, la hipótesis no tiene un escenario hídrico viable.

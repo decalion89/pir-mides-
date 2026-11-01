@@ -408,3 +408,17 @@ def test_herculano_cinetica():
     assert abs(hv.t_ficticia(0.42) - 693.15) < 0.01
     assert abs(hv.E_R * hv.R / 1000 - 390.1) < 1.0
     assert hv.enfriamiento_particula(1e-3) < 1000.0
+
+
+def test_saqqara_balance():
+    """Sin pérdidas y con aporte continuo abundante el ascensor recibe toda su demanda; con un embalse
+    pequeño y riadas raras, no."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "simulador"))
+    import numpy as np
+    import saqqara_balance_hidrico as sb
+    r = sb.simular(np.random.default_rng(0), 5, aporte_anual=5e6, riadas_ano=300, capacidad=5e6, prof=20,
+                   evap=0.0, infil=0.0, demanda=0.5e6, trinchera=3e4)
+    assert r["cubierto"] > 0.95
+    r = sb.simular(np.random.default_rng(0), 25, aporte_anual=0.6e6, riadas_ano=0.5, capacidad=3e5, prof=1.5,
+                   evap=2.1, infil=0.5, demanda=0.72e6, trinchera=2.4e4)
+    assert r["cubierto"] < 0.4

@@ -4,7 +4,8 @@ Pregunta: las discrepancias entre muones medidos y predichos (χ² = 905 para ~7
 repartidas al azar o se agrupan en alguna zona, como haría una cámara oculta (exceso de muones en
 varios bins contiguos)?
 
-Pruebas (todas con permutaciones de los residuos entre los bins válidos, 20 000 réplicas):
+Pruebas (permutaciones de los residuos entre los bins válidos, 2 000 réplicas, y una nula con
+correlación espacial de corto y largo alcance; ver nula_correlada):
 1. Σ r² frente al χ² publicado (comprobación de la transcripción).
 2. Autocorrelación espacial entre vecinos (I de Moran).
 3. Máximo de la suma normalizada Σr/√n en ventanas de 2×2, 3×3 y 4×4 bins, para excesos
@@ -26,7 +27,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCHIVO = os.path.join(RAIZ, "datos", "alvarez_1970", "fig10_residuos.txt")
 N = 30
 VENTANAS = (2, 3, 4)
-N_PERM = 20000
+N_PERM = 2000
 
 
 def cargar(signos=None):
@@ -107,7 +108,7 @@ def main():
                chi2_publicado=905, n_dudosos=n_dud, combinaciones={})
     # distribución nula: permutaciones (para cada estadístico)
     nulos = {f"exceso_{k}": [] for k in VENTANAS} | {f"deficit_{k}": [] for k in VENTANAS} | {"moran": []}
-    for _ in range(N_PERM // 10):              # la nula no depende de los signos dudosos
+    for _ in range(N_PERM):                    # la nula no depende de los signos dudosos
         P = permutar(M0, rng)
         nulos["moran"].append(moran(P))
         for k in VENTANAS:
@@ -166,41 +167,106 @@ if __name__ == "__main__":
 
 
 # --- Nula con correlación espacial (más exigente) ---------------------------------------------
-def campo_correlado(mascara, sigma_k, desv, rng):
+RETARDOS = ((0, 1), (1, 0), (1, 1), (1, -1), (0, 2), (2, 0), (0, 3), (3, 0), (2, 2))
+
+
+def correlaciones(M):
+    """Correlación de los residuos a varias distancias (filas, columnas) entre bins válidos."""
+    v = ~np.isnan(M)
+    x = np.where(v, M - np.nanmean(M), 0.0)
+    out = []
+    for di, dj in RETARDOS:
+        a = x[max(0, -di):N - max(0, di), max(0, -dj):N - max(0, dj)]
+        va = v[max(0, -di):N - max(0, di), max(0, -dj):N - max(0, dj)]
+        b = x[max(0, di):N + min(0, di), max(0, dj):N + min(0, dj)]
+        vb = v[max(0, di):N + min(0, di), max(0, dj):N + min(0, dj)]
+        m = va & vb
+        out.append(float(np.sum(a[m] * b[m]) / np.sqrt(np.sum(a[m] ** 2) * np.sum(b[m] ** 2))))
+    return np.array(out)
+
+
+def campo_correlado(mascara, sigma_k, desv, rng, frac=1.0, media=0.0):
+    """Campo gaussiano: fracción `frac` de varianza suavizada (núcleo sigma_k) + resto blanco.
+
+    Se reescala para que, TRAS redondear a enteros, tenga la dispersión `desv` y la media `media`
+    observadas (la reescala previa al redondeo se corrige con un factor fijo calibrado aparte).
+    """
     from scipy.ndimage import gaussian_filter
-    z = gaussian_filter(rng.normal(size=(N + 8, N + 8)), sigma_k, mode="wrap")[4:-4, 4:-4]
-    z = (z - z[mascara].mean()) / z[mascara].std() * desv
+    g = gaussian_filter(rng.normal(size=(N + 16, N + 16)), sigma_k, mode="wrap")[8:-8, 8:-8]
+    g = (g - g[mascara].mean()) / g[mascara].std()
+    w = rng.normal(size=(N, N))
+    z = np.sqrt(frac) * g + np.sqrt(1 - frac) * w
+    z = (z - z[mascara].mean()) / z[mascara].std() * desv + media
     out = np.full((N, N), np.nan)
     out[mascara] = np.round(z[mascara])
     return out
+
+
+def calibrar_nula(M, rng, n=120):
+    """Elige (sigma_k, frac, escala) para reproducir correlaciones y dispersión tras redondeo."""
+    v = ~np.isnan(M)
+    obs = correlaciones(M)
+    desv_obs, media_obs = float(np.nanstd(M)), float(np.nanmean(M))
+    mejor = None
+    for sk in (0.5, 1.0, 1.5, 2.0, 3.0, 4.0):
+        for frac in (0.05, 0.08, 0.11, 0.14, 0.18, 0.25, 0.35, 0.5, 1.0):
+            sims = [campo_correlado(v, sk, desv_obs * 0.93, rng, frac, media_obs) for _ in range(n)]
+            c = np.mean([correlaciones(S) for S in sims], axis=0)
+            e = float(np.sum((c - obs) ** 2))
+            if mejor is None or e < mejor[0]:
+                mejor = (e, sk, frac, c)
+    _, sk, frac, c = mejor
+    # escala previa al redondeo para que la dispersión final coincida
+    esc = 0.93
+    for _ in range(6):
+        d = np.mean([np.nanstd(campo_correlado(v, sk, desv_obs * esc, rng, frac, media_obs)) for _ in range(n)])
+        esc *= desv_obs / d
+    return dict(sigma_nucleo_bins=sk, fraccion_correlada=frac, escala=float(esc),
+                correlaciones_observadas=[round(x, 3) for x in obs],
+                correlaciones_simuladas=[round(float(x), 3) for x in c],
+                retardos=[list(r) for r in RETARDOS])
 
 
 def nula_correlada(n_sim=4000, semilla=7):
     rng = np.random.default_rng(semilla)
     M, _ = cargar()
     v = ~np.isnan(M)
-    I_obs, desv = moran(M), float(np.nanstd(M))
-    # calibrar la anchura del núcleo para reproducir la I de Moran observada tras redondear
-    mejor = None
-    for sk in np.arange(0.30, 0.80, 0.02):
-        I = np.mean([moran(campo_correlado(v, sk, desv, rng)) for _ in range(150)])
-        if mejor is None or abs(I - I_obs) < abs(mejor[1] - I_obs):
-            mejor = (float(sk), float(I))
-    sk = mejor[0]
+    cal = calibrar_nula(M, rng)
+    desv, media = float(np.nanstd(M)), float(np.nanmean(M))
     nul = {f"{n}_{k}": [] for n in ("exceso", "deficit") for k in VENTANAS}
+    maximo_global = []
     for _ in range(n_sim):
-        P = campo_correlado(v, sk, desv, rng)
+        P = campo_correlado(v, cal["sigma_nucleo_bins"], desv * cal["escala"], rng,
+                            cal["fraccion_correlada"], media)
+        fila = []
         for k in VENTANAS:
-            nul[f"exceso_{k}"].append(max_ventana(P, k, 1)[0])
-            nul[f"deficit_{k}"].append(max_ventana(P, k, -1)[0])
-    out = dict(sigma_nucleo_bins=sk, moran_simulado=mejor[1], moran_observado=I_obs, n_sim=n_sim)
+            e = max_ventana(P, k, 1)[0]
+            d = max_ventana(P, k, -1)[0]
+            nul[f"exceso_{k}"].append(e)
+            nul[f"deficit_{k}"].append(d)
+            fila.append((e, d))
+        maximo_global.append(fila)
+    out = dict(calibracion=cal, n_sim=n_sim)
+    # p de cada estadístico y p conjunto (el más extremo de los seis, en rango, frente a la nula)
+    obs_p = []
     for k in VENTANAS:
         for n, s in (("exceso", 1), ("deficit", -1)):
             val, (i, j) = max_ventana(M, k, s)
-            out[f"{n}_{k}x{k}"] = dict(valor=round(val, 2),
-                                       p_global=float(np.mean(np.array(nul[f"{n}_{k}"]) >= val)),
-                                       theta=angulos(i + (k - 1) / 2, j + (k - 1) / 2)[0],
-                                       phi=angulos(i + (k - 1) / 2, j + (k - 1) / 2)[1])
+            p = float(np.mean(np.array(nul[f"{n}_{k}"]) >= val))
+            obs_p.append(p)
+            th, ph = angulos(i + (k - 1) / 2, j + (k - 1) / 2)
+            out[f"{n}_{k}x{k}"] = dict(valor=round(val, 2), p_global=p, theta=th, phi=ph)
+    # p conjunto: fracción de simulaciones cuyo MENOR p entre los seis estadísticos es ≤ el observado
+    arr = {key: np.array(val) for key, val in nul.items()}
+    pmin_sim = []
+    for t in range(n_sim):
+        ps = []
+        for k in VENTANAS:
+            for n in ("exceso", "deficit"):
+                ps.append(np.mean(arr[f"{n}_{k}"] >= arr[f"{n}_{k}"][t]))
+        pmin_sim.append(min(ps))
+    out["p_minimo_observado"] = min(obs_p)
+    out["p_conjunto_seis_estadisticos"] = float(np.mean(np.array(pmin_sim) <= min(obs_p)))
     return out
 
 

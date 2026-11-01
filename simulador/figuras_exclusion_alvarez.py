@@ -27,6 +27,8 @@ def panel(ax, P, d, eje, titulo, paso):
     sel = np.abs(P[:, otro] - P[np.argmin(np.abs(P[:, otro])), otro]) < paso / 2
     Q, z = P[sel], d[sel]
     cls = np.where(z >= 25, 0, np.where(z >= 3.84, 1, 2))
+    cls = cls.astype(float)
+    cls[np.isnan(z)] = np.nan          # la cámara no cabe entera: no aplicable
     ux, uz = np.unique(Q[:, eje]), np.unique(Q[:, 2])
     img = np.full((uz.size, ux.size), np.nan)
     img[np.searchsorted(uz, Q[:, 2]), np.searchsorted(ux, Q[:, eje])] = cls

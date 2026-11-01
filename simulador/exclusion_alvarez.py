@@ -56,9 +56,11 @@ class Alvarez:
         self.w0 = F0 * ang * acept * self.dirs[:, 2]
         jj, ii = np.meshgrid(np.arange(30 * SUB) // SUB, np.arange(30 * SUB) // SUB, indexing="xy")
         ii = 29 - ii                                   # fila 0 = norte (θ = 45°)
-        ii = np.clip(ii + desplazamiento_filas, 0, 29)
-        self.idx = (ii * 30 + jj).reshape(-1)
-        N0 = np.bincount(self.idx, weights=self.w0, minlength=900)
+        ii = ii + desplazamiento_filas
+        idx = ii * 30 + jj
+        idx[(ii < 0) | (ii > 29)] = 900              # fuera de la matriz: se descarta
+        self.idx = idx.reshape(-1)
+        N0 = np.bincount(self.idx, weights=self.w0, minlength=901)[:900]
         escala = CUENTAS_BIN_CENTRAL / N0.reshape(30, 30)[14:16, 14:16].mean()
         self.w0 *= escala
         self.N0 = N0 * escala
@@ -76,7 +78,7 @@ class Alvarez:
         cos = self.dirs[m, 2]
         rat = cb.mu.flujo_integral(cb.mu.energia_minima(X1), cos) / np.maximum(
             cb.mu.flujo_integral(cb.mu.energia_minima(self.X0[m]), cos), 1e-300)
-        dN = np.bincount(self.idx[m], weights=self.w0[m] * (rat - 1.0), minlength=900)
+        dN = np.bincount(self.idx[m], weights=self.w0[m] * (rat - 1.0), minlength=901)[:900]
         with np.errstate(divide="ignore", invalid="ignore"):
             return np.where(self.N0 > 0, dN / np.sqrt(self.N0), 0.0)
 
@@ -106,37 +108,53 @@ def ajustar_ky(origen=None):
     return mejor
 
 
+def cabe(caja) -> bool:
+    """La caja entera dentro de la Kefrén actual (sin sobresalir de caras ni vértice)."""
+    h = np.asarray(caja.tam) / 2
+    esq = np.array([[a, b, c] for a in (-1, 1) for b in (-1, 1) for c in (-1, 1)]) * h + caja.centro
+    lim = kf.SEMI * (1 - esq[:, 2] / kf.ALTURA)
+    return bool(np.all((np.abs(esq[:, 0]) <= lim) & (np.abs(esq[:, 1]) <= lim) & (esq[:, 2] > 0)
+                       & (esq[:, 2] < kf.ALTURA_ACTUAL)))
+
+
 def main():
-    paso = float(sys.argv[1]) if len(sys.argv) > 1 else 6.0
+    paso = float(sys.argv[1]) if len(sys.argv) > 1 else 8.0
     t0 = time.time()
+    origen0 = kf.ORIGEN_ALVAREZ.copy()
     res = {}
-    P = None
-    for nombre, origen, df in (("nominal", kf.ORIGEN_ALVAREZ, 0), ("fila_-1", kf.ORIGEN_ALVAREZ, -1),
-                               ("fila_+1", kf.ORIGEN_ALVAREZ, 1), ("alternativo", kf.ORIGEN_ALTERNATIVO, 0)):
-        A = Alvarez(origen, df)
+    for nombre, origen, df in (("nominal", origen0, 0), ("fila_-1", origen0, -1),
+                               ("fila_+1", origen0, 1), ("alternativo", kf.ORIGEN_ALTERNATIVO, 0)):
         kf.ORIGEN_ALVAREZ = np.asarray(origen, float)
+        ky, _ = ajustar_ky(origen)
+        A = Alvarez(origen, df, ky)
         P = kf.voxeles(paso)
         en_cono = np.array([kf.fraccion_en_cono(q[None]) for q in P]) > 0
-        dk = np.array([A.dchi2(kf.camara_del_rey(q)) for q in P])
-        d8 = np.array([A.dchi2(cb.cubo(q, 8.0)) for q in P])
-        r = dict(kappa=round(A.kappa, 3), cuentas_totales_bins_validos=round(float(A.N0[A.valido].sum())),
-                 n_voxeles=len(P))
-        for h, d in (("camara_tipo_rey", dk), ("cubo_8m", d8)):
-            r[h] = dict(excluido_5s=float(np.mean(d >= 25)), excluido_95=float(np.mean(d >= 3.84)),
-                        excluido_5s_dentro_cono=float(np.mean(d[en_cono] >= 25)),
-                        excluido_95_dentro_cono=float(np.mean(d[en_cono] >= 3.84)),
-                        excluido_95_fuera_cono=float(np.mean(d[~en_cono] >= 3.84)),
-                        preferido_95=float(np.mean(d <= -3.84)),
-                        minimo_dchi2=round(float(d.min()), 2),
-                        donde_minimo=[round(float(x), 1) for x in P[int(np.argmin(d))]])
+        r = dict(origen=[float(x) for x in origen], ky=ky, kappa=round(A.kappa, 3),
+                 cuentas_totales_bins_validos=round(float(A.N0[A.valido].sum())))
+        guardar = {}
+        for h, f in (("camara_tipo_rey", kf.camara_del_rey), ("cubo_8m", lambda q: cb.cubo(q, 8.0))):
+            ok = np.array([cabe(f(q)) for q in P])
+            d = np.full(len(P), np.nan)
+            d[ok] = [A.dchi2(f(q)) for q in P[ok]]
+            dd, cono = d[ok], en_cono[ok]
+            i_min = int(np.nanargmin(d))
+            r[h] = dict(posiciones_que_caben=int(ok.sum()), de=len(P),
+                        excluido_95=float(np.mean(dd >= 3.84)), excluido_5s=float(np.mean(dd >= 25)),
+                        dentro_cono_95=float(np.mean(dd[cono] >= 3.84)), dentro_cono_5s=float(np.mean(dd[cono] >= 25)),
+                        fuera_cono_95_sobre_total=float(np.mean((dd >= 3.84) & ~cono)),
+                        fuera_cono_95_sobre_fuera=float(np.mean(dd[~cono] >= 3.84)),
+                        minimo_dchi2=round(float(d[i_min]), 2), donde_minimo=[round(float(x), 1) for x in P[i_min]])
+            guardar[h] = d
         res[nombre] = r
         print(nombre, json.dumps(r, ensure_ascii=False), flush=True)
         if nombre == "nominal":
             np.savez_compressed(os.path.join(RAIZ, "resultados", "24_exclusion_alvarez.npz"), P=P,
-                                dchi2_rey=dk, dchi2_8m=d8, en_cono=en_cono)
-    kf.ORIGEN_ALVAREZ = np.array([5.0, -1.5, -0.5])
+                                dchi2_rey=guardar["camara_tipo_rey"], dchi2_8m=guardar["cubo_8m"], en_cono=en_cono)
+    kf.ORIGEN_ALVAREZ = origen0
     res["tiempo_s"] = round(time.time() - t0)
-    res["criterios"] = "Δχ² ≥ 25 ≈ 5σ; Δχ² ≥ 3,84 = 95 % CL; Δχ² ≤ −3,84: los datos PREFIEREN la cámara"
+    res["criterios"] = ("Solo posiciones en que la cámara cabe entera (denominador común). Δχ² ≥ 3,84 = 95 % CL; "
+                        "Δχ² ≥ 25: ~5σ nominal (≈ 4,2σ si se tiene en cuenta la correlación de los residuos); "
+                        "Δχ² < 0: los datos prefieren la cámara")
     with open(os.path.join(RAIZ, "resultados", "24_exclusion_alvarez.json"), "w") as fh:
         json.dump(res, fh, indent=1, ensure_ascii=False, allow_nan=False)
 

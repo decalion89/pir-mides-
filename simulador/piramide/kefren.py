@@ -10,12 +10,11 @@ Alvarez et al., Science 167, 832–839 (1970):
   of the pyramid's volume"; "we now hope to rearrange the equipment so that we can look through
   the remaining 81 percent".
 
-Geometría de Kefrén: lado original 215,25 m (410 codos), altura original 143,5 m (274 codos);
-hoy ~136,4 m. La Cámara de Belzoni (14,15 × 5 m) está excavada en la roca bajo la base, casi
-en el eje vertical; aquí se toma su esquina sureste en (5, −1,5) m y el detector a ras de la
-base (el aire de la cámara queda por encima). La posición exacta es incierta: Gutowski et al.
-(arXiv:1712.08590) sitúan la cámara 13,5 m al este y 4 m al norte del centro; se estudia como
-variante (ORIGEN_ALTERNATIVO).
+Geometría de Kefrén: lado original 215,25 m (410 codos), altura original 143,5 m; hoy ~136,4 m.
+Posición del detector, según el propio Alvarez (p. 834): "the equipment is 15.5 meters east and
+4 meters north of the center" (topografía: 15,6 m); el ajuste con los rayos cósmicos lo situaba
+en 13,5 m al este. Se usa (15,5; 4) como nominal y (13,5; 4) como variante. Corregido el
+01/11/2026 tras una revisión independiente: antes se usaba (5; −1,5), que era un error de lectura.
 """
 from __future__ import annotations
 
@@ -32,8 +31,8 @@ ALTURA_ACTUAL = 136.4
 SEMI = LADO / 2
 TAN_CARA = ALTURA / SEMI
 DENSIDAD = 2.2
-ORIGEN_ALVAREZ = np.array([5.0, -1.5, -0.5])
-ORIGEN_ALTERNATIVO = np.array([19.5, 2.0, -0.5])   # esquina SE si el centro está en (13,5; 4)
+ORIGEN_ALVAREZ = np.array([15.5, 4.0, -0.5])        # Alvarez et al. 1970, p. 834
+ORIGEN_ALTERNATIVO = np.array([13.5, 4.0, -0.5])    # posición según su ajuste con rayos cósmicos
 
 
 def longitud(origen: np.ndarray, dirs: np.ndarray) -> np.ndarray:

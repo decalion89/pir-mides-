@@ -137,7 +137,15 @@ Reconstruimos la pirámide (con su remate y su revestimiento perdido), la posici
 ### 21. Cuándo fabrica un detector una cámara que no existe → [docs/28](docs/28-falsas-camaras.md)
 Con un experimento numérico calculamos cuánto error en la posición del detector hace falta para "descubrir" una cámara inexistente. Sale un umbral de ~1–1,5 m de error horizontal: por encima, la falsa señal crece con el número de muones. Con 10⁸ muones y 2 m de error aparece una cámara falsa a ~30σ. El simulador reproduce el falso candidato real de los datos de Alvarez (−46 frente a −43). La hipótesis inicial, una ley de potencias, era incorrecta.
 
-### 22. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 22. ¿Pudo un error de posición fabricar el Gran Vacío? → [docs/29](docs/29-el-gran-vacio-pasa-la-prueba.md)
+Aplicamos la misma prueba a los detectores de la Cámara de la Reina. **El Gran Vacío pasa la prueba.**
+- **Con la precisión declarada del modelo (~30 cm)** no se fabrica ninguna señal en su posición.
+- **El detector más expuesto** es KEK H1, casi bajo el eje de la Gran Galería. Necesitaría ~0,7 m de error para producir un vacío falso justo allí, con el 44 % de la señal real.
+- **Los de Nagoya**, desplazados 4,5–5,8 m del eje, no lo fabrican ni con 1,2 m de error.
+
+De aquí sale una regla de diseño: la paralaje lateral protege frente a los vacíos falsos paralelos a un hueco conocido.
+
+### 23. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica
@@ -171,6 +179,7 @@ Siete predicciones concretas, fechadas en git **antes** de que existan las medic
 | [26 — El límite del gnomon](docs/26-el-limite-del-gnomon.md) | El método solar no puede producir errores de más de ~6′: solo explica Keops y Kefrén |
 | [27 — Alvarez desde cero](docs/27-alvarez-desde-cero.md) | Reconstrucción independiente del experimento de 1969 y un falso candidato desmontado |
 | [28 — Falsas cámaras](docs/28-falsas-camaras.md) | Regla práctica: la posición del detector debe conocerse mejor que ~1 m o se fabrican cámaras falsas |
+| [29 — El Gran Vacío pasa la prueba](docs/29-el-gran-vacio-pasa-la-prueba.md) | Un error de posición no fabrica el Gran Vacío: margen ~2× para KEK H1, >4× para Nagoya; regla de la paralaje |
 | [ARTICULO.md](ARTICULO.md) | Borrador del artículo (en español) |
 | [preprint/alvarez/alvarez_reanalysis_en.pdf](preprint/alvarez/alvarez_reanalysis_en.pdf) | **Artículo breve en inglés**: los datos de Alvarez (1970) reanalizados (documentos 19–20) |
 | [preprint/preprint_en.pdf](preprint/preprint_en.pdf) | **Preprint en inglés** con todos los resultados, con fuente LaTeX para arXiv |

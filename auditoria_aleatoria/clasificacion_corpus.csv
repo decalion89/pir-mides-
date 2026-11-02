@@ -1,0 +1,226 @@
+origen,pmcid,aplicable,clase,motivo
+muestra1,PMC10036527,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC10066219,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10105696,no,NA,Morfometría geométrica de molares; sin mecanismo con ritmo
+censo_b1,PMC10119080,no,NA,Tomografía de neutrones; imagen y composición
+censo_b1,PMC10119129,no,NA,µCT para identificar taxón de corteza; imagen
+censo_b1,PMC10121553,no,NA,MA-XRF de líneas de plomo; imagen/composición
+muestra1,PMC10147686,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC10167333,si,CONDICIONAL,Paleosuelos 14C: DOC solo con parámetros extremos; error tabla 2 x3-72 (doc 40)
+censo_b1,PMC10195873,si,FALLA,"RUSLE con K=0,30 junto a R en SI: K supera ×3,3 el máximo físico SI (0,091) y ×5-14 el realista; tasas absolutas infladas ~×7,6; el patrón relativo se mantiene"
+censo_b1,PMC10227033,no,NA,Detección de sitios con aprendizaje profundo
+censo_b1,PMC10232546,limite,PASA,Origen antrópico por estratigrafía y balance de volúmenes (cubeta 400-450 mil m3 ≈ montículo ≥400-450 mil m3); el ritmo de construcción es holgado
+muestra1,PMC10307784,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC10338521,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10363533,no,NA,"Identificación de compuestos (FTIR, GC-MS) en venenos de flecha"
+censo_b1,PMC10394069,no,NA,ADN antiguo de ganado; filogeografía
+muestra1,PMC10442435,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10444888,no,NA,ADN antiguo en ladrillo; la 'protección en la arcilla' se afirma sin cuantificar ni probar daño
+censo_b1,PMC10471619,no,NA,"Composición de bálsamos (GC-MS, LC-MS/MS)"
+censo_b1,PMC10505234,no,NA,Paleoclima por proxies y correlación; sin cálculo de ritmo
+censo_b1,PMC10516984,no,NA,Redes de Petri; cognición
+censo_b1,PMC10564916,no,NA,Tafonomía observacional de buitres
+censo_b1,PMC10589302,no,NA,Dataciones con regresión bayesiana / ML
+censo_b1,PMC10616226,no,NA,Modelo matemático (número áureo); no es ciencia arqueológica con mecanismo físico
+muestra1,PMC10632388,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10643692,no,NA,"Fisiología de esperma en peces; mecanismo ensayado directamente, sin inferencia de ritmo"
+censo_b1,PMC10643694,no,NA,Método LIBS (imágenes Mg/Ca); calibración de proxy
+muestra1,PMC10651839,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC10709628,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10721606,no,NA,"Identificación de pigmentos (Raman, XRF)"
+muestra1,PMC10756879,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10781948,no,NA,Cribado IR para ADN antiguo
+censo_b1,PMC10827753,no,NA,Microrrestos y ADN en cálculo dental; identificación
+muestra1,PMC10861457,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10864403,no,NA,Composición XRF y colorimetría de monedas
+muestra1,PMC10876933,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10881475,no,NA,Procedencia por isótopos de plomo
+muestra1,PMC10928219,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC10940295,no,NA,Imputación en ADN antiguo
+censo_b1,PMC10943054,no,NA,Morfometría geométrica de manos
+censo_b1,PMC10954768,no,NA,"Osmorregulación medida en laboratorio y filogenia; salinidad medida, no inferida"
+muestra1,PMC10966001,si,PASA,Polianilina sobre puntas de lanza: corrosión plausible (retractado)
+censo_b1,PMC11001934,no,NA,ADN antiguo (diversidad genética de morsas)
+censo_b1,PMC11018830,no,NA,Distribución de consolidantes observada por µCT y Raman; sin inferencia de ritmo
+censo_b1,PMC11109126,si,CONDICIONAL,Analogía de colada sísmica: exige loess saturado a ~12-14 m (en 2023 ligado a riego invernal y helada); no se justifica para hace 4000 años
+censo_b1,PMC11109326,no,NA,Reconstrucción SIG de suelo urbano
+censo_b1,PMC11166976,no,NA,Paleoproteómica de especies
+muestra1,PMC11208530,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC11211405,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC11245623,limite,PASA,Temperatura de carbonización estimada con curva experimental; el calor exigido (≥250 °C) es trivial en un fuego
+censo_b1,PMC11255293,no,NA,Experimentos de comportamiento y huellas de uso; sin cálculo de ritmo
+censo_b1,PMC11289308,no,NA,Procesamiento de lenguaje (NER)
+censo_b1,PMC11303769,no,NA,Determinación de sexo por péptidos
+censo_b1,PMC11319456,no,NA,Nota de corrección de editorial
+censo_b1,PMC11339378,no,NA,Método de ADN sedimentario (pooling)
+censo_b1,PMC11344812,no,NA,Paleontología y filogenia en ámbar
+censo_b1,PMC11385181,no,NA,Aislamiento de arqueas y caracterización de madera; papel en el biodeterioro especulativo y sin cuantificar
+muestra1,PMC11411106,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC11544219,limite,INDETERMINADO,"Marte: agua de 3,65 a 3,42 Ga por edades de cráteres frente a congelación en 10^4-10^5 años (citada); faltan ritmos de sublimación y espesores"
+censo_b1,PMC11549383,no,NA,Isótopos de movilidad y procedencia
+censo_b1,PMC11551143,no,NA,Procedencia por isótopos de plomo
+censo_b1,PMC11618504,no,NA,Composición superficial XRD/XPS
+muestra1,PMC11634955,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC11685384,no,NA,Clasificación de procedencia con aprendizaje profundo
+muestra1,PMC11696876,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b1,PMC11700196,no,NA,ADN antiguo de Plasmodium
+censo_b1,PMC11707193,no,NA,Paleontología y filogenia en ámbar
+censo_b1,PMC11735982,no,NA,Análisis de redes sociales
+censo_b2,PMC11742038,si,PASA,"Corrosion de monedas: ranking por icorr medido; Stern-Geary cuadra salvo Rp de S3 (4743 vs 6921) y CR de S1/S2 (x1,3-2); no cambia el ranking. Analogo al n.º 39 de la primera muestra"
+censo_b2,PMC11748613,no,NA,Intervencion artistica en aldeas; ciencias sociales sin mecanismo
+censo_b2,PMC11760916,si,CONDICIONAL,25(OH)D3 en pelo: la perdida de peso exige subir el 25(OH)D circulante x5-30 frente a <=x2 publicado (ratio>=3 en 96 %); con las concentraciones medidas el pelo retiraria ~8 % (tipico) a ~60-110 % (maximos) de la produccion diaria. Afirmacion matizada; suplementos de dosis desconocida
+muestra1,PMC11805900,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b2,PMC11805905,no,NA,Historia cultural del vidrio que imita jade; sin mecanismo con ritmo
+censo_b2,PMC11814278,limite,FALLA,"Estocasticidad demografica: con las poblaciones de Data S1, el proceso nacimiento-muerte critico predice 3,4 abandonos (1596-1881; 71 observados) y 0,03 (1881-1931; 24 observados); ratio>=3 en 100 %. Aplicabilidad limite (mecanismo demografico); los autores matizan que cada abandono puede ser causal"
+censo_b2,PMC11842861,no,NA,ADN antiguo (HLA)
+censo_b2,PMC11873284,no,NA,"PAH y carbono negro como indicadores de fuegos; atribucion por cocientes, sin ritmo comprobable"
+censo_b2,PMC11876454,no,NA,Colores de paisaje con aprendizaje profundo
+censo_b2,PMC11930940,no,NA,"Gel de gellan para extraer piezas: resistencia medida directamente, sin mecanismo inferido con ritmo"
+censo_b2,PMC11977225,no,NA,Petrologia y geoquimica de fuentes de fluidos en subduccion; identificacion composicional
+muestra1,PMC12009363,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b2,PMC12056045,si,PASA,"Vida de sistemas hidrotermales fosiles <12 kyr a 1 Myr; coherente con enfriamiento conductivo L^2/kappa (0,6 km -> 12 kyr; 5-6 km -> ~1 Myr). Geologia, como el Bushveld de la primera muestra"
+censo_b2,PMC12062234,no,NA,Nota de correccion
+censo_b2,PMC12075576,no,NA,ADN antiguo
+censo_b2,PMC12125181,no,NA,Indices de tolerancia de trigo; agronomia empirica
+muestra1,PMC12149308,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC12205091,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b2,PMC12215712,no,NA,Paleopatologia por TC
+censo_b2,PMC12223272,no,NA,Morfometria craneofacial
+censo_b2,PMC12223277,no,NA,Diagnostico paleopatologico
+censo_b2,PMC12280073,no,NA,Imagen GPR
+censo_b2,PMC12283936,no,NA,Taxonomia y filogenia de hongos
+muestra1,PMC12322081,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b2,PMC12328702,no,NA,Evaluacion de tecnicas analiticas en salmueras; metodologia
+censo_b2,PMC12328786,no,NA,Consolidantes de silano: prestaciones medidas directamente; mecanismo cualitativo
+censo_b2,PMC12460655,no,NA,Metodos de IA en geofisica
+censo_b2,PMC12508033,limite,PASA,"Desplazamientos por pilotes en suelos blandos: medidos y modelo calibrado; estabilizacion a 30-40 d coherente con t90=0,848H^2/cv (4-190 d con k y Es de la tabla 1). Ingenieria"
+censo_b2,PMC12511581,no,NA,Mitogenomas antiguos
+censo_b2,PMC12514223,no,NA,Composicion y microestructura de vidriados; mecanismo de coloracion cualitativo
+censo_b2,PMC12531323,no,NA,Aprendizaje automatico y morfometria
+censo_b2,PMC12540996,no,NA,Metodo de extraccion de ADN antiguo
+muestra1,PMC12559309,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC12559727,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b2,PMC12569112,no,NA,Icnologia descriptiva; la relacion sedimentacion-escape es cualitativa y sin ritmos dados (como el n.º 32 de la primera muestra)
+censo_b2,PMC12572341,no,NA,Consolidante de lignina: penetracion y ASE medidas directamente
+censo_b2,PMC12586616,no,NA,Imagen (RM y micro-TC) de madera consolidada
+censo_b2,PMC12586692,no,NA,Imagen geofisica
+censo_b2,PMC12698780,no,NA,Nota de correccion
+censo_b2,PMC6954214,no,NA,Morfometria facial
+censo_b2,PMC6972930,no,NA,Flujo de trabajo de GC-MS; identificacion composicional
+censo_b2,PMC6976595,no,NA,Cronologia de deslizamientos
+censo_b2,PMC6978382,no,NA,Filogeografia
+censo_b2,PMC6987171,no,NA,ADN antiguo y dataciones
+censo_b2,PMC7010671,no,NA,Nota de correccion
+censo_b2,PMC7010770,no,NA,Consolidantes organosilicicos: ASE medida directamente
+censo_b2,PMC7067882,no,NA,ADN mitocondrial antiguo
+muestra1,PMC7200681,si,INDETERMINADO,Calcitonina de mejillón: dosis 10 µM sin medida fisiológica
+censo_b2,PMC7248073,no,NA,Genomica
+censo_b2,PMC7264122,no,NA,ADN antiguo
+censo_b2,PMC7272403,no,NA,Experimento balistico para clasificar marcas
+censo_b2,PMC7280300,no,NA,Comunidades bacterianas por secuenciacion
+censo_b2,PMC7283361,no,NA,Polen y carbon; paleoambiente sin ritmo comprobable
+censo_b2,PMC7316703,si,FALLA,"Hg de Tikal (caso ya analizado, doc. 39): con 10-30 ug/g en el sedimento el agua tiene ~0,6 ug/L (0,17-2,1), el 11 % de la guia OMS; la guia es >=3 veces Cw en el 94 %. Las cianobacterias son un argumento aparte"
+censo_b2,PMC7367275,no,NA,Filogeografia
+censo_b3,PMC7368048,no,NA,Estimación de sexo (proteómica/ADN/osteología); comparación de métodos
+censo_b3,PMC7423987,limite,INDETERMINADO,Desnaturalización térmica del colágeno por TEM; clasificación por analogía con Koon; diagénesis pre/post-deposicional no cuantificada y el artículo lo reconoce
+censo_b3,PMC7426858,no,NA,Datación AMS y modelo bayesiano de la llegada del mijo
+muestra1,PMC7441183,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+muestra1,PMC7445168,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b3,PMC7452889,no,NA,"Experimento de cocina de un año; residuos medidos directamente, no se infiere ritmo"
+censo_b3,PMC7455698,limite,PASA,"Δ13C→aporte de agua 71–215 mm frente a 71,4 mm/año de lluvia: apoya el riego; proxy isotópico calibrado"
+censo_b3,PMC7468286,no,NA,Corrección de autor (ADN antiguo de cobayas)
+censo_b3,PMC7471314,no,NA,Cuantificación LC-MS/MS de inhibidores ATI; composición
+censo_b3,PMC7471681,limite,INDETERMINADO,Identificación de hongos de pudrición blanda; el artículo declara que no puede estimar el ritmo de degradación
+censo_b3,PMC7490262,no,NA,Genética de poblaciones de vid
+censo_b3,PMC7492196,no,NA,ADN sedimentario de foraminíferos
+censo_b3,PMC7493802,no,NA,Imagen (microscopía óptica frente a microCT)
+censo_b3,PMC7508811,no,NA,Isótopos de procedencia de ibis momificados (silvestres o criados)
+censo_b3,PMC7519648,no,NA,Genealogía de cultivares de vid por ADN
+censo_b3,PMC7529770,no,NA,Filogenómica de Hepatica
+censo_b3,PMC7530995,no,NA,"Modelo de mezcla isotópico de la dieta de perros; composición, no ritmo"
+censo_b3,PMC7545160,si,PASA,Persistencia de ADN/células durante ≤127 ka: el ADN extracelular necesita ~8–35× de protección frente a la cinética del hueso; la vía de células durmientes es posible; el artículo matiza (frontera con CONDICIONAL)
+censo_b3,PMC7550590,no,NA,Haplotipo mitocondrial de una momia
+censo_b3,PMC7566594,no,NA,Retrovirus endógenos y origen de una raza ovina
+censo_b3,PMC7578014,no,NA,FTIR y calidad del colágeno; vías de degradación sin ritmo
+muestra1,PMC7582844,si,CONDICIONAL,Filtro de Tikal: solo con agua remansada (doc 38)
+censo_b3,PMC7596472,no,NA,Marte: datación por cráteres de superficies de canal; sin caudales
+censo_b3,PMC7596702,no,NA,Imputación de genotipos en genomas antiguos
+censo_b3,PMC7606445,no,NA,IA para marcas en superficie ósea
+censo_b3,PMC7645724,no,NA,Linajes uniparentales de antiguos húngaros
+censo_b3,PMC7655939,no,NA,Secuenciación de proteínas de coral fósil; método
+censo_b3,PMC7669863,si,PASA,"Frente sólido-líquido a 0,40 µm/s a 1200 °C frente a sqrt(D/t)≈0,27 µm/s (C en austenita); cociente ≈1,5"
+censo_b3,PMC7670438,no,NA,Transferencia génica lateral (genómica)
+censo_b3,PMC7689525,no,NA,Biomarcadores lipídicos en láminas de resina; método
+censo_b3,PMC7713070,no,NA,"Dispersión óptica por la degradación del aglutinante, medida directamente; sin ritmo"
+censo_b3,PMC7810889,no,NA,Metabolómica de residuos (tabaco); identificación de composición
+censo_b3,PMC7862261,no,NA,Genética de los griegos de Calabria
+censo_b3,PMC7862480,no,NA,Experimento de crecimiento con CO2; respuesta medida
+censo_b3,PMC7864908,no,NA,Captura por hibridación de sedaDNA; método
+censo_b3,PMC7870660,no,NA,Corrección de autor (IA para marcas óseas)
+censo_b3,PMC7873039,no,NA,Mitogenomas de tortugas extintas
+muestra1,PMC7878498,si,PASA,Ácidos biliares en Pompeya detectables tras ~1940 años
+censo_b3,PMC7892839,si,INDETERMINADO,Respiraderos como amenaza para el lago: flujo de CH4 de 6 t/año (54 respiraderos) a ~1e4 t/año (extrapolado); el artículo no mide flujos
+muestra1,PMC7892864,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b3,PMC7896077,limite,INDETERMINADO,Mecanismo de la película pasiva propuesto sin velocidad de corrosión ni tiempo de exposición
+censo_b3,PMC7930196,no,NA,Tasa de sustitución del ADNmt (filogenia/reloj molecular)
+censo_b3,PMC7955085,no,NA,"Reconstrucción de los engranajes de Antikythera; cinemática, no ritmo físico"
+censo_b3,PMC7970907,no,NA,Compilación magnética de Gondwana
+muestra1,PMC7985382,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b3,PMC8016987,no,NA,Hidrodinámica del consolidante TPA5; la penetración queda para trabajo futuro
+censo_b3,PMC8018977,no,NA,Descontaminación de ADN en cálculo dental
+censo_b3,PMC8032661,si,PASA,"Desamidación de Gln (t½ 6100 d a 37 °C): contaminante ~0,2 % frente a antiguo ~86 %; el artículo discute el límite"
+censo_b3,PMC8046818,no,NA,Estacionalidad de partos por δ18O del esmalte; quesería interpretativa
+censo_b3,PMC8115322,no,NA,Parentesco con paleogenomas
+censo_b3,PMC8119680,no,NA,ML para la procedencia de sílex
+censo_b3,PMC8160351,si,CONDICIONAL,"La aglomeración coloidal por sobresaturación no forma esferas de 6–10 mm en una cocción (coagulación ~700 años); solo se sostiene con chatarra gruesa que sedimenta, supuesto no declarado"
+censo_b3,PMC8175756,no,NA,sedaDNA y ácidos biliares como presencia de ocupación; sin ritmo
+muestra1,PMC8209062,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b4,PMC8209150,no,NA,ADN antiguo de escarabajos; identificación taxonómica
+muestra1,PMC8225893,si,FALLA,"Cal orgánica: CO2 del extracto carbonata <=0,2 % de la cal (doc 41)"
+censo_b4,PMC8257590,no,NA,Metagenómica y paleolimnología cualitativa; sin mecanismo con magnitud
+censo_b4,PMC8333347,no,NA,Filogenia y datación molecular de una enzima
+censo_b4,PMC8338975,no,NA,"Correlación microbioma–conservación (vivianita); cualitativo, sin ritmos"
+censo_b4,PMC8385020,no,NA,Nota de corrección (Antikythera)
+censo_b4,PMC8413269,no,NA,ADN antiguo y taxonomía de una tortuga
+censo_b4,PMC8528830,no,NA,Panel SNP de ADN antiguo de atún
+censo_b4,PMC8553948,no,NA,Método bioinformático de parentesco (ADN antiguo)
+censo_b4,PMC8576035,no,NA,Genética de poblaciones de Cercis; cuello de botella
+censo_b4,PMC8578419,no,NA,Paleotermometría isotópica δ18O (equilibrio); sin ritmo
+censo_b4,PMC8595683,no,NA,Procedencia de mármol por DRX
+muestra1,PMC8605008,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b4,PMC8608907,no,NA,Nota de corrección (ML de sílex)
+censo_b4,PMC8610989,no,NA,Psicología experimental de aritmética
+censo_b4,PMC8613185,no,NA,Genómica de diatomea; fragmento viral
+censo_b4,PMC8639971,si,CONDICIONAL,"Atribuye la resistencia al frío a BAT; con capacidad térmica humana medida BAT da <=15 W frente a ~42 W del exceso metabólico de Hammel; P(cociente>=3)=0,83 con supuestos generosos; no hace balance térmico"
+censo_b4,PMC8683508,no,NA,Identificación de biomarcadores de humo en cálculo dental; presencia/ausencia
+censo_b4,PMC8748637,no,NA,Composición e isótopos de plomo; procedencia del latón
+censo_b4,PMC8748697,no,NA,Identificación de fitolitos de mijo
+censo_b4,PMC8786873,si,PASA,"Velocidad 0,8–1,8 m/s y Q<=2 m3/s coherentes con Manning (mediana 1,0 m/s) y con escala de subcapa viscosa (ondas de cm); el artículo acota viscosidad y caudal máximo"
+censo_b4,PMC8807699,no,NA,Nota de corrección (financiación)
+censo_b4,PMC8873316,no,NA,Isótopos de conchas para estacionalidad y procedencia
+censo_b4,PMC8885648,no,NA,Datación radiocarbónica de morteros
+censo_b4,PMC8904470,no,NA,Temperatura de quemado por espectroscopia; identificación
+censo_b4,PMC8948219,no,NA,Correlación elementos–colágeno por imagen; diagénesis cualitativa
+censo_b4,PMC8960907,no,NA,Icnofósil de minador; XRF cualitativo
+censo_b4,PMC8994005,no,NA,Composición de kohl
+censo_b4,PMC9132974,limite,INDETERMINADO,Eutrofización por carga de paja de cáñamo (mecanismo de carga) pero sin volumen del lago ni cantidades de cáñamo
+censo_b4,PMC9192592,no,NA,Niveles del lago por indicadores arqueológicos; sin mecanismo con ritmo
+censo_b4,PMC9283436,no,NA,Paleoparasitología por NGS
+censo_b4,PMC9356035,no,NA,ADN mitocondrial antiguo y demografía simulada
+muestra1,PMC9357025,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b4,PMC9399119,no,NA,Icnología de creta lagunar
+censo_b4,PMC9424292,no,NA,Calibración de proxies de temperatura de carbonización; la oxidación se trata cualitativamente
+censo_b4,PMC9433435,no,NA,Selección en mitogenomas de colémbolos
+censo_b4,PMC9436983,no,NA,Reconocimiento de caracteres por ML
+muestra1,PMC9485162,si,PASA,Bushveld: solidificación y llenado compatibles
+censo_b4,PMC9617934,si,PASA,"ACH>0,35 con viento de 10–15 m/s: estimación de orden de magnitud ACH≈2–31; error de unidades en Fig. 19 (m3/h/cm2) sin efecto en la conclusión"
+censo_b4,PMC9626589,no,NA,"Caracterización hidrodinámica de polímeros (masa molar, conformación)"
+censo_b4,PMC9630262,no,NA,"Experimento de pH sobre hueso quemado; efectos medidos directamente, sin extrapolación de ritmo"
+censo_b4,PMC9672364,no,NA,Eliminación de ruido en imágenes por ML
+censo_b4,PMC9719486,no,NA,ADN antiguo de cabello
+censo_b4,PMC9789100,no,NA,Polen de maíz y sequías; correlación
+censo_b4,PMC9800559,no,NA,ADN antiguo de Camboya
+censo_b4,PMC9800585,no,NA,Isótopos y biomarcadores de carrizos; paleoambiente
+censo_b4,PMC9810590,no,NA,Identificación morfológica y química de coprolitos
+muestra1,PMC9832040,no,NA,No aplicable en el cribado de la primera muestra (RESULTADO.md)
+censo_b4,PMC9985608,limite,PASA,Penetración medida directamente; balance de masa coherente (ganancia 40–50% = 54–74% del máximo por llenado de poros); la sugerencia de alargar la inmersión no la respalda el tiempo de difusión

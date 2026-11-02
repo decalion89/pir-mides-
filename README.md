@@ -224,6 +224,11 @@ Para no elegir los casos a dedo, se tomaron **40 artículos al azar** (semilla f
   - un **error aritmético** en un artículo de radiocarbono en paleosuelos, que infravalora el carbono moderno ×3–72 (doc. 40);
   - un mecanismo de **carbonatación imposible por estequiometría** (×570) en una cal "orgánica" (doc. 41).
 
+### 35. El dogma de la escala y su auditoría aleatoria → [docs/42](docs/42-el-dogma-de-la-escala.md), [resultado](auditoria_aleatoria/RESULTADO_ESCALA.md)
+La ley de escala de Fourier, t ∝ L², explica por sí sola el desajuste del cerebro de Herculano (~3 000) y por qué la "carbonatación rápida" en el laboratorio no puede endurecer el núcleo de muros de un metro (7 días de probeta ≈ 70 años de muro).
+
+Pero en una **segunda muestra aleatoria** de 40 artículos, con el protocolo registrado antes de leerlos, solo 3 hacen una extrapolación de escala con transporte de por medio, y en ninguno cambia la conclusión. **El dogma es real, pero raro:** un resultado negativo que dejamos registrado tal cual.
+
 ### 35. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 

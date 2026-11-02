@@ -18,7 +18,7 @@
   - la dependencia de la escala en la meteorización mineral (Malmström et al.: en el campo es órdenes de magnitud más lenta que en el laboratorio);
   - las críticas a los ensayos de envejecimiento acelerado en conservación.
 - **No lo hemos encontrado (búsqueda del 02/11/2026):** una comprobación sistemática de semejanza dimensional aplicada a las inferencias de mecanismo de la arqueometría.
-- **La prueba que convierte esto en algo más que una idea:** la segunda auditoría aleatoria ([`auditoria_aleatoria/PROTOCOLO_ESCALA.md`](../auditoria_aleatoria/PROTOCOLO_ESCALA.md)).
+- **La prueba de si es frecuente:** la segunda auditoría aleatoria ([`auditoria_aleatoria/RESULTADO_ESCALA.md`](../auditoria_aleatoria/RESULTADO_ESCALA.md)). **Resultado: en esta muestra el dogma es raro.** Solo 3 de 40 artículos hacen una extrapolación de escala con transporte por medio (IC 1,6–20 %), y ninguno de los tres cambia su conclusión al aplicar la ley de escala (0/3). Nuestros casos son reales pero no representativos. La ley de escala sirve como comprobación puntual, no como un fallo extendido del campo.
 
 ## Límites
 - **Fourier solo vale para procesos controlados por difusión o conducción.** Las reacciones limitadas por la cinética (Damköhler) o por el aporte requieren otras comparaciones.

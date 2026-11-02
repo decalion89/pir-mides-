@@ -224,6 +224,12 @@ Para no elegir los casos a dedo, se tomaron **40 artículos al azar** (semilla f
   - un **error aritmético** en un artículo de radiocarbono en paleosuelos, que infravalora el carbono moderno ×3–72 (doc. 40);
   - un mecanismo de **carbonatación imposible por estequiometría** (×570) en una cal "orgánica" (doc. 41).
 
+### 36. Censo del corpus completo → [auditoria_aleatoria/RESULTADO_CENSO.md](auditoria_aleatoria/RESULTADO_CENSO.md)
+Los **225 artículos** de arqueología de *Scientific Reports* (2020–2025, acceso abierto), revisados uno a uno con el protocolo registrado. Recalculamos con código propio todo caso que no pasa.
+- **21 (9 %)** basan su conclusión en un mecanismo con ritmo físico.
+- De esos, **9 (43 %; IC del 22 al 66 %) no superan una comprobación de orden de magnitud hecha con sus propios números** sin un supuesto no declarado. 3 la fallan de plano.
+- Además aparecieron **5 errores numéricos o de unidades**, entre ellos una erosión de tells sobrestimada ×7,6 y carbono moderno infravalorado ×3–72.
+
 ### 35. El dogma de la escala y su auditoría aleatoria → [docs/42](docs/42-el-dogma-de-la-escala.md), [resultado](auditoria_aleatoria/RESULTADO_ESCALA.md)
 La ley de escala de Fourier, t ∝ L², explica por sí sola el desajuste del cerebro de Herculano (~3 000) y por qué la "carbonatación rápida" en el laboratorio no puede endurecer el núcleo de muros de un metro (7 días de probeta ≈ 70 años de muro).
 

@@ -1,0 +1,35 @@
+{
+ "vidrio_romano": {
+  "semivida_aglomeracion_browniana_h": {
+   "p05": 12300.0,
+   "mediana": 6220000.0,
+   "p95": 3200000000.0
+  },
+  "prob_semivida_mayor_3_fusiones": 1.0,
+  "sedimentacion_polvo_h": {
+   "p05": 3240.0,
+   "mediana": 361000.0,
+   "p95": 40300000.0
+  },
+  "sedimentacion_chatarra_gruesa_h": {
+   "p05": 1.11,
+   "mediana": 36.0,
+   "p95": 1190.0
+  },
+  "prob_chatarra_sedimenta_en_la_fusion": 0.323,
+  "nota": "El cobre puro (inclusión n.º 1) funde a 1085 °C: a 900 °C es sólido y no se redondea por tensión superficial."
+ },
+ "lajia": {
+  "agua_para_saturar_m": {
+   "p05": 1.49,
+   "mediana": 2.66,
+   "p95": 4.08
+  },
+  "anos_de_recarga_natural": {
+   "p05": 118.0,
+   "mediana": 332.0,
+   "p95": 922.0
+  },
+  "nota": "El artículo atribuye la saturación de 2023 al riego de invierno y al nivel freático alto; no muestra esas condiciones hace ~4 000 años."
+ }
+}

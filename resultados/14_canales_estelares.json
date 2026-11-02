@@ -1,0 +1,160 @@
+{
+ "canales": {
+  "Rey sur": {
+   "estrella": "Zet Ori",
+   "vmag": 2.05,
+   "decl_objetivo": -15.03738079946428,
+   "soluciones": [
+    {
+     "anio_aC": 2496.62142754623,
+     "sigma_anios": 40.99660261578327
+    }
+   ],
+   "fuente": "Gantenbrink: media 45° (pendiente 1:1)",
+   "estrellas_V2.0": [
+    "46Eps Ori(1.7)"
+   ],
+   "estrellas_V3.0": [
+    "34Del Ori(2.2)",
+    "46Eps Ori(1.7)",
+    "50Zet Ori(2.0)",
+    "26Eps Sco(2.3)",
+    "22Lam Sgr(2.8)"
+   ],
+   "estrellas_V4.0": [
+    "38Nu  Tau(3.9)",
+    "8Pi 5Ori(3.7)",
+    "34Del Ori(2.2)",
+    "46Eps Ori(1.7)",
+    "50Zet Ori(2.0)",
+    "(3.9)",
+    "26Eps Sco(2.3)",
+    "22Lam Sgr(2.8)",
+    "39Omi Sgr(3.8)",
+    "6Gam Psc(3.7)"
+   ]
+  },
+  "Rey norte": {
+   "estrella": "Alp Dra",
+   "vmag": 3.65,
+   "decl_objetivo": 87.40506401569525,
+   "soluciones": [
+    {
+     "anio_aC": 3256.8095463191376,
+     "sigma_anios": 53.18443375775858
+    },
+    {
+     "anio_aC": 2337.852113604504,
+     "sigma_anios": 53.29938243812502
+    }
+   ],
+   "fuente": "Gantenbrink: 32,6° del bloque 6 a la salida (media 32,47°)",
+   "estrellas_V2.0": [],
+   "estrellas_V3.0": [],
+   "estrellas_V4.0": []
+  },
+  "Reina sur": {
+   "estrella": "Alp CMa",
+   "vmag": -1.46,
+   "decl_objetivo": -20.430820931521517,
+   "soluciones": [
+    {
+     "anio_aC": 2368.980311570719,
+     "sigma_anios": 332.9891398994454
+    }
+   ],
+   "fuente": "Gantenbrink: 39,6078°, 24 medidas en 28 m (margen declarado ±2°)",
+   "estrellas_V2.0": [
+    "9Alp CMa(-1.5)",
+    "35Lam Sco(1.6)",
+    "20Eps Sgr(1.9)"
+   ],
+   "estrellas_V3.0": [
+    "92Alp Cet(2.5)",
+    "67Bet Eri(2.8)",
+    "44Iot Ori(2.8)",
+    "53Kap Ori(2.1)",
+    "9Alp CMa(-1.5)",
+    "15Rho Pup(2.8)",
+    "Bet Lup(2.7)",
+    "34Ups Sco(2.7)",
+    "35Lam Sco(1.6)",
+    "20Eps Sgr(1.9)",
+    "38Zet Sgr(2.6)"
+   ],
+   "estrellas_V4.0": [
+    "86Gam Cet(3.5)",
+    "92Alp Cet(2.5)",
+    "48Nu  Eri(3.9)",
+    "67Bet Eri(2.8)",
+    "20Tau Ori(3.6)",
+    "44Iot Ori(2.8)",
+    "53Kap Ori(2.1)",
+    "9Alp CMa(-1.5)",
+    "15Rho Pup(2.8)",
+    "Ups1Cen(3.9)",
+    "Iot Lup(3.5)",
+    "Bet Lup(2.7)",
+    "Eps Lup(3.4)",
+    "Mu 1Sco(3.1)",
+    "Mu 2Sco(3.6)",
+    "34Ups Sco(2.7)",
+    "35Lam Sco(1.6)",
+    "(3.2)",
+    "20Eps Sgr(1.9)",
+    "38Zet Sgr(2.6)",
+    "40Tau Sgr(3.3)"
+   ]
+  },
+  "Reina norte": {
+   "estrella": "Bet UMi",
+   "vmag": 2.08,
+   "decl_objetivo": 80.89958587315373,
+   "soluciones": [
+    {
+     "anio_aC": 2369.3303039322104,
+     "sigma_anios": 446.4411905796934
+    }
+   ],
+   "fuente": "Gantenbrink: ~39,1° estimado (tramo alto no medido; abajo 33,3-40,1°)",
+   "estrellas_V2.0": [],
+   "estrellas_V3.0": [
+    "7Bet UMi(2.1)"
+   ],
+   "estrellas_V4.0": [
+    "5Kap Dra(3.9)",
+    "7Bet UMi(2.1)",
+    "13Gam UMi(3.0)"
+   ]
+  }
+ },
+ "azar": {
+  "V2.5": {
+   "real_coincide": false,
+   "anios_aC": [],
+   "p_azar": 0.277
+  },
+  "V3.0": {
+   "real_coincide": false,
+   "anios_aC": [],
+   "p_azar": 0.2725
+  },
+  "V3.7": {
+   "real_coincide": true,
+   "anios_aC": [
+    3356.0,
+    3316.0,
+    3276.0,
+    3236.0,
+    3196.0,
+    3156.0,
+    2406.0,
+    2366.0,
+    2326.0,
+    2286.0,
+    2246.0
+   ],
+   "p_azar": 0.5905
+  }
+ }
+}

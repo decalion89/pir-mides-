@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[AUTHOR NAME AND AFFILIATION — to be completed] · Contact: labix7@gmail.com · Code and data: [REPOSITORY URL]" />
+  <title>Rate blindness in archaeological science: a census of 225 papers and six case audits</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">body{font-family:"Times New Roman",Georgia,serif;max-width:760px;margin:auto;line-height:1.45;font-size:11pt;color:#1f2933}
+  h1{font-size:14pt;margin-top:1.4em}h1.title{font-size:17pt;text-align:center}
+  p.author,p.date{text-align:center;color:#555}
+  table{border-collapse:collapse;margin:0.8em 0;font-size:9.5pt}td,th{border:1px solid #bbb;padding:3px 6px}
+  img{max-width:100%}figure{margin:1em 0;text-align:center}figcaption{font-size:9pt;color:#555}
+  code{font-size:9pt}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Rate blindness in archaeological science: a census of
+225 papers and six case audits</h1>
+<p class="author">[AUTHOR NAME AND AFFILIATION — to be completed] ·
+Contact: labix7@gmail.com · Code and data: [REPOSITORY URL]</p>
+<p class="date">Draft v4 (census added; revised after an independent
+adversarial review), 2 November 2026</p>
+</header>
+<h1 id="abstract">Abstract</h1>
+<p>Archaeological science often moves from a measured quantity to a
+mechanism without checking whether the mechanism can run at the required
+<em>rate</em>. We call this rate blindness and measure how often it
+happens.</p>
+<p>We took every open-access <em>Scientific Reports</em> paper from
+2020–2025 with “archaeolog<em>”, ”ancient”, ”prehistoric” or
+”archaeometr</em>” in the title (225 papers). The screening protocol was
+pre-registered before any paper was read. For each paper whose
+conclusion relies on a physical, chemical or biological mechanism of
+checkable magnitude, we computed the relevant transport, heat, storage,
+intake or reaction limit from the paper’s own numbers, with Monte Carlo
+ranges. Every case that did not pass was recalculated with independent
+code.</p>
+<p><strong>Main results:</strong></p>
+<ul>
+<li><strong>21 of 225 papers (9%; 95% CI 6–14%)</strong> rest on such a
+mechanism.</li>
+<li>Of these, <strong>9 (43%; CI 22–66%)</strong> do not survive the
+check without an assumption the paper neither states nor justifies, and
+<strong>3 (14%)</strong> fail outright. The failures are a lime
+“internal carbonation” that requires ~570× more CO₂ than the additive
+can supply, tell-erosion rates inflated ×7.6 by a unit mix-up, and
+drinking water deemed “seriously compromised” by sediment mercury that
+would yield ~11–17% of the WHO guideline.</li>
+<li><strong>Incidental numerical or unit errors</strong> turned up in 5
+of the 32 applicable or borderline papers, including modern carbon
+understated ×3–72 in a paleosol radiocarbon study.</li>
+<li><strong>A second pre-registered random audit (40 papers)</strong>
+tested a related “scale dogma”, lab-specimen results transferred to real
+objects without dimensional similarity. It found the problem rare (3/40
+applicable, 0/3 conclusions changed). We report it as a negative
+result.</li>
+</ul>
+<p>We complement the census with six detailed audits of widely
+publicised claims, including a mercury flux from the Qin Shi Huang tomb
+42× above the diffusive limit, a “glass brain” cooling rate 600–12,500×
+faster than conduction inside a skull allows, and a Roman-lead IQ effect
+overstated 2–3×. Each comes with a falsifiable test.</p>
+<figure>
+<img src="fig1_rate_blindness.png"
+alt="Mismatch between claim and physical limit for the four case audits that fail (median and 90% Monte Carlo range)." />
+<figcaption aria-hidden="true">Mismatch between claim and physical limit
+for the four case audits that fail (median and 90% Monte Carlo
+range).</figcaption>
+</figure>
+<h1 id="the-pattern">1. The pattern</h1>
+<p>Archaeological science often argues from <em>stocks</em>: how much
+mercury is in a tomb, what glass-transition temperature a material
+shows, how much water a catchment provides, how much lead a sediment
+holds. But a mechanism also needs a <em>flux</em> on the stated time
+scale, and every flux has a ceiling:</p>
+<ul>
+<li>diffusion is limited by D·ΔC·S, with S the geometric shape
+factor;</li>
+<li>conductive cooling is limited by k/(ρc·L²);</li>
+<li>a reservoir fed by episodic events is limited by storage between
+events;</li>
+<li>human uptake is limited by intake rates and partitioning.</li>
+</ul>
+<p>The check is cheap. Identify the flux the mechanism requires, compute
+its ceiling with the paper’s own geometry, and report the ratio.</p>
+<h1 id="census-of-225-papers">2. Census of 225 papers</h1>
+<p><strong>Protocol.</strong> Corpus: Europe PMC query
+<code>JOURNAL:"Sci Rep" AND (TITLE:archaeolog* OR TITLE:ancient OR TITLE:prehistoric OR TITLE:archaeometr*) AND OPEN_ACCESS:y AND PUB_YEAR:[2020 TO 2025]</code>,
+giving 225 papers.</p>
+<ol type="1">
+<li><strong>Random sample.</strong> A sample of 40 (seed 20261101) was
+screened first.</li>
+<li><strong>Census.</strong> The remaining 185 were screened after a
+second registration.</li>
+<li><strong>Classification.</strong> A paper is <em>applicable</em> if
+its main conclusion relies on a mechanism acting at some magnitude or
+within some time, with the numbers needed for an order-of-magnitude
+check. Classes:
+<ul>
+<li>FALLA (fails): claim/limit ≥3 in ≥90% of Monte Carlo draws, or the
+main conclusion does not hold;</li>
+<li>CONDICIONAL: holds only under an undeclared or unjustified
+assumption;</li>
+<li>PASA (passes);</li>
+<li>INDETERMINADO.</li>
+</ul></li>
+<li><strong>Screening and verification.</strong> Six independent
+screeners screened the papers. We recalculated every non-passing case
+with our own code and checked every quotation against the full
+text.</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>k / n</th>
+<th>% (95% CI, Clopper–Pearson)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Applicable</td>
+<td>21 / 225</td>
+<td>9% (6–14%)</td>
+</tr>
+<tr class="even">
+<td>Fail or conditional</td>
+<td>9 / 21</td>
+<td>43% (22–66%)</td>
+</tr>
+<tr class="odd">
+<td>Fail</td>
+<td>3 / 21</td>
+<td>14% (3–36%)</td>
+</tr>
+<tr class="even">
+<td>Pass</td>
+<td>10 / 21</td>
+<td>48% (26–70%)</td>
+</tr>
+<tr class="odd">
+<td>Sensitivity: including 11 borderline papers, fail or
+conditional</td>
+<td>10 / 32</td>
+<td>31% (16–50%)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The nine non-passing papers:</strong></p>
+<ul>
+<li><em>Fail:</em>
+<ul>
+<li>organic lime putty, where CO₂ from fermented extracts carbonates
+≤0.2% of the lime;</li>
+<li>RUSLE erosion of tells, where a US-scale K = 0.30 is combined with
+SI rainfall erosivity, inflating absolute rates ×7.6. The “extreme”
+class would imply ~20 m of lowering in 2,000 years on 23 m mounds;</li>
+<li>Tikal reservoir mercury.</li>
+</ul></li>
+<li><em>Conditional:</em>
+<ul>
+<li>the Tikal zeolite filter (feasible only with ponded inflow);</li>
+<li>paleosol radiocarbon (DOC infiltration feasible only at the top of
+all parameter ranges, plus a ×3–72 unit error);</li>
+<li>brown fat as the cause of Fuegian cold resistance (human-measured
+brown-fat capacity supplies ~1 W of the ~42 W required);</li>
+<li>mm-sized metal spheres in Roman glass (colloidal agglomeration would
+take ~10⁶ h, against firings of 3–48 h);</li>
+<li>an earthquake mudflow at Lajia (needs saturated loess, not shown for
+4000 BP);</li>
+<li>extreme hair vitamin-D levels attributed to weight loss (hair would
+take ~50% of daily 25(OH)D turnover at ~1,300× serum
+concentration).</li>
+</ul></li>
+</ul>
+<p><strong>Previously published?</strong> We searched for prior
+quantitative critiques of each of the nine and found none.</p>
+<p><strong>Scope.</strong> The census covers one journal over six years.
+The rate applies to that population and is an empirical prompt, not a
+field-wide estimate.</p>
+<p><strong>Negative result.</strong> A second pre-registered audit of 40
+further papers tested a “scale dogma”: lab-specimen results transferred
+to real objects without dimensional similarity (Fourier or Damköhler
+numbers). Only 3 papers were applicable, and none changed its conclusion
+under scaling. The scale problem exists in individual cases (Section
+3.2) but is not common in this corpus.</p>
+<h1 id="case-studies">3. Case studies</h1>
+<p>These six widely publicised claims were selected <em>because</em>
+they looked vulnerable, before the census. Two of them (Tikal mercury
+and the Tikal filter) are also in the census corpus.</p>
+<h2 id="qin-shi-huang-a-tomb-that-is-probably-not-sealed">3.1 Qin Shi
+Huang: a tomb that is probably not sealed</h2>
+<p><strong>Claim.</strong> Zhao et al. (Sci. Rep. 10, 10414, 2020)
+measured atomic mercury above the mound by differential-absorption
+lidar. They estimated an outflux of ≈5×10⁻⁸ kg s⁻¹ and wrote that
+mercury “may be escaping through cracks”. The chamber ceiling lies ≈30 m
+below the surrounding ground, under a ≈50 m mound.</p>
+<p><strong>Test.</strong></p>
+<ul>
+<li>Air in contact with liquid mercury saturates at C_sat ≈ 9.4 mg m⁻³
+(15 °C).</li>
+<li>Steady diffusion through 30–80 m of compacted loess uses the
+Millington–Quirk diffusivity (porosity 0.30–0.45, water saturation
+0.3–0.8). Lateral spreading is included through the shape factor of a
+disk buried in a semi-infinite medium.</li>
+<li>The result is a maximum flux 42× below the measured one (5.6–520).
+Diffusion suffices in 0.02% of 2×10⁵ draws. Typical emission from the
+mound soil (~190 ppb) is 9–220× too small.</li>
+<li>An open air path, on the other hand, could suffice. The required
+exchange is ~460 m³ of saturated air per day.</li>
+</ul>
+<p><strong>Caveats.</strong></p>
+<ul>
+<li>Barometric pumping supplies this robustly only if much of the 140 ×
+110 × 30 m underground palace is open space.</li>
+<li>The excess concentration is 2.4–3.6σ per scan and was absent at the
+windy third site.</li>
+</ul>
+<p><strong>Predictions (pre-registered).</strong></p>
+<ul>
+<li>Emission rises when barometric pressure falls.</li>
+<li>Soil-gas mercury increases with depth.</li>
+<li>Winter emission exceeds summer emission.</li>
+<li>A night-by-night ranking for the 2016 campaign, built from station
+pressure data.</li>
+</ul>
+<h2
+id="herculaneum-a-cooling-rate-heat-cannot-deliver-inside-a-skull">3.2
+Herculaneum: a cooling rate heat cannot deliver inside a skull</h2>
+<p><strong>Claim.</strong> Giordano et al. (Sci. Rep. 15, 5955, 2025)
+measured calorimetric onsets of 420 °C at 0.42 K s⁻¹ and 510 °C at 1000
+K s⁻¹ on glassy fragments “sampled intact, directly from within the
+skull”. They inferred a natural fictive temperature T_f ≈ 510 °C and
+cooling “at rates comparable with our experimental 1000 K s⁻¹” after a
+short-lived ash cloud.</p>
+<p><strong>Test.</strong></p>
+<ul>
+<li><em>Cooling.</em> Transient conduction in a heated head, with
+convective and radiative loss, gives 0.1–1.7 K s⁻¹ inside the
+cranium.</li>
+<li><em>Fragmentation.</em> The authors propose fragmentation into
+“sub-centimetric pieces … favouring the heat exchange”. This helps only
+if the fragments were exposed to open air: free fragments reach 17–720 K
+s⁻¹, which would imply T_f = 460–506 °C. Enclosed fragments still lose
+heat through the skull. The paper itself invokes the skull’s protection
+during heating.</li>
+<li><em>Fictive temperature.</em> At in-skull rates, the authors’
+kinetics (E = 390 kJ mol⁻¹) give T_f ≈ 405–440 °C. This overlaps the
+315–465 °C burial deposits, the criterion the authors used to reject 420
+°C.</li>
+<li><em>Survival.</em> With the same E, the material softens in 0.4 s at
+465 °C and would anneal within minutes to hours at 315–350 °C.</li>
+<li><em>Heating.</em> Drying and heating the brain above 510 °C needs
+≥3–40 min of full exposure.</li>
+</ul>
+<p><strong>Prior work.</strong> Morton-Hayward et al. (2020) questioned
+the temperatures and the survival of fatty acids in the first report;
+they did not address cooling rates.</p>
+<p><strong>Test proposed.</strong> Upscans after the first one show no
+events. The natural T_f should therefore be measured from first-scan
+onsets on fresh fragments at several heating rates, compared with
+reference tissue glasses of known cooling history.</p>
+<h2 id="roman-lead-a-regressions-intercept-counted-as-pollution">3.3
+Roman lead: a regression’s intercept counted as pollution</h2>
+<p><strong>Claim.</strong> McConnell et al. (PNAS 122, e2419630121,
+2025) model +1.04 ng m⁻³ of air lead over Europe. They apply BLL =
+exp[1.932 + 0.140 ln(PbA)] from Richmond-Bryant et al. (2014; NHANES
+III, unadjusted). They obtain a 2.0–5.3 µg dl⁻¹ “enhancement”, which
+they add to a 1 µg dl⁻¹ Neolithic baseline, and hence a deficit of 2.5–3
+IQ points.</p>
+<p><strong>Test.</strong></p>
+<ul>
+<li><em>What the regression predicts.</em> It gives the total blood lead
+of children exposed to all 1988–94 sources: with almost clean air it
+already predicts 1.6 µg dl⁻¹.</li>
+<li><em>Extrapolation.</em> Roman air is ~35× below the calibration
+median (0.036–0.037 µg m⁻³). At 1 ng m⁻³ the implied slope is 355 µg
+dl⁻¹ per µg m⁻³, whereas Richmond-Bryant et al. report 15.3–16.5 at low
+air lead.</li>
+<li><em>Differencing the regression.</em> Taking the difference against
+a natural background gives +1.0 µg dl⁻¹ and 1.4 points, and this is
+still an extrapolation.</li>
+<li><em>Intake budget.</em> An independent budget gives +0.71 µg dl⁻¹
+(0.32–1.6) and 1.0 points (0.5–1.9). It covers inhalation and deposition
+on cereals (Roman grain yields) and vegetables, cistern rainwater and
+soil, using the paper’s own &gt;500 kt deposited and child slope
+factors.</li>
+</ul>
+<p>The effect is plausible, but 2–3× smaller than claimed for the
+European average.</p>
+<h2 id="tikal-sediment-mercury-is-not-drinking-water-mercury">3.4 Tikal:
+sediment mercury is not drinking-water mercury</h2>
+<p><strong>Claim.</strong> Lentz et al. (Sci. Rep. 10, 10316, 2020)
+report sediment mercury above the “toxic effect threshold” of 1 µg g⁻¹,
+a criterion for benthic organisms. They conclude that the reservoirs
+were “seriously compromised as sources of drinking water” and that the
+elite were “fed foods laced with mercury at every meal”.</p>
+<p><strong>Test.</strong></p>
+<ul>
+<li>Mercury reaches the water dissolved (sediment–water partitioning,
+log K_d = 4.5–6) and on suspended particles (5–100 mg L⁻¹).</li>
+<li>For the most contaminated sediments (10–30 µg g⁻¹), the water
+carries ~1.0 µg L⁻¹ (0.26–2.4). That is ~17% of the WHO guideline of 6
+µg L⁻¹, which no draw exceeds.</li>
+<li>Intake at 3–5 L day⁻¹ is ~3% of the WHO tolerable intake.</li>
+<li>The cyanobacteria evidence in the same paper is independent and not
+assessed here, nor is methylmercury in fish.</li>
+</ul>
+<h2 id="conditional-cases">3.5 Conditional cases</h2>
+<p><strong>Djoser</strong> (Landreau et al., PLOS ONE 19, e0306690,
+2024). We ran a daily water balance with the authors’ storage elements,
+demand, evaporation and infiltration. The lift receives 7–34% of its
+demand with ≤2 floods per year. It receives ~80–100% with frequent
+floods or near-perennial flow, which the authors propose. O. Siegel had
+objected qualitatively that the basin “could not have held enough water
+from occasional rains”. Our result makes that objection quantitative and
+shows it depends on the flood regime. <em>Test:</em> do 3rd-Dynasty
+sediments in the Abusir wadi show frequent or continuous flow, or
+isolated floods separated by aeolian layers?</p>
+<p><strong>Tikal filter</strong> (Tankersley et al., Sci. Rep. 10,
+18021, 2020). Passing the reservoir volume (58,000 m³ yr⁻¹) through a
+slow filter needs ~550–2,300 m² if storm water arrives directly. It
+needs only ~34–200 m² if water ponds behind the dry-laid walls of the
+authors’ own scheme. Seasonal drying of the biological layer remains a
+qualitative concern.</p>
+<h1 id="discussion">4. Discussion</h1>
+<p><strong>What the census measures.</strong> Most
+archaeological-science papers in the corpus (91%) cannot suffer rate
+blindness, because they measure composition, DNA, form or age directly.
+Among the 9% that infer a mechanism of checkable magnitude, about four
+in ten (22–66%) do not survive an order-of-magnitude check made with
+their own numbers unless an unstated assumption is added. One in seven
+fails outright. The checks are cheap, typically one page of arithmetic,
+and none of the nine had been published.</p>
+<p>The census is limited to one journal, and the classification involves
+judgement. We counter this with pre-registration, independent screening,
+independent recalculation and a sensitivity analysis that includes the
+borderline papers (31%, CI 16–50%).</p>
+<p><strong>Hand-picked cases.</strong> Of the six selected cases, four
+fail and two are conditional. Five further hand-picked claims passed or
+could not be decided with public data:</p>
+<ul>
+<li>the ScanPyramids Big Void;</li>
+<li>Teotihuacan muography;</li>
+<li>Mt Echia muography;</li>
+<li>the Hierapolis Plutonion;</li>
+<li>X-ray dating of the Turin Shroud.</li>
+</ul>
+<p>What the census adds is the measured rate: rate checks change
+conclusions often enough in an ordinary, unselected corpus to be worth
+making routine for mechanism claims.</p>
+<p>Our own drafts illustrate the point. An independent adversarial
+review of this work found:</p>
+<ul>
+<li>a one-dimensional diffusion bound that understated lateral flux by
+3–6×;</li>
+<li>a filter target set at all runoff rather than the reservoir
+volume;</li>
+<li>a flood regime that excluded the authors’ own scenario;</li>
+<li>a misattributed citation.</li>
+</ul>
+<p>All of these are corrected here. Rate checks need the same scrutiny
+as the claims they test.</p>
+<h1 id="data-and-code">Data and code</h1>
+<p>All calculations, Monte Carlo inputs and figures are open:</p>
+<ul>
+<li>Qin: <code>simulador/qin_mercurio.py</code>,
+<code>simulador/qin_presion_prerregistro.py</code>;</li>
+<li>Herculaneum: <code>simulador/herculano_vidrio.py</code>;</li>
+<li>Djoser: <code>simulador/saqqara_balance_hidrico.py</code>;</li>
+<li>Roman lead: <code>simulador/plomo_romano.py</code>;</li>
+<li>Tikal: <code>simulador/tikal_filtro.py</code>,
+<code>simulador/tikal_mercurio.py</code>;</li>
+<li>census verification:
+<code>simulador/paleosuelo_radiocarbono.py</code>,
+<code>simulador/cal_organica.py</code>,
+<code>simulador/censo/*.py</code>;</li>
+<li>protocols, samples and results: <code>auditoria_aleatoria/</code>
+(PROTOCOLO<em>.md, corpus.csv, muestra</em>.csv, censo.csv,
+RESULTADO*.md);</li>
+<li>results: <code>resultados/42–55_*.json</code>.</li>
+</ul>
+<p>The pre-registered predictions are P15 and P16 in
+<code>PREDICCIONES.md</code>.</p>
+<h1 id="references">References</h1>
+<p><strong>Census papers that did not pass</strong> (Scientific Reports;
+PMCID): - Shivakumar et al. 2021, 11:13261 (PMC8225893); - Forti et
+al. 2023, 13:7683 (PMC10195873); - Lentz et al. 2020, 10:10316
+(PMC7316703); - Tankersley et al. 2020, 10:18021 (PMC7582844); - Broz et
+al. 2023, 13:7476 (PMC10167333); - Watanabe et al. 2021, 11:23290
+(PMC8639971); - PMC8160351 (Roman glass metal inclusions, 2021); -
+PMC11109126 (Lajia earthquake mudflow, 2024); - PMC11760916 (hair
+25(OH)D3, 2025).</p>
+<p><strong>Other references:</strong> - Giordano, G. et al. Unique
+formation of organic glass from a human brain in the Vesuvius eruption
+of 79 CE. <em>Sci. Rep.</em> 15, 5955 (2025). - Landreau, X. et al. On
+the possible use of hydraulic force to assist with building the step
+pyramid of Saqqara. <em>PLOS ONE</em> 19, e0306690 (2024). - Lentz, D.
+L. et al. Molecular genetic and geochemical assays reveal severe
+contamination of drinking water reservoirs at the ancient Maya city of
+Tikal. <em>Sci. Rep.</em> 10, 10316 (2020). - McConnell, J. R. et
+al. Pan-European atmospheric lead pollution, enhanced blood lead levels,
+and cognitive decline from Roman-era mining and smelting. <em>PNAS</em>
+122, e2419630121 (2025). - Millington, R. J. &amp; Quirk, J. P.
+Permeability of porous solids. <em>Trans. Faraday Soc.</em> 57,
+1200–1207 (1961). - Morton-Hayward, A. L. et al. A conscious rethink:
+why is brain tissue commonly preserved in the archaeological record?
+<em>STAR</em> 6, 87–95 (2020). - Moynihan, C. T. et al. Dependence of
+the fictive temperature of glass on cooling rate. <em>J. Am. Ceram.
+Soc.</em> 59, 12–16 (1976). - Richmond-Bryant, J. et al. The influence
+of declining air lead levels on blood lead–air lead slope factors in
+children. <em>Environ. Health Perspect.</em> 122, 754–760 (2014). -
+Bower, B. Was Egypt’s first pyramid built with hydraulics? <em>Science
+News</em>, 5 August 2024 (O. Siegel quoted). - Tankersley, K. B. et
+al. Zeolite water purification at Tikal, an ancient Maya city in
+Guatemala. <em>Sci. Rep.</em> 10, 18021 (2020). - WHO. Mercury in
+drinking-water (chemical fact sheet, 2022). - Zhao, G. et al. Mercury as
+a geophysical tracer gas — emissions from the emperor Qin tomb in Xi’an
+studied by laser radar. <em>Sci. Rep.</em> 10, 10414 (2020).</p>
+</body>
+</html>

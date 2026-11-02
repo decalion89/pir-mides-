@@ -1,0 +1,25 @@
+{
+ "chi2": 640.8,
+ "n_casillas": 460,
+ "n_parametros": 49,
+ "kappa": 1.393,
+ "detector": [
+  12.0,
+  5.0,
+  -6.0
+ ],
+ "retranqueo_m": 6.0,
+ "z_remate_m": 90.0,
+ "camara_tipo_rey": {
+  "posiciones_en_cono": 826,
+  "excluido_95_en_cono": 0.8462469733656174,
+  "excluido_5s_en_cono": 0.41404358353510895,
+  "minimo": -43.38,
+  "donde": [
+   24.4,
+   16.4,
+   60.0
+  ],
+  "p_global": 0.0
+ }
+}

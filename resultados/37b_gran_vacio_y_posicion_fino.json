@@ -1,0 +1,506 @@
+{
+ "precision_modelo_interno_m": 0.3,
+ "nota": "Morishima et al. 2017: 'precision of approximately 30 cm'",
+ "detectores": {
+  "KEK H1 (2016-17)": {
+   "distancia_este_al_eje_galeria_m": -0.3,
+   "filas": [
+    {
+     "delta_este_m": -1.2,
+     "chi2_fondo_rel": 2.139,
+     "dchi2_gran_vacio_rel": -0.628,
+     "mejor_caja_rel": -0.966,
+     "donde": [
+      7.3,
+      13.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 8.9
+    },
+    {
+     "delta_este_m": -0.9,
+     "chi2_fondo_rel": 1.519,
+     "dchi2_gran_vacio_rel": -0.601,
+     "mejor_caja_rel": -0.609,
+     "donde": [
+      7.3,
+      13.0,
+      59.0
+     ],
+     "distancia_al_gran_vacio_m": 5.7
+    },
+    {
+     "delta_este_m": -0.7,
+     "chi2_fondo_rel": 1.199,
+     "dchi2_gran_vacio_rel": -0.441,
+     "mejor_caja_rel": -0.441,
+     "donde": [
+      7.3,
+      17.0,
+      63.0
+     ],
+     "distancia_al_gran_vacio_m": 0.0
+    },
+    {
+     "delta_este_m": -0.5,
+     "chi2_fondo_rel": 0.741,
+     "dchi2_gran_vacio_rel": 0.167,
+     "mejor_caja_rel": -0.192,
+     "donde": [
+      6.3,
+      21.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 9.0
+    },
+    {
+     "delta_este_m": -0.3,
+     "chi2_fondo_rel": 0.394,
+     "dchi2_gran_vacio_rel": 0.333,
+     "mejor_caja_rel": -0.092,
+     "donde": [
+      6.3,
+      13.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 9.0
+    },
+    {
+     "delta_este_m": 0.3,
+     "chi2_fondo_rel": 0.62,
+     "dchi2_gran_vacio_rel": 1.06,
+     "mejor_caja_rel": 0.037,
+     "donde": [
+      9.3,
+      25.0,
+      67.0
+     ],
+     "distancia_al_gran_vacio_m": 9.2
+    },
+    {
+     "delta_este_m": 0.5,
+     "chi2_fondo_rel": 1.096,
+     "dchi2_gran_vacio_rel": 1.121,
+     "mejor_caja_rel": -0.07,
+     "donde": [
+      9.3,
+      21.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 9.2
+    },
+    {
+     "delta_este_m": 0.7,
+     "chi2_fondo_rel": 2.384,
+     "dchi2_gran_vacio_rel": 1.18,
+     "mejor_caja_rel": -0.678,
+     "donde": [
+      8.3,
+      13.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 9.0
+    },
+    {
+     "delta_este_m": 0.9,
+     "chi2_fondo_rel": 2.845,
+     "dchi2_gran_vacio_rel": -0.327,
+     "mejor_caja_rel": -0.895,
+     "donde": [
+      7.3,
+      9.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 11.3
+    },
+    {
+     "delta_este_m": 1.2,
+     "chi2_fondo_rel": 2.661,
+     "dchi2_gran_vacio_rel": -0.348,
+     "mejor_caja_rel": -0.878,
+     "donde": [
+      7.3,
+      9.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 11.3
+    }
+   ]
+  },
+  "KEK H2 (2017)": {
+   "distancia_este_al_eje_galeria_m": -3.2,
+   "filas": [
+    {
+     "delta_este_m": -1.2,
+     "chi2_fondo_rel": 3.65,
+     "dchi2_gran_vacio_rel": 1.115,
+     "mejor_caja_rel": -0.442,
+     "donde": [
+      9.3,
+      13.0,
+      59.0
+     ],
+     "distancia_al_gran_vacio_m": 6.0
+    },
+    {
+     "delta_este_m": -0.9,
+     "chi2_fondo_rel": 2.431,
+     "dchi2_gran_vacio_rel": 1.072,
+     "mejor_caja_rel": -0.248,
+     "donde": [
+      9.3,
+      13.0,
+      59.0
+     ],
+     "distancia_al_gran_vacio_m": 6.0
+    },
+    {
+     "delta_este_m": -0.7,
+     "chi2_fondo_rel": 1.639,
+     "dchi2_gran_vacio_rel": 1.049,
+     "mejor_caja_rel": -0.098,
+     "donde": [
+      10.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 11.7
+    },
+    {
+     "delta_este_m": -0.5,
+     "chi2_fondo_rel": 0.936,
+     "dchi2_gran_vacio_rel": 1.03,
+     "mejor_caja_rel": 0.041,
+     "donde": [
+      10.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 11.7
+    },
+    {
+     "delta_este_m": -0.3,
+     "chi2_fondo_rel": 0.366,
+     "dchi2_gran_vacio_rel": 1.014,
+     "mejor_caja_rel": 0.232,
+     "donde": [
+      10.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 11.7
+    },
+    {
+     "delta_este_m": 0.3,
+     "chi2_fondo_rel": 0.415,
+     "dchi2_gran_vacio_rel": 1.081,
+     "mejor_caja_rel": 0.251,
+     "donde": [
+      13.3,
+      13.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 10.8
+    },
+    {
+     "delta_este_m": 0.5,
+     "chi2_fondo_rel": 1.069,
+     "dchi2_gran_vacio_rel": 1.255,
+     "mejor_caja_rel": 0.101,
+     "donde": [
+      13.3,
+      17.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 10.0
+    },
+    {
+     "delta_este_m": 0.7,
+     "chi2_fondo_rel": 1.969,
+     "dchi2_gran_vacio_rel": 1.593,
+     "mejor_caja_rel": -0.109,
+     "donde": [
+      12.3,
+      25.0,
+      63.0
+     ],
+     "distancia_al_gran_vacio_m": 9.4
+    },
+    {
+     "delta_este_m": 0.9,
+     "chi2_fondo_rel": 2.983,
+     "dchi2_gran_vacio_rel": 2.085,
+     "mejor_caja_rel": -0.34,
+     "donde": [
+      12.3,
+      25.0,
+      63.0
+     ],
+     "distancia_al_gran_vacio_m": 9.4
+    },
+    {
+     "delta_este_m": 1.2,
+     "chi2_fondo_rel": 4.518,
+     "dchi2_gran_vacio_rel": 2.883,
+     "mejor_caja_rel": -0.737,
+     "donde": [
+      10.3,
+      21.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 9.4
+    }
+   ]
+  },
+  "Nagoya NE1 (2016)": {
+   "distancia_este_al_eje_galeria_m": 5.8,
+   "filas": [
+    {
+     "delta_este_m": -1.2,
+     "chi2_fondo_rel": 2.264,
+     "dchi2_gran_vacio_rel": 1.043,
+     "mejor_caja_rel": -0.314,
+     "donde": [
+      1.3,
+      25.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": -0.9,
+     "chi2_fondo_rel": 1.344,
+     "dchi2_gran_vacio_rel": 1.005,
+     "mejor_caja_rel": -0.045,
+     "donde": [
+      1.3,
+      25.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": -0.7,
+     "chi2_fondo_rel": 0.841,
+     "dchi2_gran_vacio_rel": 1.001,
+     "mejor_caja_rel": 0.152,
+     "donde": [
+      1.3,
+      25.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": -0.5,
+     "chi2_fondo_rel": 0.434,
+     "dchi2_gran_vacio_rel": 1.0,
+     "mejor_caja_rel": 0.349,
+     "donde": [
+      1.3,
+      25.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": -0.3,
+     "chi2_fondo_rel": 0.16,
+     "dchi2_gran_vacio_rel": 1.001,
+     "mejor_caja_rel": 0.476,
+     "donde": [
+      4.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 11.7
+    },
+    {
+     "delta_este_m": 0.3,
+     "chi2_fondo_rel": 0.144,
+     "dchi2_gran_vacio_rel": 0.995,
+     "mejor_caja_rel": 0.222,
+     "donde": [
+      1.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": 0.5,
+     "chi2_fondo_rel": 0.363,
+     "dchi2_gran_vacio_rel": 0.991,
+     "mejor_caja_rel": 0.086,
+     "donde": [
+      1.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": 0.7,
+     "chi2_fondo_rel": 0.642,
+     "dchi2_gran_vacio_rel": 0.986,
+     "mejor_caja_rel": -0.03,
+     "donde": [
+      1.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": 0.9,
+     "chi2_fondo_rel": 0.984,
+     "dchi2_gran_vacio_rel": 0.981,
+     "mejor_caja_rel": -0.128,
+     "donde": [
+      1.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": 1.2,
+     "chi2_fondo_rel": 1.506,
+     "dchi2_gran_vacio_rel": 0.972,
+     "mejor_caja_rel": -0.255,
+     "donde": [
+      1.3,
+      13.0,
+      67.0
+     ],
+     "distancia_al_gran_vacio_m": 8.2
+    }
+   ]
+  },
+  "Nagoya NE2 (2016)": {
+   "distancia_este_al_eje_galeria_m": -4.5,
+   "filas": [
+    {
+     "delta_este_m": -1.2,
+     "chi2_fondo_rel": 4.794,
+     "dchi2_gran_vacio_rel": 0.479,
+     "mejor_caja_rel": -0.512,
+     "donde": [
+      10.3,
+      13.0,
+      59.0
+     ],
+     "distancia_al_gran_vacio_m": 6.4
+    },
+    {
+     "delta_este_m": -0.9,
+     "chi2_fondo_rel": 3.899,
+     "dchi2_gran_vacio_rel": 1.112,
+     "mejor_caja_rel": -0.028,
+     "donde": [
+      12.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.4
+    },
+    {
+     "delta_este_m": -0.7,
+     "chi2_fondo_rel": 2.611,
+     "dchi2_gran_vacio_rel": 1.289,
+     "mejor_caja_rel": 0.156,
+     "donde": [
+      12.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.4
+    },
+    {
+     "delta_este_m": -0.5,
+     "chi2_fondo_rel": 1.169,
+     "dchi2_gran_vacio_rel": 1.181,
+     "mejor_caja_rel": 0.273,
+     "donde": [
+      11.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.0
+    },
+    {
+     "delta_este_m": -0.3,
+     "chi2_fondo_rel": 0.404,
+     "dchi2_gran_vacio_rel": 1.099,
+     "mejor_caja_rel": 0.396,
+     "donde": [
+      11.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.0
+    },
+    {
+     "delta_este_m": 0.3,
+     "chi2_fondo_rel": 0.34,
+     "dchi2_gran_vacio_rel": 0.926,
+     "mejor_caja_rel": 0.408,
+     "donde": [
+      1.3,
+      9.0,
+      71.0
+     ],
+     "distancia_al_gran_vacio_m": 12.8
+    },
+    {
+     "delta_este_m": 0.5,
+     "chi2_fondo_rel": 0.851,
+     "dchi2_gran_vacio_rel": 0.901,
+     "mejor_caja_rel": 0.19,
+     "donde": [
+      12.3,
+      25.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 12.4
+    },
+    {
+     "delta_este_m": 0.7,
+     "chi2_fondo_rel": 1.524,
+     "dchi2_gran_vacio_rel": 0.903,
+     "mejor_caja_rel": -0.08,
+     "donde": [
+      12.3,
+      25.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 12.4
+    },
+    {
+     "delta_este_m": 0.9,
+     "chi2_fondo_rel": 2.281,
+     "dchi2_gran_vacio_rel": 0.973,
+     "mejor_caja_rel": -0.306,
+     "donde": [
+      12.3,
+      25.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 12.4
+    },
+    {
+     "delta_este_m": 1.2,
+     "chi2_fondo_rel": 3.501,
+     "dchi2_gran_vacio_rel": 1.269,
+     "mejor_caja_rel": -0.673,
+     "donde": [
+      11.3,
+      17.0,
+      55.0
+     ],
+     "distancia_al_gran_vacio_m": 8.9
+    }
+   ]
+  }
+ }
+}

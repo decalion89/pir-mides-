@@ -1,0 +1,43 @@
+{
+ "angulos": [
+  45.0,
+  32.6,
+  39.61,
+  39.1
+ ],
+ "sigmas": [
+  0.2,
+  0.3,
+  1.0,
+  1.5
+ ],
+ "pendientes_n_11": {
+  "Rey sur": {
+   "angulo": 45.0,
+   "n_mas_cercano": 11,
+   "angulo_n_11": 45.0
+  },
+  "Rey norte": {
+   "angulo": 32.6,
+   "n_mas_cercano": 7,
+   "angulo_n_11": 32.47119229084849
+  },
+  "Reina sur": {
+   "angulo": 39.61,
+   "n_mas_cercano": 9,
+   "angulo_n_11": 39.28940686250036
+  },
+  "Reina norte": {
+   "angulo": 39.1,
+   "n_mas_cercano": 9,
+   "angulo_n_11": 39.28940686250036
+  }
+ },
+ "reales_encajan_d11": true,
+ "denominadores_que_encajan": [
+  11,
+  14
+ ],
+ "p_azar_d11": 0.01294,
+ "p_azar_algun_d_5_16": 0.16106
+}

@@ -1,0 +1,58 @@
+{
+  "tabla": [
+    {
+      "masa_t": 25.0,
+      "hombres_rampa": 218,
+      "longitud_equipo_m": 54.5,
+      "tramo_zigzag_disponible_m": 122.8043246930423,
+      "tramo_interno_disponible_m": 110.8043246930423,
+      "contrapeso_t_optimista": 54.136407953938104,
+      "contrapeso_t_pesimista": 127.27017836179037,
+      "palancas_simultaneas": 7,
+      "dias_palancas_hasta_61m": 15.257142857142856
+    },
+    {
+      "masa_t": 40.0,
+      "hombres_rampa": 349,
+      "longitud_equipo_m": 87.25,
+      "tramo_zigzag_disponible_m": 122.8043246930423,
+      "tramo_interno_disponible_m": 110.8043246930423,
+      "contrapeso_t_optimista": 86.61825272630097,
+      "contrapeso_t_pesimista": 203.63228537886462,
+      "palancas_simultaneas": 10,
+      "dias_palancas_hasta_61m": 15.257142857142856
+    },
+    {
+      "masa_t": 60.0,
+      "hombres_rampa": 523,
+      "longitud_equipo_m": 130.75,
+      "tramo_zigzag_disponible_m": 122.8043246930423,
+      "tramo_interno_disponible_m": 110.8043246930423,
+      "contrapeso_t_optimista": 129.92737908945145,
+      "contrapeso_t_pesimista": 305.4484280682969,
+      "palancas_simultaneas": 15,
+      "dias_palancas_hasta_61m": 15.257142857142856
+    },
+    {
+      "masa_t": 80.0,
+      "hombres_rampa": 698,
+      "longitud_equipo_m": 174.5,
+      "tramo_zigzag_disponible_m": 122.8043246930423,
+      "tramo_interno_disponible_m": 110.8043246930423,
+      "contrapeso_t_optimista": 173.23650545260193,
+      "contrapeso_t_pesimista": 407.26457075772925,
+      "palancas_simultaneas": 20,
+      "dias_palancas_hasta_61m": 15.257142857142856
+    }
+  ],
+  "resumen": {
+    "vigas": 43,
+    "volumen_rampa_recta_hasta_61m_m3": 531276.111111111,
+    "fraccion_volumen_piramide": 0.20493048008923784,
+    "ventana_anios": 1.2113716770092573,
+    "dias_palancas_en_serie": 422.6571428571429,
+    "dias_palancas_6_en_paralelo": 70.44285714285715,
+    "capacidad_vacio_t_llenado_40": 337.9200000000001,
+    "capacidad_vacio_t_llenado_80": 675.8400000000001
+  }
+}

@@ -1,0 +1,666 @@
+{
+ "senal_real_dchi2": 187.7,
+ "centro_gran_vacio": [
+  7.3,
+  17.0,
+  63.0
+ ],
+ "tam_gran_vacio": [
+  1.6,
+  30.0,
+  8.0
+ ],
+ "cajas_en_rejilla": 567,
+ "casos": [
+  {
+   "direccion": "este",
+   "delta_m": 0.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 0.0,
+     "dchi2_gran_vacio": 239.2,
+     "dchi2_mejor_caja": 35.2,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 0.0,
+     "dchi2_gran_vacio": 398.4,
+     "dchi2_mejor_caja": 83.6,
+     "donde": [
+      18.0,
+      33.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 0.0,
+     "dchi2_gran_vacio": 1479.4,
+     "dchi2_mejor_caja": 95.5,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 0.0,
+    "dchi2_gran_vacio": 2117.0,
+    "dchi2_mejor_caja": 285.3,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "este",
+   "delta_m": 0.5,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 86.8,
+     "dchi2_gran_vacio": 237.0,
+     "dchi2_mejor_caja": 24.2,
+     "donde": [
+      0.0,
+      9.0,
+      75.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 339.1,
+     "dchi2_gran_vacio": 359.0,
+     "dchi2_mejor_caja": 28.8,
+     "donde": [
+      12.0,
+      33.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 1620.6,
+     "dchi2_gran_vacio": 1656.4,
+     "dchi2_mejor_caja": -53.8,
+     "donde": [
+      9.0,
+      17.0,
+      63.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 2046.6,
+    "dchi2_gran_vacio": 2252.4,
+    "dchi2_mejor_caja": 294.0,
+    "donde": [
+     12.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "este",
+   "delta_m": 1.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 277.2,
+     "dchi2_gran_vacio": 233.9,
+     "dchi2_mejor_caja": -38.9,
+     "donde": [
+      0.0,
+      9.0,
+      75.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 1064.2,
+     "dchi2_gran_vacio": 416.0,
+     "dchi2_mejor_caja": -181.9,
+     "donde": [
+      12.0,
+      25.0,
+      55.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 3989.5,
+     "dchi2_gran_vacio": -592.0,
+     "dchi2_mejor_caja": -1196.1,
+     "donde": [
+      9.0,
+      17.0,
+      63.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 5330.9,
+    "dchi2_gran_vacio": 57.8,
+    "dchi2_mejor_caja": -571.8,
+    "donde": [
+     9.0,
+     25.0,
+     75.0
+    ]
+   }
+  },
+  {
+   "direccion": "este",
+   "delta_m": 2.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 705.8,
+     "dchi2_gran_vacio": 226.9,
+     "dchi2_mejor_caja": -154.0,
+     "donde": [
+      3.0,
+      9.0,
+      59.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 2397.9,
+     "dchi2_gran_vacio": 1202.2,
+     "dchi2_mejor_caja": -482.3,
+     "donde": [
+      12.0,
+      21.0,
+      59.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 4944.5,
+     "dchi2_gran_vacio": -1268.2,
+     "dchi2_mejor_caja": -975.0,
+     "donde": [
+      9.0,
+      17.0,
+      63.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 8048.2,
+    "dchi2_gran_vacio": 160.9,
+    "dchi2_mejor_caja": 6.7,
+    "donde": [
+     15.0,
+     29.0,
+     75.0
+    ]
+   }
+  },
+  {
+   "direccion": "este",
+   "delta_m": 3.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 1091.1,
+     "dchi2_gran_vacio": 219.9,
+     "dchi2_mejor_caja": -203.2,
+     "donde": [
+      3.0,
+      13.0,
+      55.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 3151.4,
+     "dchi2_gran_vacio": 932.8,
+     "dchi2_mejor_caja": -466.0,
+     "donde": [
+      12.0,
+      25.0,
+      59.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 5579.0,
+     "dchi2_gran_vacio": -1150.1,
+     "dchi2_mejor_caja": -867.4,
+     "donde": [
+      9.0,
+      17.0,
+      63.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 9821.5,
+    "dchi2_gran_vacio": 2.6,
+    "dchi2_mejor_caja": -301.6,
+    "donde": [
+     9.0,
+     17.0,
+     63.0
+    ]
+   }
+  },
+  {
+   "direccion": "norte",
+   "delta_m": 0.5,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 26.5,
+     "dchi2_gran_vacio": 254.6,
+     "dchi2_mejor_caja": 36.2,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 138.9,
+     "dchi2_gran_vacio": 415.4,
+     "dchi2_mejor_caja": 66.5,
+     "donde": [
+      18.0,
+      33.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 165.2,
+     "dchi2_gran_vacio": 1540.2,
+     "dchi2_mejor_caja": 81.4,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 330.6,
+    "dchi2_gran_vacio": 2210.2,
+    "dchi2_mejor_caja": 298.4,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "norte",
+   "delta_m": 1.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 92.7,
+     "dchi2_gran_vacio": 269.6,
+     "dchi2_mejor_caja": 36.9,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 430.6,
+     "dchi2_gran_vacio": 429.2,
+     "dchi2_mejor_caja": 47.9,
+     "donde": [
+      18.0,
+      33.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 504.7,
+     "dchi2_gran_vacio": 1582.1,
+     "dchi2_mejor_caja": 56.8,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 1028.0,
+    "dchi2_gran_vacio": 2280.9,
+    "dchi2_mejor_caja": 302.7,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "norte",
+   "delta_m": 2.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 326.3,
+     "dchi2_gran_vacio": 299.0,
+     "dchi2_mejor_caja": 37.9,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 1344.4,
+     "dchi2_gran_vacio": 435.9,
+     "dchi2_mejor_caja": 23.4,
+     "donde": [
+      18.0,
+      33.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 1664.8,
+     "dchi2_gran_vacio": 1599.0,
+     "dchi2_mejor_caja": 20.6,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 3335.5,
+    "dchi2_gran_vacio": 2333.9,
+    "dchi2_mejor_caja": 322.6,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "norte",
+   "delta_m": 3.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 674.3,
+     "dchi2_gran_vacio": 327.8,
+     "dchi2_mejor_caja": 38.1,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 2440.6,
+     "dchi2_gran_vacio": 410.2,
+     "dchi2_mejor_caja": -17.9,
+     "donde": [
+      18.0,
+      21.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 2826.5,
+     "dchi2_gran_vacio": 1517.1,
+     "dchi2_mejor_caja": 13.4,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 5941.4,
+    "dchi2_gran_vacio": 2255.1,
+    "dchi2_mejor_caja": 317.8,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "arriba",
+   "delta_m": 0.5,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 7.6,
+     "dchi2_gran_vacio": 238.6,
+     "dchi2_mejor_caja": 34.9,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 36.3,
+     "dchi2_gran_vacio": 373.8,
+     "dchi2_mejor_caja": 91.7,
+     "donde": [
+      18.0,
+      33.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 33.7,
+     "dchi2_gran_vacio": 1419.8,
+     "dchi2_mejor_caja": 93.1,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 77.6,
+    "dchi2_gran_vacio": 2032.1,
+    "dchi2_mejor_caja": 296.7,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "arriba",
+   "delta_m": 1.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 29.6,
+     "dchi2_gran_vacio": 238.0,
+     "dchi2_mejor_caja": 34.7,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 135.5,
+     "dchi2_gran_vacio": 352.6,
+     "dchi2_mejor_caja": 95.7,
+     "donde": [
+      18.0,
+      33.0,
+      51.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 135.9,
+     "dchi2_gran_vacio": 1361.7,
+     "dchi2_mejor_caja": 89.7,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 300.9,
+    "dchi2_gran_vacio": 1952.4,
+    "dchi2_mejor_caja": 310.1,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "arriba",
+   "delta_m": 2.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 108.5,
+     "dchi2_gran_vacio": 236.3,
+     "dchi2_mejor_caja": 33.8,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 456.5,
+     "dchi2_gran_vacio": 322.6,
+     "dchi2_mejor_caja": 68.5,
+     "donde": [
+      12.0,
+      1.0,
+      75.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 503.4,
+     "dchi2_gran_vacio": 1254.5,
+     "dchi2_mejor_caja": 84.2,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 1068.4,
+    "dchi2_gran_vacio": 1813.4,
+    "dchi2_mejor_caja": 345.3,
+    "donde": [
+     -6.0,
+     33.0,
+     51.0
+    ]
+   }
+  },
+  {
+   "direccion": "arriba",
+   "delta_m": 3.0,
+   "detectores": {
+    "Nagoya NE1 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 224.5,
+     "dchi2_gran_vacio": 234.1,
+     "dchi2_mejor_caja": 3.5,
+     "donde": [
+      0.0,
+      9.0,
+      75.0
+     ]
+    },
+    "Nagoya NE2 (2016)": {
+     "casillas": 10000,
+     "chi2_fondo": 939.9,
+     "dchi2_gran_vacio": 299.0,
+     "dchi2_mejor_caja": -11.5,
+     "donde": [
+      12.0,
+      9.0,
+      71.0
+     ]
+    },
+    "KEK H1 (2016-17)": {
+     "casillas": 6400,
+     "chi2_fondo": 1063.6,
+     "dchi2_gran_vacio": 1163.7,
+     "dchi2_mejor_caja": 81.4,
+     "donde": [
+      -6.0,
+      33.0,
+      51.0
+     ]
+    }
+   },
+   "conjunto": {
+    "casillas": 26400,
+    "chi2_fondo": 2227.9,
+    "dchi2_gran_vacio": 1696.8,
+    "dchi2_mejor_caja": 317.3,
+    "donde": [
+     0.0,
+     1.0,
+     75.0
+    ]
+   }
+  }
+ ]
+}

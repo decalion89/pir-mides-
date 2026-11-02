@@ -1,0 +1,349 @@
+{
+ "tabla": [
+  {
+   "rey": "Djoser",
+   "volumen_m3": 330400,
+   "reinado": [
+    19,
+    29
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    11393,
+    17389
+   ],
+   "experiencia_acumulada_m3": 165200
+  },
+  {
+   "rey": "Sekhemkhet",
+   "volumen_m3": 33600,
+   "reinado": [
+    6,
+    7
+   ],
+   "terminada": false,
+   "ritmo_m3_ano": [
+    4800,
+    5600
+   ],
+   "experiencia_acumulada_m3": 347200
+  },
+  {
+   "rey": "Khaba",
+   "volumen_m3": 47040,
+   "reinado": [
+    6,
+    8
+   ],
+   "terminada": false,
+   "ritmo_m3_ano": [
+    5880,
+    7840
+   ],
+   "experiencia_acumulada_m3": 387520
+  },
+  {
+   "rey": "Snefru",
+   "volumen_m3": 3569773,
+   "reinado": [
+    24,
+    48
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    74370,
+    148741
+   ],
+   "experiencia_acumulada_m3": 2195926
+  },
+  {
+   "rey": "Keops",
+   "volumen_m3": 2583283,
+   "reinado": [
+    23,
+    27
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    95677,
+    112317
+   ],
+   "experiencia_acumulada_m3": 5272454
+  },
+  {
+   "rey": "Djedefra",
+   "volumen_m3": 131043,
+   "reinado": [
+    8,
+    11
+   ],
+   "terminada": false,
+   "ritmo_m3_ano": [
+    11913,
+    16380
+   ],
+   "experiencia_acumulada_m3": 6629618
+  },
+  {
+   "rey": "Kefrén",
+   "volumen_m3": 2211096,
+   "reinado": [
+    24,
+    26
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    85042,
+    92129
+   ],
+   "experiencia_acumulada_m3": 7800687
+  },
+  {
+   "rey": "Micerino",
+   "volumen_m3": 235183,
+   "reinado": [
+    18,
+    28
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    8399,
+    13066
+   ],
+   "experiencia_acumulada_m3": 9023826
+  },
+  {
+   "rey": "Userkaf",
+   "volumen_m3": 87906,
+   "reinado": [
+    7,
+    8
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    10988,
+    12558
+   ],
+   "experiencia_acumulada_m3": 9185371
+  },
+  {
+   "rey": "Sahure",
+   "volumen_m3": 96542,
+   "reinado": [
+    12,
+    14
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    6896,
+    8045
+   ],
+   "experiencia_acumulada_m3": 9277595
+  },
+  {
+   "rey": "Neferirkara",
+   "volumen_m3": 257250,
+   "reinado": [
+    10,
+    20
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    12862,
+    25725
+   ],
+   "experiencia_acumulada_m3": 9454491
+  },
+  {
+   "rey": "Niuserra",
+   "volumen_m3": 112632,
+   "reinado": [
+    24,
+    35
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    3218,
+    4693
+   ],
+   "experiencia_acumulada_m3": 9639432
+  },
+  {
+   "rey": "Djedkara",
+   "volumen_m3": 107835,
+   "reinado": [
+    33,
+    44
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    2451,
+    3268
+   ],
+   "experiencia_acumulada_m3": 9749666
+  },
+  {
+   "rey": "Unas",
+   "volumen_m3": 47390,
+   "reinado": [
+    15,
+    30
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    1580,
+    3159
+   ],
+   "experiencia_acumulada_m3": 9827278
+  },
+  {
+   "rey": "Teti",
+   "volumen_m3": 107835,
+   "reinado": [
+    12,
+    33
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    3268,
+    8986
+   ],
+   "experiencia_acumulada_m3": 9904890
+  },
+  {
+   "rey": "Pepi I",
+   "volumen_m3": 107835,
+   "reinado": [
+    25,
+    50
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    2157,
+    4313
+   ],
+   "experiencia_acumulada_m3": 10012726
+  },
+  {
+   "rey": "Merenra",
+   "volumen_m3": 107835,
+   "reinado": [
+    6,
+    11
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    9803,
+    17972
+   ],
+   "experiencia_acumulada_m3": 10120560
+  },
+  {
+   "rey": "Pepi II",
+   "volumen_m3": 107835,
+   "reinado": [
+    64,
+    94
+   ],
+   "terminada": true,
+   "ritmo_m3_ano": [
+    1147,
+    1685
+   ],
+   "experiencia_acumulada_m3": 10228396
+  }
+ ],
+ "fase_crecimiento": [
+  "Djoser",
+  "Snefru",
+  "Keops",
+  "Kefrén"
+ ],
+ "wright_exponente_b": {
+  "mediana": 0.529,
+  "p05": 0.472,
+  "p95": 0.578,
+  "tasa_aprendizaje_por_duplicacion": 0.307
+ },
+ "techo": {
+  "Rmax_m3_ano_mediana": 123823,
+  "Rmax_p05": 110982,
+  "Rmax_p95": 138694,
+  "C_mitad_mediana": 1215967
+ },
+ "nota_aic": "n = 4 puntos: con tan pocos datos el AICc solo distingue diferencias grandes",
+ "fraccion_mc_mejor_modelo": {
+  "wright": 0.0,
+  "techo": 0.64865,
+  "constante": 0.35135
+ },
+ "prueba_dinastias_V_VI": {
+  "reyes": [
+   "Userkaf",
+   "Sahure",
+   "Neferirkara",
+   "Niuserra",
+   "Djedkara",
+   "Unas",
+   "Teti",
+   "Pepi I",
+   "Merenra",
+   "Pepi II"
+  ],
+  "ritmo_observado_rango": [
+   [
+    10988,
+    12558
+   ],
+   [
+    6896,
+    8045
+   ],
+   [
+    12862,
+    25725
+   ],
+   [
+    3218,
+    4693
+   ],
+   [
+    2451,
+    3268
+   ],
+   [
+    1580,
+    3159
+   ],
+   [
+    3268,
+    8986
+   ],
+   [
+    2157,
+    4313
+   ],
+   [
+    9803,
+    17972
+   ],
+   [
+    1147,
+    1685
+   ]
+  ],
+  "ritmo_predicho_techo": 123823,
+  "caida_respecto_al_techo": [
+   10.5,
+   16.6,
+   6.4,
+   31.3,
+   43.3,
+   52.3,
+   20.2,
+   38.3,
+   8.9,
+   87.4
+  ]
+ }
+}

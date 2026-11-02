@@ -1,0 +1,46 @@
+{
+ "plantilla": "alvarez",
+ "grado": 2,
+ "n_parametros": 6,
+ "chi2": 958.2,
+ "ndf": 795,
+ "chi2_alvarez_recalculado": 983.2,
+ "correlacion_con_residuos_alvarez": 0.992,
+ "moran": 0.085,
+ "cuentas_medidas": 649011,
+ "exclusion": {
+  "camara_tipo_rey": {
+   "posiciones": 3633,
+   "excluido_95": 0.2603908615469309,
+   "excluido_5s": 0.13570052298375998,
+   "dentro_cono_95": 0.9537166900420757,
+   "dentro_cono_5s": 0.573632538569425,
+   "fuera_cono_95_sobre_total": 0.07321772639691715,
+   "minimo_dchi2": -10.76,
+   "donde_minimo": [
+    24.4,
+    -15.6,
+    92.0
+   ],
+   "p_global": 0.442,
+   "sigma_global_una_cola": 0.15
+  },
+  "cubo_8m": {
+   "posiciones": 2949,
+   "excluido_95": 0.3387589013224822,
+   "excluido_5s": 0.2692438114615124,
+   "dentro_cono_95": 0.9956458635703919,
+   "dentro_cono_5s": 0.9027576197387518,
+   "fuera_cono_95_sobre_total": 0.10613767378772465,
+   "minimo_dchi2": -5.99,
+   "donde_minimo": [
+    -23.6,
+    -31.6,
+    60.0
+   ],
+   "p_global": 0.797,
+   "sigma_global_una_cola": -0.83
+  }
+ },
+ "kappa": 1.196
+}

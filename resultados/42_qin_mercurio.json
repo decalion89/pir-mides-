@@ -1,0 +1,123 @@
+{
+ "entrada": {
+  "flujo_lidar_kg_s": "5e-8 (×2)",
+  "temperatura_C": "13–17",
+  "area_fuente_m2": "4000–15400",
+  "espesor_m": "30–80",
+  "porosidad": "0,30–0,45",
+  "saturacion_agua": "0,3–0,8"
+ },
+ "c_sat_mg_m3": {
+  "p05": 8.08,
+  "mediana": 9.42,
+  "p95": 11.0
+ },
+ "A_difusion": {
+  "D_efectiva_m2_s": {
+   "p05": 2.4e-08,
+   "mediana": 2.42e-07,
+   "p95": 9.68e-07
+  },
+  "flujo_max_1d_kg_s": {
+   "p05": 2.98e-11,
+   "mediana": 3.25e-10,
+   "p95": 1.77e-09
+  },
+  "cociente_lidar_sobre_difusion_1d": {
+   "p05": 19.2,
+   "mediana": 163.0,
+   "p95": 2170.0
+  },
+  "factor_3d_sobre_1d": {
+   "p05": 2.72,
+   "mediana": 3.8,
+   "p95": 5.57
+  },
+  "flujo_max_kg_s": {
+   "p05": 1.24e-10,
+   "mediana": 1.27e-09,
+   "p95": 5.79e-09
+  },
+  "cociente_lidar_sobre_difusion": {
+   "p05": 5.59,
+   "mediana": 41.9,
+   "p95": 522.0
+  },
+  "prob_difusion_basta": 0.00023,
+  "cota_aire_libre_kg_s": {
+   "p05": 4.31e-08,
+   "mediana": 6.84e-08,
+   "p95": 1.16e-07
+  },
+  "cociente_lidar_sobre_aire_libre": {
+   "p05": 0.207,
+   "mediana": 0.722,
+   "p95": 2.51
+  },
+  "prob_aire_libre_basta": 0.665605
+ },
+ "B_suelo": {
+  "flujo_suelo_tipico_kg_s": {
+   "p05": 3.91e-10,
+   "mediana": 1.1e-09,
+   "p95": 3.11e-09
+  },
+  "flujo_por_area_necesario_ng_m2_h": {
+   "p05": 457.0,
+   "mediana": 1430.0,
+   "p95": 4500.0
+  },
+  "cociente_lidar_sobre_suelo": {
+   "p05": 9.43,
+   "mediana": 45.4,
+   "p95": 220.0
+  },
+  "prob_suelo_basta": 1e-05
+ },
+ "C_adveccion": {
+  "caudal_necesario_m3_dia": {
+   "p05": 145.0,
+   "mediana": 458.0,
+   "p95": 1460.0
+  },
+  "renovacion_camara_dias": {
+   "p05": 41.2,
+   "mediana": 131.0,
+   "p95": 414.0
+  },
+  "renovacion_palacio_dias": {
+   "p05": 317.0,
+   "mediana": 1010.0,
+   "p95": 3190.0
+  },
+  "bombeo_barometrico_camara_m3_dia": {
+   "p05": 109.0,
+   "mediana": 180.0,
+   "p95": 309.0
+  },
+  "bombeo_barometrico_palacio_m3_dia": {
+   "p05": 838.0,
+   "mediana": 1390.0,
+   "p95": 2380.0
+  },
+  "prob_bombeo_camara_basta": 0.11393,
+  "prob_bombeo_palacio_basta": 0.926515
+ },
+ "mercurio": {
+  "perdido_en_2200_anos_t": {
+   "p05": 1.11,
+   "mediana": 3.46,
+   "p95": 10.9
+  },
+  "superficie_minima_expuesta_m2": {
+   "p05": 0.858,
+   "mediana": 3.29,
+   "p95": 14.1
+  },
+  "anos_para_perder_100_t": {
+   "p05": 20200.0,
+   "mediana": 63500.0,
+   "p95": 199000.0
+  }
+ }
+}

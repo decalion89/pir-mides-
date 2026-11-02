@@ -1,0 +1,20 @@
+{
+  "muones_NE1_previstos": 5275861.191407025,
+  "muones_NE1_publicados": 4400000.0,
+  "exceso_pico_suavizado_BV_QC": 0.08616638304443586,
+  "exceso_publicado_KEK": [
+    0.052,
+    0.11
+  ],
+  "Z_BV_QC_modelo": 17.007001972042023,
+  "Z_BV_QC_publicado_NE1": 13.7,
+  "Z_BV_exterior_modelo": 2.758325036651054,
+  "Z_BV_exterior_publicado": 5.8,
+  "exceso_max_NFC_desde_corredor": 0.2801083757021643,
+  "Z_NFC_modelo": 94.13053461370346,
+  "Z_NFC_publicado": "> 10",
+  "mu_implicito_Djehutihotep_200N_350N": [
+    0.06045906710253436,
+    0.10580336742943514
+  ]
+}

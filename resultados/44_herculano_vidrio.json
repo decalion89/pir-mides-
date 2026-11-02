@@ -1,0 +1,70 @@
+{
+ "E_activacion_kJ_mol": 389.9,
+ "ritmo_enfriamiento_craneo_K_s": {
+  "generoso (k=0,5, h=25, ε=0,9)": {
+   "borde_del_cerebro": 0.739,
+   "a_1cm_del_hueso": 0.249,
+   "centro": 0.08
+  },
+  "muy generoso (k=1,0, h=100: viento fuerte)": {
+   "borde_del_cerebro": 1.716,
+   "a_1cm_del_hueso": 0.567,
+   "centro": 0.172
+  },
+  "realista (k=0,2, h=10)": {
+   "borde_del_cerebro": 0.414,
+   "a_1cm_del_hueso": 0.121
+  }
+ },
+ "ritmo_enfriamiento_fragmento_suelto_K_s": {
+  "0.5 mm": 718.3,
+  "1 mm": 207.1,
+  "2 mm": 65.5,
+  "5 mm": 17.1
+ },
+ "ritmo_fragmento_1mm_con_viento_h200_K_s": 331.5,
+ "temperatura_ficticia_C": {
+  "0.01 K/s": 383.7,
+  "0.1 K/s": 405.6,
+  "1 K/s": 429.0,
+  "10 K/s": 454.1,
+  "100 K/s": 481.0,
+  "1000 K/s": 510.0
+ },
+ "minutos_minimos_para_secar_y_calentar_el_cerebro": {
+  "nube 550 °C, ε=0.3, h=30, área 0.06 m²": 39.1,
+  "nube 550 °C, ε=0.3, h=30, área 0.12 m²": 19.6,
+  "nube 550 °C, ε=1.0, h=100, área 0.06 m²": 11.7,
+  "nube 550 °C, ε=1.0, h=100, área 0.12 m²": 5.9,
+  "nube 650 °C, ε=0.3, h=30, área 0.06 m²": 28.8,
+  "nube 650 °C, ε=0.3, h=30, área 0.12 m²": 14.4,
+  "nube 650 °C, ε=1.0, h=100, área 0.06 m²": 8.6,
+  "nube 650 °C, ε=1.0, h=100, área 0.12 m²": 4.3,
+  "nube 750 °C, ε=0.3, h=30, área 0.06 m²": 21.7,
+  "nube 750 °C, ε=0.3, h=30, área 0.12 m²": 10.9,
+  "nube 750 °C, ε=1.0, h=100, área 0.06 m²": 6.5,
+  "nube 750 °C, ε=1.0, h=100, área 0.12 m²": 3.3
+ },
+ "en_el_deposito": {
+  "315 °C": {
+   "tiempo_para_ablandarse_s": 4290000.0,
+   "tiempo_de_recocido_si_Tf510_s": 210.0,
+   "tiempo_de_recocido_si_Tf430_s": 6630.0
+  },
+  "350 °C": {
+   "tiempo_para_ablandarse_s": 48700.0,
+   "tiempo_de_recocido_si_Tf510_s": 22.3,
+   "tiempo_de_recocido_si_Tf430_s": 707.0
+  },
+  "400 °C": {
+   "tiempo_para_ablandarse_s": 182.0,
+   "tiempo_de_recocido_si_Tf510_s": 1.37,
+   "tiempo_de_recocido_si_Tf430_s": 43.2
+  },
+  "465 °C": {
+   "tiempo_para_ablandarse_s": 0.394,
+   "tiempo_de_recocido_si_Tf510_s": 0.0636,
+   "tiempo_de_recocido_si_Tf430_s": 2.01
+  }
+ }
+}

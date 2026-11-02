@@ -1,0 +1,6 @@
+body{font-family:"Times New Roman",Georgia,serif;max-width:760px;margin:auto;line-height:1.45;font-size:11pt;color:#1f2933}
+h1{font-size:14pt;margin-top:1.4em}h1.title{font-size:17pt;text-align:center}
+p.author,p.date{text-align:center;color:#555}
+table{border-collapse:collapse;margin:0.8em 0;font-size:9.5pt}td,th{border:1px solid #bbb;padding:3px 6px}
+img{max-width:100%}figure{margin:1em 0;text-align:center}figcaption{font-size:9pt;color:#555}
+code{font-size:9pt}

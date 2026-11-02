@@ -1,0 +1,126 @@
+{
+ "paso_m": 4.0,
+ "n_voxeles": 34529,
+ "volumen_m3": 2209856.0,
+ "fraccion_cono_35": 0.198876306872484,
+ "alvarez_publicado": 0.19,
+ "dias_equivalentes_alvarez_modelo": 4.9,
+ "eventos_alvarez": 700000.0,
+ "propuesta": {
+  "area_m2": 2.0,
+  "dias": 180.0,
+  "puestos": [
+   "Belzoni, cenital",
+   "Belzoni, inclinada 45° al norte",
+   "Belzoni, inclinada 45° al sur",
+   "Belzoni, inclinada 45° al este",
+   "Belzoni, inclinada 45° al oeste"
+  ]
+ },
+ "resultados": {
+  "cámara tipo Rey": {
+   "calibrado (×0,44, Nagoya)": {
+    "alvarez_explorado_5s": 0.027715833067856004,
+    "alvarez_explorado_3s": 0.08326334385588925,
+    "alvarez_fraccion_del_cono_5s": 0.12625600698995196,
+    "alvarez_fraccion_del_cono_3s": 0.38794233289646135,
+    "cenital_moderna_5s": 0.30693040632511803,
+    "cinco_orientaciones_5s": 0.5985693185438328,
+    "cinco_orientaciones_3s": 0.609922094471314,
+    "sin_explorar_tras_propuesta_por_altura": {
+     "0-20": 0.8822449305444675,
+     "20-40": 0.30636473562712985,
+     "40-60": 0.0037428803905614322,
+     "60-90": 0.0,
+     "90-140": 0.0
+    }
+   },
+   "sin calibrar (×1)": {
+    "alvarez_explorado_5s": 0.13377161226794868,
+    "alvarez_explorado_3s": 0.20029540386341915,
+    "alvarez_fraccion_del_cono_5s": 0.6253094509975244,
+    "alvarez_fraccion_del_cono_3s": 0.9239842726081258,
+    "cenital_moderna_5s": 0.3498798111732167,
+    "cinco_orientaciones_5s": 0.6145848417272438,
+    "cinco_orientaciones_3s": 0.6203481131802253,
+    "sin_explorar_tras_propuesta_por_altura": {
+     "0-20": 0.8705891745170047,
+     "20-40": 0.26415301747828956,
+     "40-60": 0.0,
+     "60-90": 0.0,
+     "90-140": 0.0
+    }
+   }
+  },
+  "cubo de 8 m": {
+   "calibrado (×0,44, Nagoya)": {
+    "alvarez_explorado_5s": 0.07628370355353471,
+    "alvarez_explorado_3s": 0.15824379507081004,
+    "alvarez_fraccion_del_cono_5s": 0.35707004514343965,
+    "alvarez_fraccion_del_cono_3s": 0.7384592980923256,
+    "cenital_moderna_5s": 0.3456804425265719,
+    "cinco_orientaciones_5s": 0.6161777056966607,
+    "cinco_orientaciones_3s": 0.6252425497407976,
+    "sin_explorar_tras_propuesta_por_altura": {
+     "0-20": 0.8640427909947309,
+     "20-40": 0.266901176211938,
+     "40-60": 0.00032546786004882016,
+     "60-90": 0.0,
+     "90-140": 0.0
+    }
+   },
+   "sin calibrar (×1)": {
+    "alvarez_explorado_5s": 0.1973413652292276,
+    "alvarez_explorado_3s": 0.2218425091951693,
+    "alvarez_fraccion_del_cono_5s": 0.9113149847094801,
+    "alvarez_fraccion_del_cono_3s": 0.9983981360128149,
+    "cenital_moderna_5s": 0.35961076196820063,
+    "cinco_orientaciones_5s": 0.6290943844304787,
+    "cinco_orientaciones_3s": 0.6347997335572997,
+    "sin_explorar_tras_propuesta_por_altura": {
+     "0-20": 0.8528660386396296,
+     "20-40": 0.23348356601077278,
+     "40-60": 0.0,
+     "60-90": 0.0,
+     "90-140": 0.0
+    }
+   }
+  },
+  "cubo de 5 m": {
+   "calibrado (×0,44, Nagoya)": {
+    "alvarez_explorado_5s": 0.005502620985258768,
+    "alvarez_explorado_3s": 0.02035969764545744,
+    "alvarez_fraccion_del_cono_5s": 0.025192951798456386,
+    "alvarez_fraccion_del_cono_3s": 0.09654871122761031,
+    "cenital_moderna_5s": 0.16603434793941324,
+    "cinco_orientaciones_5s": 0.43276665990906193,
+    "cinco_orientaciones_3s": 0.5691447768542385,
+    "sin_explorar_tras_propuesta_por_altura": {
+     "0-20": 0.9010857416573527,
+     "20-40": 0.5269869187644278,
+     "40-60": 0.3308380797396257,
+     "60-90": 0.05031315240083507,
+     "90-140": 0.6245560629122273
+    }
+   },
+   "sin calibrar (×1)": {
+    "alvarez_explorado_5s": 0.041819919487966636,
+    "alvarez_explorado_3s": 0.10278316777201772,
+    "alvarez_fraccion_del_cono_5s": 0.19921363040629095,
+    "alvarez_fraccion_del_cono_3s": 0.49308286005533714,
+    "cenital_moderna_5s": 0.3104926293839961,
+    "cinco_orientaciones_5s": 0.5972371050421384,
+    "cinco_orientaciones_3s": 0.6053172695415447,
+    "sin_explorar_tras_propuesta_por_altura": {
+     "0-20": 0.8869551333226888,
+     "20-40": 0.3059250302297461,
+     "40-60": 0.002278275020341741,
+     "60-90": 0.0,
+     "90-140": 0.0
+    }
+   }
+  }
+ },
+ "camara_del_rey_40m_sobre_belzoni_Z_modelo": 11.3,
+ "tiempo_s": 203
+}

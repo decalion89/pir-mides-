@@ -1,0 +1,276 @@
+{
+  "n_muestras": 600,
+  "criterios": {
+    "anios": 20.0,
+    "personas": 25000.0,
+    "volumen_aux": 0.5
+  },
+  "modelos": {
+    "recta": {
+      "nombre": "Rampa recta frontal",
+      "p_viable": 0.0,
+      "anios_med": 8.61296614184044,
+      "anios_p10": 6.569553143206107,
+      "anios_p90": 11.569073472055932,
+      "personas_med": 4816.43857083572,
+      "vaux_med": 1.847747524374817
+    },
+    "zigzag": {
+      "nombre": "Rampa en zigzag sobre una cara",
+      "p_viable": 0.0,
+      "anios_med": 91.13759259118872,
+      "anios_p10": 53.08222198293382,
+      "anios_p90": 154.47166480349188,
+      "personas_med": null,
+      "vaux_med": 0.011825372272004317
+    },
+    "zigzag4": {
+      "nombre": "Zigzag en las 4 caras",
+      "p_viable": 0.37333333333333335,
+      "anios_med": 22.83700549270626,
+      "anios_p10": 13.323732681652771,
+      "anios_p90": 38.66556183807385,
+      "personas_med": null,
+      "vaux_med": 0.04730148908801727
+    },
+    "espiral": {
+      "nombre": "Rampa en espiral exterior",
+      "p_viable": 0.0,
+      "anios_med": 91.13759259118872,
+      "anios_p10": 53.08222192294952,
+      "anios_p90": 154.47166480349188,
+      "personas_med": null,
+      "vaux_med": 0.011825372272004317
+    },
+    "espiral4": {
+      "nombre": "4 espirales exteriores",
+      "p_viable": 0.37333333333333335,
+      "anios_med": 22.837004890598585,
+      "anios_p10": 13.32373223039081,
+      "anios_p90": 38.66556062563543,
+      "personas_med": null,
+      "vaux_med": 0.04730148908801727
+    },
+    "interna": {
+      "nombre": "Rampa interna (Houdin)",
+      "p_viable": 0.0,
+      "anios_med": 69.96286921999481,
+      "anios_p10": 43.45726614924282,
+      "anios_p90": 114.8796700620676,
+      "personas_med": null,
+      "vaux_med": 0.07686920777843093
+    },
+    "aristas": {
+      "nombre": "Rampas integradas en las aristas",
+      "p_viable": 0.37333333333333335,
+      "anios_med": 22.826642220850573,
+      "anios_p10": 13.312216579259273,
+      "anios_p90": 38.65008897260272,
+      "personas_med": null,
+      "vaux_med": 0.0016964516803654544
+    },
+    "palancas": {
+      "nombre": "Palancas hilada a hilada",
+      "p_viable": 1.0,
+      "anios_med": 7.500044816793295,
+      "anios_p10": 5.454763373210552,
+      "anios_p90": 10.52736773622234,
+      "personas_med": 9137.08686864041,
+      "vaux_med": 0.0
+    },
+    "recta+zigzag": {
+      "nombre": "Híbrido: recta hasta 45 m + zigzag",
+      "p_viable": 0.045,
+      "anios_med": 36.02144460617937,
+      "anios_p10": 23.320588908377005,
+      "anios_p90": 56.43264062403392,
+      "personas_med": null,
+      "vaux_med": 0.09411740484003504
+    },
+    "recta+palancas": {
+      "nombre": "Híbrido: recta hasta 45 m + palancas",
+      "p_viable": 1.0,
+      "anios_med": 8.308236400084677,
+      "anios_p10": 6.4533056348452424,
+      "anios_p90": 11.095113843113225,
+      "personas_med": 5080.746530867194,
+      "vaux_med": 0.0859219217374727
+    }
+  },
+  "sensibilidad": {
+    "aristas": {
+      "t_giro_min": 0.96865657960161,
+      "horas_dia": -0.16075905766404905,
+      "dias_anio": -0.13630987863855173,
+      "volumen_bloque": -0.12473784649401805,
+      "holgura_trineos": -0.10001066669629637,
+      "mu": -0.08289289692471367,
+      "equipo_palanca": -0.0676637990661085,
+      "prod_rampa": -0.03723060341834283,
+      "t_colocar_min": -0.03556232100644724,
+      "equipo_colocacion": 0.03266631296198045,
+      "t_palanca_min": -0.03109980861057947,
+      "area_por_equipo": -0.023599787777188266,
+      "fraccion_apoyo": -0.019439720665890736,
+      "metros_por_hombre": -0.012922591451642918,
+      "distancia_cantera": -0.012053422370617694,
+      "fuerza_hombre": 0.0065612404478901315,
+      "v_vacio": 0.005700015833377314,
+      "v_cargado": 0.0027171186586629407,
+      "prod_cantera": -0.0017840049555693208,
+      "t_carga_min": 0.000624001733338148
+    },
+    "recta+palancas": {
+      "v_cargado": -0.6394271095197486,
+      "metros_por_hombre": 0.3205365014902819,
+      "mu": 0.25732977036047316,
+      "holgura_trineos": 0.2317908660857391,
+      "fuerza_hombre": -0.22408201133892033,
+      "horas_dia": -0.22314756429878968,
+      "dias_anio": -0.19204281123003117,
+      "t_palanca_min": 0.11156653212925591,
+      "equipo_palanca": 0.10465945738738162,
+      "volumen_bloque": -0.10256178489384692,
+      "t_carga_min": 0.08692957480437444,
+      "prod_cantera": -0.06453451259586832,
+      "t_giro_min": -0.05574437706771407,
+      "distancia_cantera": -0.0370827696743602,
+      "fraccion_apoyo": 0.03597226658962941,
+      "area_por_equipo": 0.029514581984949956,
+      "v_vacio": -0.023860899613610036,
+      "t_colocar_min": -0.02053233481204114,
+      "prod_rampa": -0.018467162408784467,
+      "equipo_colocacion": 0.005115291986922186
+    },
+    "zigzag": {
+      "t_giro_min": 0.9689788582746063,
+      "horas_dia": -0.1600571668254634,
+      "dias_anio": -0.1357025436181767,
+      "volumen_bloque": -0.12407006686129683,
+      "holgura_trineos": -0.09986227739521499,
+      "mu": -0.08237545104291956,
+      "equipo_palanca": -0.06752063200175555,
+      "t_colocar_min": -0.03787477187436632,
+      "prod_rampa": -0.03722904785846627,
+      "equipo_colocacion": 0.03291470254084039,
+      "t_palanca_min": -0.030939085941905396,
+      "area_por_equipo": -0.02506612518368106,
+      "fraccion_apoyo": -0.01920538668162967,
+      "metros_por_hombre": -0.013023036175100486,
+      "distancia_cantera": -0.011965144347623186,
+      "fuerza_hombre": 0.006123572565479347,
+      "v_vacio": 0.005652682368562135,
+      "v_cargado": 0.0023731177031047304,
+      "prod_cantera": -0.0015843377342714838,
+      "t_carga_min": 0.000570668251856255
+    }
+  },
+  "parametros_centrales": {
+    "recta": {
+      "anios": 7.30509058059812,
+      "cuello": {
+        "carriles": 148,
+        "colocación": 0,
+        "mano de obra": 61
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 1.2113716770092573
+    },
+    "zigzag": {
+      "anios": 63.7481410025655,
+      "cuello": {
+        "carriles": 196,
+        "colocación": 13,
+        "mano de obra": 0
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 11.832002426602045
+    },
+    "zigzag4": {
+      "anios": 15.991622392909989,
+      "cuello": {
+        "carriles": 183,
+        "colocación": 25,
+        "mano de obra": 1
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 2.9580006066505113
+    },
+    "espiral": {
+      "anios": 63.7481410025655,
+      "cuello": {
+        "carriles": 196,
+        "colocación": 13,
+        "mano de obra": 0
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 11.832002426602045
+    },
+    "espiral4": {
+      "anios": 15.991621931607382,
+      "cuello": {
+        "carriles": 183,
+        "colocación": 25,
+        "mano de obra": 1
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 2.9580006066505113
+    },
+    "interna": {
+      "anios": 49.49701329790682,
+      "cuello": {
+        "carriles": 200,
+        "colocación": 9,
+        "mano de obra": 0
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 23.664004853204077
+    },
+    "aristas": {
+      "anios": 15.978454282834475,
+      "cuello": {
+        "carriles": 183,
+        "colocación": 26,
+        "mano de obra": 0
+      },
+      "equipo_max": 25,
+      "ventana_43_66_anios": 2.9580006066505113
+    },
+    "palancas": {
+      "anios": 5.96279366124947,
+      "cuello": {
+        "carriles": 9,
+        "colocación": 26,
+        "mano de obra": 174
+      },
+      "equipo_max": 14,
+      "ventana_43_66_anios": 1.4429582905841851
+    },
+    "recta+zigzag": {
+      "anios": 25.67054038489907,
+      "cuello": {
+        "carriles": 196,
+        "colocación": 13,
+        "mano de obra": 0
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 11.03060168263328
+    },
+    "recta+palancas": {
+      "anios": 6.776406628813832,
+      "cuello": {
+        "carriles": 114,
+        "colocación": 30,
+        "mano de obra": 65
+      },
+      "equipo_max": 23,
+      "ventana_43_66_anios": 1.2113716770092573
+    }
+  },
+  "t_giro_maximo_para_20_anios_min": {
+    "zigzag": 1.5,
+    "interna": 1.5,
+    "aristas": 6.25,
+    "recta+zigzag": 3.5
+  }
+}

@@ -1,0 +1,196 @@
+{
+ "volumen_keops_m3": 2592470,
+ "dias_trabajo_anio": 300.0,
+ "tecnica_giro": "parametrica",
+ "techo_historico_m3_ano": {
+  "asintota": 123823,
+  "p05": 110982,
+  "p95": 138694,
+  "observado_snefru_keops_kefren": [
+   74370,
+   148741
+  ]
+ },
+ "modelos": {
+  "Rampa recta frontal": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 272439,
+    "25000": 354885,
+    "50000": 376669,
+    "100000": 384563,
+    "300000": 389910,
+    "1000000": 391783
+   },
+   "techo_m3_ano": 391783,
+   "techo_m3_dia": 1073,
+   "anios_minimos_keops": 6.6,
+   "hiladas_por_cuello": {
+    "carriles": 169,
+    "colocación": 39,
+    "mano de obra": 1
+   }
+  },
+  "Rampa en zigzag sobre una cara": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 40664,
+    "25000": 40667,
+    "50000": 40668,
+    "100000": 40669,
+    "300000": 40669,
+    "1000000": 40669
+   },
+   "techo_m3_ano": 40669,
+   "techo_m3_dia": 111,
+   "anios_minimos_keops": 63.7,
+   "hiladas_por_cuello": {
+    "carriles": 196,
+    "colocación": 13,
+    "mano de obra": 0
+   }
+  },
+  "Zigzag en las 4 caras": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 161880,
+    "25000": 162114,
+    "50000": 162184,
+    "100000": 162218,
+    "300000": 162241,
+    "1000000": 162249
+   },
+   "techo_m3_ano": 162249,
+   "techo_m3_dia": 445,
+   "anios_minimos_keops": 16.0,
+   "hiladas_por_cuello": {
+    "carriles": 183,
+    "colocación": 26,
+    "mano de obra": 0
+   }
+  },
+  "Rampa en espiral exterior": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 40664,
+    "25000": 40667,
+    "50000": 40668,
+    "100000": 40669,
+    "300000": 40669,
+    "1000000": 40669
+   },
+   "techo_m3_ano": 40669,
+   "techo_m3_dia": 111,
+   "anios_minimos_keops": 63.7,
+   "hiladas_por_cuello": {
+    "carriles": 196,
+    "colocación": 13,
+    "mano de obra": 0
+   }
+  },
+  "4 espirales exteriores": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 161906,
+    "25000": 162114,
+    "50000": 162184,
+    "100000": 162218,
+    "300000": 162241,
+    "1000000": 162249
+   },
+   "techo_m3_ano": 162249,
+   "techo_m3_dia": 445,
+   "anios_minimos_keops": 16.0,
+   "hiladas_por_cuello": {
+    "carriles": 183,
+    "colocación": 26,
+    "mano de obra": 0
+   }
+  },
+  "Rampa interna (Houdin)": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 52305,
+    "25000": 52376,
+    "50000": 52388,
+    "100000": 52394,
+    "300000": 52398,
+    "1000000": 52399
+   },
+   "techo_m3_ano": 52399,
+   "techo_m3_dia": 144,
+   "anios_minimos_keops": 49.5,
+   "hiladas_por_cuello": {
+    "carriles": 200,
+    "colocación": 9,
+    "mano de obra": 0
+   }
+  },
+  "Rampas integradas en las aristas": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 162240,
+    "25000": 162248,
+    "50000": 162250,
+    "100000": 162252,
+    "300000": 162252,
+    "1000000": 162253
+   },
+   "techo_m3_ano": 162253,
+   "techo_m3_dia": 445,
+   "anios_minimos_keops": 16.0,
+   "hiladas_por_cuello": {
+    "carriles": 183,
+    "colocación": 26,
+    "mano de obra": 0
+   }
+  },
+  "Palancas hilada a hilada": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 176271,
+    "25000": 434774,
+    "50000": 752274,
+    "100000": 931345,
+    "300000": 931345,
+    "1000000": 931345
+   },
+   "techo_m3_ano": 931345,
+   "techo_m3_dia": 2552,
+   "anios_minimos_keops": 2.8,
+   "hiladas_por_cuello": {
+    "carriles": 169,
+    "colocación": 40,
+    "mano de obra": 0
+   }
+  },
+  "Híbrido: recta hasta 45 m + zigzag": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 100649,
+    "25000": 100990,
+    "50000": 101043,
+    "100000": 101070,
+    "300000": 101088,
+    "1000000": 101094
+   },
+   "techo_m3_ano": 101094,
+   "techo_m3_dia": 277,
+   "anios_minimos_keops": 25.6,
+   "hiladas_por_cuello": {
+    "carriles": 196,
+    "colocación": 13,
+    "mano de obra": 0
+   }
+  },
+  "Híbrido: recta hasta 45 m + palancas": {
+   "ritmo_m3_ano_por_personas": {
+    "10000": 285547,
+    "25000": 382573,
+    "50000": 391846,
+    "100000": 392213,
+    "300000": 392458,
+    "1000000": 392544
+   },
+   "techo_m3_ano": 392544,
+   "techo_m3_dia": 1075,
+   "anios_minimos_keops": 6.6,
+   "hiladas_por_cuello": {
+    "carriles": 169,
+    "colocación": 40,
+    "mano de obra": 0
+   }
+  }
+ }
+}

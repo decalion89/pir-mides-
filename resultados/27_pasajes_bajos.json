@@ -1,0 +1,49 @@
+{
+ "sin_cubrir_antes": 0.21514348676554337,
+ "puestos": {
+  "corredor descendente a -5 m": {
+   "origen": [
+    7.3,
+    58.0,
+    -5.0
+   ],
+   "cubre_del_hueco": 0.02221199217401312
+  },
+  "corredor descendente a -15 m": {
+   "origen": [
+    7.3,
+    37.9,
+    -15.0
+   ],
+   "cubre_del_hueco": 0.055932788583266196
+  },
+  "corredor descendente a -25 m": {
+   "origen": [
+    7.3,
+    17.9,
+    -25.0
+   ],
+   "cubre_del_hueco": 0.08608585567959488
+  },
+  "pasaje ciego al sur de la Cámara Subterránea": {
+   "origen": [
+    2.0,
+    -23.0,
+    -28.0
+   ],
+   "cubre_del_hueco": 0.17516400046035216
+  }
+ },
+ "todos_juntos": {
+  "cubre_del_hueco": 0.2809299113822074,
+  "total_explorado": 0.8452967539059598,
+  "base_0_20": 0.7006254343293954,
+  "franja_20_40": 0.8349718430848525
+ },
+ "resto_por_lado": {
+  "norte": 0.15364916773367476,
+  "sur": 0.16549295774647887,
+  "este": 0.29225352112676056,
+  "oeste": 0.3886043533930858
+ }
+}

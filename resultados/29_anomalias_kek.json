@@ -1,0 +1,52 @@
+{
+ "chi2_ajuste": 1100.6,
+ "n_puntos": 639,
+ "autocorrelacion_lag1": 0.087,
+ "dispersion": 1.242,
+ "exceso": {
+  "valor": 5.46,
+  "p_global": 0.031,
+  "detector": "H2",
+  "corte_dy": [
+   48,
+   63
+  ],
+  "tan_x": [
+   0.2,
+   0.25
+  ],
+  "tan_y": [
+   0.48,
+   0.64
+  ],
+  "puntos": 6
+ },
+ "deficit": {
+  "valor": 4.09,
+  "p_global": 0.66,
+  "detector": "H2",
+  "corte_dy": [
+   16,
+   31
+  ],
+  "tan_x": [
+   0.43,
+   0.45
+  ],
+  "tan_y": [
+   0.16,
+   0.32
+  ],
+  "puntos": 3
+ },
+ "sin_primer_corte": {
+  "exceso": 5.46,
+  "deficit": 4.09
+ },
+ "nulo_percentiles_exceso": {
+  "50": 4.29,
+  "95": 5.31,
+  "99": 5.85
+ },
+ "n_sim": 5000
+}

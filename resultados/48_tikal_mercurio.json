@@ -1,0 +1,48 @@
+{
+ "sedimento típico por encima del TET (1–10 µg/g)": {
+  "hg_en_agua_ug_L": {
+   "p05": 0.0357,
+   "mediana": 0.172,
+   "p95": 0.677
+  },
+  "fraccion_guia_OMS_6ugL": {
+   "p05": 0.00595,
+   "mediana": 0.0286,
+   "p95": 0.113
+  },
+  "prob_supera_guia": 0.0,
+  "ingesta_ug_dia": {
+   "p05": 0.139,
+   "mediana": 0.68,
+   "p95": 2.73
+  },
+  "fraccion_ingesta_tolerable_120ug": {
+   "p05": 0.00116,
+   "mediana": 0.00567,
+   "p95": 0.0227
+  }
+ },
+ "las muestras más altas (10–30 µg/g)": {
+  "hg_en_agua_ug_L": {
+   "p05": 0.255,
+   "mediana": 1.01,
+   "p95": 2.37
+  },
+  "fraccion_guia_OMS_6ugL": {
+   "p05": 0.0425,
+   "mediana": 0.168,
+   "p95": 0.395
+  },
+  "prob_supera_guia": 0.0,
+  "ingesta_ug_dia": {
+   "p05": 0.993,
+   "mediana": 3.96,
+   "p95": 9.69
+  },
+  "fraccion_ingesta_tolerable_120ug": {
+   "p05": 0.00828,
+   "mediana": 0.033,
+   "p95": 0.0808
+  }
+ }
+}

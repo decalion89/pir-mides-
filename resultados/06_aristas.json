@@ -1,0 +1,77 @@
+{
+  "notas": "Detector de 1 m² a 15 m del pie de la cara este, elevación 45°, exposición efectiva x0,25.",
+  "resultados": [
+    {
+      "delta_densidad": -0.02,
+      "dias": 30,
+      "Z": 0.604105444974614,
+      "exceso_max": 0.005168278435824458
+    },
+    {
+      "delta_densidad": -0.02,
+      "dias": 100,
+      "Z": 0.8568107405510598,
+      "exceso_max": 0.005168278435824458
+    },
+    {
+      "delta_densidad": -0.02,
+      "dias": 300,
+      "Z": 1.050958945415891,
+      "exceso_max": 0.005168278435824458
+    },
+    {
+      "delta_densidad": -0.05,
+      "dias": 30,
+      "Z": 1.5184959912264295,
+      "exceso_max": 0.013036044462612084
+    },
+    {
+      "delta_densidad": -0.05,
+      "dias": 100,
+      "Z": 2.153282352769516,
+      "exceso_max": 0.013036044462612084
+    },
+    {
+      "delta_densidad": -0.05,
+      "dias": 300,
+      "Z": 2.6406248526269183,
+      "exceso_max": 0.013036044462612306
+    },
+    {
+      "delta_densidad": -0.1,
+      "dias": 30,
+      "Z": 3.0643524980013788,
+      "exceso_max": 0.026494566784991402
+    },
+    {
+      "delta_densidad": -0.1,
+      "dias": 100,
+      "Z": 4.344344636638627,
+      "exceso_max": 0.026494566784991402
+    },
+    {
+      "delta_densidad": -0.1,
+      "dias": 300,
+      "Z": 5.325944125838986,
+      "exceso_max": 0.026494566784991402
+    },
+    {
+      "delta_densidad": -0.2,
+      "dias": 30,
+      "Z": 6.24072870798713,
+      "exceso_max": 0.054634808157951076
+    },
+    {
+      "delta_densidad": -0.2,
+      "dias": 100,
+      "Z": 8.843205860014564,
+      "exceso_max": 0.05463480815795152
+    },
+    {
+      "delta_densidad": -0.2,
+      "dias": 300,
+      "Z": 10.834624949080636,
+      "exceso_max": 0.0546348081579513
+    }
+  ]
+}

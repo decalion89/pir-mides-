@@ -1,0 +1,40 @@
+{
+ "cal": {
+  "profundidad_carbonatada_en_7_dias_NHL_mm": {
+   "p05": 0.617,
+   "mediana": 1.12,
+   "p95": 2.11
+  },
+  "anos_para_carbonatar_el_nucleo_cal_aerea": {
+   "p05": 59.0,
+   "mediana": 175.0,
+   "p95": 531.0
+  },
+  "anos_para_carbonatar_el_nucleo_NHL": {
+   "p05": 498.0,
+   "mediana": 2050.0,
+   "p95": 8000.0
+  },
+  "factor_de_tiempo_probeta_a_muro": {
+   "p05": 1070.0,
+   "mediana": 3580.0,
+   "p95": 18500.0
+  },
+  "equivalente_en_muro_de_7_dias_de_probeta_anos": {
+   "p05": 20.6,
+   "mediana": 68.7,
+   "p95": 355.0
+  }
+ },
+ "herculano": {
+  "factor_de_ritmo_fragmento_a_craneo": {
+   "p05": 984.0,
+   "mediana": 2970.0,
+   "p95": 42800.0
+  },
+  "nota": "El ritmo de enfriamiento escala como 1/L² (número de Fourier). El cociente ~10³–10⁵ coincide con el doc. 35."
+ },
+ "polianilina": {
+  "nota": "Inhibidor disuelto a 10–100 ppm en el electrolito sobre electrodos de 1 cm², frente a un recubrimiento finito sobre el objeto: el aporte de inhibidor no es comparable (desajuste de Damköhler). Sin cifras de espesor ni de duración del recubrimiento no se puede cuantificar."
+ }
+}

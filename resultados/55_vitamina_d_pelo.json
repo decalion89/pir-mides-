@@ -1,0 +1,43 @@
+{
+ "produccion_de_pelo_mg_dia": {
+  "p05": 101.0,
+  "mediana": 192.0,
+  "p95": 314.0
+ },
+ "4500 pg/mg": {
+  "fraccion_del_recambio_diario": {
+   "p05": 0.025,
+   "mediana": 0.0589,
+   "p95": 0.162
+  },
+  "veces_la_concentracion_del_suero": {
+   "p05": 115.0,
+   "mediana": 150.0,
+   "p95": 214.0
+  }
+ },
+ "20000 pg/mg": {
+  "fraccion_del_recambio_diario": {
+   "p05": 0.111,
+   "mediana": 0.262,
+   "p95": 0.718
+  },
+  "veces_la_concentracion_del_suero": {
+   "p05": 513.0,
+   "mediana": 667.0,
+   "p95": 952.0
+  }
+ },
+ "38442 pg/mg": {
+  "fraccion_del_recambio_diario": {
+   "p05": 0.214,
+   "mediana": 0.503,
+   "p95": 1.38
+  },
+  "veces_la_concentracion_del_suero": {
+   "p05": 985.0,
+   "mediana": 1280.0,
+   "p95": 1830.0
+  }
+ }
+}

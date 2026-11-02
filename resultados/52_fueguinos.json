@@ -1,0 +1,30 @@
+{
+ "humana (2–15 W/kg)": {
+  "potencia_grasa_parda_W": {
+   "p05": 0.217,
+   "mediana": 1.23,
+   "p95": 6.9
+  },
+  "cociente_necesario_sobre_capacidad": {
+   "p05": 6.04,
+   "mediana": 34.1,
+   "p95": 193.0
+  },
+  "prob_mayor_3": 0.999,
+  "prob_basta": 0.0
+ },
+ "generosa (2–100 W/kg)": {
+  "potencia_grasa_parda_W": {
+   "p05": 0.295,
+   "mediana": 3.15,
+   "p95": 34.1
+  },
+  "cociente_necesario_sobre_capacidad": {
+   "p05": 1.22,
+   "mediana": 13.3,
+   "p95": 142.0
+  },
+  "prob_mayor_3": 0.833,
+  "prob_basta": 0.033
+ }
+}

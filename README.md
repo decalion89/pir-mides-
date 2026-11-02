@@ -195,12 +195,8 @@ Landreau et al. (2024) compararon el agua total disponible con la necesaria (18 
 
 La hipótesis no queda refutada, sino condicionada al régimen hídrico, y eso se puede comprobar en los sedimentos (P16). *(Corregido tras revisión adversaria.)*
 
-### 30. El patrón común: "ceguera al ritmo" → [preprint/ritmo](preprint/ritmo/rate_blindness_en.pdf)
-Seis afirmaciones famosas, auditadas con el límite de ritmo físico que les corresponde y revisadas después por un revisor adversario independiente:
-- **Cuatro no superan la comprobación:** Qin (×42), Herculano (×600–12 500), el plomo romano (×2–3) y el mercurio de Tikal.
-- **Dos quedan condicionadas:** Djoser (exige crecidas frecuentes) y el filtro de Tikal (exige agua remansada).
-
-La selección no fue aleatoria, así que no se afirma con qué frecuencia ocurre. Lo que sí se muestra es que la comprobación es barata y cambia conclusiones.
+### 30. Síntesis: "ceguera al ritmo" en la ciencia arqueológica → [preprint/ritmo](preprint/ritmo/rate_blindness_en.pdf)
+El preprint (v4) tiene como resultado central el **censo de los 225 artículos** (sección 35): el 9 % basa su conclusión en un mecanismo con ritmo físico, y de esos el 43 % (IC del 22 al 66 %) no supera una comprobación de orden de magnitud sin un supuesto no declarado. Los seis casos famosos (Qin, Herculano, plomo romano, mercurio de Tikal, Djoser, filtro de Tikal) quedan como ilustración. La auditoría del dogma de la escala se publica como resultado negativo.
 
 ### 31. El plomo de Roma: el efecto sobre el CI está sobrestimado unas 2–3 veces → [docs/37](docs/37-el-plomo-de-roma.md)
 McConnell et al. (PNAS 2025) calcularon 2,5–3 puntos de CI perdidos en todo el Imperio por el plomo del aire. Para ello tomaron como "aumento" la plombemia **total** que predice una regresión moderna (niños de EE. UU. de 1988–94) y le sumaron una base neolítica.
@@ -224,18 +220,18 @@ Para no elegir los casos a dedo, se tomaron **40 artículos al azar** (semilla f
   - un **error aritmético** en un artículo de radiocarbono en paleosuelos, que infravalora el carbono moderno ×3–72 (doc. 40);
   - un mecanismo de **carbonatación imposible por estequiometría** (×570) en una cal "orgánica" (doc. 41).
 
-### 36. Censo del corpus completo → [auditoria_aleatoria/RESULTADO_CENSO.md](auditoria_aleatoria/RESULTADO_CENSO.md)
+### 35. Censo del corpus completo → [auditoria_aleatoria/RESULTADO_CENSO.md](auditoria_aleatoria/RESULTADO_CENSO.md)
 Los **225 artículos** de arqueología de *Scientific Reports* (2020–2025, acceso abierto), revisados uno a uno con el protocolo registrado. Recalculamos con código propio todo caso que no pasa.
 - **21 (9 %)** basan su conclusión en un mecanismo con ritmo físico.
 - De esos, **9 (43 %; IC del 22 al 66 %) no superan una comprobación de orden de magnitud hecha con sus propios números** sin un supuesto no declarado. 3 la fallan de plano.
 - Además aparecieron **5 errores numéricos o de unidades**, entre ellos una erosión de tells sobrestimada ×7,6 y carbono moderno infravalorado ×3–72.
 
-### 35. El dogma de la escala y su auditoría aleatoria → [docs/42](docs/42-el-dogma-de-la-escala.md), [resultado](auditoria_aleatoria/RESULTADO_ESCALA.md)
+### 36. El dogma de la escala y su auditoría aleatoria → [docs/42](docs/42-el-dogma-de-la-escala.md), [resultado](auditoria_aleatoria/RESULTADO_ESCALA.md)
 La ley de escala de Fourier, t ∝ L², explica por sí sola el desajuste del cerebro de Herculano (~3 000) y por qué la "carbonatación rápida" en el laboratorio no puede endurecer el núcleo de muros de un metro (7 días de probeta ≈ 70 años de muro).
 
 Pero en una **segunda muestra aleatoria** de 40 artículos, con el protocolo registrado antes de leerlos, solo 3 hacen una extrapolación de escala con transporte de por medio, y en ninguno cambia la conclusión. **El dogma es real, pero raro:** un resultado negativo que dejamos registrado tal cual.
 
-### 35. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
+### 37. Predicciones registradas → [PREDICCIONES.md](PREDICCIONES.md)
 Siete predicciones concretas, fechadas en git **antes** de que existan las mediciones que las comprobarán. Incluyen la huella de las rampas en las aristas medible desde fuera (P6) y las condiciones para afirmar la galería de contrapeso (P7).
 
 ## La parte histórica

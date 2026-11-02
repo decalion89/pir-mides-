@@ -1,0 +1,25 @@
+{
+ "R_reproducido": 806.2,
+ "factor_contra_maximo_fisico_SI": 3.3,
+ "factor_sobrestimacion": {
+  "p05": 5.24,
+  "mediana": 7.6,
+  "p95": 13.8
+ },
+ "prob_mayor_3": 1.0,
+ "descenso_superficie_clase_extrema_mm_ano": {
+  "p05": 8.93,
+  "mediana": 10.0,
+  "p95": 11.4
+ },
+ "metros_perdidos_en_2000_anos_a_150t": {
+  "p05": 17.9,
+  "mediana": 20.0,
+  "p95": 22.7
+ },
+ "umbral_extremo_equivalente_con_K_corregido_t_ha_ano": {
+  "p05": 10.9,
+  "mediana": 19.7,
+  "p95": 28.6
+ }
+}

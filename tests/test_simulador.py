@@ -432,3 +432,14 @@ def test_plomo_romano_reproduce_articulo():
     assert abs(pr.bll_regresion(157e-3) - 5.33) < 0.02
     assert abs(pr.deficit_ci(2.4) - 2.61) < 0.02
     assert pr.bll_regresion(3e-5) > 1.5            # aire casi limpio: la regresión ya predice >1,5 µg/dl
+
+
+def test_kappa_segunda_codificacion():
+    import importlib.util, pathlib
+    p = pathlib.Path(__file__).resolve().parent.parent / "simulador" / "censo" / "segunda_codificacion.py"
+    spec = importlib.util.spec_from_file_location("segcod", p)
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    # po = 0,75; pe = (2·1 + 2·3)/16 = 0,5  →  κ = 0,5
+    assert m.kappa([1, 1, 0, 0], [1, 0, 0, 0]) == (0.5, 0.75)
+    assert m.cp(0, 40)[0] == 0.0 and abs(m.cp(0, 40)[1] - 0.088) < 0.001
